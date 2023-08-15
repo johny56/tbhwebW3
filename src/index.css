@@ -20,8 +20,6 @@
     margin-top: 25px;
 }
 
-
-/*
 input.defaultCheckbox::before {
 	content: url(../src/assets/svg/checked.svg); 
 	color: white;
@@ -35,4 +33,4 @@ input.defaultCheckbox::before {
 
 input:checked.defaultCheckbox::before { 
 	opacity: 1;
-}*/
+}
