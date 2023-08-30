@@ -17,26 +17,30 @@ export default function Product(){
                 
                     
             
-                <div className="flex flex-row bg-tranparent bg-clip-content p-1 m-1">
+                <div className="flex flex-row bg-tranparent bg-clip-content p-1">
                     <div
-                        className="relative w-full flex items-center invisible md:visible"
+                        className="relative rounded w-full flex flex-col invisible md:visible"
                         
-                    ><img className="h-72 w-full hover:opacity-75" src={"https://drive.google.com/uc?export=view&id=1QKpaqfYmycu8uQdsJBuhrQsw3mK5cPTR"}/>
+                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1Vi1wL2OMv06XuEowYlpDnRddGSQuC1RI"}/>
+                    <p className="text-center">Mixture</p>
                     </div>
                     <div
-                        className="relative w-full flex items-center invisible md:visible "
+                        className="relative rounded w-full flex flex-col text-start invisible md:visible"
                         
-                    ><img className="h-72 w-full hover:opacity-75" src={"https://drive.google.com/uc?export=view&id=1Y0tLBg9vMc6X_uUz370Zbtc8c38lLlSa"}/>
+                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1ijPFqAXWne1Xolo_yWTS3s1cbaCW8rgW"}/>
+                    <p className="text-center">STR20CV</p>
                     </div>
                     <div
-                        className="relative w-full flex items-center invisible md:visible "
+                        className="relative rounded w-full flex flex-col text-start invisible md:visible"
                         
-                    ><img className="h-72 w-full hover:opacity-75" src={"https://drive.google.com/uc?export=view&id=1QKpaqfYmycu8uQdsJBuhrQsw3mK5cPTR"}/>
+                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1TXpKFGXd-QiltFPL6r_zrf0OR1XH_Aj3"}/>
+                    <p className="text-center">STR20</p>
                     </div>
                     <div
-                        className="relative w-full flex items-center invisible md:visible "
+                        className="relative rounded w-full flex flex-col text-start invisible md:visible"
                         
-                    ><img className="h-72 w-full hover:opacity-75" src={"https://drive.google.com/uc?export=view&id=1Y0tLBg9vMc6X_uUz370Zbtc8c38lLlSa"}/>
+                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1WlUUw79Dg2Pj4GOtNEnwiZB1_Erlptw2"}/>
+                    <p className="text-center">STR10</p>
                     </div>
                     
                 </div>
