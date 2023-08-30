@@ -8,13 +8,14 @@ export default function FactoryClip(){
             
              <div className="relative h-screen">
                 
-                {/* <video autoplay loop muted
-                    className="absolute z-10 w-auto 
-                    min-w-full min-h-full max-w-none">
-                    <source src=
-                        "src/about_us/factory/video/TBH-surat.mp4"
-                        type="video/mp4"/>
-                </video> */}
+                <iframe className="h-screen w-full"
+                    src="https://www.youtube.com/embed/d25bccY87M4?si=Vsv5wtK0CM3hzaHD" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+
+                </iframe>
                
              </div>
            
