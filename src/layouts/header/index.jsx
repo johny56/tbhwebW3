@@ -12,10 +12,10 @@ const Header = () => {
         // <div className="bg-transition h-max z-40">
 
           <header className="bg-green-500 bg-local hover:bg-fixed top-0 w-full shadow-md z-0">
-              <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
+              {/* <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
                   <Logo></Logo>
                   <Navbar></Navbar>
-              </nav>
+              </nav> */}
               <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20">
               <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1w2SwHnIUEbKgPLefMC8YPxEH4kzJX0QB)] bg-no-repeat z-10">
             

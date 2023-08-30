@@ -1,20 +1,20 @@
-import Header from "layouts/header";
-import Homepage from "layouts/homepage";
+import Layout from "layouts";
+import WorkOpputunity from "work_opp";
 
 import React from "react";
 
 const routes = [
     {
-      name: "Homepage",
-      layout: "/homepage",
+      name: "Layouts",
+      layout: "/layouts",
       path: "default",
-      component: <Homepage />,
+      component: <Layout />,
     },
     {
-      name: "Header",
-      layout: "/header",
+      name: "work_opputunity",
+      layout: "work_opp",
       path: "default",
-      component: <Header />,
+      component: <WorkOpputunity />,
     },
 ];
 export default routes;

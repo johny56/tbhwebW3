@@ -1,25 +1,31 @@
 import React from "react";
-//import { Routes, Route, Navigate } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom'
+import Layout from "layouts";
+import WorkOpputunity from "work_opp";
 
-import Header from "layouts/header";
-import Body from "layouts/body";
-
-
+import Navbar from "components/navbar";
+import Logo from "components/navbar/logo";
 
 const App = () => {
 
 
   return (
-    <body>
-      
-        <Header></Header>
-        <Body></Body>
-
-        
-
-    </body>
     
-   
+    
+
+    <div>
+      <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
+          <Logo></Logo>
+          <Navbar></Navbar>
+      </nav>
+
+      <Routes>
+        <Route path='/' element={<Layout/>} />
+        <Route path='/work_opp' element={<WorkOpputunity/>}/>
+      </Routes>
+    </div>
+
+    
     
   );
 };

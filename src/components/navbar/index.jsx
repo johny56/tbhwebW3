@@ -1,5 +1,6 @@
 import Dropdown from "components/dropdown";
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -30,7 +31,8 @@ const Navbar = () => {
             <div className="flex flex-row items-end justify-end">
 
                     <p className="mx-2">
-                        <a href="#" className="text-white dark:text-white hover:underline" aria-current="page">Work Opportunity</a>
+                        <li className="text-white dark:text-white hover:underline"><Link to="/work_opp">Work Opportunity</Link></li>
+                        {/* <a href="#" className="text-white dark:text-white hover:underline" aria-current="page">Work Opportunity</a> */}
                     </p>
                     <p className="mx-2">
                         <a href="#" className="text-white dark:text-white hover:underline">Contact Us</a>
