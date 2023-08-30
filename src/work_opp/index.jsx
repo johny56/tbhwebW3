@@ -5,7 +5,7 @@ export default function WorkOpputunity(){
     return (
 
         <div>
-            <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-green-500 pt-4">
+            <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-white">
                 <div className="bg-contain h-screen bg-[url(https://drive.google.com/uc?export=view&id=1NrjlHx18OHUAMQPRh-rd6nx7h-AZhwh-)] bg-no-repeat z-10">
             
 
@@ -23,7 +23,7 @@ export default function WorkOpputunity(){
             
 
             
-            <div className="flex overflow-x-auto shadow-md sm:rounded-lg z-40">
+            <div className="flex  overflow-x-auto shadow-md sm:rounded-lg z-40">
                 <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
@@ -102,6 +102,38 @@ export default function WorkOpputunity(){
                     </tbody>
                 </table>
             </div>
+
+            {/* <div className="bg-[#273F02] text-white">
+                <div className="flex flex-col w-full container mx-auto text-center">
+                    <div className=" md:flex-row text-center text-based md:text-left md:justify-between py-6">
+                        <a>For futher information, please contact us</a>
+                        <a>HR Department at Teck Bee Hang Co,Ltd(Head office)</a>
+                        <a>157 Niphat Uthut 2 Road Hatyai Songkhla 90110</a>
+                        <a>Email: HRD@teckbeehang.com</a>
+                        <a>Call us:074-xxx-xxx Ext 20xx</a>
+                        
+                    </div>
+                </div>
+            </div> */}
+            <footer className="bg-white text-black py-8 m-8">
+            <div className="container mx-auto flex flex-wrap justify-center text-center">
+                <div className="w-full md:w-1/3 px-4 mb-6">
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-6">
+                <a>For futher information, please contact us</a>
+                <br></br>
+                <a>HR Department at Teck Bee Hang Co,Ltd(Head office)</a>
+                <br></br>
+                <a>157 Niphat Uthut 2 Road Hatyai Songkhla 90110</a>
+                <br></br>
+                <a>Email: HRD@teckbeehang.com</a>
+                <br></br>
+                <a>Call us:074-xxx-xxx Ext 20xx</a>
+                </div>
+                <div className="w-full md:w-1/3 px-4 mb-6">
+                </div>
+            </div>
+            </footer>
 
             </div>
       
