@@ -16,7 +16,6 @@ const App = () => {
     <div>
       <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
           <Logo></Logo>
-          <Navbar></Navbar>
       </nav>
 
       <Routes>
