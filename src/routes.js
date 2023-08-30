@@ -2,6 +2,7 @@ import Layout from "layouts";
 import WorkOpputunity from "work_opp";
 
 import React from "react";
+import Whistleblowing from "Whistleblowing";
 
 const routes = [
     {
@@ -15,6 +16,12 @@ const routes = [
       layout: "work_opp",
       path: "default",
       component: <WorkOpputunity />,
+    },
+    {
+      name: "Whistleblowing",
+      layout: "Whistleblowing",
+      path: "default",
+      component: <Whistleblowing/>,
     },
 ];
 export default routes;

@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Routes } from 'react-router-dom'
 import Layout from "layouts";
 import WorkOpputunity from "work_opp";
+import Whistleblowing from "Whistleblowing";
 
-import Navbar from "components/navbar";
 import Logo from "components/navbar/logo";
 
 const App = () => {
@@ -21,6 +21,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Layout/>} />
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
+        <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
       </Routes>
     </div>
 

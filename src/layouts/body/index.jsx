@@ -3,9 +3,10 @@ import Product from "our_product/product";
 import Policy from "sustainability/policies";
 import FactoryClip from "about_us/factory";
 import Activity from "about_us/company_activity";
-import WorkOpputunity from "work_opp";
+
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Body = () => {
 
@@ -46,7 +47,8 @@ const Body = () => {
                   <div className="bg-[#273F02] text-white">
                     <div className="w-full container mx-auto flex flex-col text-center">
                         <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6">
-                            <a href="#" class="uppercase ">WHISTLEBLOWER</a>
+                            {/* <a href="#" class="uppercase ">WHISTLEBLOWER</a> */}
+                            <li className="text-white dark:text-white hover:underline"><Link to="/Whistleblowing">WHISTLEBLOWIMG</Link></li>
                             <a href="#" class="uppercase ">SUGGESTION/CUSTOMER COMPLAINTS</a>
                             <a href="#" class="uppercase ">PRIVACY POLICY | COOKIE POLICY</a>
                             <a href="#" class="uppercase ">TBH STAFF</a>
