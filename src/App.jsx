@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from "layouts";
 import WorkOpputunity from "work_opp";
 import Whistleblowing from "Whistleblowing";
+import Activity from "activity_board";
 
 import Logo from "components/navbar/logo";
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/' element={<Layout/>} />
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
+        <Route path='/Activity' element={<Activity/>}/>
       </Routes>
     </div>
 

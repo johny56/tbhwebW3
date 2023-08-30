@@ -23,5 +23,11 @@ const routes = [
       path: "default",
       component: <Whistleblowing/>,
     },
+    {
+      name: "Activity",
+      layout: "Activity",
+      path: "default",
+      component: <Activity/>,
+    }
 ];
 export default routes;
