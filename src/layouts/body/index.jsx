@@ -48,7 +48,7 @@ const Body = () => {
                     <div className="w-full container mx-auto flex flex-col text-center">
                         <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6">
                             {/* <a href="#" class="uppercase ">WHISTLEBLOWER</a> */}
-                            <li className="text-white dark:text-white hover:underline"><Link to="/Whistleblowing">WHISTLEBLOWIMG</Link></li>
+                            <p className="text-white dark:text-white hover:underline"><Link to="/Whistleblowing">WHISTLEBLOWIMG</Link></p>
                             <a href="#" class="uppercase ">SUGGESTION/CUSTOMER COMPLAINTS</a>
                             <a href="#" class="uppercase ">PRIVACY POLICY | COOKIE POLICY</a>
                             <a href="#" class="uppercase ">TBH STAFF</a>
