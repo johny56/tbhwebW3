@@ -21,7 +21,7 @@ export default function About(){
         return (
             <div className="relative" data-te-dropdown-ref z-50>
             <a
-                className="flex item-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-base font-sans leading-normal text-white"
+                className="flex item-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-base font-sans font-noto-sans-thai leading-normal text-white"
                 href="#"
                 type="button"
                 id="dropdownMenuButton2"

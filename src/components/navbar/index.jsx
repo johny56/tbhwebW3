@@ -31,14 +31,14 @@ const Navbar = () => {
             <div className="flex flex-row items-end justify-end">
 
                     <p className="mx-2">
-                        <p className="text-white dark:text-white hover:underline"><Link to="/work_opp">Work Opportunity</Link></p>
+                        <p className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline"><Link to="/work_opp">Work Opportunity</Link></p>
                         {/* <a href="#" className="text-white dark:text-white hover:underline" aria-current="page">Work Opportunity</a> */}
                     </p>
                     <p className="mx-2">
-                        <a href="#" className="text-white dark:text-white hover:underline">Contact Us</a>
+                        <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">Contact Us</a>
                     </p>
                     <p className="mx-2">
-                        <a href="#" className="text-white dark:text-white hover:underline">TH/EN</a>
+                        <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">TH/EN</a>
                     </p>
 
             </div>

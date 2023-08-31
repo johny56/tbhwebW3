@@ -16,7 +16,9 @@ export default function FactoryClip(){
                     allowfullscreen>
 
                 </iframe>
-               
+
+                {/* <iframe src="https://drive.google.com/file/d/1FYS0WQWXmYQ8YSjYHarWJMEW4AFRYlBA/preview" width="640" height="480" allow="autoplay"></iframe> */}
+                {/* google drive iframe */}
              </div>
            
             

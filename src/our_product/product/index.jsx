@@ -11,13 +11,13 @@ export default function Product(){
 
         <div>
             
-            <div className="bg-white flex flex-col justify-start p-2">
+            <div className="bg-white flex flex-col justify-start p-2 ">
                 
-                <a href="#" className=" text-5xl font-bold text-green-900 m-10 p-2">PRODUCTS</a>
+                <a href="#" className=" text-5xl font-sans font-tt-hoves text-green-900 m-10 p-2">PRODUCTS</a>
                 
                     
             
-                <div className="flex flex-row bg-tranparent bg-clip-content p-1">
+                <div className="flex flex-row bg-tranparent bg-clip-content p-1 font-sans font-tt-hoves">
                     <div
                         className="relative rounded w-full flex flex-col invisible md:visible"
                         

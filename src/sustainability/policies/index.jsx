@@ -10,7 +10,7 @@ export default function Policy(){
             <div className="flex flex-col h-full items-center justify-center">
              <div className="text-[#E6DCC6] space-y-8">
                  {/* <p className="text-4xl font-sans flex justify-center"> Quality Policy</p> */}
-                 <p className="text-2xl font-sans indent-4 text-center space-y-8">
+                 <p className="text-2xl font-sans font-dm-sans indent-4 text-center space-y-8">
                      " To Produce Standard Thai Rubber (STR) that Consistently<br></br>
                      Satisfies or Exceeds Customers’ Requirements Through<br></br>Continuous Improvement "
                      </p>

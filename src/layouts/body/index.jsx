@@ -48,10 +48,10 @@ const Body = () => {
                     <div className="w-full container mx-auto flex flex-col text-center">
                         <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6">
                             {/* <a href="#" class="uppercase ">WHISTLEBLOWER</a> */}
-                            <p className="text-white dark:text-white hover:underline"><Link to="/Whistleblowing">WHISTLEBLOWIMG</Link></p>
-                            <a href="#" class="uppercase ">SUGGESTION/CUSTOMER COMPLAINTS</a>
-                            <a href="#" class="uppercase ">PRIVACY POLICY | COOKIE POLICY</a>
-                            <a href="#" class="uppercase ">TBH STAFF</a>
+                            <p className="font-sans font-tt-hoves text-white dark:text-white hover:underline"><Link to="/Whistleblowing">WHISTLEBLOWIMG</Link></p>
+                            <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
+                            <a href="#" className="font-sans font-tt-hoves ">PRIVACY POLICY | COOKIE POLICY</a>
+                            <a href="#" className="font-sans font-tt-hoves ">TBH STAFF</a>
                             
                         </div>
                     </div>

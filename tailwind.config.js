@@ -108,6 +108,8 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         dm: ["DM Sans", "sans-serif"],
+        'noto-sans-thai': ['Noto Sans Thai', 'sans-serif'],
+        'tt-hoves': ['TT Hoves', 'sans-serif'],
       },
       boxShadow: {
         "3xl": "14px 17px 40px 4px",
