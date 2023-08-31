@@ -24,7 +24,7 @@ export default function Whistleblowing(){
             </div>
             <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
                 <div className=" bg-scroll h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat z-10">
-                <div className="container text-back p-16">
+                <div className="container text-back px-16 pt-4">
                     <h1 className="font-extrabold">1. Principle and justification</h1>
                     <p className="text-left">The policy for handling complaints has been established by Teck Bee Hang Co.,
 Ltd., attempting to conduct business that upholds ethical standards in addition to
@@ -63,8 +63,9 @@ Location: 157 Niphat Uthit 2 Road, Hat Yai District, Songkhla 90110<br></br>
 You may also use an online system to file complaints.
 <a className="font-bold"> https://teckbeehang.com/whistleblower/</a></p>
                 <br></br>
+                
+                <h5 className="font-bold">5.</h5>
                 <p className="text-left">
-                <a className="font-extrabold">5.</a>
 The company investigates and handles complaints. The investigation results
 should go to the appropriate agencies to report for the right people.
 Send the complainant an email to let them know what we did and inform the
@@ -73,9 +74,8 @@ executives of the activities&#39; results for acknowledgment.</p>
                 
 
                 </div>
-                
-             
                 </div>
+
                 <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
                 <div className=" bg-cover h-max-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat-y z-10">
                 <footer className="bg-white text-back text-start mx-16 p-8">
