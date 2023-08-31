@@ -3,9 +3,10 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from "layouts";
 import WorkOpputunity from "work_opp";
 import Whistleblowing from "Whistleblowing";
-import Activity from "activity_board";
+import EventBoard from "activity_board";
 
 import Logo from "components/navbar/logo";
+import ManagementTeam from "about_us/management";
 
 const App = () => {
 
@@ -23,7 +24,8 @@ const App = () => {
         <Route path='/' element={<Layout/>} />
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
-        <Route path='/Activity' element={<Activity/>}/>
+        <Route path='/eventBoard' element={<EventBoard/>}/>
+        <Route path='/management' element={<ManagementTeam/>}/>
       </Routes>
     </div>
 

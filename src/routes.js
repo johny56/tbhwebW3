@@ -3,6 +3,8 @@ import WorkOpputunity from "work_opp";
 
 import React from "react";
 import Whistleblowing from "Whistleblowing";
+import eventBoard from "activity_board";
+import ManagementTeam from "about_us/management";
 
 const routes = [
     {
@@ -13,21 +15,27 @@ const routes = [
     },
     {
       name: "work_opputunity",
-      layout: "work_opp",
+      layout: "/work_opp",
       path: "default",
       component: <WorkOpputunity />,
     },
     {
       name: "Whistleblowing",
-      layout: "Whistleblowing",
+      layout: "/Whistleblowing",
       path: "default",
       component: <Whistleblowing/>,
     },
     {
-      name: "Activity",
-      layout: "Activity",
+      name: "activity_board",
+      layout: "/activity_board",
       path: "default",
-      component: <Activity/>,
-    }
+      component: <eventBoard/>,
+    },
+    {
+      name: "management",
+      layout: "/management",
+      path: "default",
+      component: <ManagementTeam/>,
+    },
 ];
 export default routes;

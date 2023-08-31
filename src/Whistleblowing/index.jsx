@@ -8,13 +8,14 @@ export default function Whistleblowing(){
     return(
 
         <div>
-             <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-white">
+             {/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-white"> */}
+            <div className="h-full w-full overflow-hidden bg-fixed z-20 bg-white">
                 <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=19jdeLIEDDBYocV06j6pCxQPGIpKwKMEi)] bg-no-repeat z-10">
                 
 
                     <div className="container relative h-full py-36">
                     <div className="text-green-900 text-center">
-                        <h2 className="my-72 text-9xl font-semibold"> WHISTLEBLOWING</h2>
+                        <h2 className="pl-36 my-64 text-8xl font-sans font-tt-hoves"> WHISTLEBLOWING</h2>
                     
                     </div>
                     </div>
@@ -29,7 +30,7 @@ export default function Whistleblowing(){
 Ltd., attempting to conduct business that upholds ethical standards in addition to
 effective corporate governance If a whistleblower is identified, ensure a fair
 investigation to reach an equitable outcome. To satisfy the convenience requirements
-of both internal and external complainants</p><br></br>
+of both internal and external complainants.</p><br></br>
                     <h2 className="font-extrabold">2. Whistleblower Protection and Confidentiality</h2>
                     <p className="text-left">To protect the legal rights of truthful information providers and complainants. The
 company will keep the complainant&#39;s or informant&#39;s identity, address, and other
@@ -76,10 +77,10 @@ executives of the activities&#39; results for acknowledgment.</p>
              
                 </div>
                 <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
-                <div className=" bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat z-10">
+                <div className=" bg-cover h-max-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat-y z-10">
                 <footer className="bg-white text-back text-start mx-16 p-8">
                     <div className="container mx-auto flex flex-col justify-center">
-                        <div className="w-full front-normal px-4 mb-6">
+                        <div className="w-full font-normal px-4 mb-6">
                         <h2 className="text-xl font-extrabold mb-4">Complaint Form</h2>
                         </div>
                         <div className="w-full  px-4 mb-6">
@@ -103,7 +104,7 @@ executives of the activities&#39; results for acknowledgment.</p>
                         </div>
                         <div className="w-full  px-4 mb-6">
                         <h2 className="text-xl front-normal mb-4">Complaint Topics</h2>
-                        
+                        <InputConplaintForm></InputConplaintForm>
                         </div>
                         <div className="w-full  px-4 mb-6">
                         <h2 className="text-xl front-normal mb-4">Details</h2>
@@ -113,7 +114,7 @@ executives of the activities&#39; results for acknowledgment.</p>
                         <h2 className="text-xl front-normal mb-4">Attachment(if have)</h2>
                         <div className="flex flex-row">
 
-                        
+                        <InputConplaintForm></InputConplaintForm>
                         <span class="sr-only">Choose file</span>
                         <input type="file" 
                         className="block px-10 mx-8 w-full text-sm text-slate-500
@@ -126,10 +127,10 @@ executives of the activities&#39; results for acknowledgment.</p>
                         </div>
                         </div>
                         
-                    </div>
-                    <div className="flex flex-row p-4">
-                        <StyledCheckbox></StyledCheckbox>
-                        <p>I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
+                        <div className="flex flex-row p-4">
+                            <StyledCheckbox></StyledCheckbox>
+                            <p className="text-xs">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
+                        </div>
                     </div>
                     
                 </footer>

@@ -39,6 +39,8 @@ const Navbar = () => {
                     </p>
                     <p className="mx-2">
                         <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">TH/EN</a>
+                        {/* <i className="flag flag-united-states z-40"></i>
+                        <i className="flag flag-thailand"></i> */}
                     </p>
 
             </div>

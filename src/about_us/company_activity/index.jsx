@@ -12,12 +12,12 @@ export default function Activity(){
                     <div className="grid gap-3">
             
                         <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition">
-                            <Link to="/Activity">
+                            <Link to="/eventBoard">
                             <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2" alt=""/>
-                            </Link>
                             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                             <span class="text-gray-200/95 text-7xl font-bold"> + </span>
                             </div>
+                            </Link>
                         </div>
 
                         <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition">
