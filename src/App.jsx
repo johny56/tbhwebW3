@@ -7,6 +7,7 @@ import EventBoard from "activity_board";
 
 import Logo from "components/navbar/logo";
 import ManagementTeam from "about_us/management";
+import PolicyPage from "sustainability/policy_page";
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
         <Route path='/eventBoard' element={<EventBoard/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
+        <Route path='/policy_page' element={<PolicyPage/>}/>
       </Routes>
     </div>
 

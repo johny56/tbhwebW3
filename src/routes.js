@@ -5,6 +5,7 @@ import React from "react";
 import Whistleblowing from "Whistleblowing";
 import eventBoard from "activity_board";
 import ManagementTeam from "about_us/management";
+import PolicyPage from "sustainability/policy_page";
 
 const routes = [
     {
@@ -36,6 +37,12 @@ const routes = [
       layout: "/management",
       path: "default",
       component: <ManagementTeam/>,
+    },
+    {
+      name: "policy-page",
+      layout: "/sustainability",
+      path: "default",
+      component: <PolicyPage/>,
     },
 ];
 export default routes;
