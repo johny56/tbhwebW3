@@ -8,8 +8,9 @@ export default function Activity(){
 
             <div className="w-full bg-[#FFFFFF] shadow flex flex-col p-8">
         
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="grid gap-3">
+                {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4"> */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid gap-3 ">
             
                         <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition">
                             <Link to="/eventBoard">
@@ -36,6 +37,7 @@ export default function Activity(){
                     </div>
 
                     <div className="grid gap-3">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> */}
                     <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition">
                             <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=1r7-sOj-ceD-5ANhvvz_Gk4uF_Sj4pO0L" alt=""/>
                             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
@@ -58,8 +60,8 @@ export default function Activity(){
                         </div>
                     </div>    
 
-                    <div className="grid gap-3">
-                        
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"> */}
+                        <div className="grid gap-3"> 
                         <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition">
                             <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=1r7-sOj-ceD-5ANhvvz_Gk4uF_Sj4pO0L" alt=""/>
                             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">

@@ -11,10 +11,11 @@ import {
 
 export default function Product(){
 
-    const [isOpen, setOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const handleDropDown = () => {
-        setOpen(!isOpen);
+    const handleDropDown = (event) => {
+        event.preventDefault();
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -33,7 +34,10 @@ export default function Product(){
                 
             </a>
             <ul
-                className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+                className={`absolute z-[1000] float-left m-0 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 ${
+                    isOpen ? 'block' : 'hidden'
+                  }`}
+                // className="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
                 aria-labelledby="dropdownMenuButton2"
                 data-te-dropdown-menu-ref>
                 <li>
