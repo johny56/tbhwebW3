@@ -9,10 +9,16 @@ export default function ManagementTeam(){
             
            
             <div className="bg-cover h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1rPrxVtBFJ7S0thIXNkvrZRw23qLo1jLA)] text-back text-end">
-                <div className="w-full font-normal pr-24 mr-12 py-16">
-                        <h1 className="text-7xl font-extrabold mb-4 text-[#827717]">Management </h1>
+                <div className="flex flex-col items-end justify-end pr-8 py-4">
+
+                        <h1 className="text-7xl font-extrabold mb-4 text-[#827717]">
+                        <a className="text-border-2 border-indigo-600">Management</a>
+                         </h1>
+                         
+                        {/* <img className="h-fit w-3/4 z-10" src="https://drive.google.com/uc?export=view&id=1EbUAFn7RR1F9wHCIvuxtKpyC1s905Cy2" alt=""/> */}
                         <h2 className="text-7xl font-extrabold">
                             <a className="text-border-2 border-indigo-600">Team</a>
+                            {/* <img className="h-fit w-3/4 z-20" src="https://drive.google.com/uc?export=view&id=1YroMJuy1tPWjf5YYr8iIRqd0dgmZNX_K" alt=""/> */}
                         </h2>
                     
                 </div>
