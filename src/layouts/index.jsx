@@ -2,6 +2,7 @@
 import Header from "layouts/header";
 import Body from "layouts/body";
 
+
 import React from 'react';
 
 const Layout = () => {
@@ -12,7 +13,7 @@ const Layout = () => {
       
         <Header></Header>
         <Body></Body>
-
+        
         
 
         </body>
