@@ -35,7 +35,8 @@ const Navbar = () => {
                         {/* <a href="#" className="text-white dark:text-white hover:underline" aria-current="page">Work Opportunity</a> */}
                     </p>
                     <p className="mx-2">
-                        <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">Contact Us</a>
+                        <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">
+                          <Link to="/contact_us">Contact Us</Link></a>
                     </p>
                     <p className="mx-2">
                         <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">TH/EN</a>

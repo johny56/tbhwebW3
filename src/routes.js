@@ -3,9 +3,10 @@ import WorkOpputunity from "work_opp";
 
 import React from "react";
 import Whistleblowing from "Whistleblowing";
-import eventBoard from "activity_board";
 import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
+import EventBoard from "activity_board";
+import ContactUS from "contact_us";
 
 const routes = [
     {
@@ -30,7 +31,7 @@ const routes = [
       name: "activity_board",
       layout: "/activity_board",
       path: "default",
-      component: <eventBoard/>,
+      component: <EventBoard/>,
     },
     {
       name: "management",
@@ -43,6 +44,12 @@ const routes = [
       layout: "/sustainability",
       path: "default",
       component: <PolicyPage/>,
+    },
+    {
+      name: "contact_us",
+      layout: "/contact_us",
+      path: "default",
+      component: <ContactUS/>,
     },
 ];
 export default routes;
