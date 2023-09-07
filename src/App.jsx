@@ -23,9 +23,7 @@ const App = () => {
       <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
           <Logo></Logo>
       </nav>
-      <nav className="flex flex-col item-end fixed bottom-0 fixed right-0 h-full w-full z-30">
-          <ScrollToTopButton></ScrollToTopButton>
-      </nav>
+      
 
       <Routes>
         <Route path='/' element={<Layout/>} />
@@ -37,6 +35,9 @@ const App = () => {
         <Route path='/contact_us' element={<ContactUS/>}/>
       </Routes>
 
+      <nav className="bottom-0 fixed right-0 z-10">
+          <ScrollToTopButton></ScrollToTopButton>
+      </nav>
       
     </div>
 

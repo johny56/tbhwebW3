@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 p-2 bg-green-400 text-white rounded-full hover:bg-green-600"
+          className="fixed mb-24 mr-8 bottom-4 right-4 p-2 bg-green-400 text-white rounded-full hover:bg-green-600"
         >
           {/* Your icon goes here */}
         </button>

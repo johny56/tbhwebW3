@@ -9,7 +9,7 @@ export default function Whistleblowing(){
 
         <div>
              {/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-white"> */}
-            <div className="h-full w-full overflow-hidden bg-fixed z-20 bg-white">
+            <div className="relative h-full w-full overflow-hidden bg-fixed z-20 bg-white">
                 <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=19jdeLIEDDBYocV06j6pCxQPGIpKwKMEi)] bg-no-repeat z-10">
                 
 
@@ -22,7 +22,7 @@ export default function Whistleblowing(){
                 
                 </div>
             </div>
-            <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
+            <div className="bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
                 <div className=" bg-scroll h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat z-10">
                 <div className="container text-back px-16 pt-4">
                     <h1 className="font-extrabold">1. Principle and justification</h1>
