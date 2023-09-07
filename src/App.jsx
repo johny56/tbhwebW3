@@ -11,6 +11,7 @@ import ScrollToTopButton from "components/scroll_up";
 import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
 import ContactUS from "contact_us";
+import TBHstaff from "thbstaff";
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>
         <Route path='/contact_us' element={<ContactUS/>}/>
+        <Route path='/tbhstaff' element={<TBHstaff/>}/>
       </Routes>
 
       <nav className="bottom-0 fixed right-0 z-10">
