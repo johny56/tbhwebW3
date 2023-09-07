@@ -11,6 +11,10 @@ import ContactUS from "contact_us";
 import QCC from "activity_board/qcctrain";
 import Efforts from "activity_board/efforts";
 import ThungSong from "activity_board/thungSong5S";
+import NewYear23 from "activity_board/newyear23";
+import NewYear22 from "activity_board/newyear22";
+import BestSupplier from "activity_board/bestsupply";
+import ThungSong21 from "activity_board/thungsong21";
 
 
 const routes = [
@@ -57,10 +61,34 @@ const routes = [
       component: <Efforts/>,
     },
     {
+      name: "thungsong21",
+      layout: "/thungsong21",
+      path: "default",
+      component: <ThungSong21/>,
+    },
+    {
       name: "thungSong5S",
       layout: "/thungSong5S",
       path: "default",
       component: <ThungSong/>,
+    },
+    {
+      name: "newyear23",
+      layout: "/newyear23",
+      path: "default",
+      component: <NewYear23/>,
+    },
+    {
+      name: "newyear22",
+      layout: "/newyear22",
+      path: "default",
+      component: <NewYear22/>,
+    },
+    {
+      name: "bestsupply",
+      layout: "/bestsupply",
+      path: "default",
+      component: <BestSupplier/>,
     },
     {
       name: "management",

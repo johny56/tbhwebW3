@@ -16,6 +16,10 @@ import HappyWork from "activity_board/happyWorkplace";
 import QCC from "activity_board/qcctrain";
 import Efforts from "activity_board/efforts";
 import ThungSong from "activity_board/thungSong5S";
+import ThungSong21 from "activity_board/thungsong21";
+import NewYear23 from "activity_board/newyear23";
+import NewYear22 from "activity_board/newyear22";
+import BestSupplier from "activity_board/bestsupply";
 
 const App = () => {
 
@@ -39,6 +43,10 @@ const App = () => {
         <Route path='/qcctrain' element={<QCC/>}/>
         <Route path='/efforts' element={<Efforts/>}/>
         <Route path='/thungSong5S' element={<ThungSong/>}/>
+        <Route path='/thungsong21' element={<ThungSong21/>}/>
+        <Route path='/newyear23' element={<NewYear23/>}/>
+        <Route path='/newyear22' element={<NewYear22/>}/>
+        <Route path='/bestsupply' element={<BestSupplier/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>
         <Route path='/contact_us' element={<ContactUS/>}/>
