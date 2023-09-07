@@ -35,26 +35,33 @@ export default function Songkran(){
                                     </div>
                                 </div>
                                 <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3">
+
                                 <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                     
-                                    <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2" alt=""/>
-                    
-                                </div>
-
-                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
-                                    <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=1SKwh20kJ56vJwm3Bxut1Rdm_9b5Rt9Uv" alt=""/>
-                                    
-                                </div>
-
-                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
-                                    <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=16YDqsO5xkNWOa4NjkIKNDnMFnMfXx8Op" alt=""/>
-                                    
+                                    <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-01.jpg?fit=960%2C720&ssl=1" alt=""/>
+                                
                                 </div>
                                 <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                     
-                                    <img className="h-auto max-w-full rounded-lg" src="https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2" alt=""/>
-                    
+                                    <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-02.jpg?fit=960%2C720&ssl=1" alt=""/>
+                                    {/* https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2 */}
                                 </div>
+
+                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                    <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-03.jpg?fit=1030%2C773&ssl=1" alt=""/>
+                                    {/* https://drive.google.com/uc?export=view&id=1SKwh20kJ56vJwm3Bxut1Rdm_9b5Rt9Uv */}
+                                </div>
+
+                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                    <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-04.jpg?fit=1030%2C773&ssl=1" alt=""/>
+                                    {/* https://drive.google.com/uc?export=view&id=16YDqsO5xkNWOa4NjkIKNDnMFnMfXx8Op */}
+                                </div>
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    
+                                    <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-05.jpg?fit=1030%2C481&ssl=1" alt=""/>
+                                    {/* https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2 */}
+                                </div>
+                                
 
                                 </div>
                             </div>

@@ -5,8 +5,13 @@ import React from "react";
 import Whistleblowing from "Whistleblowing";
 import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
-import EventBoard from "activity_board";
+import Songkran from "activity_board/songkran";
+import HappyWork from "activity_board/happyWorkplace";
 import ContactUS from "contact_us";
+import QCC from "activity_board/qcctrain";
+import Efforts from "activity_board/efforts";
+import ThungSong from "activity_board/thungSong5S";
+
 
 const routes = [
     {
@@ -28,10 +33,34 @@ const routes = [
       component: <Whistleblowing/>,
     },
     {
-      name: "activity_board",
-      layout: "/activity_board",
+      name: "Songkran",
+      layout: "/songkran",
       path: "default",
-      component: <EventBoard/>,
+      component: <Songkran/>,
+    },
+    {
+      name: "QCC",
+      layout: "/qcctrain",
+      path: "default",
+      component: <QCC/>,
+    },
+    {
+      name: "happyWorkplace",
+      layout: "/HappyWork",
+      path: "default",
+      component: <HappyWork/>,
+    },
+    {
+      name: "efforts",
+      layout: "/efforts",
+      path: "default",
+      component: <Efforts/>,
+    },
+    {
+      name: "thungSong5S",
+      layout: "/thungSong5S",
+      path: "default",
+      component: <ThungSong/>,
     },
     {
       name: "management",

@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from "layouts";
 import WorkOpputunity from "work_opp";
 import Whistleblowing from "Whistleblowing";
-import EventBoard from "activity_board";
 
 import Logo from "components/navbar/logo";
 import ScrollToTopButton from "components/scroll_up";
@@ -12,6 +11,11 @@ import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
 import ContactUS from "contact_us";
 import TBHstaff from "thbstaff";
+import Songkran from "activity_board/songkran";
+import HappyWork from "activity_board/happyWorkplace";
+import QCC from "activity_board/qcctrain";
+import Efforts from "activity_board/efforts";
+import ThungSong from "activity_board/thungSong5S";
 
 const App = () => {
 
@@ -30,7 +34,11 @@ const App = () => {
         <Route path='/' element={<Layout/>} />
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
-        <Route path='/eventBoard' element={<EventBoard/>}/>
+        <Route path='/songkran' element={<Songkran/>}/>
+        <Route path='/HappyWork' element={<HappyWork/>}/>
+        <Route path='/qcctrain' element={<QCC/>}/>
+        <Route path='/efforts' element={<Efforts/>}/>
+        <Route path='/thungSong5S' element={<ThungSong/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>
         <Route path='/contact_us' element={<ContactUS/>}/>
