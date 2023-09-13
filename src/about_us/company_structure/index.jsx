@@ -41,38 +41,3 @@ export default function CompanyStructure() {
 
                   
             
-
-// import React from "react";
-
-// export default function CompanyStructure(){
-
-//     return (
-
-       
-//         <div className="relative">
-//         <div
-//             className="absolute h-full w-full inset-0 bg-scroll bg-center"
-//             style={{ backgroundImage: "url('https://drive.google.com/uc?export=view&id=16IPET1uaGQKXb75QfNamUhnwdbNzzWY8')" }}
-//         ></div>
-//         <div className="absolute inset-0 flex justify-start ">
-//             <h1 className="flex flex-col text-7xl font-extrabold mb-4 ml-36 text-[#827717]">
-//             <a className="text-border-2 border-indigo-600">company</a>
-//             <a className="ml-20 text-border-2 border-indigo-600">structure</a>
-//             </h1>
-//             <div className="pt-8 m-4 absolute inset-0 flex items-center justify-center">
-//              <img
-//              src="https://drive.google.com/uc?export=view&id=1UlDI4TNigmnC72dseYHSIg4q73reQyi3"
-//              className="max-h-full max-w-full"
-//              alt=""
-//              />
-//              </div>
-//          </div>
-//         </div>
-        
-
-            
-//     );
-
-// }
-
-// https://drive.google.com/file/d/1zokBDxnqSDfVdEKNmRBCV5PYI9kBexft/view?usp=sharing  <--struct
