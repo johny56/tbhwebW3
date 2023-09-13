@@ -43,7 +43,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row items-end justify-end pr-8">
+            <div className="flex flex-row items-end justify-end pr-8 pb-16">
               <p className="mx-2">
                 <p className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline"><Link to="/work_opp">Work Opportunity</Link></p>
               </p>
@@ -60,7 +60,7 @@ const Navbar = () => {
         </nav>
         
         {/* New Navbar (Sticky) */}
-        {!isNavbarVisible && (
+        {!isNavbarVisible && ( 
           <GREENnav></GREENnav>
         )}
         

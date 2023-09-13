@@ -43,10 +43,6 @@ const Body = () => {
                     <Activity></Activity>
                   </div>
 
-                  <div id="structure">
-                    <CompanyStructure></CompanyStructure>
-                  </div>
-
                   <div className="bg-[#273F02] text-white">
                     <div className="w-full container mx-auto flex flex-col text-center">
                         <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6">

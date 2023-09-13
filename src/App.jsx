@@ -23,6 +23,7 @@ import ThungSong21 from "activity_board/thungsong21";
 import NewYear23 from "activity_board/newyear23";
 import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
+import CompanyStructure from "about_us/company_structure";
 
 import GREENnav from "components/navbar/greenNav";
 
@@ -58,6 +59,7 @@ const App = () => {
         <Route path='/policy_page' element={<PolicyPage/>}/>
         <Route path='/contact_us' element={<ContactUS/>}/>
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
+        <Route path='/company_structure' element={<CompanyStructure/>}/>
       </Routes>
 
       <nav className="bottom-0 fixed right-0 z-10">
