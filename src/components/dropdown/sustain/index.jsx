@@ -23,7 +23,7 @@ export default function Sustain(){
 
         <div className="relative" data-te-dropdown-ref>
         <a
-            className="flex item-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-base font-sans font-noto-sans-thai leading-normal text-white"
+            className="flex item-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-3xl font-sans font-noto-sans-thai leading-normal text-white"
             href="#"
             type="button"
             id="dropdownMenuButton2"

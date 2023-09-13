@@ -1,5 +1,4 @@
 import Navbar from "components/navbar";
-import Logo from "components/navbar/logo";
 import React from 'react';
 
 const Header = () => {
