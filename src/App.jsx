@@ -1,10 +1,13 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom'
+// import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import Layout from "layouts";
 import WorkOpputunity from "work_opp";
 import Whistleblowing from "Whistleblowing";
 
-import Logo from "components/navbar/logo";
+
 import ScrollToTopButton from "components/scroll_up";
 
 import ManagementTeam from "about_us/management";
@@ -21,18 +24,22 @@ import NewYear23 from "activity_board/newyear23";
 import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
 
+import GREENnav from "components/navbar/greenNav";
+
 const App = () => {
 
+  const location = useLocation();
+  const isRootPath = location.pathname === "/";
 
   return (
     
     
 
     <div>
-      {/* <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
-          <Logo></Logo>
-      </nav> */}
-      
+
+      {!isRootPath && (
+                <GREENnav></GREENnav>
+      )}
 
       <Routes>
         <Route path='/' element={<Layout/>} />

@@ -1,13 +1,16 @@
+
+
 import Dropdown from "components/dropdown";
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "./logo";
 import GREENnav from "./greenNav";
 
+
 const Navbar = () => {
     const [isNavbarVisible, setIsNavbarVisible] = useState(false); // Set initial visibility to false
     const [prevScrollPos, setPrevScrollPos] = useState(0);
-  
+
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
   
@@ -23,6 +26,7 @@ const Navbar = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
+
   
     return (
       <div>
@@ -59,6 +63,7 @@ const Navbar = () => {
         {!isNavbarVisible && (
           <GREENnav></GREENnav>
         )}
+        
       </div>
     );
 };

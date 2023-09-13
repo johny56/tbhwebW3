@@ -8,7 +8,7 @@ const GREENnav = () =>{
 
     return (
 
-        <nav className="fixed w-full bg-green-800">
+        <nav className="fixed w-full bg-[#273F02] z-40">
             <div className="px-4 mx-auto flex items-center justify-between">
             <div className="flex items-center">
               <Logo></Logo> {/* Replace with your logo component */}
