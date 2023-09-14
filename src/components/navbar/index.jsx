@@ -53,7 +53,7 @@ const Navbar = () => {
                 </a>
               </p>
               <p className="mx-2">
-                <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">TH/EN</a>
+                <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">TH|EN</a>
               </p>
             </div>
           </div>
