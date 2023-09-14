@@ -1,4 +1,4 @@
-// import Logo from "components/navbar/logo"
+import Forum from "./emailforum";
 
 export default function WorkOpputunity(){
 
@@ -66,7 +66,7 @@ export default function WorkOpputunity(){
                                 <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a>
                             </td>
                             <td className="px-6 py-4">
-                                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLAY NOW</a>
+                                <a href="#emailforum" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a>
                             </td>
                             <td className="px-6 py-4">
                                 ...
@@ -89,7 +89,7 @@ export default function WorkOpputunity(){
                                 <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a>
                             </td>
                             <td className="px-6 py-4">
-                                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLAY NOW</a>
+                                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a>
                             </td>
                             <td className="px-6 py-4">
                                 ...
@@ -102,6 +102,11 @@ export default function WorkOpputunity(){
             </div>
                 
             </div>
+
+            <div id="emailforum">
+            <Forum></Forum>
+            </div>
+
 
             
 
