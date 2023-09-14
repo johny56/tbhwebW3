@@ -35,11 +35,11 @@ const Navbar = () => {
           <div className="px-4 mx-auto flex items-center justify-between">
             <div className="flex items-center">
               <Logo></Logo> {/* Replace with your logo component */}
-              <div className="flex item-center ml-52 pl-52">
-                <div className="pl-16">
+              <div className="flex item-center ml-32 pl-32">
+                
                 <div className="relative rounded-full bg-gray-600/20">
                   <Dropdown></Dropdown>
-                </div>
+              
                 </div>
               </div>
             </div>

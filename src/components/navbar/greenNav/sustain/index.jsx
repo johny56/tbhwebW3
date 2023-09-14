@@ -16,6 +16,9 @@ export default function Sustain2nav(){
     const handleDropDown = (event) => {
         event.preventDefault();
         setIsOpen(!isOpen);
+        setTimeout(() => {
+            setIsOpen(false);
+          }, 6000);
     };
     
     return (

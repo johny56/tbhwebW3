@@ -9,16 +9,18 @@ export default function ContactUS() {
 
   return (
     <div>
-      <div className="flex flex-col h-16 bg-[#E6DCC6]"></div>
-      <div className="h-full bg-gray-200">
-        <div className="flex flex-row items-start">
+      {/* <div className="flex flex-col h-16 bg-[#E6DCC6]"></div> */}
+      <div className="h-full pt-24 bg-gray-200">
+        <div className="flex flex-row items-start p-2">
+          
           <img
-            className="h-min w-1/2 p-2"
+            className="h-min-screen w-auto"
             src="https://drive.google.com/uc?export=view&id=14qtecVcjCjvO8X279QUqg2mvMvUWLjx4"
             alt=""
           />
-          <div className="flex h-full w-1/2 bg-cover bg-gray-100 mt-2 p-2 relative z-40">
-            <div className="w-full">
+          <div className="flex flex-col h-full w-full bg-cover bg-gray-100 relative z-10">
+           <h1 className="pl-32 m-4 uppercase text-3xl font-sans font-noto-sans-thai">contact us</h1>
+            <div className="w-full pt-8">
               {[1, 2, 3, 4, 5, 6].map((index) => (
                 <div key={index}>
                   <button

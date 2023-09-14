@@ -16,6 +16,10 @@ export default function Product(){
     const handleDropDown = (event) => {
         event.preventDefault();
         setIsOpen(!isOpen);
+
+        setTimeout(() => {
+            setIsOpen(false);
+          }, 7000);
     };
 
     return (

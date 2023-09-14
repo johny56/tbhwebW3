@@ -16,6 +16,9 @@ export default function Product2nav(){
     const handleDropDown = (event) => {
         event.preventDefault();
         setIsOpen(!isOpen);
+        setTimeout(() => {
+            setIsOpen(false);
+          }, 6000);
     };
 
     return (

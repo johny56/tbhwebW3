@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-// import { Link } from 'react-router-dom';
 
 import {
     Dropdown,
@@ -16,13 +15,15 @@ export default function About(){
 
     const [isOpen, setIsOpen] = useState(false);
 
-    // const handleDropDown = () => {
-    //     setIsOpen(!isOpen);
-    // };
-        const handleDropDown = (event) => {
-            event.preventDefault();
-            setIsOpen(!isOpen);
-        };
+    
+    const handleDropDown = (event) => {
+        event.preventDefault();
+        setIsOpen(!isOpen);
+
+        setTimeout(() => {
+            setIsOpen(false);
+          }, 7000);
+    };
 
         return (
             <div className="relative" data-te-dropdown-ref>
@@ -130,30 +131,3 @@ export default function About(){
     );
 }
 
-// import React, { useState } from 'react';
-// import { Link } from 'react-router-dom'; // Import Link from React Router if you're using it
-
-// const About = () => {
-//   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-//   const toggleDropdown = () => {
-//     setIsDropdownOpen(!isDropdownOpen);
-//   };
-
-//   return (
-//     <div className="relative inline-block">
-//       <button onClick={toggleDropdown} className="text-white">
-//         Open Dropdown
-//       </button>
-//       {isDropdownOpen && (
-//         <div className="absolute right-0 mt-2 bg-gray-700 p-2">
-//           <Link to="/" className="block text-white hover:text-blue-500 transition-colors">Home</Link>
-//           <Link to="/about" className="block text-white hover:text-blue-500 transition-colors">About</Link>
-//           {/* Add more Link components for additional menu items */}
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default About;
