@@ -8,35 +8,33 @@ export default function ManagementTeam(){
         <div>
             
            
-            <div className="bg-cover h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1rPrxVtBFJ7S0thIXNkvrZRw23qLo1jLA)] text-back text-end">
-                <div className="flex flex-col items-end justify-end pr-8 py-4">
+            <div className="bg-cover h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] text-back text-end">
+                <div className="flex flex-col items-end justify-end pr-8 py-4 pt-52">
 
-                        <h1 className="text-7xl font-extrabold mb-4 text-[#827717]">
+                        <h1 className="text-8xl font-extrabold mb-4 pr-8 text-[#273F02]">
                         <a className="text-border-2 border-indigo-600">Management</a>
                          </h1>
                          
                         {/* <img className="h-fit w-3/4 z-10" src="https://drive.google.com/uc?export=view&id=1EbUAFn7RR1F9wHCIvuxtKpyC1s905Cy2" alt=""/> */}
-                        <h2 className="text-7xl font-extrabold">
+                        <h2 className="text-9xl font-extrabold pr-8">
                             <a className="text-border-2 border-indigo-600">Team</a>
                             {/* <img className="h-fit w-3/4 z-20" src="https://drive.google.com/uc?export=view&id=1YroMJuy1tPWjf5YYr8iIRqd0dgmZNX_K" alt=""/> */}
                         </h2>
                     
                 </div>
             
-                <div className="grid grud-flow-row-dense grid-cols-1">
-                    <div className="flex justify-center">    
-                            <img className="h-auto w-1/4 rounded-lg" src="https://drive.google.com/uc?export=view&id=1dHjOtrI-a38Ru9S013MMoWGUOJQZSwky" alt=""/>
-            
-                    </div>
-                </div>
-                <div className="grid grid-flow-row-dense grid-cols-2">
-
-                    <div className="flex justify-center">
+                <div className="grid grud-flow-row-dense grid-cols-3">
+                
+                <div className="flex justify-center pt-32 mt-32">
                         <img className="h-auto w-2/3 rounded-lg" src="https://drive.google.com/uc?export=view&id=1pbSXuyZ1J2SV4in9JgSulWyve5zsLEOj" alt=""/>
                         
                     </div>
+                    <div className="flex justify-center pb-24 mb-24"> 
+                            <img className="h-auto w-2/3 rounded-lg " src="https://drive.google.com/uc?export=view&id=1dHjOtrI-a38Ru9S013MMoWGUOJQZSwky" alt=""/>
+            
+                    </div>
                     
-                    <div className="flex justify-center">
+                    <div className="flex justify-center pt-32 mt-32">
                         <img className="h-auto w-2/3 rounded-lg" src="https://drive.google.com/uc?export=view&id=1WWCYYvpoddFCt_xOuff03HMRoVPG_EqR" alt=""/>
                         
                     </div>

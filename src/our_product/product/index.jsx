@@ -21,25 +21,25 @@ export default function Product(){
                     <div
                         className="relative rounded w-full flex flex-col invisible md:visible"
                         
-                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1Vi1wL2OMv06XuEowYlpDnRddGSQuC1RI"}/>
+                    ><img className="h-full w-full " src={"https://drive.google.com/uc?export=view&id=1y_Mv63WCCTfhymINmR8uvQ0ptdS_Kjc4"}/>
                     <p className="text-center">Mixture</p>
                     </div>
                     <div
                         className="relative rounded w-full flex flex-col text-start invisible md:visible"
                         
-                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1ijPFqAXWne1Xolo_yWTS3s1cbaCW8rgW"}/>
+                    ><img className="h-full w-full " src={"https://drive.google.com/uc?export=view&id=1-GU2ZF2o5QznCUiB6TFncXS6ccz4SLjO"}/>
                     <p className="text-center">STR20CV</p>
                     </div>
                     <div
                         className="relative rounded w-full flex flex-col text-start invisible md:visible"
                         
-                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1TXpKFGXd-QiltFPL6r_zrf0OR1XH_Aj3"}/>
+                    ><img className="h-full w-full " src={"https://drive.google.com/uc?export=view&id=1PfKAz9x_8GKbY0VyLYlXj8SCW-mmUrs-"}/>
                     <p className="text-center">STR20</p>
                     </div>
                     <div
                         className="relative rounded w-full flex flex-col text-start invisible md:visible"
                         
-                    ><img className="h-72 w-full " src={"https://drive.google.com/uc?export=view&id=1WlUUw79Dg2Pj4GOtNEnwiZB1_Erlptw2"}/>
+                    ><img className="h-full w-full " src={"https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu"}/>
                     <p className="text-center">STR10</p>
                     </div>
                     
