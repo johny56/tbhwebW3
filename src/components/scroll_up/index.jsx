@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -10,6 +12,12 @@ const ScrollToTopButton = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Whenever the route changes, reset scroll position and hide the button
+    window.scrollTo(0, 0);
+    setIsVisible(false);
+  }, [location]);
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -41,3 +49,4 @@ const ScrollToTopButton = () => {
 };
 
 export default ScrollToTopButton;
+
