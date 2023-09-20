@@ -10,7 +10,7 @@ export default function Whistleblowing(){
         <div>
              {/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-white"> */}
             <div className="relative h-full w-full overflow-hidden bg-fixed z-20 bg-white">
-                <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=19jdeLIEDDBYocV06j6pCxQPGIpKwKMEi)] bg-no-repeat z-10">
+                <div className="bg-cover bg-[url(https://drive.google.com/uc?export=view&id=19jdeLIEDDBYocV06j6pCxQPGIpKwKMEi)] bg-no-repeat z-10">
                 
 
                     <div className="container relative h-full py-36">

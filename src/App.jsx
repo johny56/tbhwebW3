@@ -24,23 +24,20 @@ import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
 import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
+import Navbar from "components/navbar";
 
 const App = () => {
 
   const location = useLocation();
   const isRootPath = location.pathname === "/";
+  const isLayoutsPath = location.pathname === "/layouts";
 
   return (
     
-    
-
     <div>
-
-      {!isRootPath && (
-                <GREENnav></GREENnav>
+      {!isRootPath &&(
+        <GREENnav></GREENnav>
       )}
-
-      
 
       <Routes>
         <Route path='/' element={<Layout/>} />
@@ -61,6 +58,7 @@ const App = () => {
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
         <Route path='/company_structure' element={<CompanyStructure/>}/>
       </Routes>
+
 
       <nav className="bottom-0 fixed right-0 z-10">
           <ScrollToTopButton></ScrollToTopButton>

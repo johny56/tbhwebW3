@@ -31,7 +31,8 @@ const Navbar = () => {
     return (
       <div>
         {/* Original Navbar */}
-        <nav className={`fixed w-full transition-transform duration-300 ${isNavbarVisible ? 'transform translate-y-0' : '-translate-y-full'}`}>
+        <nav className={`fixed w-full transition-transform z-40 duration-300`}>
+        {/* <nav className={`fixed w-full transition-transform z-40 duration-300 ${isNavbarVisible ? 'transform translate-y-0' : '-translate-y-full'}`}> */}
           <div className="px-4 mx-auto flex items-center justify-between">
             <div className="flex items-center">
               <Logo></Logo> {/* Replace with your logo component */}
@@ -59,11 +60,12 @@ const Navbar = () => {
           </div>
         </nav>
         
-        {/* New Navbar (Sticky) */}
-        {!isNavbarVisible && ( 
-          <GREENnav></GREENnav>
+        {window.pageYOffset >= 900 &&(
+          <GREENnav></GREENnav>  
         )}
         
+      
+
       </div>
     );
 };

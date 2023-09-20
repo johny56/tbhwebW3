@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import {
     Dropdown,
@@ -128,69 +128,6 @@ export default function About2nav(){
     );
 }
 
-
-// import { React, useState, useEffect } from "react";
-// import Logo from "components/navbar/logo";
-
-// import {
-//   Dropdown,
-//   Ripple,
-//   initTE,
-// } from "tw-elements";
-
-// initTE({ Dropdown, Ripple });
-
-// export default function About2nav() {
-
-//   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const currentScrollPos = window.pageYOffset;
-
-//       // Show the navbar when at the top of the page
-//       setIsNavbarVisible(currentScrollPos <= 0);
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-
-//   return (
-//     <nav
-//       className={`fixed top-0 left-0 right-0 transition-transform duration-300 ${
-//         isNavbarVisible ? 'transform translate-y-0' : '-translate-y-full'
-//       }`}
-//     >
-//       <div className="px-4 mx-auto flex items-center justify-between">
-//         <div className="flex items-center">
-//           <Logo></Logo> {/* Replace with your logo component */}
-//           <div className="flex item-center ml-40 pl-40"> {/* Adjust margin as needed */}
-//             <Dropdown></Dropdown> {/* Replace with your dropdown component */}
-//           </div>
-//         </div>
-//         <div className="flex flex-row items-end justify-end pr-8">
-//           <a
-//             href="/"
-//             className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline"
-//           >
-//             History
-//           </a>
-//           <a
-//             href="#core_value"
-//             className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline"
-//           >
-//             Vision & Mission / Core Value
-//           </a>
-//           {/* Add more navigation links as needed */}
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }
 
 
 
