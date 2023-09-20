@@ -22,7 +22,7 @@ export default function About(){
 
         setTimeout(() => {
             setIsOpen(false);
-          }, 7000);
+          }, 2000);
     };
 
         return (

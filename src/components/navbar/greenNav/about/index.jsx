@@ -22,7 +22,7 @@ export default function About2nav(){
 
             setTimeout(() => {
                 setIsOpen(false);
-              }, 6000);
+              }, 2000);
         };
 
         return (

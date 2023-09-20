@@ -8,20 +8,18 @@ const GREENnav = () =>{
 
     return (
 
-        <nav className="fixed w-full bg-[#273F02] z-40">
+        <nav className="fixed w-full bg-[#273F02] z-40 mb-64">
             <div className="px-4 mx-auto flex items-center justify-between">
             <div className="flex items-center">
               <Logo></Logo> {/* Replace with your logo component */}
               <div className="flex justify-center item-center ml-32 pl-32">
-                <div className= "pl-16">
-                    <div className="flex flex-row">
-
-                    <About2nav></About2nav>
-                    <Product2nav></Product2nav>
-                    <Sustain2nav></Sustain2nav>
-                    </div>
-                </div>
+                  <div className="flex flex-row justify-center item-center pl-32">
+                  <About2nav></About2nav>
+                  <Product2nav></Product2nav>
+                  <Sustain2nav></Sustain2nav>
+                  </div>
               </div>
+             
             </div>
             <div className="flex flex-row items-end justify-end pr-8 mb-16">
               <p className="mx-2">

@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom'
-// import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Layout from "layouts";
@@ -24,7 +23,6 @@ import NewYear23 from "activity_board/newyear23";
 import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
 import CompanyStructure from "about_us/company_structure";
-
 import GREENnav from "components/navbar/greenNav";
 
 const App = () => {
@@ -41,6 +39,8 @@ const App = () => {
       {!isRootPath && (
                 <GREENnav></GREENnav>
       )}
+
+      
 
       <Routes>
         <Route path='/' element={<Layout/>} />
