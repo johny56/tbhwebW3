@@ -7,7 +7,7 @@ import WorkOpputunity from "work_opp";
 import Whistleblowing from "Whistleblowing";
 
 
-import ScrollToTopButton from "components/scroll_up";
+import ScrollToTopButton from "components/scroll_upButton";
 
 import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
@@ -26,6 +26,9 @@ import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
 import Navbar from "components/navbar";
 
+import ScrollToTopOnPageChange from "components/scroll_up";
+
+
 const App = () => {
 
   const location = useLocation();
@@ -38,6 +41,7 @@ const App = () => {
       {!isRootPath &&(
         <GREENnav></GREENnav>
       )}
+      <ScrollToTopOnPageChange />
 
       <Routes>
         <Route path='/' element={<Layout/>} />
@@ -61,7 +65,7 @@ const App = () => {
 
 
       <nav className="bottom-0 fixed right-0 z-10">
-          <ScrollToTopButton></ScrollToTopButton>
+          <ScrollToTopButton/>
       </nav>
       
     </div>

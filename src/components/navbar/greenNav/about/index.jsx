@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { Link } from 'react-router-dom';
+// import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 import {
     Dropdown,
@@ -24,6 +25,17 @@ export default function About2nav(){
                 setIsOpen(false);
               }, 2000);
         };
+
+        const scrollToSection = (sectionId) => {
+            const section = document.getElementById(sectionId);
+        
+            if (section) {
+              const yOffset = -100; // Adjust as needed to fine-tune the scroll position
+              const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+          };
 
         return (
             <div className="relative" data-te-dropdown-ref>
@@ -111,10 +123,11 @@ export default function About2nav(){
                     </a>
                 </li>
                 <li>
+                    
                     <a
-                    href="#activity"
-                    className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
-                    data-te-dropdown-item-ref
+                    href="/#activity"
+                    className="font-sans font-noto-sans-thai text-black dark:text-white hover:underline"
+                    onClick={() => scrollToSection('activity')}
                     >
                     Company Activities
                     </a>

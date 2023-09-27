@@ -8,8 +8,27 @@ import CompanyStructure from "about_us/company_structure";
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useEffect } from "react";
 
 const Body = () => {
+
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+          const targetId = hash.substring(1); // Remove the "#" symbol
+          scrollToSection(targetId);
+        }
+      }, []);
+
+      const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const yOffset = -100; // Adjust as needed to fine-tune the scroll position
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      };
+      
 
     return (
       
@@ -39,7 +58,7 @@ const Body = () => {
                       <Policy></Policy>
                   </div>
   
-                  <div id="activity">
+                  <div className="mt-16" id="activity">
                     <Activity></Activity>
                   </div>
 

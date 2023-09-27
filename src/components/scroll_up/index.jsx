@@ -1,52 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const ScrollToTopOnPageChange = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Whenever the route changes, reset scroll position and hide the button
-    window.scrollTo(0, 0);
-    setIsVisible(false);
+    // Scroll to the top of the page on route changes for all routes except the root path
+    if (location.pathname !== '/') {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
 
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
-  return (
-    <nav>
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed mb-24 mr-8 bottom-4 right-4 p-2 bg-green-400 text-white rounded-full hover:bg-green-600"
-        >
-          {/* Your icon goes here */}
-        </button>
-      )}
-    </nav>
-  );
+  return null; // This component doesn't render anything, it's just for the side effect
 };
 
-export default ScrollToTopButton;
+export default ScrollToTopOnPageChange;
+
+
 
