@@ -1,32 +1,26 @@
+import React from "react";
 import InputConplaintForm from "./complaint_form";
 import StyledCheckbox from "./checkbox";
 
-export default function Whistleblowing(){
-
-    
-
-    return(
-
-        <div>
-             {/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20 bg-white"> */}
-            <div className="relative h-full w-full overflow-hidden bg-fixed z-20 bg-white">
-                <div className="bg-cover bg-[url(https://drive.google.com/uc?export=view&id=19jdeLIEDDBYocV06j6pCxQPGIpKwKMEi)] bg-no-repeat z-10">
-                
-
-                    <div className="container relative h-full py-36">
-                    <div className="text-green-900 text-center">
-                        <h2 className="pl-36 my-64 text-8xl font-sans font-tt-hoves"> WHISTLEBLOWING</h2>
-                    
-                    </div>
-                    </div>
-                
-                </div>
-            </div>
-            <div className="bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
-                <div className=" bg-scroll h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat z-10">
-                <div className="container text-back px-16 pt-4">
-                    <h1 className="font-extrabold">1. Principle and justification</h1>
-                    <p className="text-left">The policy for handling complaints has been established by Teck Bee Hang Co.,
+export default function Whistleblowing() {
+  return (
+    <div className="relative h-screen">
+      <div
+        className="absolute top-0 left-0 w-full h-1/2 bg-fixed bg-cover"
+        style={{
+          backgroundImage: `url(https://drive.google.com/uc?export=view&id=19jdeLIEDDBYocV06j6pCxQPGIpKwKMEi)`,
+        }}
+      >
+        <div className="container h-full flex justify-center items-center">
+          <h2 className="text-8xl font-sans font-tt-hoves text-green-900">
+            WHISTLEBLOWING
+          </h2>
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-scroll bg-cover">
+        <div className="container mx-auto text-black px-16 pt-4">
+          <h1 className="font-extrabold">1. Principle and justification</h1>
+          <p className="text-left">The policy for handling complaints has been established by Teck Bee Hang Co.,
 Ltd., attempting to conduct business that upholds ethical standards in addition to
 effective corporate governance If a whistleblower is identified, ensure a fair
 investigation to reach an equitable outcome. To satisfy the convenience requirements
@@ -59,7 +53,6 @@ being sent Addressed to:<br></br>
 Teck Bee Hang Co., Ltd.&#39;s<br></br>
 CEO and Deputy CEO.<br></br>
 Location: 157 Niphat Uthit 2 Road, Hat Yai District, Songkhla 90110<br></br>
-<br></br>
 You may also use an online system to file complaints.
 <a className="font-bold"> https://teckbeehang.com/whistleblower/</a></p>
                 <br></br>
@@ -71,78 +64,90 @@ should go to the appropriate agencies to report for the right people.
 Send the complainant an email to let them know what we did and inform the
 executives of the activities&#39; results for acknowledgment.</p>
                 
-                
+        </div>
+      </div>
 
-                </div>
-                </div>
-
-                <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
-                <div className=" bg-cover h-max-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat-y z-10">
-                <footer className="bg-white text-back text-start mx-16 p-8">
-                    <div className="container mx-auto flex flex-col justify-center">
-                        <div className="w-full font-normal px-4 mb-6">
-                        <h2 className="text-xl font-extrabold mb-4">Complaint Form</h2>
-                        </div>
-                        <div className="w-full  px-4 mb-6">
-                        
-                        <h2 className="text-xl font-normal mb-4">Name-Surname</h2>
-                        <InputConplaintForm></InputConplaintForm>
-                        </div>
-                        {/* <p className="mt-2">Entered Text: {inputText}</p> */}
-                        
-                        <div className="w-full  px-4 mb-6">
-                        <h2 className="text-xl front-normal mb-4">Contact Number</h2>
-                        <InputConplaintForm></InputConplaintForm>
-                        </div>
-                        <div className="w-full  px-4 mb-6">
-                        <h2 className="text-xl front-normal mb-4">Email</h2>
-                        <InputConplaintForm></InputConplaintForm>
-                        </div>
-                        <div className="w-full  px-4 mb-6">
-                        <h2 className="text-xl front-normal mb-4">Type of Complaint</h2>
-                        <InputConplaintForm></InputConplaintForm>
-                        </div>
-                        <div className="w-full  px-4 mb-6">
-                        <h2 className="text-xl front-normal mb-4">Complaint Topics</h2>
-                        <InputConplaintForm></InputConplaintForm>
-                        </div>
-                        <div className="w-full  px-4 mb-6">
-                        <h2 className="text-xl front-normal mb-4">Details</h2>
-                        <InputConplaintForm></InputConplaintForm>
-                        </div>
-                        <div className="flex flex-col w-full px-4 mb-6">
-                        <h2 className="text-xl front-normal mb-4">Attachment(if have)</h2>
-                        <div className="flex flex-row">
-
-                        <InputConplaintForm></InputConplaintForm>
-                        <span class="sr-only">Choose file</span>
-                        <input type="file" 
-                        className="block px-10 mx-8 w-full text-sm text-slate-500
-                        file:mr-4 file:py-2 file:px-4
-                        file:rounded-full file:border-0
-                        file:text-sm file:font-semibold
-                        file:bg-violet-50 file:text-violet-700
-                        hover:file:bg-violet-100
-                        "/>
-                        </div>
-                        </div>
-                        
-                        <div className="flex flex-row p-4">
-                            <StyledCheckbox></StyledCheckbox>
-                            <p className="text-xs">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
-                        </div>
-                    </div>
-                    
-                </footer>
-                
-                </div>
-                </div>
-                
+      {/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
+        <div className="bg-cover h-max-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat-y z-10">
+          <footer className="bg-white text-back text-start mx-16 p-8">
+            <div className="container mx-auto flex flex-col justify-center">
+              <div className="w-full font-normal px-4 mb-6">
+                <h2 className="text-xl font-extrabold mb-4">Complaint Form</h2>
+              </div>
+              
+              
             </div>
+          </footer>
+        </div>
+      </div>   */}
+        
 
+      </div>
+
+        
+  );
+}
+
+
+
+{/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
+        <div className=" bg-cover h-max-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat-y z-10">
+        <footer className="bg-white text-back text-start mx-16 p-8">
+            <div className="container mx-auto flex flex-col justify-center">
+                <div className="w-full font-normal px-4 mb-6">
+                <h2 className="text-xl font-extrabold mb-4">Complaint Form</h2>
+                </div>
+                <div className="w-full  px-4 mb-6">
+                
+                <h2 className="text-xl font-normal mb-4">Name-Surname</h2>
+                <InputConplaintForm></InputConplaintForm>
+                </div>
+                {/* <p className="mt-2">Entered Text: {inputText}</p> 
+                
+                <div className="w-full  px-4 mb-6">
+                <h2 className="text-xl front-normal mb-4">Contact Number</h2>
+                <InputConplaintForm></InputConplaintForm>
+                </div>
+                <div className="w-full  px-4 mb-6">
+                <h2 className="text-xl front-normal mb-4">Email</h2>
+                <InputConplaintForm></InputConplaintForm>
+                </div>
+                <div className="w-full  px-4 mb-6">
+                <h2 className="text-xl front-normal mb-4">Type of Complaint</h2>
+                <InputConplaintForm></InputConplaintForm>
+                </div>
+                <div className="w-full  px-4 mb-6">
+                <h2 className="text-xl front-normal mb-4">Complaint Topics</h2>
+                <InputConplaintForm></InputConplaintForm>
+                </div>
+                <div className="w-full  px-4 mb-6">
+                <h2 className="text-xl front-normal mb-4">Details</h2>
+                <InputConplaintForm></InputConplaintForm>
+                </div>
+                <div className="flex flex-col w-full px-4 mb-6">
+                <h2 className="text-xl front-normal mb-4">Attachment(if have)</h2>
+                <div className="flex flex-row">
+
+                <InputConplaintForm></InputConplaintForm>
+                <span class="sr-only">Choose file</span>
+                <input type="file" 
+                className="block px-10 mx-8 w-full text-sm text-slate-500
+                file:mr-4 file:py-2 file:px-4
+                file:rounded-full file:border-0
+                file:text-sm file:font-semibold
+                file:bg-violet-50 file:text-violet-700
+                hover:file:bg-violet-100
+                "/>
+                </div>
+                </div>
+                
+                <div className="flex flex-row p-4">
+                    <StyledCheckbox></StyledCheckbox>
+                    <p className="text-xs">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
+                </div>
+            </div>
             
+        </footer>
 
         </div>
-
-    );
-}
+        </div> */}
