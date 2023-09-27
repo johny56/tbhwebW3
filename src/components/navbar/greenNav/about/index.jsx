@@ -70,7 +70,7 @@ export default function About2nav(){
                 </li>
                 <li>
                     <a
-                    href="#core_value"
+                    href="/#core_value"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     data-te-dropdown-item-ref
                     >
@@ -97,7 +97,7 @@ export default function About2nav(){
                 </li>
                 <li>
                     <a
-                    href="#factory-clip"
+                    href="/#factory-clip"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     data-te-dropdown-item-ref
                     >
@@ -126,7 +126,7 @@ export default function About2nav(){
                     
                     <a
                     href="/#activity"
-                    className="font-sans font-noto-sans-thai text-black dark:text-white hover:underline"
+                    className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     onClick={() => scrollToSection('activity')}
                     >
                     Company Activities
