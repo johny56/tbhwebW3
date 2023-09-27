@@ -16,7 +16,7 @@ export default function CoreValue(){
                     
                     <div className="flex flex-col item-center justify-center space-y-6">
 
-                        <h1 className="mx-48 w-1/2 mb-5 text-5xl font-sans font-tt-hoves uppercase text-green-900 dark:text-neutral-50">
+                        <h1 className="mt-8 mx-48 w-1/2 mb-5 text-5xl font-sans font-tt-hoves uppercase text-green-900 dark:text-neutral-50">
                             Core Value
                         </h1>
                         <p className="ml-36 mb-2 text-2xl font-sans font-tt-hoves uppercase text-neutral-800 dark:text-neutral-50">
