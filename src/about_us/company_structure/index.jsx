@@ -6,7 +6,7 @@ export default function CompanyStructure() {
       <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20">
       <div className="pt-32 bg-cover h-full bg-[url(https://drive.google.com/uc?export=view&id=16IPET1uaGQKXb75QfNamUhnwdbNzzWY8)] bg-no-repeat z-10">
 
-      <div className="absolute inset-0 flex flex-col pt-28 pl-16">
+      <div className="absolute inset-0 flex flex-row pt-28">
         {/* <h1 className="flex flex-col  text-7xl font-extrabold ml-36 text-[#827717]"> */}
             <img
                 src="https://drive.google.com/uc?export=view&id=19ePNijrJLKrJ4O8X9FNCEcVyk9XKKYgV"
@@ -15,7 +15,7 @@ export default function CompanyStructure() {
                 />
             <img
                 src="https://drive.google.com/uc?export=view&id=1vDVjmb2SGxNkH5vhA7uYTMcgXck_wsPc"
-                className="ml-56 h-min w-1/3"
+                className="h-min w-1/3"
                 alt=""
                 />
         {/* </h1> */}
