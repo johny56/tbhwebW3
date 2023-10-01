@@ -25,6 +25,17 @@ export default function About(){
           }, 2000);
     };
 
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+    
+        if (section) {
+          const yOffset = -100; // Adjust as needed to fine-tune the scroll position
+          const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      };
+
         return (
             <div className="relative" data-te-dropdown-ref>
             <a
@@ -61,7 +72,7 @@ export default function About(){
                 <li>
                 <a
                     className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                    href="#core_value"
+                    href="/#core_value"
                     data-te-dropdown-item-ref
                     >Vision&Mision / Core Value			
                     </a>
@@ -88,7 +99,7 @@ export default function About(){
                 <li>
                 <a
                     className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                    href="#factory-clip"
+                    href="/ourFactory"
                     data-te-dropdown-item-ref
                     >Factory
                     
@@ -115,12 +126,12 @@ export default function About(){
                 </li>
                 <li>
                 <a
+                    href="/#activity"
                     className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                    href="#activity"
-                    data-te-dropdown-item-ref
-                    >Company Activities	
-                    
-                </a>
+                    onClick={() => scrollToSection('activity')}
+                    >
+                    Company Activities
+                    </a>
                 </li>
                 
             </ul>

@@ -97,7 +97,7 @@ export default function About2nav(){
                 </li>
                 <li>
                     <a
-                    href="/#factory-clip"
+                    href="/ourFactory"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     data-te-dropdown-item-ref
                     >
@@ -123,7 +123,6 @@ export default function About2nav(){
                     </a>
                 </li>
                 <li>
-                    
                     <a
                     href="/#activity"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"

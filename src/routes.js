@@ -15,6 +15,7 @@ import NewYear23 from "activity_board/newyear23";
 import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
 import ThungSong21 from "activity_board/thungsong21";
+import ourFACTORY from "about_us/ourFactory";
 
 
 const routes = [
@@ -107,6 +108,12 @@ const routes = [
       layout: "/contact_us",
       path: "default",
       component: <ContactUS/>,
+    },
+    {
+      name: "ourFactory",
+      layout: "/ourFactory",
+      path: "default",
+      component: <OurFACTORY/>,
     },
 ];
 export default routes;

@@ -24,7 +24,8 @@ import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
 import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
-import Navbar from "components/navbar";
+// import Navbar from "components/navbar";
+import OurFACTORY from "about_us/ourFactory";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 
@@ -33,12 +34,13 @@ const App = () => {
 
   const location = useLocation();
   const isRootPath = location.pathname === "/";
-  const isLayoutsPath = location.pathname === "/layouts";
+  const isManagementPath = location.pathname === "/management";
+  const isFactoryPath = location.pathname === "/ourFactory";
 
   return (
     
     <div>
-      {!isRootPath &&(
+      {!isRootPath && !isFactoryPath && !isManagementPath &&(
         <GREENnav></GREENnav>
       )}
       <ScrollToTopOnPageChange />
@@ -61,6 +63,7 @@ const App = () => {
         <Route path='/contact_us' element={<ContactUS/>}/>
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
         <Route path='/company_structure' element={<CompanyStructure/>}/>
+        <Route path='/ourFactory' element={<OurFACTORY/>}/>
       </Routes>
 
 
