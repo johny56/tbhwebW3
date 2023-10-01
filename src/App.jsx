@@ -33,12 +33,12 @@ const App = () => {
 
   const location = useLocation();
   const isRootPath = location.pathname === "/";
-  const isLayoutsPath = location.pathname === "/layouts";
+  const isManagementPath = location.pathname === "/management";
 
   return (
     
     <div>
-      {!isRootPath &&(
+      {!isRootPath && !isManagementPath &&(
         <GREENnav></GREENnav>
       )}
       <ScrollToTopOnPageChange />
@@ -76,11 +76,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-<Routes>
-      <Route path="homepage/*" element={<Homepage />} />
-      <Route path="header/*" element={<Header />} />
-      <Route path="/" element={<Navigate to="/homepage" replace />} />
-    </Routes>
-    */

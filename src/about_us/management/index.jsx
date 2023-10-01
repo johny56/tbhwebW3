@@ -1,12 +1,14 @@
 import React from "react";
-
+import Navbar from "components/navbar";
 
 export default function ManagementTeam(){
 
     return (
 
         <div>
-            
+            <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
+                  <Navbar></Navbar>
+            </nav>
            
             <div className="bg-cover h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] text-back text-end">
                 

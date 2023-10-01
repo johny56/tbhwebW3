@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
         </nav>
         
-        {window.pageYOffset >= 900 &&(
+        {window.pageYOffset >= 800 &&(
           <GREENnav></GREENnav>  
         )}
         
