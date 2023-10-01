@@ -79,11 +79,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-<Routes>
-      <Route path="homepage/*" element={<Homepage />} />
-      <Route path="header/*" element={<Header />} />
-      <Route path="/" element={<Navigate to="/homepage" replace />} />
-    </Routes>
-    */
