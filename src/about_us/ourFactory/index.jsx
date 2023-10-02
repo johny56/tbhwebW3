@@ -74,22 +74,30 @@ export default function OurFACTORY() {
                 <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1orJcXqMsWi-KNZ9wM0Psu1EWsXWvZKTD" alt=""/>
             </Link>
           </div>
+          <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
+            <Link to='/yala'>
+                <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1vYgFkcAZKBW-0KaUrJ7YfNMJuIicXwt7" alt=""/>
+            </Link>
+          </div>
+          <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
+            <Link to='/narathiwas'>
+                <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1eejgxsNbI5bTRXm0YQBb8vMUKxru8mLU" alt=""/>
+            </Link>
+          </div>
+          <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
+            <Link to='/pattani'>
+                <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1y3HekKl5d4RA8ndKVDn5IG3YpVTCAh5K" alt=""/>
+            </Link>
+          </div>
+          <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
+            <Link to='/suratthani'>
+                <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1fzIjOZ1IZg3gXctRaZbi3ymC92Vm09DM" alt=""/>
+            </Link>
+          </div>
 
-
-            <div className="h-72 w-auto ">
-              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1vYgFkcAZKBW-0KaUrJ7YfNMJuIicXwt7" />
-            </div>
-            <div className="h-72 w-auto ">
-              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1eejgxsNbI5bTRXm0YQBb8vMUKxru8mLU" />
-            </div>
-            <div className="h-72 w-auto ">
-              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1y3HekKl5d4RA8ndKVDn5IG3YpVTCAh5K" />
-            </div>
-            <div className="h-72 w-auto ">
-              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1fzIjOZ1IZg3gXctRaZbi3ymC92Vm09DM" />
-            </div>
           </div>
           </div>
+
            </div>
 
       </div>
@@ -97,4 +105,7 @@ export default function OurFACTORY() {
     </div>
   );
 }
+
+
+
 

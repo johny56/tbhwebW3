@@ -29,6 +29,10 @@ import OurFACTORY from "about_us/ourFactory";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 import ThungSongfac from "about_us/ourFactory/thungSong";
+import YaLafac from "about_us/ourFactory/yala";
+import NarathiWasfac from "about_us/ourFactory/narathiwas";
+import PatTanifac from "about_us/ourFactory/pattani";
+import SuratThanifac from "about_us/ourFactory/suratthani";
 
 
 const App = () => {
@@ -66,6 +70,10 @@ const App = () => {
         <Route path='/company_structure' element={<CompanyStructure/>}/>
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path ="/thungSong" element={<ThungSongfac/>}/>
+        <Route path ="/yala" element={<YaLafac/>}/>
+        <Route path ="/narathiwas" element={<NarathiWasfac/>}/>
+        <Route path ="/pattani" element={<PatTanifac/>}/>
+        <Route path ="/suratthani" element={<SuratThanifac/>}/>
       </Routes>
 
 
