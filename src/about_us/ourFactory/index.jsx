@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import Navbar from "components/navbar";
 import { Link } from "react-router-dom";
 
+
 export default function OurFACTORY() {
 
   const [isCardVisible, setCardVisibility] = useState(false);
 
   const toggleCard = () => {
           // Toggle the visibility state
+          console.log('Toggle card function called');
+  console.log('isCardVisible:', isCardVisible);
       setCardVisibility(!isCardVisible);
 
       // Scroll to the card content when it becomes visible
@@ -65,66 +68,26 @@ export default function OurFACTORY() {
           <div className="h-full w-auto bg-white-200">
           <div className="grid grid-flow-row-dense grid-cols-5 gap-4 m-2 p-2 pt-12 ml-16">
 
-            <div className="h-72 max-w-full overflow-hidden hover:opacity-75 transition">
-              <Link to="/Songkran">
-              <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1orJcXqMsWi-KNZ9wM0Psu1EWsXWvZKTD" alt=""/>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                {/* <img className="h-12 w-12" src="https://drive.google.com/uc?export=view&id=1vLDPRW1ckbl8LdFqK1oo7t7EBX2ZeGCA"/> */}
-                {/* google drive + img */}
-              <span className="text-gray-200/95 text-7xl font-bold pb-18">+
-              </span>
-              </div>
-              </Link>
-            </div>
 
-            <div className="h-72 max-w-full overflow-hidden hover:opacity-75 transition">
-              <Link to="/Songkran">
-              <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1vYgFkcAZKBW-0KaUrJ7YfNMJuIicXwt7" alt=""/>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <span className="text-gray-200/95 text-7xl font-bold pb-18"> + </span>
-              </div>
-              </Link>
-            </div>
+           <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
+            <Link to='/thungSong'>
+                <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1orJcXqMsWi-KNZ9wM0Psu1EWsXWvZKTD" alt=""/>
+            </Link>
+          </div>
 
-            <div className="h-72 max-w-full overflow-hidden hover:opacity-75 transition">
-              <Link to="/Songkran">
-              <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1eejgxsNbI5bTRXm0YQBb8vMUKxru8mLU" alt=""/>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <span className="text-gray-200/95 text-7xl font-bold pb-18"> + </span>
-              </div>
-              </Link>
-            </div>
 
-            <div className="h-72 max-w-full overflow-hidden hover:opacity-75 transition">
-              <Link to="/Songkran">
-              <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1y3HekKl5d4RA8ndKVDn5IG3YpVTCAh5K" alt=""/>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <span className="text-gray-200/95 text-7xl font-bold pb-18"> + </span>
-              </div>
-              </Link>
+            <div className="h-72 w-auto ">
+              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1vYgFkcAZKBW-0KaUrJ7YfNMJuIicXwt7" />
             </div>
-
-            <div className="h-72 max-w-full overflow-hidden hover:opacity-75 transition">
-              <Link to="/Songkran">
-              <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1fzIjOZ1IZg3gXctRaZbi3ymC92Vm09DM" alt=""/>
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-              <span className="text-gray-200/95 text-7xl font-bold pb-18"> + </span>
-              </div>
-              </Link>
+            <div className="h-72 w-auto ">
+              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1eejgxsNbI5bTRXm0YQBb8vMUKxru8mLU" />
             </div>
-
-            {/* <div className="h-full max-w-full ">
-              <img className="bg-cover rounded-lg " src="https://drive.google.com/uc?export=view&id=1vYgFkcAZKBW-0KaUrJ7YfNMJuIicXwt7" />
+            <div className="h-72 w-auto ">
+              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1y3HekKl5d4RA8ndKVDn5IG3YpVTCAh5K" />
             </div>
-            <div className="h-full max-w-full ">
-              <img className="bg-cover rounded-lg " src="https://drive.google.com/uc?export=view&id=1eejgxsNbI5bTRXm0YQBb8vMUKxru8mLU" />
+            <div className="h-72 w-auto ">
+              <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1fzIjOZ1IZg3gXctRaZbi3ymC92Vm09DM" />
             </div>
-            <div className="h-full max-w-full ">
-              <img className="bg-cover rounded-lg " src="https://drive.google.com/uc?export=view&id=1y3HekKl5d4RA8ndKVDn5IG3YpVTCAh5K" />
-            </div>
-            <div className="h-full max-w-full ">
-              <img className="bg-cover rounded-lg " src="https://drive.google.com/uc?export=view&id=1fzIjOZ1IZg3gXctRaZbi3ymC92Vm09DM" />
-            </div> */}
           </div>
           </div>
            </div>

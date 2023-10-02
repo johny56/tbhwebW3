@@ -28,6 +28,7 @@ import GREENnav from "components/navbar/greenNav";
 import OurFACTORY from "about_us/ourFactory";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
+import ThungSongfac from "about_us/ourFactory/thungSong";
 
 
 const App = () => {
@@ -64,6 +65,7 @@ const App = () => {
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
         <Route path='/company_structure' element={<CompanyStructure/>}/>
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
+        <Route path ="/thungSong" element={<ThungSongfac/>}/>
       </Routes>
 
 
