@@ -15,7 +15,8 @@ export default function ManagementTeam(){
                 <div className="absolute top-0 right-0">
                     <div className="flex flex-col items-end justify-end pr-8 py-4 pt-28">
 
-                        <img className="h-56 w-4/6 z-10" src="https://drive.google.com/uc?export=view&id=1vvpZZS31z7uXH12jk24HgVoAo_kdXKZ3" alt=""/>
+                        <img className="h-46 w-2/6 z-10" src="https://drive.google.com/uc?export=view&id=1vvpZZS31z7uXH12jk24HgVoAo_kdXKZ3" alt=""/>
+                        {/* <img className="h-56 w-4/6 z-10" src="https://drive.google.com/uc?export=view&id=1ER6nXDoxeRO7n-20xtEr-tmPRInyLvRL" alt=""/>  1.svg */}
                         
                     </div>
                 </div>
@@ -23,16 +24,18 @@ export default function ManagementTeam(){
                 <div className="flex flex-row h-full w-auto pt-32 justify-center space-x-32">
                     <div className="pt-32">
                         <div className="h-96 w-auto flex justify-center mx-4 px-2">
-                            <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1pbSXuyZ1J2SV4in9JgSulWyve5zsLEOj" alt=""/>
+
+                            <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1tLi7WYQZQs_4WbsIDXYvLsm30ON7U7UF" alt=""/>
                         </div>
                     </div>
                     <div className="h-96 w-auto flex justify-center mx-4 px-2"> 
-                            <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1dHjOtrI-a38Ru9S013MMoWGUOJQZSwky" alt=""/>
-            
+
+                            <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1Wf4xXOaUKZkFE_92uatzWcAucwZqplzR" alt=""/>
                     </div>
                     <div className="pt-32">
                         <div className="h-96 w-auto flex justify-center mx-4 px-2">
-                            <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1WWCYYvpoddFCt_xOuff03HMRoVPG_EqR" alt=""/>
+
+                            <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1uCG3NEH1cAwc5KyGyBUTEFhGjPsh0z5V" alt=""/>
                             
                         </div>
                     </div>
@@ -41,20 +44,20 @@ export default function ManagementTeam(){
 
                 <div className="flex flex-row h-full w-auto justify-center space-x-32">
                     <div className="h-96 w-auto flex justify-center mx-4 px-2">
-                        
-                        <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1xsPPXIccCZfdjPXi7dLW1VbzZYn5mzvV" alt=""/>
+
+                        <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1F8AJAJrTZVNNIZ6zDoHgT-9Edl_BSWiw" alt=""/>
         
                     </div>
                     
                     <div className="h-96 w-auto flex justify-center mx-4 px-2">
-                        
-                        <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1ZfG_96Fhx0j_CUAS2Ce9hOZ3oXxQrjKh" alt=""/>
+
+                        <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1AvSIwSs46vYXa1dY5KJgPUa3nUYh9ZEp" alt=""/>
         
                     </div>
                     
                     <div className="h-96 w-auto flex justify-center mx-4 px-2">
-                        
-                        <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1H69ug1KKq6-G5Q7uqyofWgE0D3PTEtqd" alt=""/>
+
+                        <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1GmL4RmjEZkht5PNZSxRHzGkyxJz5EDbY" alt=""/>
         
                     </div>
                 
@@ -63,46 +66,46 @@ export default function ManagementTeam(){
                 <div className="flex flex-row h-full w-auto justify-center space-x-32">
 
                     <div className="h-80 w-auto flex justify-center mx-4 px-2">
-                        
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1bF78Y3qjvOk-AHA7t4lIkLbOWRTOGK0s" alt=""/>
+
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1YDwSVyGzGbJKT2BufdL0wpyUfDcamG4z" alt=""/>
         
                     </div>
                     
                     <div className="h-80 w-auto flex justify-center mx-4 px-2">
-                        
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1950AVJQnSrDHmGMwjNytxnMITmumd1ar" alt=""/>
+
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1_OA01c9dUTp23AB2Wk_8XfbGdZgGe0uv" alt=""/>
         
                     </div>
 
                     <div className="h-80 w-auto flex justify-center mx-4 px-2">
-                        
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1M0KQ_Px4SjdvNvDdod38NjHQQ1H3MT2b" alt=""/>
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1a3qQtXxFM1qusNSqahy8PKhBi6BntJUR" alt=""/>
         
                     </div>
                     
                     <div className="h-80 w-auto flex justify-center mx-4 px-2">
-                        
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1oFzZ3oD0zGhjKLxQ0HwCJx5lv6LqzDsR" alt=""/>
+
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1o3wUF7qYxC2Iz54dOpXglX9Gz_2CFQbn" alt=""/>
         
                     </div>
                 </div>
     
                 <div className="flex flex-row h-full w-auto justify-center space-x-32 pb-44">
                     <div className="h-80 w-auto flex justify-center">
-                        
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1zx6YSaL15xvaWf5w1nx1MqriuaacaOT1" alt=""/>
+
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1osMoGCgmu8vBHvRHOL_ZUnd83ckPPbnK" alt=""/>
         
                     </div>
 
                     <div className="h-80 w-auto flex justify-center">
                         
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1RMFXJapuM7y67pD2E18b1vxiMkQXLDzh" alt=""/>
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1qGsiOCAa0MuZDlWgAAMlkYpfswxi1Ljw" alt=""/>
         
                     </div>
 
                     <div className="h-80 w-auto flex justify-center">
-                        
-                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1pi5W2P76OA9GRkJXxn5vo0_BGzEsPMTz" alt=""/>
+
+                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1SJfqQp03aiwBdEZei0O102xSpz7QJxY_" alt=""/>
+
         
                     </div>
 
