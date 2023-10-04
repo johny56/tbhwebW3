@@ -9,8 +9,8 @@ export default function OurFACTORY() {
 
   const toggleCard = () => {
           // Toggle the visibility state
-          console.log('Toggle card function called');
-  console.log('isCardVisible:', isCardVisible);
+      console.log('Toggle card function called');
+      console.log('isCardVisible:', isCardVisible);
       setCardVisibility(!isCardVisible);
 
       // Scroll to the card content when it becomes visible
@@ -22,6 +22,16 @@ export default function OurFACTORY() {
           });
         }
       }
+      else {
+        // Scroll to the top of the page when the card becomes visible
+        window.scrollTo({
+          top: 0,
+          behavior: 'auto', // You can use 'auto' instead of 'smooth' for instant scrolling
+        });
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
+      }
     };
   
    
@@ -32,7 +42,7 @@ export default function OurFACTORY() {
         <Navbar />
       </nav>
 
-      <div className="bg-cover h-screen w-auto bg-[url(https://drive.google.com/uc?export=view&id=1OCFsHZyA9FKvkP0wgaEwsozoxmlY7Aih)] text-back text-end">
+      <div className="bg-cover h-screen overflow-y-hidden w-auto bg-[url(https://drive.google.com/uc?export=view&id=1OCFsHZyA9FKvkP0wgaEwsozoxmlY7Aih)] text-back text-end">
         <div className="flex flex-col items-center justify-center pt-48">
           <img
             className="h-full w-5/6 rounded-lg"
@@ -42,23 +52,24 @@ export default function OurFACTORY() {
         <div className="flex items-center justify-center mt-24">
           {/* Button to toggle visibility */}
           <button
-            // className="hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             onClick={toggleCard}
+            className={`relative focus:outline-none focus:ring-2 focus:ring-blue-500 transition ${
+              isCardVisible ? 'top-[4rem] translate-x-[36rem] rotate-180 z-20': ''}`}
           >
-          <img className="h-28 w-auto hover:bg-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" src="https://drive.google.com/uc?export=view&id=1cy8XQkDEIFEhsay-zZ7p7uNGCh_zwwzf"/>
+          <img className="h-28 w-auto hover:bg-gray-600 rounded-lg" src="https://drive.google.com/uc?export=view&id=1cy8XQkDEIFEhsay-zZ7p7uNGCh_zwwzf"/>
           </button>
         </div>
 
         <div id="cardContent"
-          className={`card transition-opacity duration-300 mt-32 ${
-          isCardVisible ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0'
+          className={`card transition-opacity duration-300  ${
+          isCardVisible ? 'opacity-100 max-h-screen bg-white' : 'opacity-0 max-h-0'
         }`
       }
       >
         
 
-          <div className="relative flex flex-col h-full w-full bg-white-200 z-0">
-            <img className="h-76 w-3/5 pt-12" src="https://drive.google.com/uc?export=view&id=1xxdfNMIwSAWQrVLnwQ4CU5JR13RJ40qd"/>
+          <div className="relative flex flex-col h-full w-full">
+            <img className="h-76 w-3/5" src="https://drive.google.com/uc?export=view&id=1xxdfNMIwSAWQrVLnwQ4CU5JR13RJ40qd"/>
             <div className="flex justify-end pr-12">
               <img className="h-full w-3/5" src="https://drive.google.com/uc?export=view&id=18V4VW5FwMcyioBxnaQCHY3f7UsyQE_ED"/>
             </div>
