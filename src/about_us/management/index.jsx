@@ -9,35 +9,36 @@ export default function ManagementTeam(){
             <nav className="flex flex-row fixed top-0 w-full z-40 lg:pr-24 pt-0.5">
                   <Navbar></Navbar>
             </nav>
-           
-            {/* <div className="bg-cover h-full w-auto lg:w-3/4 md:w-auto sm:block bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] text-back text-end"> */}
-            <div className="lg:pl-16 mt-24 bg-contain bg-no-repeat bg-center h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] ">
+        
+            <div className="lg:pl-16 mt-24 bg-contain bg-no-repeat h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] ">
+            {/* <div className="lg:pl-16 mt-24 bg-contain bg-no-repeat bg-center h-full w-auto bg-white"> */}
                 <div className="h-full w-auto md:w-auto sm:w-auto">
                 {/* <div className="absolute top-0 right-0"> */}
-                <div className="absolute lg:top-0 right-0 md:top-0 right-0">
-                    <div className="flex flex-col items-end justify-end pr-8 py-4 pt-28">
+                <div className="absolute top-0 inset-x-0 pt-8 pl-28">
+                    {/* md:absolute top-0 inset-x-0 w-1/3 pl-56"> */}
+                    <div className="p-4 h-72 w-full flex flex-row items-center justify-center">
 
-                        <img className="h-46 w-2/6 z-10 md:flex justify-end sm:hidden" src="https://drive.google.com/uc?export=view&id=1vvpZZS31z7uXH12jk24HgVoAo_kdXKZ3" alt=""/>
-                        {/* <img className="h-56 w-4/6 z-10" src="https://drive.google.com/uc?export=view&id=1ER6nXDoxeRO7n-20xtEr-tmPRInyLvRL" alt=""/>  1.svg */}
-                        
+                        <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=11X-pxbn_6GaAa7pxQm29ERkwIrBnT6ci" alt=""/>
+                        <img className="pb-2 h-2/3 w-auto" src="https://drive.google.com/uc?export=view&id=1HtWWXweUOmQbMlsZlEX8MCsjodWzLzCR" alt=""/>
+
                     </div>
                 </div>
             
-                <div className="flex flex-row h-full w-auto justify-center lg:space-x-16 md:space-x-10">
+                <div className="pt-24 flex flex-row h-full w-auto justify-center lg:space-x-16 md:space-x-10">
                     <div className="pt-24">
                         <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
-                            <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1tLi7WYQZQs_4WbsIDXYvLsm30ON7U7UF" alt=""/>
+                            <img className="z-10 h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1tLi7WYQZQs_4WbsIDXYvLsm30ON7U7UF" alt=""/>
                         </div>
                     </div>
                     <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto"> 
 
-                            <img className="h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1Wf4xXOaUKZkFE_92uatzWcAucwZqplzR" alt=""/>
+                            <img className="z-10 h-full w-auto rounded-lg " src="https://drive.google.com/uc?export=view&id=1Wf4xXOaUKZkFE_92uatzWcAucwZqplzR" alt=""/>
                     </div>
                     <div className="pt-24">
                         <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
-                            <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1uCG3NEH1cAwc5KyGyBUTEFhGjPsh0z5V" alt=""/>
+                            <img className="z-10 h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1uCG3NEH1cAwc5KyGyBUTEFhGjPsh0z5V" alt=""/>
                             
                         </div>
                     </div>
