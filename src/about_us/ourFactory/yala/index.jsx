@@ -8,30 +8,50 @@ export default function YaLafac() {
         
 
             <div>
-                <div className="relative bottom-0 left-0 right-0 top-0 h-screen w-full">
-                    <div className="bg-contain h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1r-lZKJ3L5_klh6EWlakBmwYEGGXMeNb2)]">
-                    <div className="relative h-64 w-3/5 flex flex-col pt-36 pl-24">
-                        <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1dmbu53giK8AZPu_pEw2cc9dfQZdCg17R"/>
+                <div className="h-screen w-full overflow-clip">
+                    <div className="bg-cover bg-no-repeat bg-center h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1r-lZKJ3L5_klh6EWlakBmwYEGGXMeNb2)]">
+                    <div className="relative h-80 w-1/4 flex flex-col pt-20 pl-24">
+                        <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1UxPPaxZQsk-mwLUl4gdji41sk1TG46z3"/>
                     </div>
 
-                    <div className="flex flex-row justify-center pt-12">
-                        <div className="h-1/2 w-auto p-4">
-                            <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=18DePw60yxUJQyB6GgBwiEI_di9RoxvGm"/>
+                    <div className="md:h-3/5 w-full flex flex-row justify-center space-x-32 lg:h-1/2 w-full flex flex-row justify-center space-x-28">
+                        <div className="h-full w-auto p-4">
+                            <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1PjFVReVpTjOqfFGxMuqkXFWyGmaHOPBk"/>
                         
                         </div>
-                        <div className="h-1/2 w-auto pb-4">
-                            <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1IP__Oz75ye7jgGplJajUA-stzUYYgMI0"/>
+                        <div className="h-full w-auto pb-4">
+                            <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1tCdnNJE984lbFw_xsy-TIbfVLW4ZSHK5"/>
                         </div>
                     </div>
                     </div>
                 </div>
-            </div>
-
+            </div>    
             
-
+        
     );
 
 }
-// https://drive.google.com/uc?export=view&id=1dmbu53giK8AZPu_pEw2cc9dfQZdCg17R
-// https://drive.google.com/uc?export=view&id=18DePw60yxUJQyB6GgBwiEI_di9RoxvGm
-// https://drive.google.com/uc?export=view&id=1IP__Oz75ye7jgGplJajUA-stzUYYgMI0
+
+
+               
+// <div className="relative bottom-0 left-0 right-0 top-0 h-screen w-full">
+// <div className="bg-cover bg-no-repeat bg-[url(https://drive.google.com/uc?export=view&id=1r-lZKJ3L5_klh6EWlakBmwYEGGXMeNb2)]">
+//     <div className="flex flex-col pl-24 pt-12">
+//         <div className="h-72 w-auto">
+//             <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1UxPPaxZQsk-mwLUl4gdji41sk1TG46z3"/>
+//         </div>
+//     </div>
+//     <div className="flex flex-row justify-center>">
+//         <div className="h-48 w-full">
+//             <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1PjFVReVpTjOqfFGxMuqkXFWyGmaHOPBk"/>
+        
+//         </div>
+//         <div className="h-80 w-full">
+//             <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=1tCdnNJE984lbFw_xsy-TIbfVLW4ZSHK5"/>
+//         </div>
+//     </div>
+// </div>
+// </div>
+
+
+                
