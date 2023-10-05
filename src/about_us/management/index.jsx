@@ -11,11 +11,9 @@ export default function ManagementTeam(){
             </nav>
         
             <div className="lg:pl-16 mt-24 bg-contain bg-no-repeat h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] ">
-            {/* <div className="lg:pl-16 mt-24 bg-contain bg-no-repeat bg-center h-full w-auto bg-white"> */}
+
                 <div className="h-full w-auto md:w-auto sm:w-auto">
-                {/* <div className="absolute top-0 right-0"> */}
                 <div className="absolute top-0 inset-x-0 pt-8 pl-28">
-                    {/* md:absolute top-0 inset-x-0 w-1/3 pl-56"> */}
                     <div className="p-4 h-72 w-full flex flex-row items-center justify-center">
 
                         <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=11X-pxbn_6GaAa7pxQm29ERkwIrBnT6ci" alt=""/>
@@ -24,7 +22,7 @@ export default function ManagementTeam(){
                     </div>
                 </div>
             
-                <div className="pt-24 flex flex-row h-full w-auto justify-center lg:space-x-16 md:space-x-10">
+                <div className="pt-48 flex flex-row h-full w-auto justify-center lg:space-x-16 md:space-x-10">
                     <div className="pt-24">
                         <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
