@@ -11,9 +11,21 @@ export default function Activity(){
                 <div className="grid grid-rows-1 md:grid-cols-3 gap-2 lg:ml-12 gap-0 grid-rows-1 xl:grid-rows-1 ml-16 gap-0">
 
                     <div className="grid gap-4 justify-center">
-                        <div className="flex justify-center">
-                            <img className="h-96 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/06-1.jpg?fit=1030%2C772&ssl=1" alt=""/>
+                    <Link to="/path">
+                        <div class="group relative">
+                        <img
+                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/06-1.jpg?fit=1030%2C772&ssl=1"
+                            alt="Your Alt Text"
+                            class="max-w-full h-96 rounded transition-all duration-300 group-hover:opacity-75"
+                        />
+                            <div class="hidden group-hover:flex items-center justify-center absolute top-0 left-0 w-full h-full mr-32">
+                                {/* <span class="text-white text-9xl font-black">+</span> */}
+                                <img className="w-auto h-40 flex justify-center item-center mr-16"
+                                    src="https://drive.google.com/uc?export=view&id=1vLDPRW1ckbl8LdFqK1oo7t7EBX2ZeGCA"
+                                />
+                            </div>
                         </div>
+                    </Link>
 
                         <div className="flex flex-cols gap-2 mb-72">
                             <div className="flex justify-center">
