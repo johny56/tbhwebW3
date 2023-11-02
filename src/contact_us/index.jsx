@@ -69,7 +69,7 @@ export default function ContactUS() {
                                         Sales@teckbeehang.com
                                         <br />
                                         <button className="mt-4 w-1/6 bg-green-700 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
-                                        onClick={() => openGoogleMaps(7.009771, 100.477157)}>
+                                        onClick={() => openGoogleMaps(7.001995028881394, 100.47036332748954)}>
                                         Map
                                         </button>
                                       </p>
