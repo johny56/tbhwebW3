@@ -20,22 +20,22 @@ export default function Activity_board(){
                     <div className="flex justify-center bg-white h-full w-full text-back mt-96 pt-16">
                         <div className="flex flex-col gap-8">
                         <div className="flex flex-rows-3 gap-16">
-                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg">
-                                <div className="flex flex-col h-36 w-80 bg-gray-100 flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-55%] mt-80 pt-2">
+                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
+                                <div className="flex flex-col h-32 w-76 bg-white flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-52%] mt-80 pt-2">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white pr-56"> 2023</h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400 pr-40">text...........................<br></br>............................<br></br>............................</p>
                                 </div>
 
                             </div>
-                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg">
-                                <div className="flex flex-col h-36 w-80 bg-gray-100 flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-55%] mt-80 pt-2">
+                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
+                                <div className="flex flex-col h-32 w-76 bg-white flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-52%] mt-80 pt-2">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white pr-56"> 2023</h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400 pr-40">text...........................<br></br>............................<br></br>............................</p>
                                 </div>
 
                             </div>
-                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg">
-                                <div className="flex flex-col h-36 w-80 bg-gray-100 flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-55%] mt-80 pt-2">
+                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
+                                <div className="flex flex-col h-32 w-76 bg-white flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-52%] mt-80 pt-2">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white pr-56"> 2023</h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400 pr-40">text...........................<br></br>............................<br></br>............................</p>
                                 </div>
@@ -43,22 +43,22 @@ export default function Activity_board(){
                             </div>
                         </div>
                         <div className="flex flex-rows-3 gap-16">
-                        <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg">
-                                <div className="flex flex-col h-36 w-80 bg-gray-100 flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-55%] mt-80 pt-2">
+                        <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
+                                <div className="flex flex-col h-32 w-76 bg-white flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-52%] mt-80 pt-2">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white pr-56"> 2023</h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400 pr-40">text...........................<br></br>............................<br></br>............................</p>
                                 </div>
 
                             </div>
-                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg">
-                                <div className="flex flex-col h-36 w-80 bg-gray-100 flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-55%] mt-80 pt-2">
+                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
+                                <div className="flex flex-col h-32 w-76 bg-white flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-52%] mt-80 pt-2">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white pr-56"> 2023</h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400 pr-40">text...........................<br></br>............................<br></br>............................</p>
                                 </div>
 
                             </div>
-                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg">
-                                <div className="flex flex-col h-36 w-80 bg-gray-100 flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-55%] mt-80 pt-2">
+                            <div className="bg-green-300 h-96 w-80 pt-2/3 block max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg">
+                                <div className="flex flex-col h-32 w-76 bg-white flex items-center justify-start group-hover:bottom-0 opacity-0 hover:opacity-100 transform transition-transform duration-300 ease-in-out hover:translate-y-[-52%] mt-80 pt-2">
                                     <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white pr-56"> 2023</h5>
                                     <p className="font-normal text-gray-700 dark:text-gray-400 pr-40">text...........................<br></br>............................<br></br>............................</p>
                                 </div>
