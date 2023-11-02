@@ -6,12 +6,17 @@ export default function Activity_board(){
     return (
 
         <div>
-            <nav className="flex flex-row bg-transition fixed top-0 w-full z-20 ml-16">
+            <nav className="flex flex-row bg-transition fixed top-0 w-full z-20 ml-8">
                 <Navbar />
             </nav>
             
             <div>
-                <div className="relative bg-cover h-screen bg-blue-200 pt-16">
+                <div className="relative bg-cover max-h-screen bg-blue-200 pt-36">
+                    <div className="absolute flex flex-col text-white text-9xl font-black pl-96">
+                        <p className="pl-48">COMPANY</p>
+                        <p className="pl-96">ACTIVITIES</p>
+                    </div>
+
                     <div className="flex justify-center bg-white h-full w-full text-back mt-96 pt-16">
                         <div className="flex flex-col gap-8">
                         <div className="flex flex-rows-3 gap-16">

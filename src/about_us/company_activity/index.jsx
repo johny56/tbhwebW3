@@ -6,7 +6,7 @@ export default function Activity(){
     
         return (
 
-            <div className="w-full h-screen bg-[#FFFFFF] shadow flex flex-col p-8 pt-32 overflow-hidden">
+            <div className="w-full h-screen bg-[#FFFFFF] shadow flex flex-col p-8 pt-28 overflow-hidden">
         
                 <div className="grid grid-rows-1 md:ml-2 grid-cols-3 gap-2 lg:ml-16 gap-0 grid-rows-1 xl:grid-rows-1 ml-16 gap-0">
 
