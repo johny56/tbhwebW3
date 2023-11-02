@@ -35,7 +35,7 @@ export default function About2nav(){
         
               window.scrollTo({ top: y, behavior: 'smooth' });
             }
-          };
+        };
 
         return (
             <div className="relative" data-te-dropdown-ref>

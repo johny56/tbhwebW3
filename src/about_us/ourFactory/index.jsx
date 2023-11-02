@@ -38,7 +38,7 @@ export default function OurFACTORY() {
 
   return (
     <div>
-      <nav className="flex flex-row bg-transition fixed top-0 w-full z-40">
+      <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
         <Navbar />
       </nav>
 
