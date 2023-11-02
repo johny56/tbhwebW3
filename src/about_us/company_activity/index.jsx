@@ -8,11 +8,11 @@ export default function Activity(){
 
             <div className="w-full h-screen bg-[#FFFFFF] shadow flex flex-col p-8 pt-32 overflow-hidden">
         
-                <div class="grid grid-rows-1 md:grid-cols-3 gap-2 lg:ml-12 gap-0 grid-rows-1 xl:grid-rows-1 ml-16 gap-0">
+                <div className="grid grid-rows-1 md:grid-cols-3 gap-2 lg:ml-12 gap-0 grid-rows-1 xl:grid-rows-1 ml-16 gap-0">
 
-                    <div class="grid gap-4 justify-center">
+                    <div className="grid gap-4 justify-center">
                         <div className="flex justify-center">
-                            <img class="h-96 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/06-1.jpg?fit=1030%2C772&ssl=1" alt=""/>
+                            <img className="h-96 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/06-1.jpg?fit=1030%2C772&ssl=1" alt=""/>
                         </div>
 
                         <div className="flex flex-cols gap-2 mb-72">
@@ -20,27 +20,27 @@ export default function Activity(){
                                 <img class="h-72 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-01.jpg?fit=960%2C720&ssl=1" alt=""/>
                             </div>
                             <div className="flex justify-center">
-                                <img class="h-72 w-auto rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/04-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
+                                <img className="h-72 w-auto rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/04-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                             </div>
                         </div>
                         
                     </div>
                     
-                    <div class="grid gap-4 justify-center">
+                    <div className="grid gap-4 justify-center">
                         <div className="flex flex-cols gap-2 pl-4">
                             <div className="flex justify-start">
-                                <img class="h-40 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_83.jpg?fit=1030%2C686&ssl=1" alt=""/>
+                                <img className="h-40 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_83.jpg?fit=1030%2C686&ssl=1" alt=""/>
                             </div>
                             <div className="flex justify-center">
-                                <img class="h-40 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-4.jpg?fit=1030%2C686&ssl=1" alt=""/>
+                                <img className="h-40 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-4.jpg?fit=1030%2C686&ssl=1" alt=""/>
                             </div>
                         </div>
                         <div className="flex flex-wrap gap-4 p-4">
                             <div className="flex justify-center ml-12">
-                                <img class="h-72 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2022/05/yrs-1-e1653465777889.png?fit=1030%2C725&ssl=1" alt=""/>
+                                <img className="h-72 max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2022/05/yrs-1-e1653465777889.png?fit=1030%2C725&ssl=1" alt=""/>
                             </div>
                             <div className="flex justify-center mb-72">
-                                <img class="h-48 ml-12 w-auto rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201016133652-1-scaled.jpg?fit=1030%2C474&ssl=1" alt=""/>
+                                <img className="h-48 ml-12 w-auto rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201016133652-1-scaled.jpg?fit=1030%2C474&ssl=1" alt=""/>
                             </div>
                         </div>
                     </div>
