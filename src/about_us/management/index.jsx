@@ -6,23 +6,23 @@ export default function ManagementTeam(){
     return (
 
         <div>
-            <nav className="flex flex-row fixed top-0 w-full z-40 lg:pr-24 pt-0.5">
+            {/* <nav className="flex flex-row fixed top-0 w-full z-40 lg:pr-24 pt-0.5">
                   <Navbar></Navbar>
-            </nav>
+            </nav> */}
         
-            <div className="lg:pl-16 mt-24 bg-contain bg-no-repeat h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)] ">
+            <div className="bg-contain bg-no-repeat h-max w-auto bg-[url(https://drive.google.com/uc?export=view&id=1NPbCPEdJuJHq1nrKQFVCDmWlFOITrLTN)]  lg:pl-16">
 
-                <div className="h-full w-auto md:w-auto sm:w-auto">
-                <div className="absolute top-0 inset-x-0 pt-8 pl-28">
-                    <div className="p-4 h-72 w-full flex flex-row items-center justify-center">
+                <div className="pt-24 h-full w-auto md:w-auto sm:w-auto">
+                <div className="absolute top-0 inset-x-0 flex flex-row justify-center pt-12 pl-28">
+                    {/* <div className="p-4 h-36 w-full flex flex-row items-center justify-center"> */}
 
-                        <img className="h-full w-auto" src="https://drive.google.com/uc?export=view&id=11X-pxbn_6GaAa7pxQm29ERkwIrBnT6ci" alt=""/>
-                        <img className="pb-2 h-2/3 w-auto" src="https://drive.google.com/uc?export=view&id=1HtWWXweUOmQbMlsZlEX8MCsjodWzLzCR" alt=""/>
+                        <img className="h-full w-80" src="https://drive.google.com/uc?export=view&id=11X-pxbn_6GaAa7pxQm29ERkwIrBnT6ci" alt=""/>
+                        <img className="h-auto w-48 pb-2" src="https://drive.google.com/uc?export=view&id=1HtWWXweUOmQbMlsZlEX8MCsjodWzLzCR" alt=""/>
 
-                    </div>
+                    {/* </div> */}
                 </div>
             
-                <div className="pt-48 flex flex-row h-full w-auto justify-center lg:space-x-16 md:space-x-10">
+                <div className="pt-24 flex flex-row h-96 w-auto justify-center pb-24 lg:space-x-16 md:space-x-10">
                     <div className="pt-24">
                         <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
@@ -43,7 +43,7 @@ export default function ManagementTeam(){
                 </div>
                 
 
-                <div className="flex flex-row h-full w-auto justify-center lg:space-x-16 pb-8 md:space-x-10">
+                <div className="flex flex-row h-full w-auto justify-center mt-8 lg:space-x-16 md:space-x-10">
                     <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
                         <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1F8AJAJrTZVNNIZ6zDoHgT-9Edl_BSWiw" alt=""/>
@@ -64,7 +64,7 @@ export default function ManagementTeam(){
                 
                 </div>
 
-                <div className="flex flex-row h-full w-auto justify-center lg:space-x-16 pt-28 md:space-x-2">
+                <div className="flex flex-row h-full w-auto justify-center lg:space-x-16 pt-6 md:space-x-2">
 
                     <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto">
 
@@ -90,7 +90,7 @@ export default function ManagementTeam(){
                     </div>
                 </div>
     
-                <div className="flex flex-row h-full w-auto justify-center pb-12 lg:space-x-16 md:space-x-10">
+                <div className="flex flex-row h-full w-auto justify-center pb-8 lg:space-x-16 md:space-x-10">
                     <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto">
 
                          <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1osMoGCgmu8vBHvRHOL_ZUnd83ckPPbnK" alt=""/>
@@ -114,6 +114,9 @@ export default function ManagementTeam(){
             
             
                 
+            </div>
+            <div className="p-4 h-10 w-auto">
+
             </div>
             
             

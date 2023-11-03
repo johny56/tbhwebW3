@@ -33,7 +33,7 @@ import OurFACTORY from "about_us/ourFactory";
 import ScrollToTopOnPageChange from "components/scroll_up";
 import ThungSongfac from "about_us/ourFactory/thungSong";
 import YaLafac from "about_us/ourFactory/yala";
-import NarathiWasfac from "about_us/ourFactory/narathiwas";
+import NarathiWatfac from "about_us/ourFactory/narathiwat";
 import PatTanifac from "about_us/ourFactory/pattani";
 import SuratThanifac from "about_us/ourFactory/suratthani";
 
@@ -43,15 +43,15 @@ const App = () => {
 
   const location = useLocation();
   const isRootPath = location.pathname === "/";
-  const isManagementPath = location.pathname === "/management";
+  // const isManagementPath = location.pathname === "/management";
   const isFactoryPath = location.pathname === "/ourFactory";
   const isCompanyStructurePath = location.pathname === "/company_structure";
   const isActivityBoard = location.pathname === "/activity_board";
 
   return (
-    
+    // && !isManagementPath
     <div>
-      {!isRootPath && !isFactoryPath && !isManagementPath && !isCompanyStructurePath && !isActivityBoard &&(
+      {!isRootPath && !isFactoryPath && !isCompanyStructurePath && !isActivityBoard &&(
         <GREENnav></GREENnav>
       )}
       <ScrollToTopOnPageChange />
@@ -77,7 +77,7 @@ const App = () => {
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path ="/thungSong" element={<ThungSongfac/>}/>
         <Route path ="/yala" element={<YaLafac/>}/>
-        <Route path ="/narathiwas" element={<NarathiWasfac/>}/>
+        <Route path ="/narathiwat" element={<NarathiWatfac/>}/>
         <Route path ="/pattani" element={<PatTanifac/>}/>
         <Route path ="/suratthani" element={<SuratThanifac/>}/>
         <Route path ="/activity_board" element={<Activity_board/>}/>
