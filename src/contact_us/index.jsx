@@ -85,7 +85,7 @@ export default function ContactUS() {
                                         Tel:(66)7541 9131-2
                                         <br />
                                         <button className="mt-4 w-1/6 bg-green-700 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
-                                        onClick={() => openGoogleMaps(8.235256, 99.750508)}>
+                                        onClick={() => openGoogleMaps(8.152605101072783, 99.67352552999604)}>
                                         Map
                                         </button>
                                       </p>
@@ -98,7 +98,7 @@ export default function ContactUS() {
                                         Tel:(66)7326 4027-9
                                         <br />
                                         <button className="mt-4 w-1/6 bg-green-700 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
-                                        onClick={() => openGoogleMaps(6.540532, 101.283684)}>
+                                        onClick={() => openGoogleMaps(6.547020862000301, 101.2396240156058)}>
                                         Map
                                         </button>
                                       </p>
@@ -112,7 +112,7 @@ export default function ContactUS() {
                                         Tel:(66)7363 1863-9
                                         <br />
                                         <button className="mt-4 w-1/6 bg-green-700 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
-                                        onClick={() => openGoogleMaps(6.430288, 101.817072)}>
+                                        onClick={() => openGoogleMaps(6.398899420035838, 101.81543874553819)}>
                                         Map
                                         </button>
                                       </p>
@@ -126,7 +126,7 @@ export default function ContactUS() {
                                         Tel:(66)7343 7089-91
                                         <br />
                                         <button className="mt-4 w-1/6 bg-green-700 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
-                                        onClick={() => openGoogleMaps(6.793253, 101.153611)}>
+                                        onClick={() => openGoogleMaps(6.846633823805951, 101.18874581365861)}>
                                         Map
                                         </button>
                                       </p>
@@ -140,7 +140,7 @@ export default function ContactUS() {
                                         Tel:(66)7720 0504-7
                                         <br />
                                         <button className="mt-4 w-1/6 bg-green-700 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
-                                        onClick={() => openGoogleMaps(9.128392, 99.324155)}>
+                                        onClick={() => openGoogleMaps(9.104190149021198, 99.29821901890978)}>
                                         Map
                                         </button>
                                       </p>
