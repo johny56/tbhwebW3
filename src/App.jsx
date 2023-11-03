@@ -13,6 +13,7 @@ import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
 import ContactUS from "contact_us";
 import TBHstaff from "thbstaff";
+
 import Songkran from "activity_board/songkran";
 import HappyWork from "activity_board/happyWorkplace";
 import QCC from "activity_board/qcctrain";
@@ -22,6 +23,8 @@ import ThungSong21 from "activity_board/thungsong21";
 import NewYear23 from "activity_board/newyear23";
 import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
+import Activity_board from "activity_board";
+
 import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
 // import Navbar from "components/navbar";
@@ -35,17 +38,20 @@ import PatTanifac from "about_us/ourFactory/pattani";
 import SuratThanifac from "about_us/ourFactory/suratthani";
 
 
+
 const App = () => {
 
   const location = useLocation();
   const isRootPath = location.pathname === "/";
   const isManagementPath = location.pathname === "/management";
   const isFactoryPath = location.pathname === "/ourFactory";
+  const isCompanyStructurePath = location.pathname === "/company_structure";
+  const isActivityBoard = location.pathname === "/activity_board";
 
   return (
     
     <div>
-      {!isRootPath && !isFactoryPath && !isManagementPath &&(
+      {!isRootPath && !isFactoryPath && !isManagementPath && !isCompanyStructurePath && !isActivityBoard &&(
         <GREENnav></GREENnav>
       )}
       <ScrollToTopOnPageChange />
@@ -74,6 +80,7 @@ const App = () => {
         <Route path ="/narathiwas" element={<NarathiWasfac/>}/>
         <Route path ="/pattani" element={<PatTanifac/>}/>
         <Route path ="/suratthani" element={<SuratThanifac/>}/>
+        <Route path ="/activity_board" element={<Activity_board/>}/>
       </Routes>
 
 
