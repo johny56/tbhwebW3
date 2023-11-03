@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "components/navbar";
 import { Link } from "react-router-dom";
-
+// import { useLocation } from 'react-router-dom';
 
 export default function OurFACTORY() {
 
@@ -38,9 +38,12 @@ export default function OurFACTORY() {
 
   return (
     <div>
-      <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
-        <Navbar />
-      </nav>
+      {!isCardVisible &&(
+          <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
+              <Navbar />
+          </nav>
+      )}
+      
 
       <div className="bg-cover h-screen overflow-y-hidden w-auto bg-[url(https://drive.google.com/uc?export=view&id=1OCFsHZyA9FKvkP0wgaEwsozoxmlY7Aih)] text-back text-end">
         <div className="flex flex-col items-center justify-center pt-48">
@@ -91,7 +94,7 @@ export default function OurFACTORY() {
             </Link>
           </div>
           <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
-            <Link to='/narathiwas'>
+            <Link to='/narathiwat'>
                 <img className="h-full w-auto rounded-lg" src="https://drive.google.com/uc?export=view&id=1eejgxsNbI5bTRXm0YQBb8vMUKxru8mLU" alt=""/>
             </Link>
           </div>
