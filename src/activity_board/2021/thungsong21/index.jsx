@@ -8,7 +8,7 @@ export default function ThungSong21(){
             {/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden"> */}
             <div>
                 <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]">
-                    <div className="bg-white h-full w-full text-back text-start">
+                    <div className="bg-white h-full w-full text-back text-start pt-12">
                         <div className="container mx-auto flex flex-col justify-center">
                             <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-24 mx-16">
                             TBH THUNG SONG RECEIVES 5S GOLD

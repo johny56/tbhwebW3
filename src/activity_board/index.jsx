@@ -6,19 +6,19 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1R5UA-WR0il_GxollPD_1iKR7Iyp0fv7Z',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Gcg',
             date: '6 กันยายน 2556',
             content: 'เมื่อวันที่ 6 กันยายน 2566 ที่ผ่านมานี้ กรมพัฒนาธุรกิจการค้า . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1uV1p8BvjJ7YCt8aV3LVBoJzkqR7sMrRC',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/KaizenAward',
             date: '11 สิงหาคม 2566',
             content: 'ผู้จัดการโรงงานสาขาทุ่งสง คุณสมชาย มโนสถาพร พร้อมทีม . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1mLyMYsN_r8_8DcsQL5pgLwu9LaxZdKe5',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/HappyWork',
             date: 'Employees’ Birthday Gift',
             content: 'ในฐานะองกรณ์ที่ให้ความสำคัญกับความสุขในการทำงานและให้ . . .',
         },
@@ -29,19 +29,19 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1E0QGiOlxbvNez0fuJ2dmwATSWCyB9YgW',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/qcctrain',
             date: '28 มิถุนายน 2556',
             content: 'บริษัทยางไทยปักษ์ใต้ ไม่เพียงแต่ให้ความใส่ใจคุณภาพของ . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1wXiE2q9FDaqVAsb-yUtmiC2irq88TmSY',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/songkran',
             date: '12 เมษายน 2556',
             content: 'พนักงานและคณะผู้บริหารทุกคนร่วมสนุกสนานกับกิจกรรมวันขึ้นปีใหม่ . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1hcn58n29VCeGM7IyBMnRAFTL6yoSBBbp',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/efforts',
             date: '2 กุมภาพันธ์ 2556',
             content: 'กลุ่มบริษัท ยางไทยปักษ์ใต้ จำกัด ประกอบไปด้วย 5 สาขาคือ . . .',
         },
@@ -51,20 +51,20 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1aQGNHf8NgD-DqlpsJiDNm0PQjm6uB2P5',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/newyear23',
             date: '20 มกราคม 2556',
             content:  'กลุ่มบริษัท ยางไทยปักษ์ใต้ จำกัด สำนักงานใหญ่ ฉลองเทศกาลตรุษจีนในวันที่ . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=15OtZ05_KnSZsnbylHV569areZGWTwjVG',
-            linkUrl: 'https://example.com/page1',
-            date: '11 พฤศจิกายน 2565',
+            linkUrl: '/Bigcleaning',
+            date: '11 พฤศจิกายน2565',
             content: 'บริษัทยางไทยปักษ์ใต้มีการส่งเสริมให้นำ 5ส มาใช้ โดยมีการจัดการประกวด . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1kzoMY9lRNNNjVOS_zp8oyzwunL5nrJ-T',
-            linkUrl: 'https://example.com/page1',
-            date: '2-3 พฤศจิกายน  2022',
+            linkUrl: '/thungSong5S',
+            date: '2 พฤศจิกายน 2022',
             content: 'บริษัท ยางไทยปักษ์ใต้ จำกัด สาขา ทุ่งสง ได้ผ่านการตรวจจากคณะกรรมการประเมินการเข้าประกวก . . .',
         },
     ],
@@ -72,19 +72,19 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=13narKpNafHSYxd3_7JCt94t-Esl0XOT2',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/bestsupply',
             date: 'Best Supplier',
             content: 'Best Supplier for Quality Performance Award',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1oZumGmDWMQ0McrRNzStnkvC1wNdSvglk',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/newyear22',
             date: '28 มกราคม 2565',
             content: 'บริษัท ยางไทยปักษ์ใต้ จำกัด สำนักงานใหญ่ ได้จัดกิจกรรมไหว้ตรุษจีนต้อนรับปีขาล . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=14Ew_4A29zM0qqLEduDmdGpZWwomfC_rd',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/thungSong21',
             date: '18 มีนาคม 2021',
             content: 'BITECH Bangna, Bangkok — TBH Thung Song led by manager K. Somchai Manosathaporn receives 5S Silver Award . . .',
         },
@@ -224,7 +224,7 @@ export default function ActivityBoard() {
                                     <img className="h-56 w-80" src={item.imageUrl} alt="" />
                                 </Link>
                                 <div className="flex flex-col h-auto w-auto bg-white flex items-start justify-start transform pt-2 pl-4">
-                                <div className="bg-green-800 h-8 w-36 pt-1 pl-2">
+                                <div className="bg-green-800 h-8 w-42 pt-1 pl-2">
                                     <h5 className="text-base font-bold tracking-tight text-white dark:text-white">{item.date}</h5>
                                 </div>
                                 <div className="whitespace-normal w-3/4 h-auto">

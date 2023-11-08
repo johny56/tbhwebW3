@@ -14,15 +14,18 @@ import PolicyPage from "sustainability/policy_page";
 import ContactUS from "contact_us";
 import TBHstaff from "thbstaff";
 
-import Songkran from "activity_board/songkran";
-import HappyWork from "activity_board/happyWorkplace";
-import QCC from "activity_board/qcctrain";
-import Efforts from "activity_board/efforts";
-import ThungSong from "activity_board/thungSong5S";
-import ThungSong21 from "activity_board/thungsong21";
-import NewYear23 from "activity_board/newyear23";
-import NewYear22 from "activity_board/newyear22";
-import BestSupplier from "activity_board/bestsupply";
+import Gcg from "activity_board/2023/gcg";
+import KaizenAward from "activity_board/2023/kaizen";
+import Songkran from "activity_board/2023/songkran";
+import HappyWork from "activity_board/2023/happyWorkplace";
+import QCC from "activity_board/2023/qcctrain";
+import Efforts from "activity_board/2023/efforts";
+import ThungSong from "activity_board/2022/thungSong5S";
+import ThungSong21 from "activity_board/2021/thungsong21";
+import NewYear23 from "activity_board/2023/newyear23";
+import NewYear22 from "activity_board/2022/newyear22";
+import BestSupplier from "activity_board/2022/bestsupply";
+import Bigcleaning from "activity_board/2022/bigcleaning";
 import Activity_board from "activity_board";
 
 import CompanyStructure from "about_us/company_structure";
@@ -60,6 +63,8 @@ const App = () => {
         <Route path='/' element={<Layout/>} />
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
+        <Route path='/Gcg' element={<Gcg/>}/>
+        <Route path='/KaizenAward' element={<KaizenAward/>}/>
         <Route path='/songkran' element={<Songkran/>}/>
         <Route path='/HappyWork' element={<HappyWork/>}/>
         <Route path='/qcctrain' element={<QCC/>}/>
@@ -68,6 +73,7 @@ const App = () => {
         <Route path='/thungsong21' element={<ThungSong21/>}/>
         <Route path='/newyear23' element={<NewYear23/>}/>
         <Route path='/newyear22' element={<NewYear22/>}/>
+        <Route path='/Bigcleaning' element={<Bigcleaning/>}/>
         <Route path='/bestsupply' element={<BestSupplier/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>
