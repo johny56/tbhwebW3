@@ -11,7 +11,7 @@ export default function CompanyStructure() {
         </nav>
       <div className="pt-32 bg-cover h-full bg-[url(https://drive.google.com/uc?export=view&id=16IPET1uaGQKXb75QfNamUhnwdbNzzWY8)] bg-no-repeat z-10">
 
-      <div className="absolute inset-0 flex flex-row pt-28">
+      <div className="absolute inset-0 flex flex-row pt-28 pl-8">
         {/* <h1 className="flex flex-col  text-7xl font-extrabold ml-36 text-[#827717]"> */}
             <img
                 src="https://drive.google.com/uc?export=view&id=19ePNijrJLKrJ4O8X9FNCEcVyk9XKKYgV"
