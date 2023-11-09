@@ -18,14 +18,14 @@ export default function PatTanifac() {
                     
                     <div className="relative flex flex-col pt-24 pl-32">
                         <h1 className="font-black text-8xl text-white pt-10">PATTANI</h1>
-                        <div className="absolute right-0 pt-8 pr-12">
+                        <div className="absolute left-0 pt-16 pl-8">
                             {/* Button to toggle visibility */}
                             <Link to="/ourFactory">
                             <button
                                 onClick={toggleCard}
                                 className={`relative focus:outline-none transition `}
                                 >
-                            <FontAwesomeIcon className="fa-4x text-gray-[8080] hover:opacity-60" icon={faChevronLeft}/>
+                            <FontAwesomeIcon className="fa-3x text-white hover:opacity-60" icon={faChevronLeft}/>
 
                             </button>
                             </Link>

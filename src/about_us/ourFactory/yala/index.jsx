@@ -18,19 +18,19 @@ export default function YaLafac() {
                     <div className="bg-cover bg-no-repeat bg-center h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1r-lZKJ3L5_klh6EWlakBmwYEGGXMeNb2)]">
                     <div className="relative flex flex-row pt-24 pl-32">
 
-                        <h1 className="font-black text-8xl text-white pt-10">YALA</h1>
-                        <div className="absolute right-0 pt-8 pr-12">
+                        <div className="absolute left-0 pt-16 pl-8">
                             {/* Button to toggle visibility */}
                             <Link to="/ourFactory">
                             <button
                                 onClick={toggleCard}
                                 className={`relative focus:outline-none transition `}
                                 >
-                            <FontAwesomeIcon className="fa-4x text-gray-[8080] hover:opacity-60" icon={faChevronLeft}/>
+                            <FontAwesomeIcon className="fa-3x text-white hover:opacity-60" icon={faChevronLeft}/>
 
                             </button>
                             </Link>
                         </div>
+                        <h1 className="font-black text-8xl text-white pt-10">YALA</h1>
                     </div>
 
                     <div className="md:h-3/5 w-auto flex flex-row justify-center space-x-32 lg:h-1/2 w-full mt-16">
