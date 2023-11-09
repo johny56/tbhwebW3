@@ -106,7 +106,7 @@ const pageData = [
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1XmK_upqXI3wrQgZM9PIFW-xyujYQhY6M',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Leanproduction',
             date: '4 กุมภาพันธ์ 2021',
             content: 'LEAN PRODUCTION TRAINING . . .',
         },
@@ -189,13 +189,17 @@ export default function ActivityBoard() {
         {/* <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
             <Navbar />
         </nav> */}
-            <div className="h-screen bg-cover bg-[url(https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2)] pt-40">
-                <div className="absolute flex flex-col text-white text-9xl font-black pl-96">
+            {/* <div className="h-screen bg-contain bg-[url(https://drive.google.com/uc?export=view&id=1Iq3t9w9bNbyIfyvfSYQlaRl6v8_IpAOc)] pt-36"> */}
+                {/* <div className="absolute flex flex-col text-white text-9xl font-black pl-96">
                     <p className="pl-48">COMPANY</p>
                     <p className="pl-96">ACTIVITIES</p>
+                </div> */}
+            <div className="h-screen bg-fixed bg-white">
+                <div className="h-full w-full bg-contain bg-no-repeat bg-center bg-[url(https://drive.google.com/uc?export=view&id=1Iq3t9w9bNbyIfyvfSYQlaRl6v8_IpAOc)]">
+
                 </div>
 
-                <div className="flex justify-center bg-white h-full w-full text-back mt-96 pt-16">
+                <div className="flex justify-center bg-white h-full w-full text-back">
                     <div className="flex flex-col gap-8">
                     <div className="flex flex-rows-3 gap-16">
 
@@ -240,7 +244,7 @@ export default function ActivityBoard() {
 
                 </div>
                     
-            <div className="absolute h-12 w-screen end-0 flex justify-center p-4 pt-36 pb-12 mt-16">
+            <div className="absolute h-12 w-screen end-0 flex justify-center pb-4">
                 <ul className="list-style-none flex">
                 <li>
                                     <button
