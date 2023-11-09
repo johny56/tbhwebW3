@@ -26,6 +26,8 @@ import NewYear23 from "activity_board/2023/newyear23";
 import NewYear22 from "activity_board/2022/newyear22";
 import BestSupplier from "activity_board/2022/bestsupply";
 import Bigcleaning from "activity_board/2022/bigcleaning";
+import Technical from "activity_board/2021/technical";
+import Chnewyear21 from "activity_board/2021/chnewyear21";
 import Activity_board from "activity_board";
 
 import CompanyStructure from "about_us/company_structure";
@@ -71,8 +73,10 @@ const App = () => {
         <Route path='/efforts' element={<Efforts/>}/>
         <Route path='/thungSong5S' element={<ThungSong/>}/>
         <Route path='/thungsong21' element={<ThungSong21/>}/>
+        <Route path='/Technical' element={<Technical/>}/>
         <Route path='/newyear23' element={<NewYear23/>}/>
         <Route path='/newyear22' element={<NewYear22/>}/>
+        <Route path='/Chnewyear21' element={<Chnewyear21/>}/>
         <Route path='/Bigcleaning' element={<Bigcleaning/>}/>
         <Route path='/bestsupply' element={<BestSupplier/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>

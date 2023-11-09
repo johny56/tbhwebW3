@@ -94,13 +94,13 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1aIPmOxtH0RLnbPIo0i9YAGpRfVXsEofS',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Technical',
             date: '24 กุมภาพันธ์ 2021',
             content:  'TECHNICAL SKILLS TRAINING . . .',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1mzRux4q3KiyPOeLgFmY6UTCMkuuKXS4T',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Chnewyear21',
             date: '9 กุมภาพันธ์ 2021',
             content: 'CHINESE NEW YEAR 2021 . . .',
         },
@@ -252,12 +252,12 @@ export default function ActivityBoard() {
                                     &laquo;
                                     </button>
                                 </li>
-                                {[1, 2, 3, '...',].map((page) => (
+                                {[1, 2, 3, 4, 5, 6, 7,].map((page) => (
                                     <li key={page}>
                                     <button
                                         onClick={() => handlePageChange(page)}
                                         className={`relative block rounded bg-transparent px-3 text-sm text-neutral-600 transition-all duration-300 ${
-                                        currentPage === page ? 'bg-neutral-100 dark:text-white dark:bg-neutral-700' : 'hover:bg-neutral-100 dark:hover:bg-neutral-700 dark:hover:text-white'
+                                        currentPage === page ? 'bg-green-500 round-lg dark:text-white dark:bg-neutral-700' : 'hover:bg-green-300 dark:hover:text-white'
                                         }`}
                                     >
                                         {page}
