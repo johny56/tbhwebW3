@@ -49,12 +49,12 @@ const App = () => {
   // const isManagementPath = location.pathname === "/management";
   const isFactoryPath = location.pathname === "/ourFactory";
   const isCompanyStructurePath = location.pathname === "/company_structure";
-  const isActivityBoard = location.pathname === "/activity_board";
+  // const isActivityBoard = location.pathname === "/activity_board";
 
   return (
     // && !isManagementPath
     <div>
-      {!isRootPath && !isFactoryPath && !isCompanyStructurePath && !isActivityBoard &&(
+      {!isRootPath && !isFactoryPath && !isCompanyStructurePath &&(
         <GREENnav></GREENnav>
       )}
       <ScrollToTopOnPageChange />

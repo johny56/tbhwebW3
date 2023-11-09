@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import Navbar from 'components/navbar';
 import { Link } from 'react-router-dom';
 
+
 const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1R5UA-WR0il_GxollPD_1iKR7Iyp0fv7Z',
             linkUrl: '/Gcg',
             date: '6 กันยายน 2556',
-            content: 'เมื่อวันที่ 6 กันยายน 2566 ที่ผ่านมานี้ กรมพัฒนาธุรกิจการค้า . . .',
+            content: 'เมื่อวันที่ 6 กันยายน 2566 ที่ผ่านมานี้ กรมพัฒนาธุรกิจการค้า เมื่อวันที่ 6 กันยายน 2566 ที่ผ่านมานี้ กรมพัฒนาธุรกิจการค้า เมื่อวันที่ 6 กันยายน 2566 ที่ผ่านมานี้ กรมพัฒนาธุรกิจการค้า เมื่อวันที่ 6 กันยายน 2566 ที่ผ่านมานี้ กรมพัฒนาธุรกิจการค้า',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1uV1p8BvjJ7YCt8aV3LVBoJzkqR7sMrRC',
@@ -19,7 +20,7 @@ const pageData = [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1mLyMYsN_r8_8DcsQL5pgLwu9LaxZdKe5',
             linkUrl: '/HappyWork',
-            date: 'Employees’ Birthday Gift',
+            date: 'Birthday Gift',
             content: 'ในฐานะองกรณ์ที่ให้ความสำคัญกับความสุขในการทำงานและให้ . . .',
         },
     ],
@@ -86,7 +87,7 @@ const pageData = [
             imageUrl: 'https://drive.google.com/uc?export=view&id=14Ew_4A29zM0qqLEduDmdGpZWwomfC_rd',
             linkUrl: '/thungSong21',
             date: '18 มีนาคม 2021',
-            content: 'BITECH Bangna, Bangkok — TBH Thung Song led by manager K. Somchai Manosathaporn receives 5S Silver Award . . .',
+            content: 'BITECH Bangna, Bangkok — TBH Thung Song led by manager K. Somchai Manosathaporn . . .',
         },
     ],
     //--------------------page3--------------------------
@@ -185,10 +186,10 @@ export default function ActivityBoard() {
 
   return (
     <div>
-      <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
-                <Navbar />
-            </nav>
-            <div className="h-screen bg-cover bg-[url(https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2)] pt-28">
+        {/* <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
+            <Navbar />
+        </nav> */}
+            <div className="h-screen bg-cover bg-[url(https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2)] pt-40">
                 <div className="absolute flex flex-col text-white text-9xl font-black pl-96">
                     <p className="pl-48">COMPANY</p>
                     <p className="pl-96">ACTIVITIES</p>
@@ -204,11 +205,11 @@ export default function ActivityBoard() {
                                 <img className="h-56 w-80" src={item.imageUrl} alt="" />
                             </Link>
                             <div className="flex flex-col h-auto w-auto bg-white flex items-start justify-start transform pt-2 pl-4">
-                            <div className="bg-green-800 h-8 w-36 pt-1 pl-2">
+                            <div className="bg-green-800 h-8 w-40 pt-1 flex justify-center">
                                 <h5 className="text-base font-bold tracking-tight text-white dark:text-white">{item.date}</h5>
                             </div>
-                            <div className="whitespace-normal w-3/4 h-auto">
-                                <p className="text-base/6 pt-2 ml-2 pb-2 text-black dark:text-gray-400">{item.content}</p>
+                            <div className="whitespace-normal w-3/4 h-auto py-2">
+                                <p className="line-clamp-2" >{item.content}</p>
                             </div>
                             </div>
                         </div>
@@ -224,11 +225,11 @@ export default function ActivityBoard() {
                                     <img className="h-56 w-80" src={item.imageUrl} alt="" />
                                 </Link>
                                 <div className="flex flex-col h-auto w-auto bg-white flex items-start justify-start transform pt-2 pl-4">
-                                <div className="bg-green-800 h-8 w-42 pt-1 pl-2">
+                                <div className="bg-green-800 h-8 w-40 pt-1 flex justify-center">
                                     <h5 className="text-base font-bold tracking-tight text-white dark:text-white">{item.date}</h5>
                                 </div>
-                                <div className="whitespace-normal w-3/4 h-auto">
-                                    <p className="text-base/6 pt-2 ml-2 pb-2 text-black dark:text-gray-400">{item.content}</p>
+                                <div className="whitespace-normal w-3/4 h-auto py-2">
+                                <p className="line-clamp-2" >{item.content}</p>
                                 </div>
                                 </div>
                             </div>
@@ -239,7 +240,7 @@ export default function ActivityBoard() {
 
                 </div>
                     
-            <div className="absolute h-12 w-screen end-0 flex justify-center p-4 ">
+            <div className="absolute h-12 w-screen end-0 flex justify-center p-4 pt-36 pb-12 mt-16">
                 <ul className="list-style-none flex">
                 <li>
                                     <button

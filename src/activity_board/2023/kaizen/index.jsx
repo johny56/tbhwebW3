@@ -10,7 +10,7 @@ export default function KaizenAward(){
                     <h1 className="text-bold text-4xl">TBH WON THAILAND KAIZEN GOLDEN AWARD 2023</h1>
                 </div>
 
-                <div className="grid grid-cols-3 pl-32 gap-0 justify-center h-full w-5/6 ml-48 pt-12">
+                <div className="grid grid-cols-3 gap-0 justify-center h-full w-5/6 ml-48 pt-12 md:pl-2 lg:pt-16">
                     <div className="h-96 w-96">
                         <img src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01.png?fit=1030%2C773&ssl=1"/>
                     </div>

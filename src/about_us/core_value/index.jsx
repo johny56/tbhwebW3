@@ -10,8 +10,9 @@ export default function CoreValue(){
                 <div
                     className="flex flex-row w-full h-auto rounded-lg bg-[#FFFFFF]">
                     <img
-                        className="max-h-4xl max-w-4xl"
+                        className="h-56 w-auto pt-32"
                         src="https://drive.google.com/uc?export=view&id=1sKykK-POA0B5vcQvgFpm9a82F1oczP-G"
+                        // src="https://drive.google.com/uc?export=view&id=1hr1nl4h79Dkgp0QzO5N9wUs5tc9qXRh0"
                         alt="" />
                     
                     <div className="flex flex-col item-center justify-center space-y-6">
