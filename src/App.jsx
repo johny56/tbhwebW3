@@ -20,15 +20,27 @@ import Songkran from "activity_board/2023/songkran";
 import HappyWork from "activity_board/2023/happyWorkplace";
 import QCC from "activity_board/2023/qcctrain";
 import Efforts from "activity_board/2023/efforts";
-import ThungSong from "activity_board/2022/thungSong5S";
-import ThungSong21 from "activity_board/2021/thungsong21";
 import NewYear23 from "activity_board/2023/newyear23";
+
+import ThungSong from "activity_board/2022/thungSong5S";
 import NewYear22 from "activity_board/2022/newyear22";
 import BestSupplier from "activity_board/2022/bestsupply";
 import Bigcleaning from "activity_board/2022/bigcleaning";
+
+import ThungSong21 from "activity_board/2021/thungsong21";
 import Technical from "activity_board/2021/technical";
 import Chnewyear21 from "activity_board/2021/chnewyear21";
 import Leanproduction from "activity_board/2021/leanproduction";
+
+import Isotrainning from "activity_board/2020/iso";
+import Newyear20 from "activity_board/2020/newyear20";
+import Softskill from "activity_board/2020/softskill";
+import FireEscapetraining from "activity_board/2020/fireescape";
+import Merrit from "activity_board/2020/merrit";
+import Nrproperty from "activity_board/2020/nr";
+import Ergonomic from "activity_board/2020/ergonomic";
+import Healthbody from "activity_board/2020/healthbody";
+
 import Activity_board from "activity_board";
 
 import CompanyStructure from "about_us/company_structure";
@@ -66,32 +78,47 @@ const App = () => {
         <Route path='/' element={<Layout/>} />
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
-        <Route path='/Gcg' element={<Gcg/>}/>
-        <Route path='/KaizenAward' element={<KaizenAward/>}/>
-        <Route path='/songkran' element={<Songkran/>}/>
-        <Route path='/HappyWork' element={<HappyWork/>}/>
-        <Route path='/qcctrain' element={<QCC/>}/>
-        <Route path='/efforts' element={<Efforts/>}/>
-        <Route path='/thungSong5S' element={<ThungSong/>}/>
-        <Route path='/thungsong21' element={<ThungSong21/>}/>
-        <Route path='/Technical' element={<Technical/>}/>
-        <Route path='/newyear23' element={<NewYear23/>}/>
-        <Route path='/newyear22' element={<NewYear22/>}/>
-        <Route path='/Chnewyear21' element={<Chnewyear21/>}/>
-        <Route path='/Leanproduction' element={<Leanproduction/>}/>
-        <Route path='/Bigcleaning' element={<Bigcleaning/>}/>
-        <Route path='/bestsupply' element={<BestSupplier/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>
         <Route path='/contact_us' element={<ContactUS/>}/>
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
         <Route path='/company_structure' element={<CompanyStructure/>}/>
+        {/* factory path */}
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path ="/thungSong" element={<ThungSongfac/>}/>
         <Route path ="/yala" element={<YaLafac/>}/>
         <Route path ="/narathiwat" element={<NarathiWatfac/>}/>
         <Route path ="/pattani" element={<PatTanifac/>}/>
         <Route path ="/suratthani" element={<SuratThanifac/>}/>
+        {/* activity path */}
+        {/* 2023 */}
+        <Route path='/Gcg' element={<Gcg/>}/>
+        <Route path='/KaizenAward' element={<KaizenAward/>}/>
+        <Route path='/songkran' element={<Songkran/>}/>
+        <Route path='/HappyWork' element={<HappyWork/>}/>
+        <Route path='/qcctrain' element={<QCC/>}/>
+        <Route path='/efforts' element={<Efforts/>}/>
+        <Route path='/newyear23' element={<NewYear23/>}/>
+        {/* 2022 */}
+        <Route path='/thungSong5S' element={<ThungSong/>}/>
+        <Route path='/bestsupply' element={<BestSupplier/>}/>
+        <Route path='/Bigcleaning' element={<Bigcleaning/>}/>
+        <Route path='/newyear22' element={<NewYear22/>}/>
+        {/* 2021 */}
+        <Route path='/Technical' element={<Technical/>}/>
+        <Route path='/Chnewyear21' element={<Chnewyear21/>}/>
+        <Route path='/Leanproduction' element={<Leanproduction/>}/>
+        <Route path='/thungsong21' element={<ThungSong21/>}/>
+        {/* 2020 */}
+        <Route path='/Isotraining' element={<Isotrainning/>}/>
+        <Route path='/Newyear20' element={<Newyear20/>}/>
+        <Route path='/Softskill' element={<Softskill/>}/>
+        <Route path='/Fireescape' element={<FireEscapetraining/>}/>
+        <Route path='/Merritpage' element={<Merrit/>}/>
+        <Route path='/Nrtraining' element={<Nrproperty/>}/>
+        <Route path='/Ergonomic' element={<Ergonomic/>}/>
+        <Route path='/Healthbody' element={<Healthbody/>}/>
+
         <Route path ="/activity_board" element={<Activity_board/>}/>
       </Routes>
 

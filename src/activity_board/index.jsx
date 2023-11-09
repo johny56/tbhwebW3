@@ -115,19 +115,19 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=13eJ90d2JmypI1R3KaVzC2-Kri_wWyLT0',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Isotraining',
             date: '23 ธันวาคม 2020',
             content: 'ISO TRAINING',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1CAX3bp_nHZ_FciqKPA3MMbsZzP8OTPys',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Softskill',
             date: '21 ธันวาคม 2020',
             content: 'SOFTSKILL TRAINING',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1I7Eq5UacdelopFZVdvRIsAYCc9gwFMq9',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Newyear20',
             date: '17 ธันวาคม 2020',
             content: 'NEW YEARS PARTY',
         },
@@ -136,19 +136,19 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=17ma_TlaEH8VL91YD6-g-U2NPJgT6zfcT',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Fireescape',
             date: '4 ธันวาคม 2020',
             content: 'FIRE ESCAPE TRAINING',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1947sdUloZpAEIeOtrAxuxsuW0BuxsElW',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Merritpage',
             date: '9 พฤศจิกายน 2020',
             content: 'OFFICE MERRIT',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1eftEZ0OiJLxMhdJIsuUpAp8kNX0t-Gp1',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Nrtraining',
             date: '16 ตุลาคม 2020',
             content: 'NR PROPERTY TRAINING',
         },
@@ -157,13 +157,13 @@ const pageData = [
     [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1nA5u3SUlP7lmVXGIdS-f61z7i3BaOp4h',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Ergonomic',
             date: '2 ตุลาคม 2020',
             content: 'ERGONOMIC TRAINING',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1Y_1cy9LLAZsNqoQwe6o6AdnQv2PrjHRz',
-            linkUrl: 'https://example.com/page1',
+            linkUrl: '/Healthbody',
             date: '5 พฤษภาคม 2020',
             content: 'HEALTHY BODY',
         },
