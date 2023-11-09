@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import Navbar from "components/navbar";
 import { Link } from "react-router-dom";
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { useLocation } from 'react-router-dom';
+
 
 export default function OurFACTORY() {
 
   const [isCardVisible, setCardVisibility] = useState(false);
+  if(!isCardVisible){
+    setTimeout(() => {
+      toggleCard();
+    }, 3000);
+
+  }
 
   const toggleCard = () => {
           // Toggle the visibility state
@@ -52,14 +61,16 @@ export default function OurFACTORY() {
             src="https://drive.google.com/uc?export=view&id=1axpdX8sWXczDhAiMDo3U4UCaSeTZIs0e"
           />
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center pt-24">
           {/* Button to toggle visibility */}
           <button
             onClick={toggleCard}
-            className={`relative focus:outline-none focus:ring-2 focus:ring-blue-500 transition ${
+            className={`relative focus:outline-none transition ${
               isCardVisible ? 'top-[8rem] translate-x-[36rem] rotate-180 z-20': ''}`}
           >
-          <img className="h-28 w-auto hover:bg-gray-600 rounded-lg" src="https://drive.google.com/uc?export=view&id=1cy8XQkDEIFEhsay-zZ7p7uNGCh_zwwzf"/>
+          {/* <img className="h-12 w-24 hover:bg-gray-600 shadow-md rounded-lg" src="https://drive.google.com/uc?export=view&id=1cy8XQkDEIFEhsay-zZ7p7uNGCh_zwwzf"/> */}
+          <FontAwesomeIcon className="fa-7x text-gray-200 fa-beat" icon={faChevronDown}/>
+
           </button>
         </div>
 
@@ -79,7 +90,7 @@ export default function OurFACTORY() {
             
             
 
-          <div className="h-full w-auto bg-white-200">
+          <div className="h-full w-auto bg-white-200" id="factory-select">
           <div className="grid grid-flow-row-dense grid-cols-5 lg:gap-0 pb-8 ml-10 pl-24 md:gap-2 ml-2">
 
 

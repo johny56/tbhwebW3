@@ -1,8 +1,13 @@
 import React  from "react";
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 export default function PatTanifac() {
 
-    
+    const toggleCard = () => {
+        console.log("Istoggle");
+    };
 
     return (
         
@@ -13,12 +18,24 @@ export default function PatTanifac() {
                     
                     <div className="relative flex flex-col pt-24 pl-32">
                         <h1 className="font-black text-8xl text-white pt-10">PATTANI</h1>
+                        <div className="absolute right-0 pt-8 pr-12">
+                            {/* Button to toggle visibility */}
+                            <Link to="/ourFactory">
+                            <button
+                                onClick={toggleCard}
+                                className={`relative focus:outline-none transition `}
+                                >
+                            <FontAwesomeIcon className="fa-4x text-gray-[8080] hover:opacity-60" icon={faChevronLeft}/>
+
+                            </button>
+                            </Link>
+                        </div>
                     </div>
                     
                 
                     <div className="md:h-3/5 w-auto flex flex-row justify-center space-x-32 lg:h-1/2 w-full mt-16">
                         <div className="h-full w-auto p-4">
-                            <img className="h-full w-96" src="https://drive.google.com/uc?export=view&id=1JuuwHQblRLqxF4Pp1G1lChEBP0kycO_8"/>
+                            <img className="h-full w-96" src="https://drive.google.com/uc?export=view&id=1VFzBYTk10-ilk8EeGWQ9hps_QuPsMxR1"/>
                         
                         </div>
                         <div className="h-full w-auto p-4">
