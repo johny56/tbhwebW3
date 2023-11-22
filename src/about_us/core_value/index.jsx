@@ -33,11 +33,11 @@ export default function CoreValue(){
                             <img className="h-full w-96" src="https://drive.google.com/uc?export=view&id=1wv7ExbPIbzyjXX-YA2pYQaY9EL3bjPqq" alt=""/>
                         </div>
 
-                        <div className="h-full w-2/3 item-start justify-start">
-                            <h1 className="pt-48 text-start text-8xl font-bold text-green-900">OUR<br/> MISSION</h1>
+                        <div className="h-full w-2/3 item-start justify-start md:w-full pl-32 ">
+                            <h1 className="pt-48 text-start text-8xl font-bold text-green-900 md:pt-28">OUR<br/> MISSION</h1>
                             <div className="flex flex-col m-4">
                                 <div className="h-2 w-28 bg-green-900"></div>
-                                <div className="flex justify-center w-2/3">
+                                <div className="flex justify-center lg:w-2/3 md:w-full">
                                     <p className="pt-6 font-sans text-xl text-green-900 indent-5">Committed to comtinuously developing and maintaining product quality coupled with building innovation excellence whilst developing employee potential and welfare. To promote a "Kaizen" mindset amonget employees and to be a sustainable organization that is community and environment friendly.</p>
                                 </div>
                             </div>
