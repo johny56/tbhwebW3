@@ -6,35 +6,66 @@ export default function CoreValue(){
         return (
 
             
-            <div className="flex item-end justify-end max-w-full">
-                <div
-                    className="flex flex-row w-full h-auto rounded-lg bg-[#FFFFFF]">
-                    <img
-                        className="h-56 w-auto pt-32"
-                        src="https://drive.google.com/uc?export=view&id=1sKykK-POA0B5vcQvgFpm9a82F1oczP-G"
-                        // src="https://drive.google.com/uc?export=view&id=1hr1nl4h79Dkgp0QzO5N9wUs5tc9qXRh0"
-                        alt="" />
+            <div className="bg-contain bg-no-repeat h-max-screen w-auto bg-green-200">
+                <div className="w-full h-auto bg-white">
                     
-                    <div className="flex flex-col item-center justify-center space-y-6">
+                    <div className="flex flex-row m-2 pt-6">
+                        
+                        <div className="h-full w-1/2 item-end justify-end">
+                            <h1 className="text-end text-8xl font-bold text-green-900 pr-20">OUR<br/> VISION</h1>
+                            <div className="flex flex-col justify-center m-8 pl-12 pt-12">
+                                <div className="h-2 w-28 bg-green-900"></div>
+                                <div className="flex justify-center w-2/3">
+                                    <p className="pt-6 font-sans text-xl text-green-900 indent-5">To be a professional natural rubber processor that is committed to developing its block rubber business to be globally renown for excellence in quality,technology and competency with sustainable ties to community and society.</p>
+                                </div>
+                            </div>
 
-                        <h1 className="mt-8 mx-48 w-1/2 mb-5 text-5xl font-sans font-tt-hoves uppercase text-green-900 dark:text-neutral-50">
-                            Core Value
-                        </h1>
-                        <p className="ml-36 mb-2 text-2xl font-sans font-tt-hoves uppercase text-neutral-800 dark:text-neutral-50">
-                            respect
-                        </p>
-                        <p className="ml-36 mb-2 text-2xl font-sans font-tt-hoves uppercase text-neutral-800 dark:text-neutral-50">
-                            leadership
-                        </p>
-                        <p className="ml-36 mb-2 text-2xl font-sans font-tt-hoves uppercase text-neutral-800 dark:text-neutral-50">
-                            communication
-                        </p>
-                        <p className="ml-36 mb-2 text-2xl font-sans font-tt-hoves uppercase text-neutral-800 dark:text-neutral-50">
-                            professionalism
-                        </p>
-                        <p className="ml-36 mb-2 text-2xl font-sans font-tt-hoves uppercase text-neutral-800 dark:text-neutral-50">
-                            integrity
-                        </p>
+                        </div>
+
+                        <div className="h-full w-1/2 flex justify-center item-center m-4">
+                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1u3grAJgd74mkD7unpG8bM_80SHmxMc32" alt=""/>
+                        </div>
+                    </div>
+                        
+                    <div className="flex flex-row m-4 pt-4">
+                        
+                        <div className="h-full w-1/3 flex justify-start item-start pl-12">
+                            <img className="h-full w-96" src="https://drive.google.com/uc?export=view&id=1wv7ExbPIbzyjXX-YA2pYQaY9EL3bjPqq" alt=""/>
+                        </div>
+
+                        <div className="h-full w-2/3 item-start justify-start">
+                            <h1 className="pt-48 text-start text-8xl font-bold text-green-900">OUR<br/> MISSION</h1>
+                            <div className="flex flex-col m-4">
+                                <div className="h-2 w-28 bg-green-900"></div>
+                                <div className="flex justify-center w-2/3">
+                                    <p className="pt-6 font-sans text-xl text-green-900 indent-5">Committed to comtinuously developing and maintaining product quality coupled with building innovation excellence whilst developing employee potential and welfare. To promote a "Kaizen" mindset amonget employees and to be a sustainable organization that is community and environment friendly.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div className="flex flex-row m-2 pt-4">
+                        
+                        <div className="h-full w-1/2 item-start justify-start pt-48 pl-8">
+                            <h1 className="text-start text-8xl font-bold text-green-900 pl-16">CORE<br/> VALUE</h1>
+                            <div className="flex flex-col m-6 pl-4 pt-8">
+                                <div className="h-2 w-28 bg-green-900"></div>
+                                <p className="pt-6 font-sans text-xl text-green-900">RESPECT<br/>LEADERSHIP<br/>COMMUNICATION<br/>PROFESSIONALISM<br/>INTEGRITY</p>
+                            </div>
+
+                        </div>
+
+                        <div className="h-full w-1/2 flex justify-center item-center m-4">
+                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1kTRrbtsZnq4QvPcbbPNLjuu17Hthki7Q" alt=""/>
+                        </div>
+
+                    </div>
+
+                    <div className="h-full w-full flex justify-center item-center px-56 pt-8 m-2">
+                        <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XDwEOmCirIdsJ-0RIaenfKD6ZtP1oaDH" alt=""/>
                     </div>
 
                 </div>
