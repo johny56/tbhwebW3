@@ -9,7 +9,7 @@ export default function Gcg(){
                 <div className="flex flex-row justify-center item-center">
                     <h1 className="text-bold text-4xl">GOOD CORPORATE GOVERNANCE STANDARD 2023</h1>
                 </div>
-                <div className="h-full w-1/3 ml-48 pt-12">
+                <div className="flex justify-center h-full w-full py-12">
                     <img src="https://drive.google.com/uc?export=view&id=1R5UA-WR0il_GxollPD_1iKR7Iyp0fv7Z"/>
                 </div>
                 <div className="bg-white h-full w-2/3 ml-40 pt-8 pb-24">
