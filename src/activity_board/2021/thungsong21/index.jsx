@@ -25,7 +25,7 @@ export default function ThungSong21(){
                                         
                                     </div>
                                 
-                                <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-2">
+                                <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-2 mx-8 py-4">
 
                                 <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                     

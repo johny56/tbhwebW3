@@ -14,28 +14,28 @@ export default function QCC(){
                             THE QUALITY CONTROL CIRCLE TRAINING
                             </h1>
                             <div className="flex flex-row">
-                                <div className="flex flex-col">
-                                    <div className="flex flex-col h-1/2 w-full">
+                                <div className="flex flex-col h-full w-1/2">
+                                    <div className="flex flex-col h-full w-full">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
                                         THE QUALITY CONTROL CIRCLE TRAINING<br />
                                             On 28 June 2023 , TBH Head office
                                         </h2><br></br>
-                                        <p className="mx-16">We continue to reskill and upskill our employees. This year, we are expanding and educating the entire organization on the QCC (Quality Control Circle) program. We are committed to continuous service and product improvement based on employee feedback.
+                                        <p className="indent-8 mx-16">We continue to reskill and upskill our employees. This year, we are expanding and educating the entire organization on the QCC (Quality Control Circle) program. We are committed to continuous service and product improvement based on employee feedback.
           Our team will be able to identify the root cause and discover novel techniques for enhancing our organization’s performance.
                                         </p>
                                     </div>
                                     <br></br>
                             
-                                    <div className="flex flex-col h-full w-full">
+                                    <div className="flex flex-col h-full w-full pt-56">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
                                         กิจกรรมกลุ่มควบคุมคุณภาพ<br />28 มิถุนายน 2556 ณ สำนักงานใหญ่ บริษัทยางไทยปักษ์ใต้ จำกัด
                                         </h2><br></br>
-                                        <p className="mx-16">บริษัทยางไทยปักษ์ใต้ ไม่เพียงแต่ให้ความใส่ใจคุณภาพของสินค้าและการบริการเท่านั้น เรายังให้ความสำคัญต่อบุคลากรในองค์กร ในปีนี้บริษัทได้เพิ่มความรู้และทักษะให้แก่พนักงานเกี่ยวกับหลักการและแนวคิดแบบ QCC หรือ Quality Control Circle (วงจรควบคุมคุณภาพที่ทุกคนมีส่วนร่วม) เรามุ่งมั่นที่จะปรับปรุงผลิตภัณฑ์และการให้บริการอย่างต่อเนื่องตามความเห็นของพนักงาน
+                                        <p className="indent-8 mx-16">บริษัทยางไทยปักษ์ใต้ ไม่เพียงแต่ให้ความใส่ใจคุณภาพของสินค้าและการบริการเท่านั้น เรายังให้ความสำคัญต่อบุคลากรในองค์กร ในปีนี้บริษัทได้เพิ่มความรู้และทักษะให้แก่พนักงานเกี่ยวกับหลักการและแนวคิดแบบ QCC หรือ Quality Control Circle (วงจรควบคุมคุณภาพที่ทุกคนมีส่วนร่วม) เรามุ่งมั่นที่จะปรับปรุงผลิตภัณฑ์และการให้บริการอย่างต่อเนื่องตามความเห็นของพนักงาน
           เป้าหมายของเราคือ สามารถหาสาเหตุของปัญหาที่แท้จริงและค้นพบเทคนิคในการทำงานใหม่ ๆ เพื่อเพิ่มประสิทธิภาพการทำงานขององค์กรของเรา
                                         </p>
                                     </div>
                                 </div>
-                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3">
+                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 h-full w-1/2">
 
                                 <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                     

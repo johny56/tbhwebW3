@@ -14,8 +14,8 @@ export default function BestSupplier(){
                         <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-24 mx-16">
                         Best Supplier for Quality Performance Award
                         </h1>
-                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
-                            <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2022/05/yrs-1-e1653465777889.png?fit=1030%2C725&ssl=1" alt=""/>
+                        <div className="flex justify-center p-4">
+                            <img className="max-h-full max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2022/05/yrs-1-e1653465777889.png?fit=1030%2C725&ssl=1" alt=""/>
                         </div>
 
                         </div>

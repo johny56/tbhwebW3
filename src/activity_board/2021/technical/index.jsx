@@ -21,7 +21,7 @@ export default function Technical(){
                                         
                                     </div>
                                 
-                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-2 gap-4 py-8">
+                                <div className="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4 py-16 m-8">
 
                                 <div className="relative h-full w-full overflow-hidden hover:opacity-75 transition">
                                     <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63667-1.jpg?resize=495%2C400&ssl=1" alt=""/>

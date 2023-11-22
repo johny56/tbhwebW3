@@ -14,25 +14,25 @@ export default function NewYear22(){
                             HAPPY CHINESE NEW YEAR 2022 CELEBRATIONL
                             </h1>
                             <div className="flex flex-row">
-                                <div className="flex flex-col">
+                                <div className="flex flex-col h-full w-1/2">
                                     <div className="flex flex-col h-1/2 w-full">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
                                         HAPPY CHINESE NEW YEAR 2022 CELEBRATION<br></br>On 28 January 2022 , TBH Head office
                                         </h2><br></br>
-                                        <p className="mx-16"> Led by CEO Mr. Lee Keng Seng, head office management, branch management, and Teck Bee Hang Co., Ltd company employees. Gathered in front of the company to celebrate Chinese New Year to increase this year’s good fortune. So that all employees participate in the Chinese New Year celebrations to enhance the auspiciousness and enjoy the meal. Mr.Lee Keng Seng congratulated all employees: Happy Chinese new year! May all your wishes come true today, and bless you with health, wealth, and happiness.
+                                        <p className="indent-6 mx-16"> Led by CEO Mr. Lee Keng Seng, head office management, branch management, and Teck Bee Hang Co., Ltd company employees. Gathered in front of the company to celebrate Chinese New Year to increase this year’s good fortune. So that all employees participate in the Chinese New Year celebrations to enhance the auspiciousness and enjoy the meal. Mr.Lee Keng Seng congratulated all employees: Happy Chinese new year! May all your wishes come true today, and bless you with health, wealth, and happiness.
                                         </p>
                                     </div>
                                     <br></br>
                             
-                                    <div className="flex flex-col h-full w-full">
+                                    <div className="flex flex-col h-full w-full pt-56">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
                                         ฉลองเทศกาลตรุษจีน ประจำปี 2565<br></br>28 มกราคม 2565 ณ สำนักงานใหญ่ บริษัท ยางไทยปักษ์ใต้ จำกัด
                                         </h2><br></br>
-                                        <p className="mx-16">บริษัท ยางไทยปักษ์ใต้ จำกัด สำนักงานใหญ่ ได้จัดกิจกรรมไหว้ตรุษจีนต้อนรับปีขาล นำโดยประธานกรรมการ Mr.Lee Keng Seng ผู้บริหารสำนักงานใหญ่ เพื่อให้พนักงานทุกคนได้มีส่วนร่วมในการไหว้ตรุษจีนเพื่อเสริมศิริมงคลและร่วมรับประทานอาหารร่วมกัน โดย Mr.Lee Keng Seng ได้กล่าวอวยพรพนักงานทุกท่าน ซินเจียยู่อี่ ซินนี้ฮวดไช้ คิดหวังสิ่งใดขอให้สมหวังสมปรารถนาในปีใหม่นี้ มีแต่ความสุขมั่งคั่ง โชคดีร่ำรวยตลอดปี
+                                        <p className="indent-6 mx-16">บริษัท ยางไทยปักษ์ใต้ จำกัด สำนักงานใหญ่ ได้จัดกิจกรรมไหว้ตรุษจีนต้อนรับปีขาล นำโดยประธานกรรมการ Mr.Lee Keng Seng ผู้บริหารสำนักงานใหญ่ เพื่อให้พนักงานทุกคนได้มีส่วนร่วมในการไหว้ตรุษจีนเพื่อเสริมศิริมงคลและร่วมรับประทานอาหารร่วมกัน โดย Mr.Lee Keng Seng ได้กล่าวอวยพรพนักงานทุกท่าน ซินเจียยู่อี่ ซินนี้ฮวดไช้ คิดหวังสิ่งใดขอให้สมหวังสมปรารถนาในปีใหม่นี้ มีแต่ความสุขมั่งคั่ง โชคดีร่ำรวยตลอดปี
                                         </p>
                                     </div>
                                 </div>
-                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-2">
+                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-2 h-full w-1/2">
 
                                 <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                     
