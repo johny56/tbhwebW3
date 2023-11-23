@@ -13,6 +13,7 @@ import ManagementTeam from "about_us/management";
 import PolicyPage from "sustainability/policy_page";
 import ContactUS from "contact_us";
 import TBHstaff from "thbstaff";
+import CorevaluePage from "about_us/core_value/corevaluepage";
 
 import Gcg from "activity_board/2023/gcg";
 import KaizenAward from "activity_board/2023/kaizen";
@@ -83,6 +84,7 @@ const App = () => {
         <Route path='/contact_us' element={<ContactUS/>}/>
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
         <Route path='/company_structure' element={<CompanyStructure/>}/>
+        <Route path='/CorevaluePage' element={<CorevaluePage/>}/>
         {/* factory path */}
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path ="/thungSong" element={<ThungSongfac/>}/>

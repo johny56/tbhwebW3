@@ -115,5 +115,11 @@ const routes = [
       path: "default",
       component: <OurFACTORY/>,
     },
+    {
+      name: "CorevaluePage",
+      layout: "/CorevaluePage",
+      path: "default",
+      component: <CorevaluePage/>,
+    },
 ];
 export default routes;
