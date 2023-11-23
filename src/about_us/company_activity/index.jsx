@@ -44,13 +44,13 @@ export default function Activity(){
                         <Link to="/activity_board">
                         <div className="group relative">
                         <img
-                           className="max-w-full rounded transition-all duration-300 group-hover:opacity-75 "
+                           className="max-w-full rounded transition-all duration-300 group-hover:opacity-75"
                             key={i}
                             src={image}
                             style={{width: "100%", display: "block", borderRadius: "15px"}}
                             alt=""
                         />
-                            <div className="hidden group-hover:flex items-center justify-center absolute top-0 left-0 w-full h-full pr-32">
+                            <div className="hidden group-hover:flex items-center justify-center absolute top-0 left-0 w-full h-full">
                                     <img className="w-auto h-32 flex justify-center item-center"
                                         src="https://drive.google.com/uc?export=view&id=1vLDPRW1ckbl8LdFqK1oo7t7EBX2ZeGCA"
                                     />
