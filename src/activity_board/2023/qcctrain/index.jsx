@@ -26,7 +26,7 @@ export default function QCC(){
                                     </div>
                                     <br></br>
                             
-                                    <div className="flex flex-col h-full w-full pt-56">
+                                    <div className="flex flex-col h-full w-full pt-56 md:pt-28">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
                                         กิจกรรมกลุ่มควบคุมคุณภาพ<br />28 มิถุนายน 2556 ณ สำนักงานใหญ่ บริษัทยางไทยปักษ์ใต้ จำกัด
                                         </h2><br></br>
