@@ -18,7 +18,7 @@ export default function Sustain2nav(){
         setIsOpen(!isOpen);
         setTimeout(() => {
             setIsOpen(false);
-          }, 2000);
+          }, 3000);
     };
     
     return (

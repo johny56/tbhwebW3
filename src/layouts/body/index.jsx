@@ -58,7 +58,7 @@ const Body = () => {
                       <Policy></Policy>
                   </div>
   
-                  <div className="mt-16" id="activity">
+                  <div className="" id="activity">
                     <Activity></Activity>
                   </div>
 

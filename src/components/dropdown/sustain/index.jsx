@@ -20,7 +20,7 @@ export default function Sustain(){
 
         setTimeout(() => {
             setIsOpen(false);
-          }, 2000);
+          }, 3000);
     };
 
     return (

@@ -23,7 +23,7 @@ export default function About2nav(){
 
             setTimeout(() => {
                 setIsOpen(false);
-              }, 2000);
+              }, 3000);
         };
 
         const scrollToSection = (sectionId) => {
@@ -70,7 +70,7 @@ export default function About2nav(){
                 </li>
                 <li>
                     <a
-                    href="/#core_value"
+                    href="/CorevaluePage"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     data-te-dropdown-item-ref
                     >
@@ -124,7 +124,7 @@ export default function About2nav(){
                 </li>
                 <li>
                     <a
-                    href="/#activity"
+                    href="/activity_board"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     onClick={() => scrollToSection('activity')}
                     >

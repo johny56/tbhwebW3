@@ -19,7 +19,7 @@ export default function Product(){
 
         setTimeout(() => {
             setIsOpen(false);
-          }, 2000);
+          }, 3000);
     };
 
     return (
