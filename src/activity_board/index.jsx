@@ -9,19 +9,22 @@ const pageData = [
             imageUrl: 'https://drive.google.com/uc?export=view&id=1R5UA-WR0il_GxollPD_1iKR7Iyp0fv7Z',
             linkUrl: '/Gcg',
             date: '6 September 2023',
-            content: 'The Department of Business Development, Ministry of Commerce on September 6th, 2023, conducted a ceremony to honor the 2023 recipients of the Given Award for Good Corporate Governance Standards.Teck Bee Hang Co., Ltd. has been awarded and certified a renowned “Good Corporate Governance Standards 2023” from the Department of Business Development, Ministry of Commerce.',
+            // content: 'The Department of Business Development, Ministry of Commerce on September 6th, 2023, conducted a ceremony to honor the 2023 recipients of the Given Award for Good Corporate Governance Standards.Teck Bee Hang Co., Ltd. has been awarded and certified a renowned “Good Corporate Governance Standards 2023” from the Department of Business Development, Ministry of Commerce.',
+            content: 'GOOD CORPORATE GOVERNANCE STANDARD 2023',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1uV1p8BvjJ7YCt8aV3LVBoJzkqR7sMrRC',
             linkUrl: '/KaizenAward',
             date: '11 August 2023',
-            content: 'Mr. Somchai Manosathaporn and his team won the gold medal in the Automatic Kaizen category of the THAILAND KAIZEN AWARD 2023 competition organized by the Technology Promotion Association (Thai-Japanese) by presenting the work “Auto Feed Transverser” under the slogan “Kaizen Ideas, generates inventions, and promotes innovation.”The Management team at Teck Bee Hang expects each staff member to contribute innovative ideas by developing personally and continuously enhancing the organization.',
+            // content: 'Mr. Somchai Manosathaporn and his team won the gold medal in the Automatic Kaizen category of the THAILAND KAIZEN AWARD 2023 competition organized by the Technology Promotion Association (Thai-Japanese) by presenting the work “Auto Feed Transverser” under the slogan “Kaizen Ideas, generates inventions, and promotes innovation.”The Management team at Teck Bee Hang expects each staff member to contribute innovative ideas by developing personally and continuously enhancing the organization.',
+            content: 'TBH WON THAILAND KAIZEN GOLDEN AWARD 2023',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1mLyMYsN_r8_8DcsQL5pgLwu9LaxZdKe5',
             linkUrl: '/HappyWork',
             date: 'Birthday Gift',
-            content: 'Sincere to say, as a happy workplace, we have always valued the diligent work of our team.We aspire to fulfill a small role in their birthday anniversary celebration.',
+            content:'HAPPY WORKPLACE HAPPY HEART',
+            // content: 'Sincere to say, as a happy workplace, we have always valued the diligent work of our team.We aspire to fulfill a small role in their birthday anniversary celebration.',
         },
     ],
                             // second line
@@ -30,19 +33,22 @@ const pageData = [
             imageUrl: 'https://drive.google.com/uc?export=view&id=1E0QGiOlxbvNez0fuJ2dmwATSWCyB9YgW',
             linkUrl: '/qcctrain',
             date: '28 June 2023',
-            content: 'We continue to reskill and upskill our employees. This year, we are expanding and educating the entire organization on the QCC (Quality Control Circle) program. We are committed to continuous service and product improvement based on employee feedback.',
+            content: 'THE QUALITY CONTROL CIRCLE TRAINING',
+            // content: 'We continue to reskill and upskill our employees. This year, we are expanding and educating the entire organization on the QCC (Quality Control Circle) program. We are committed to continuous service and product improvement based on employee feedback.',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1wXiE2q9FDaqVAsb-yUtmiC2irq88TmSY',
             linkUrl: '/songkran',
             date: '12 April 2023',
-            content: 'All employees and the management team enjoyed in-house Thai new year activities by showering and blessing the water for the new year.',
+            content: 'HAPPY SONGKRAN FESTIVAL',
+            // content: 'All employees and the management team enjoyed in-house Thai new year activities by showering and blessing the water for the new year.',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1hcn58n29VCeGM7IyBMnRAFTL6yoSBBbp',
             linkUrl: '/efforts',
             date: '2 February 2023',
-            content: 'On February 2, 2023, representatives Mr. Narongrit Songpan and Ms. Chutinthorn Poolsawat received the prize plaque.',
+            content: 'TECK BEE HANG CO., LTD RECEIVED A SPECIAL PLAQUE FOR ITS EFFORTS IN PROMOTING THE EMPLOYMENT OF PEOPLE WITH DISABILITIES. POWERING INNOVATION FOR ACCESSIBLE AND FAIR EMPLOYMENT.'
+            // content: 'On February 2, 2023, representatives Mr. Narongrit Songpan and Ms. Chutinthorn Poolsawat received the prize plaque.',
         },
     ],
     
@@ -52,13 +58,15 @@ const pageData = [
             imageUrl: 'https://drive.google.com/uc?export=view&id=1aQGNHf8NgD-DqlpsJiDNm0PQjm6uB2P5',
             linkUrl: '/newyear23',
             date: '20 January 2023',
-            content:  'On Friday, January 20, 2023, led by Chairman Mr. Lee Keng Seng, head office management, branch management,and Teck Bee Hang Co.,',
+            content: 'HAPPY CHINESE NEW YEAR 2023 CELEBRATIONL',
+            // content:  'On Friday, January 20, 2023, led by Chairman Mr. Lee Keng Seng, head office management, branch management,and Teck Bee Hang Co.,',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=15OtZ05_KnSZsnbylHV569areZGWTwjVG',
             linkUrl: '/Bigcleaning',
             date: '11 November 2022',
-            content: 'Teck Bee Hang Co., Ltd. encourages employees to adopt 5S as the company’s guiding principle by organising an annual 5S competition. Employees at the head office join',
+            content: 'BIG CLEANING DAY 2022',
+            // content: 'Teck Bee Hang Co., Ltd. encourages employees to adopt 5S as the company’s guiding principle by organising an annual 5S competition. Employees at the head office join',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1kzoMY9lRNNNjVOS_zp8oyzwunL5nrJ-T',
@@ -78,8 +86,9 @@ const pageData = [
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=1oZumGmDWMQ0McrRNzStnkvC1wNdSvglk',
             linkUrl: '/newyear22',
-            date: '28 January 2023',
-            content: 'Led by CEO Mr. Lee Keng Seng, head office management, branch management, and Teck Bee Hang Co., Ltd company employees.',
+            date: '28 January 2022',
+            content: 'HAPPY CHINESE NEW YEAR 2022 CELEBRATIONL'
+            // content: 'Led by CEO Mr. Lee Keng Seng, head office management, branch management, and Teck Bee Hang Co., Ltd company employees.',
         },
         {
             imageUrl: 'https://drive.google.com/uc?export=view&id=14Ew_4A29zM0qqLEduDmdGpZWwomfC_rd',
@@ -197,7 +206,7 @@ export default function ActivityBoard() {
                         <div key={index} className="relative h-full w-80 shadow-lg">
                             <Link to={item.linkUrl}>
                                 <img className="h-56 w-80" src={item.imageUrl} alt="" />
-                            </Link>
+                            
                             <div className="flex flex-col h-auto w-auto bg-white flex items-start justify-start transform pt-2 pl-4">
                             <div className="bg-green-800 h-8 w-40 pt-1 flex justify-center">
                                 <h5 className="text-base font-bold tracking-tight text-white dark:text-white">{item.date}</h5>
@@ -206,6 +215,7 @@ export default function ActivityBoard() {
                                 <p className="text-sm line-clamp-2" >{item.content}</p>
                             </div>
                             </div>
+                            </Link>
                         </div>
                         ))}
 
@@ -217,7 +227,7 @@ export default function ActivityBoard() {
                             <div key={index} className="relative h-full w-80 shadow-lg">
                                 <Link to={item.linkUrl}>
                                     <img className="h-56 w-80" src={item.imageUrl} alt="" />
-                                </Link>
+                                
                                 <div className="flex flex-col h-auto w-auto bg-white flex items-start justify-start transform pt-2 pl-4">
                                 <div className="bg-green-800 h-8 w-40 pt-1 flex justify-center">
                                     <h5 className="text-base font-bold tracking-tight text-white dark:text-white">{item.date}</h5>
@@ -226,6 +236,7 @@ export default function ActivityBoard() {
                                 <p className="text-sm line-clamp-2">{item.content}</p>
                                 </div>
                                 </div>
+                                </Link>
                             </div>
                             ))}
                         </div>
