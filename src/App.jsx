@@ -43,11 +43,11 @@ import Ergonomic from "activity_board/2020/ergonomic";
 import Healthbody from "activity_board/2020/healthbody";
 
 import Activity_board from "activity_board";
-
+import Award from "about_us/award";
 import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
-// import Navbar from "components/navbar";
 import OurFACTORY from "about_us/ourFactory";
+import OurFactoryList from "about_us/ourFactory/ourFactoryList";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 import ThungSongfac from "about_us/ourFactory/thungSong";
@@ -65,6 +65,7 @@ const App = () => {
   // const isManagementPath = location.pathname === "/management";
   const isFactoryPath = location.pathname === "/ourFactory";
   const isCompanyStructurePath = location.pathname === "/company_structure";
+  // const isAward = location.pathname === "/award";
   // const isActivityBoard = location.pathname === "/activity_board";
 
   return (
@@ -84,9 +85,11 @@ const App = () => {
         <Route path='/contact_us' element={<ContactUS/>}/>
         <Route path='/tbhstaff' element={<TBHstaff/>}/>
         <Route path='/company_structure' element={<CompanyStructure/>}/>
+        <Route path='/award' element={<Award/>}/>
         <Route path='/CorevaluePage' element={<CorevaluePage/>}/>
         {/* factory path */}
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
+        <Route path='/ourFactoryList' element={<OurFactoryList/>}/>
         <Route path ="/thungSong" element={<ThungSongfac/>}/>
         <Route path ="/yala" element={<YaLafac/>}/>
         <Route path ="/narathiwat" element={<NarathiWatfac/>}/>

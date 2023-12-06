@@ -20,7 +20,7 @@ export default function YaLafac() {
 
                         <div className="absolute left-0 pt-16 pl-8">
                             {/* Button to toggle visibility */}
-                            <Link to="/ourFactory">
+                            <Link to="/ourFactoryList">
                             <button
                                 onClick={toggleCard}
                                 className={`relative focus:outline-none transition `}

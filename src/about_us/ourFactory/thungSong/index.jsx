@@ -20,7 +20,7 @@ export default function ThungSongfac() {
                         <h1 className="font-black text-8xl text-white pt-10">THUNG SONG</h1>
                         <div className="absolute left-0 pt-16 pl-8">
                             {/* Button to toggle visibility */}
-                            <Link to="/ourFactory">
+                            <Link to="/ourFactoryList">
                             <button
                                 onClick={toggleCard}
                                 className={`relative focus:outline-none transition `}
