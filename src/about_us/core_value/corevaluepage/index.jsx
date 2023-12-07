@@ -59,7 +59,7 @@ export default function CorevaluePage(){
 
                         </div>
 
-                        <div className="h-full w-1/2 flex justify-center item-center">
+                        <div className="h-full w-1/2 flex justify-center item-center pr-24">
                             <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1kTRrbtsZnq4QvPcbbPNLjuu17Hthki7Q" alt=""/>
                         </div>
 
