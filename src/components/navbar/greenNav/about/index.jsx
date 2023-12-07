@@ -115,7 +115,7 @@ export default function About2nav(){
                 </li>
                 <li>
                     <a
-                    href="/"
+                    href="/award"
                     className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                     data-te-dropdown-item-ref
                     >
