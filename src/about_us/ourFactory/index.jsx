@@ -36,12 +36,12 @@ export default function OurFACTORY() {
                   src="https://drive.google.com/uc?export=view&id=1axpdX8sWXczDhAiMDo3U4UCaSeTZIs0e"
                 />
               </div>
-              <div className="flex items-center justify-center pt-24">
+              <div className="flex items-center justify-center pt-24 md:pt-0">
                 {/* Button to toggle visibility */}
                 <button
                   onClick={toggleCard}
                   className={`relative focus:outline-none transition ${
-                    isCardVisible ? 'top-[8rem] z-20' : ''
+                    isCardVisible ? 'top-[8rem] z-0' : ''
                   }`}
                 >
                   <FontAwesomeIcon className="fa-7x text-gray-200 fa-beat" icon={faChevronDown} />
