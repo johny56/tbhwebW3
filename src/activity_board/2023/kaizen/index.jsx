@@ -20,11 +20,11 @@ export default function KaizenAward(){
                 <div className="bg-cover h-screen w-full bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]">
                     <div className="bg-white h-full w-full text-back text-start pt-12">
                         <div className="container mx-auto flex flex-col justify-center">
-                            <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-24 mx-16">
-                            TBH WON THAILAND KAIZEN GOLDEN AWARD 2023
-                            </h1>
                             <div className="flex flex-row">
                                 <div className="flex flex-col h-full w-1/2 m-4">
+                                    <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-16 mx-16">
+                                    TBH WON THAILAND KAIZEN GOLDEN AWARD 2023
+                                    </h1>
 
                                     <div className="flex flex-col h-full w-full">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
@@ -50,7 +50,7 @@ export default function KaizenAward(){
                                     </div>
                                 </div>
                                 
-                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 w-1/2">
+                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 w-1/2 pt-16">
                                     {selectedImage ? (
                                             
                                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">

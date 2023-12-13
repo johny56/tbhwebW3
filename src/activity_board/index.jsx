@@ -183,6 +183,7 @@ const pageData = [
 ];
 
 export default function ActivityBoard() {
+    
   const [currentPage, setCurrentPage] = useState(1);
 
   const handlePageChange = (page) => {
@@ -245,7 +246,7 @@ export default function ActivityBoard() {
 
                 </div>
                     
-            <div className="h-12 w-full flex justify-center pb-4">
+            <div className="h-12 w-full flex justify-center">
                 <ul className="list-style-none flex">
                 <li>
                                     <button
