@@ -1,6 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Carousel } from "@material-tailwind/react";
 
 export default function Technical(){
+
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageClick = (imageSrc) => {
+        setSelectedImage(imageSrc);
+    };
+
+    const handleCloseCarousel = () => {
+        setSelectedImage(null);
+    };
 
     return (
 
@@ -21,27 +32,117 @@ export default function Technical(){
                                         
                                     </div>
                                 
-                                <div className="grid grid-flow-row-dense grid-cols-4 grid-rows-2 gap-4 py-16 m-8">
-
-                                <div className="relative h-full w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63667-1.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-full w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63666-1.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-full w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63664-1.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-full w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63663-1.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-                                
-
-                                </div>
                             </div>
+                            <div className="grid grid-flow-row-dense grid-cols-4 grid-rows-2 w-full pt-16">
+                                    {selectedImage ? (
+                                            
+                                            <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
+                                                            
+
+                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                                    navigation={({ setActiveIndex, activeIndex, length }) => (
+
+                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        
+                                                        {new Array(length).fill("").map((_, i) => (
+                                                            <span
+                                                            key={i}
+                                                            className={`block h-2.5 border-2 cursor-pointer rounded-2xl transition-all content-[''] ${
+                                                                activeIndex === i ? "w-16 bg-white" : "w-12 bg-white/50"
+                                                            }`}
+                                                            onClick={() => setActiveIndex(i)}
+                                                            />
+                                                        ))}
+
+                                                            
+                                                        </div>
+                                                        
+                                                    )}
+                                                >
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63667-1.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63666-1.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63664-1.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63663-1.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                />
+                                            </Carousel>
+                                            <button
+                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                CLOSE
+                                            </button>    
+                                            </div>
+                                            
+                                            ) : (
+                                        <>
+                                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                            <img
+                                            className="h-auto max-w-full rounded-lg"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63667-1.jpg?resize=495%2C400&ssl=1"
+                                            alt=""
+                                            onClick={() =>
+                                                handleImageClick(
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63667-1.jpg?resize=495%2C400&ssl=1'
+                                                )
+                                            }
+                                            />
+                                        </div>
+                                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                            <img
+                                            className="h-auto max-w-full rounded-lg"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63666-1.jpg?resize=495%2C400&ssl=1"
+                                            alt=""
+                                            onClick={() =>
+                                                handleImageClick(
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63666-1.jpg?resize=495%2C400&ssl=1'
+                                                )
+                                            }
+                                            />
+                                        </div>
+                                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                            <img
+                                            className="h-auto max-w-full rounded-lg"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63664-1.jpg?resize=495%2C400&ssl=1"
+                                            alt=""
+                                            onClick={() =>
+                                                handleImageClick(
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63664-1.jpg?resize=495%2C400&ssl=1'
+                                                )
+                                            }
+                                            />
+                                        </div>
+                                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                            <img
+                                            className="h-auto max-w-full rounded-lg"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63663-1.jpg?resize=495%2C400&ssl=1"
+                                            alt=""
+                                            onClick={() =>
+                                                handleImageClick(
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/63663-1.jpg?resize=495%2C400&ssl=1'
+                                                )
+                                            }
+                                            />
+                                        </div>
+                                        
+                                        
+                                        </>
+                                    )}
+                                </div>
                             
                         </div>
                     </div>
