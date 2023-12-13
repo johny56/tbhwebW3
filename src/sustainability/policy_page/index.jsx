@@ -4,8 +4,8 @@ const PolicyPage = () =>{
 
     return (
         
-        <div className="h-full w-full bg-lime-900/50">
-            <div className=" pt-32 h-max-screen w-full bg-cover bg-[url(https://drive.google.com/uc?export=view&id=1KVrNviFEcQ02gLS30r00p6NAHkXxgIEL)]">
+        // <div className="bg-cover h-screen w-full bg-lime-900/50">
+            <div className="pt-32 h-full w-full bg-contain bg-[url(https://drive.google.com/uc?export=view&id=1KVrNviFEcQ02gLS30r00p6NAHkXxgIEL)]">
                 <div className="mt-1 h-32 w-auto flex flex-row justify-center item-center">
                     <h1 className="font-bold text-8xl text-white">POLICIES</h1>
                 </div>
@@ -14,10 +14,10 @@ const PolicyPage = () =>{
 
                     <div className="flex flex-col h-full w-1/2">
                     <div className="m-2 pl-56">
-                        <div className="bg-transition flex flex-col justify-start bg-lime-100/90 h-48 w-96 rounded-2xl">
-                            <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-full">
-                                <h1 className="text-white text-xl font-bold m-2">GROUP POLICIES(HAC)</h1>
-                            </div>
+                        <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-t-lg">
+                            <h1 className="text-white text-xl font-bold m-2">GROUP POLICIES(HAC)</h1>
+                        </div>
+                        <div className="bg-contain flex flex-col justify-start bg-lime-100/90 h-36 w-96 rounded-b-lg">
 
                             <div className="flex flex-row justify-start h-8 w-full py-2">
                                 <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,10 +45,10 @@ const PolicyPage = () =>{
                     </div>
                     {/* TBH policies */}
                     <div className="m-2 pl-56 pt-2">
-                        <div className="bg-transition flex flex-col justify-start bg-lime-100/90 h-80 w-96 rounded-2xl">
-                            <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-full">
+                            <div className="flex justify-center bg-green-900/80 h-12 w-96 rounded-t-lg">
                                 <h1 className="text-white text-xl font-bold p-2">TBH POLICIES</h1>
                             </div>
+                            <div className="bg-transition flex flex-col justify-start bg-lime-100/90 h-72 w-full rounded-b-lg">
 
                             <div className="flex flex-row justify-start h-8 w-full py-2">
                                 <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -102,10 +102,10 @@ const PolicyPage = () =>{
                 
                 <div className="flex flex-col h-full w-full">
                     <div className="h-4/7 w-full p-2 pl-12">
-                        <div className="h-full w-2/3 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-2xl pb-4">
-                            <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-full">
+                            <div className="flex justify-center bg-green-900/80 h-12 w-2/3 rounded-t-lg">
                                 <h1 className="text-white text-xl font-bold p-2">HUMAN RESOURCES & CSR POLICIES</h1>
                             </div>
+                            <div className="h-full w-2/3 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-b-lg pb-4">
 
                             <div className="flex flex-row justify-start h-8 w-full py-1">
                                 <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,8 +162,8 @@ const PolicyPage = () =>{
 
                     </div>
                         <div className="flex flex-row h-64 w-full p-4 pl-12">
-                        <div className="h-full w-96 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-2xl">
-                            <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-full">
+                            <div className="h-full w-96 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-t-lg">
+                            <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-b-lg">
                                 <h1 className="text-white text-xl font-bold p-2">EHS POLICIES</h1>
                             </div>
 
@@ -228,7 +228,7 @@ const PolicyPage = () =>{
                                 <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
                                 </svg>
-                                <a href="" className="font-thin text-green-900/80">Cookies Policy</a>
+                                <a href="https://drive.google.com/uc?export=view&id=1w3Rm8HKx9BfTK0TcfQ4O7AlvrgfiSxw1/view?usp=sharing" className="font-thin text-green-900/80">Cookies Policy</a>
                             </div>
 
                             </div>
@@ -238,7 +238,7 @@ const PolicyPage = () =>{
 
                 </div>
                 </div>
-             </div>
+            //  </div>
 
             
         
