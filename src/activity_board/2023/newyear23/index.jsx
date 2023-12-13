@@ -37,28 +37,28 @@ Happy Chinese New Year! We wish you all the best!
                                 </div>
                                 <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-2">
 
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_83.jpg?fit=1030%2C686&ssl=1" alt=""/>
                                     </div>
 
-                                    <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_113.jpg?fit=1030%2C686&ssl=1" alt=""/>
                                     </div>
 
-                                    <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_121.jpg?fit=1030%2C686&ssl=1" alt=""/>
                                     </div>
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_128.jpg?fit=1030%2C686&ssl=1" alt=""/>
 
                                     </div>
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_133.jpg?fit=1030%2C686&ssl=1" alt=""/>
                                     </div>
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_76.jpg?fit=773%2C1030&ssl=1" alt=""/>
                                     

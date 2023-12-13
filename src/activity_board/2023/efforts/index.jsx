@@ -42,27 +42,27 @@ export default function Efforts(){
                                 </div>
                                 <div className="grid grid-flow-col-dense grid-cols-2 grid-rows-3  w-1/2">
 
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/02/20230202_111816-scaled.jpg?fit=773%2C1030&ssl=1" alt=""/>
                                     </div>
 
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/02/20230202_110945-scaled.jpg?fit=1030%2C773&ssl=1" alt=""/>
                                     </div>
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/02/20230202_1109390-scaled.jpg?fit=1030%2C773&ssl=1" alt=""/>   
                                     </div>
 
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/02/20230202_111027-scaled.jpg?fit=773%2C1030&ssl=1" alt=""/>
                                     </div>
 
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/02/20230202_131231-01-scaled.jpeg?fit=773%2C1030&ssl=1" alt=""/>
                                     </div>
 
-                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                         <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/02/20230202_111551-1-scaled.jpg?fit=1030%2C773&ssl=1" alt=""/>
                                     </div>
 

@@ -37,33 +37,33 @@ export default function QCC(){
                                 </div>
                                 <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 h-full w-1/2">
 
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/01-1-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                                 
                                 </div>
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/02-1-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                                     
                                 </div>
 
-                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/03-1-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                                    
                                 </div>
 
-                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/04-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                               
                                 </div>
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/05-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                                    
                                 </div>
                                 
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/06-scaled.jpg?fit=1030%2C687&ssl=1" alt=""/>
                                    

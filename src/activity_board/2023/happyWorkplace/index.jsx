@@ -10,7 +10,7 @@ export default function HappyWork(){
                 <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]">
                     <div className="bg-white h-full w-full text-back text-start pt-12">
                         <div className="container mx-auto flex flex-col justify-center">
-                            <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-24 mx-16">
+                            <h1 className="text-3xl text-green-800 font-sans font-tt-hoves pt-24 py-12 mx-16">
                             HAPPY WORKPLACE<br />
                             HAPPY HEART
                             </h1>
@@ -33,7 +33,7 @@ Happy Heart, TBH!
                                     </div>
                                     <br></br>
                             
-                                    <div className="flex flex-col h-full w-full">
+                                    <div className="flex flex-col h-full w-full pt-16">
                                         <h2 className="text-xl text-green-800 font-sans font-tt-hoves mx-16">
                                         มอบของขวัญวันคล้ายวันเกิดให้แก่พนักงาน<br />
                                         ณ สำนักงานใหญ่ บริษัทยางไทยปักษ์ใต้ จำกัด
@@ -45,32 +45,32 @@ Happy Heart, TBH!
                                 </div>
                                 <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3">
 
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/01-2.jpg?fit=1030%2C773&ssl=1" alt=""/>
                                 
                                 </div>
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/02-2.jpg?fit=1030%2C773&ssl=1" alt=""/>
                                     {/* https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2 */}
                                 </div>
 
-                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/03-2.jpg?fit=1030%2C772&ssl=1" alt=""/>
                                     {/* https://drive.google.com/uc?export=view&id=1SKwh20kJ56vJwm3Bxut1Rdm_9b5Rt9Uv */}
                                 </div>
 
-                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/04-1.jpg?fit=1030%2C773&ssl=1" alt=""/>
                                     {/* https://drive.google.com/uc?export=view&id=16YDqsO5xkNWOa4NjkIKNDnMFnMfXx8Op */}
                                 </div>
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/05-1.jpg?fit=1030%2C772&ssl=1" alt=""/>
                                     {/* https://drive.google.com/uc?export=view&id=18AJQk3aosy7D62EYxaIvwCi6jlVgxaG2 */}
                                 </div>
-                                <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
                                     
                                     <img className="h-auto max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/07/06-1.jpg?fit=1030%2C772&ssl=1" alt=""/>
                                     
