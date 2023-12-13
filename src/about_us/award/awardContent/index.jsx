@@ -124,7 +124,7 @@ export default function AwardContent() {
                   <div className="h-full w-2/6 bg-transition pl-32">
                     <img className="h-full w-96" src={award.imageUrl} alt={`Award ${index}`} />
                   </div>
-                  <div className="flex flex-col h-full w-4/6 bg-white text-start pl-32 pt-32">
+                  <div className="flex flex-col h-full w-4/6 bg-white text-start pl-32 pt-28">
                     <h1 className="text-4xl font-bold text-back pr-80">{award.title}</h1>
                     <h2 className="text-2xl font-normal text-gray-700">{award.description}</h2>
                   </div>
@@ -143,13 +143,13 @@ export default function AwardContent() {
                     <img className="h-full w-96" src={award.imageUrl} alt={`Award ${index}`} />
                   </div>
                   <div className="flex flex-col h-full w-4/6 bg-white text-start mt-4 pl-32">
-                    <h1 className="text-4xl font-bold text-back pr-80">{award.title}</h1>
-                    <h2 className="text-2xl font-normal text-gray-700">{award.description}</h2>
-                    <h3 className="text-2xl font-normal text-gray-700">{award.description1}</h3>
-                    <h4 className="text-2xl font-normal text-gray-700">{award.description2}</h4>
-                    <h5 className="text-2xl font-normal text-gray-700">{award.description3}</h5>
-                    <h6 className="text-2xl font-normal text-gray-700">{award.description4}</h6>
-                    <h7 className="text-2xl font-normal text-gray-700">{award.description5}</h7>
+                    <h1 className="text-4xl pt-4 font-bold text-back pr-80">{award.title}</h1>
+                    <h2 className="text-2xl pt-2 font-normal text-gray-700">{award.description}</h2>
+                    <h3 className="text-2xl pt-2 font-normal text-gray-700">{award.description1}</h3>
+                    <h4 className="text-2xl pt-2 font-normal text-gray-700">{award.description2}</h4>
+                    <h5 className="text-2xl pt-4 font-normal text-gray-700">{award.description3}</h5>
+                    <h6 className="text-2xl pt-4 font-normal text-gray-700">{award.description4}</h6>
+                    <h7 className="text-2xl pt-4 font-normal text-gray-700">{award.description5}</h7>
                   </div>
                 </div>
               </div>

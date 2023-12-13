@@ -26,7 +26,7 @@ export default function Award(){
             
             <div className="relative bg-cover h-screen w-full bg-[url(https://drive.google.com/uc?export=view&id=17OcFrqE-5HEkzmHXLn5wP6KmcUKK8f05)]">
               
-              <div className="bg-transition h-2/3 w-full flex flex-col justify-center item-center pt-96 text-end">
+              <div className="h-2/3 w-full flex flex-col justify-center item-center pt-96 text-end">
 
                 <div className="flex flex-row justify-center item-center h-full w-auto pt-48">
                     <div className="absolute left-96 h-80 w-56 bg-transition pb-24 pr-8 m-4">
