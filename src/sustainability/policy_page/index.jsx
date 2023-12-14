@@ -12,7 +12,7 @@ const PolicyPage = () =>{
                 <div className="flex flex-row h-full w-full">
 
                     <div className="flex flex-col h-full w-1/2">
-                    <div className="m-2 pl-56">
+                    <div className="m-1 pl-56">
                         <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-t-lg">
                             <h1 className="text-white text-xl font-bold m-2">GROUP POLICIES(HAC)</h1>
                         </div>
@@ -161,7 +161,7 @@ const PolicyPage = () =>{
 
                     </div>
                         <div className="flex flex-row h-64 w-full p-4 pl-12">
-                            <div className="h-full w-96 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-t-lg">
+                            <div className="h-full w-96 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-lg">
                             <div className="flex justify-center bg-green-900/80 h-12 w-full rounded-t-lg">
                                 <h1 className="text-white text-xl font-bold p-2">EHS POLICIES</h1>
                             </div>
