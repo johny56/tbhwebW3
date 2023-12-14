@@ -1,6 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Carousel } from "@material-tailwind/react";
 
 export default function Isotrainning(){
+
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageClick = (imageSrc) => {
+        setSelectedImage(imageSrc);
+    };
+
+    const handleCloseCarousel = () => {
+        setSelectedImage(null);
+    };
 
     return (
 
@@ -20,63 +31,289 @@ export default function Isotrainning(){
                                         </h2>
                                         
                                     </div>
-                                
-                                <div className="grid grid-flow-rows-5 grid-cols-5 grid-rows-2 gap-3 pt-12 pb-16">
 
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208092239-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
+                                    <div className="grid grid-flow-row-dense grid-cols-4 grid-rows-2 w-full pt-16">
+                                    {selectedImage ? (
+                                        
+                                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
+                                                            
 
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208102350-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
+                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-800/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                                    navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208103750-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
+                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        
+                                                        {new Array(length).fill("").map((_, i) => (
+                                                            <span
+                                                            key={i}
+                                                            className={`block h-2.5 border-2 cursor-pointer rounded-2xl transition-all content-[''] ${
+                                                                activeIndex === i ? "w-16 bg-white" : "w-12 bg-white/50"
+                                                            }`}
+                                                            onClick={() => setActiveIndex(i)}
+                                                            />
+                                                            ))}
 
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111833-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
+                                                            
+                                                        </div>
+                                                        
+                                                        )}
+                                                        > 
+                                                        
+                                    
+                                    
+                                    
+                                    
 
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111914-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-                            {/* line2 */}
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208132824-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-                                
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208135350-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-                                
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101628-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101646-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101652-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-                            {/* line3 */}
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101657-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209135309-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                    <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201222144230-scaled.jpg?resize=495%2C400&ssl=1" alt=""/>
-                                </div>
-
-
-                                </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208092239-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208102350-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208103750-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111833-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                {/* ----------------------1------------ */}
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111914-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208132824-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208135350-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101628-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                {/* --------------------2-------------- */}
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101646-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101652-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101657-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209135309-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                <img
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201222144230-scaled.jpg?resize=495%2C400&ssl=1"
+                                                    alt="image 1"
+                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                />
+                                                {/* ----------------------3------------ */}
+                                                </Carousel>
+                                                <button
+                                                                className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
+                                                                onClick={handleCloseCarousel}
+                                                                >
+                                                                    CLOSE
+                                                </button>    
+                                                </div>
+                                                
+                                                ) : (
+                                            <>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208092239-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                        'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208092239-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208102350-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208102350-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208103750-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208103750-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111833-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111833-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            {/* -----------------------------------1--------------------------------------- */}
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111914-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111914-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208132824-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208132824-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208135350-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208135350-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101628-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101628-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            {/* -----------------------------------2--------------------------------------- */}
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101646-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101646-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101652-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101652-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101657-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101657-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209135309-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209135309-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                                <img
+                                                className="h-auto max-w-full rounded-lg"
+                                                src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201222144230-scaled.jpg?resize=495%2C400&ssl=1"
+                                                alt=""
+                                                onClick={() =>
+                                                    handleImageClick(
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201222144230-scaled.jpg?resize=495%2C400&ssl=1'
+                                                    )
+                                                }
+                                                />
+                                            </div>
+                                            </>
+                                            )}
+                                        </div>      
                             </div>
                             
                         </div>
