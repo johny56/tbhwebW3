@@ -60,7 +60,7 @@ Happy Heart, TBH!
                                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-800/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
                                                         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
