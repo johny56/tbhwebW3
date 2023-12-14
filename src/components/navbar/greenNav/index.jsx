@@ -13,7 +13,7 @@ const GREENnav = () =>{
             <div className="flex items-center">
               <Logo></Logo> {/* Replace with your logo component */}
               <div className="flex justify-center item-center md:pl-32 lg:pl-72">
-                  <div className="flex flex-row justify-center item-center pl-32">
+                  <div className="flex flex-row justify-center item-center  md:pl-16 lg:pl-32">
                   <About2nav></About2nav>
                   <Product2nav></Product2nav>
                   <Sustain2nav></Sustain2nav>

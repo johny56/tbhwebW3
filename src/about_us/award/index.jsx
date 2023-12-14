@@ -26,15 +26,15 @@ export default function Award(){
             
             <div className="relative bg-cover h-screen w-full bg-[url(https://drive.google.com/uc?export=view&id=17OcFrqE-5HEkzmHXLn5wP6KmcUKK8f05)]">
               
-              <div className="h-2/3 w-full flex flex-col justify-center item-center pt-96 text-end">
+              <div className="h-2/3 w-full flex flex-col justify-center item-center pt-96 text-end md:pt-72">
 
                 <div className="flex flex-row justify-center item-center h-full w-auto pt-48">
-                    <div className="absolute left-96 h-80 w-56 bg-transition pb-24 pr-8 m-4">
-                        <img className="h-full w-full " src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/>
+                    <div className="absolute left-96 h-80 w-56 bg-transition pb-24 pr-8 m-4 md:pl-20 md:pt-12">
+                        <img className="h-full w-full md:h-3/4 md:w-full" src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/>
                     </div>
                     <div className="flex flex-col items-center justify-center text-white pt-32">
-                        <h2 className="text-9xl font-bold text-back pr-56">WARDS &</h2>
-                        <h2 className="text-9xl font-bold text-back pt-2 pl-36">CHIEVEMENTS</h2>
+                        <h2 className="text-9xl font-bold text-back pr-56 md:text-7xl">WARDS &</h2>
+                        <h2 className="text-9xl font-bold text-back pt-2 pl-36 md:text-7xl md:pl-4">CHIEVEMENTS</h2>
                     </div>
 
                 </div>
