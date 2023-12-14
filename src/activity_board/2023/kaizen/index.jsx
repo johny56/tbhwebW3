@@ -53,11 +53,13 @@ export default function KaizenAward(){
                                 <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 w-1/2 pt-16">
                                     {selectedImage ? (
                                             
-                                            <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
+                                            <div className="absolute top-20 left-0 right-0 bottom-0 bg-white h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-800/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="absolute top-16 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-4/5 w-full z-0 rounded-xl p-2 shadow-lg"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
+
+                                                        // <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
 
                                                         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
                                                         
@@ -79,41 +81,42 @@ export default function KaizenAward(){
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01.png?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-7.jpg?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/03-7.jpg?fit=1030%2C772&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/04-5.jpg?fit=1030%2C772&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/5.png?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/6.png?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                             </Carousel>
                                             <button
-                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
+                                                            className="absolute pt-4 top-16 right-10 text-white/90 text-bold cursor-pointer text-4xl"
                                                             onClick={handleCloseCarousel}
                                                             >
                                                                 CLOSE
                                             </button>    
                                             </div>
+                                            
                                             
                                             ) : (
                                         <>
@@ -191,6 +194,7 @@ export default function KaizenAward(){
                                         </div>
                                         
                                         </>
+                                        
                                     )}
                                 </div>
                                     
