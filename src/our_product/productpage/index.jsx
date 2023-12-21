@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Productpage(){
 
@@ -8,7 +7,7 @@ export default function Productpage(){
 
         <div>
             
-            <div className="bg-white flex flex-col justify-start p-2 ">
+            <div className="bg-green-500 bg-screen">
 
                 
                 
