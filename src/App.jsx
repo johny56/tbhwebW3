@@ -49,7 +49,7 @@ import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
 import OurFACTORY from "about_us/ourFactory";
 import OurFactoryList from "about_us/ourFactory/ourFactoryList";
-import Productpage from "our_product/productpage";
+import Productpage from "our_product";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 import ThungSongfac from "about_us/ourFactory/thungSong";
