@@ -26,3 +26,8 @@
 input:checked.defaultCheckbox::before { 
 	opacity: 1;
 }
+
+.text-stroke {
+	-webkit-text-stroke: 2px green; /* Adjust the width and color as needed */
+	color: transparent;
+  }

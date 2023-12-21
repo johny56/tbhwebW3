@@ -49,6 +49,7 @@ import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
 import OurFACTORY from "about_us/ourFactory";
 import OurFactoryList from "about_us/ourFactory/ourFactoryList";
+import Productpage from "our_product";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 import ThungSongfac from "about_us/ourFactory/thungSong";
@@ -56,6 +57,7 @@ import YaLafac from "about_us/ourFactory/yala";
 import NarathiWatfac from "about_us/ourFactory/narathiwat";
 import PatTanifac from "about_us/ourFactory/pattani";
 import SuratThanifac from "about_us/ourFactory/suratthani";
+
 
 
 
@@ -89,6 +91,7 @@ const App = () => {
         <Route path='/award' element={<Award/>}/>
         <Route path='/awardContent' element={<AwardContent/>}/>
         <Route path='/CorevaluePage' element={<CorevaluePage/>}/>
+        <Route path='/productpage' element={<Productpage/>}/>
         {/* factory path */}
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path='/ourFactoryList' element={<OurFactoryList/>}/>
