@@ -46,7 +46,7 @@ export default function AwardContent() {
         imageUrl: "https://drive.google.com/uc?export=view&id=1TIxcGNyhoieEVJU8TpgpVKx_FweVWKEn",
         },
         {
-        title: "CSR-DIW AWAD",
+        title: "CSR-DIW Award",
         description: "Teck Bee Hang Co.,Ltd(Pattani Branch)",
         description2: "Teck Bee Hang Co.,Ltd(Narathiwat Branch)",
         description3: "Teck Bee Hang Co.,Ltd(Yala Branch)",
