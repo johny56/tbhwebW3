@@ -15,8 +15,9 @@ import NewYear23 from "activity_board/newyear23";
 import NewYear22 from "activity_board/newyear22";
 import BestSupplier from "activity_board/bestsupply";
 import ThungSong21 from "activity_board/thungsong21";
-import ourFACTORY from "about_us/ourFactory";
+import OurFACTORY from "about_us/ourFactory";
 import Productpage from "our_product";
+import History from "about_us/history";
 
 
 const routes = [
@@ -127,6 +128,12 @@ const routes = [
       layout: "/productpage",
       path: "default",
       component: <Productpage/>,
+    },
+    {
+      name: "history",
+      layout: "/history",
+      path: "default",
+      component: <History/>,
     },
 ];
 export default routes;

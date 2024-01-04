@@ -50,6 +50,7 @@ import GREENnav from "components/navbar/greenNav";
 import OurFACTORY from "about_us/ourFactory";
 import OurFactoryList from "about_us/ourFactory/ourFactoryList";
 import Productpage from "our_product";
+import History from "about_us/history";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 import ThungSongfac from "about_us/ourFactory/thungSong";
@@ -81,6 +82,7 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<Layout/>} />
+        <Route path='/history' element={<History/>}/>
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
         <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
