@@ -249,11 +249,11 @@ const productImage = [
                             </div>
                             </div>
 
-                            <div className="h-screen w-full bg-white pt-96 mt-96">
+                            <div className="h-screen w-full bg-white pt-96 mt-72">
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
-                                      <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">SPEC</div>
-                                      <div className="h-32 w-auto text-7xl font-bold text-green-900 pl-4">Approved</div>
+                                      <div className="h-20 w-auto text-6xl font-bold text-stroke text-green-900">SPEC</div>
+                                      <div className="h-20 w-auto text-6xl font-bold text-green-900 pl-4">Approved</div>
                                     </div>
 
                                     <div className="relativeb h-screen w-full bg-white">
@@ -261,29 +261,31 @@ const productImage = [
 
                                       <div className="h-12 w-full flex justify-center">
                                         <div className="flex flex-row justify-center h-12 w-80 rounded-full bg-gray-400">
-                                          <button onClick={() => handleSpecChange(currentSpec - 1)} className="btn btn-warning text-2xl text-white font-medium px-4 pt-2 hover:bg-green-800 rounded-full">RRIT SPEC</button>
-                                          <button onClick={() => handleSpecChange(currentSpec + 2)} className="btn btn-success text-2xl text-white font-medium px-4 ml-4 pt-2 hover:bg-green-800 rounded-full">INE SPEC</button>
+                                          <button onClick={() => handleSpecChange(currentSpec - 1)} className="btn btn-warning text-2xl text-white font-medium px-4 hover:bg-green-800 rounded-full">RRIT SPEC</button>
+                                          <button onClick={() => handleSpecChange(currentSpec + 2)} className="btn btn-success text-2xl text-white font-medium px-4 ml-4 hover:bg-green-800 rounded-full">INE SPEC</button>
                                           </div>
 
 
                                         </div>
-                                        
+                                        <div className="h-2/3 w-2/3 border-2 mt-2 ml-72">
                                           {currentSpec <= 0 &&PRITspec.map((item) => (
 
-                                            <div className="flex justify-center h-full w-auto border-8 mt-4">
+                                            <div className="flex justify-center h-full w-auto hover:scale-125 hover:translate-y-20">
                                               <img src="https://drive.google.com/uc?export=view&id=1YzxZ2MirclJyI98j0oY1JFISAuIrdCxG"/>
-                                              <img src={item.imageUrl}/>
+                                              {/* <img src={item.imageUrl}/> */}
                                             </div>
                                           ))}
                                           {currentSpec > 0 &&INEspec.map((item) => (
 
-                                            <div className="flex justify-center h-full w-auto border-8 scale-75">
+                                            <div className="flex justify-center h-full w-auto hover:scale-125 hover:translate-y-20">
                                               <img src="https://drive.google.com/uc?export=view&id=1vc104kTA6ah_F2FuGEicJCsYNKCJR7dm"/>
-                                              <img src={item.imageUrl}/>
+                                              {/* <img src={item.imageUrl}/> */}
                                             </div>
                                           ))}
+                                        </div>
+                                        
                                       </div>
-                                      <p className="flex justify-end pt-16 mt-8 pr-28 text-2xl font-normal h-12 w-full">NEED MORE INFORMATION? FEEL FREE TO CONTACT US</p>
+                                      <p className="flex justify-end pr-28 text-2xl font-normal h-12 w-full">NEED MORE INFORMATION? FEEL FREE TO CONTACT US</p>
                                     </div>
                                     
                                     <Packing/>
