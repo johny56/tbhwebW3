@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import Packing from "./packing";
 // import Carousel from "./component_p/Carousel";
 
 const productImage = [
@@ -39,42 +40,7 @@ const productImage = [
       },
       
     ],
-    [
-      {
-          name:'STR10',
-          imageUrl: 'https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu',
-          dirt:'0.08',ash:'0.60',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'50',
-          
-      },
-      
-    ],
-    [
-      {
-          name:'STR20',
-          imageUrl: 'https://drive.google.com/uc?export=view&id=1PfKAz9x_8GKbY0VyLYlXj8SCW-mmUrs-',
-          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'40',
-          
-      },
-      
-    ],
-    [
-      {
-          name:'Mixtures20',
-          imageUrl: 'https://drive.google.com/uc?export=view&id=1y_Mv63WCCTfhymINmR8uvQ0ptdS_Kjc4',
-          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'40',
-          
-      },
-      
-    ],
-    [
-      {
-          name:'STR20CV',
-          imageUrl: 'https://drive.google.com/uc?export=view&id=1-GU2ZF2o5QznCUiB6TFncXS6ccz4SLjO',
-          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'-',PRI:'40',
-          
-      },
-      
-    ],
+    
     
   ];
 
@@ -100,86 +66,20 @@ const productImage = [
     ],
   ];
 
-  const Package = [
-    [
-      {
-        name:'Shrink wrap - pallet RMP',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1-LqXai5puVUzPihWFcBA7Tp5gcQq-21J',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - wooden pallet',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1fSIZVZvMj1EnOGI3-aDqDSrCY7EvbiPC',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - TBH Metal pallet',
-        imageUrl:'https://drive.google.com/uc?export=view&id=18raH7socPMFD_SFEOCpoPApyuVXwosUu',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - DMP-A Power Concord',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1L8e7RvEcoMPpBqY4R1A7g3a5_xng9UA1',
-      },
-    ],
-    [
-      {
-        name:'Metal nox',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1pTa5hIhTl9NbbMwIloTcQ2x_NhQVxY9w',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - pallet RMP',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1-LqXai5puVUzPihWFcBA7Tp5gcQq-21J',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - wooden pallet',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1fSIZVZvMj1EnOGI3-aDqDSrCY7EvbiPC',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - TBH Metal pallet',
-        imageUrl:'https://drive.google.com/uc?export=view&id=18raH7socPMFD_SFEOCpoPApyuVXwosUu',
-      },
-    ],
-    [
-      {
-        name:'Shrink wrap - DMP-A Power Concord',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1L8e7RvEcoMPpBqY4R1A7g3a5_xng9UA1',
-      },
-    ],
-    [
-      {
-        name:'Metal nox',
-        imageUrl:'https://drive.google.com/uc?export=view&id=1pTa5hIhTl9NbbMwIloTcQ2x_NhQVxY9w',
-      },
-    ],
-  ]
 
 
-
-  
   function Productpage(){
     
     
         const [currentProduct, setCurrentProduct] = useState(1);
         const [currentSpec, setCurrentSpec] = useState(1);
-        const [currentPackage, setCurrentPackage] = useState(1);
 
-        
         const handleCardChange = (product) => {
           
           console.log(currentProduct);
           setCurrentProduct(product);
           console.log(currentProduct);
-          if(currentProduct > 3)setCurrentProduct(0);
+          if(currentProduct >= 4)setCurrentProduct(0);
           if(currentProduct < 0)setCurrentProduct(3);
         };
 
@@ -190,12 +90,7 @@ const productImage = [
           if(currentSpec < 0)setCurrentSpec(0);
         };
 
-        const handlePackageChange = (pack) => {
-          console.log(currentPackage);
-          setCurrentPackage(pack);
-          if(currentPackage > 5)setCurrentPackage(1);
-          if(currentPackage < -5)setCurrentPackage(0);
-        };
+        
 
 
        
@@ -282,6 +177,8 @@ const productImage = [
                                   </div>
                             
                                 {/* https://www.section.io/engineering-education/how-to-create-a-carousel-using-react-class-components-and-tailwind-css/ */}
+
+                                {/* check Transitions & Animation */}
                                 
                                 <div className="relative flex justify-center item-center h-full w-3/4 pt-24">
 
@@ -364,8 +261,8 @@ const productImage = [
 
                                       <div className="h-12 w-full flex justify-center">
                                         <div className="flex flex-row justify-center h-12 w-80 rounded-full bg-gray-400">
-                                          <button onClick={() => handleSpecChange(currentSpec - 1)} className="btn btn-warning text-2xl text-white font-medium pl-2 pt-2">RRIT SPEC</button>
-                                          <button onClick={() => handleSpecChange(currentSpec + 2)} className="btn btn-success text-2xl text-white font-medium pl-20 pt-2">INE SPEC</button>
+                                          <button onClick={() => handleSpecChange(currentSpec - 1)} className="btn btn-warning text-2xl text-white font-medium px-4 pt-2 hover:bg-green-800 rounded-full">RRIT SPEC</button>
+                                          <button onClick={() => handleSpecChange(currentSpec + 2)} className="btn btn-success text-2xl text-white font-medium px-4 ml-4 pt-2 hover:bg-green-800 rounded-full">INE SPEC</button>
                                           </div>
 
 
@@ -388,119 +285,16 @@ const productImage = [
                                       </div>
                                       <p className="flex justify-end pt-16 mt-8 pr-28 text-2xl font-normal h-12 w-full">NEED MORE INFORMATION? FEEL FREE TO CONTACT US</p>
                                     </div>
+                                    
+                                    <Packing/>
+                                    
 
-                                    <div className="relativeb h-screen w-full bg-white">
-                                        
-                                      <div className="h-full w-full flex flex-col">
+                                </div>
+                                </div>
+                        </div>
+                        </div>
 
-                                      <div className="flex flex-row justify-center item-center pt-28">
-                                        <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
-                                        <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
-                                      </div>
-
-                                        <div className="flex flex-rows-3 justify-center item-center">
-
-                                        {Package[currentPackage - 1].map((item, index) => (
-                                        <div key={index} className="relative flex justify-center item-center h-full w-1/4">
-                                                <div className="relative h-full w-56 pt-8">
-                                                <div className="absolute h-72 w-72 rounded-full bg-orange-100"></div>
-                                                <img className="absolute buttom-32 left-10 h-auto w-auto bg-transparent pt-20" src={item.imageUrl} alt="" />
-                                              </div>
-                                            
-                                        </div>
-                                        ))}
-
-                                        {Package[currentPackage - 0].map((item, index) => (
-                                        <div key={index} className="relative flex justify-center item-center h-full w-2/4">
-                                                <div className="relative h-full w-96">
-                                                <div className="absolute h-96 w-96 rounded-full bg-orange-100"></div>
-                                                <img className="absolute buttom-10 h-auto w-auto bg-transparent pt-20" src={item.imageUrl} alt="" />
-                                              </div>
-                                            
-                                        </div>
-                                        ))}
-
-                                        {Package[currentPackage + 1].map((item, index) => (
-                                        <div key={index} className="relative flex justify-center item-center h-full w-1/4">
-                                                <div className="relative h-full w-56 pt-8">
-                                                <div className="absolute h-72 w-72 rounded-full bg-orange-100"></div>
-                                                <img className="absolute buttom-32 left-10 h-auto w-auto bg-transparent pt-20" src={item.imageUrl} alt="" />
-                                              </div>
-                                            
-                                        </div>
-                                        ))}
-
-                                        </div>
-
-                                        <div className="relative h-12 w-full mt-80 pt-16">
-                                          <div className="flex flex-rows-3 justify-center">
-
-                                            <button
-                                            onClick={() => handlePackageChange(currentPackage - 1)}
-                                            className={`h-12 w-12 bg-gray-500 rounded-full
-                                            }`}
-                                            >
-                                            <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                              <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
-                                            </svg>
-                                            </button>
-
-                                            {Package[currentPackage - 0].map((item, index) => (
-                                            <div key={index} className="relative h-16 w-2/3 text-center">
-                                              <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
-                                            </div>
-                                            ))}
-                                            
-                                            {/* <div className="absolute right-72 h-12 w-12 bg-gray-500 rounded-full">R</div> */}
-                                            <button
-                                            onClick={() => handlePackageChange(currentPackage + 1)}
-                                            className={`h-12 w-12 bg-gray-500 rounded-full`}
-                                            >
-                                            <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                            </svg>
-                                            </button>
-
-                                          </div>
-                                          <div className="relativeb h-screen w-full bg-white pt-48">
-                                            <div className="flex flex-col">
-                                              <div className="flex flex-row justify-center item-center">
-                                                <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">Other</div>
-                                                <div className="h-32 w-auto text-7xl font-bold text-green-900 pl-4">business</div>
-                                              </div>
-                                              <div className="flex flex-row justify-center item-center gap-16">
-                                                <div className="h-72 w-72 bg-green-500 rounded-lg">
-                                                  {/* <img className="h-full w-full" src="" alt="" /> */}
-                                                </div>
-                                                <div className="h-72 w-72 bg-green-500 rounded-lg">
-                                                  {/* <img className="h-full w-full" src="" alt="" /> */}
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="bg-[#273F02] text-white mt-56">
-                                            <div className="w-full container mx-auto flex flex-col text-center">
-                                                <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6">
-                                                    
-                                                    <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>
-                                                    <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
-                                                    <a href="#" className="font-sans font-tt-hoves ">PRIVACY POLICY | COOKIE POLICY</a>
-                                                    <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/tbhstaff">TBH STAFF</Link>
-                                                    
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          </div>
-
-                                          </div>
-                                      </div>
-
-                                    </div>
-                                    </div>
-                            </div>
-                            </div>
-
-                  </div>
-                  </div>
+              </div>
 
           );
 
