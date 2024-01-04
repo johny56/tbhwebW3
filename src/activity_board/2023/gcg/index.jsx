@@ -9,6 +9,18 @@ export default function Gcg(){
                 <div className="flex flex-row justify-center item-center">
                     <h1 className="text-bold text-4xl">GOOD CORPORATE GOVERNANCE STANDARD 2023</h1>
                 </div>
+                {/* backbutton */}
+                    <div className="flex justify-end pr-12">
+                        <a href="activity_board"
+                            className="inline-flex items-center border border-green-500 px-3 py-1.5 rounded-md text-green-700 hover:bg-indigo-50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">
+                                </path>
+                            </svg>
+                            <span className="ml-1 font-bold text-lg text-green-700">Back</span>
+                        </a>
+                    </div>
+                {/* backbutton */}
                 <div className="flex justify-center h-full w-full py-12">
                     <img src="https://drive.google.com/uc?export=view&id=1R5UA-WR0il_GxollPD_1iKR7Iyp0fv7Z"/>
                 </div>
