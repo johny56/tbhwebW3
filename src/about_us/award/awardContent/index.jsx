@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function AwardContent() {
-  const [selectedYear, setSelectedYear] = useState("2022");
+  const [selectedYear, setSelectedYear] = useState("2023");
   const [isCardVisible, setIsCardVisible] = useState(false);
 
   const toggleCard = () => {
@@ -86,6 +86,18 @@ export default function AwardContent() {
     <>
       <div className="relative bg-cover h-screen w-full bg-white">
         <div className="pt-32 pl-16">
+
+          <div className="flex flex-row justify-center h-full w-auto">
+              <div className="h-28 w-28 mr-2 bg-green-900 rounded-full">
+                  <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/>
+                  {/* <h2 className="text-9xl font-bold text-black text-stroke">A</h2> */}
+              </div>
+              <div className="flex flex-col items-center justify-center text-black">
+                  <h2 className="text-4xl font-bold pr-28">WARDS &</h2>
+                  <h2 className="text-4xl font-bold pt-2">CHIEVEMENTS</h2>
+              </div>
+          </div>
+          
           <div className="relative inline-block text-left">
             <button
               onClick={toggleCard}
@@ -122,13 +134,14 @@ export default function AwardContent() {
               <div key={index} className="relative bg-white shadow-md flex flex-col h-full w-full pt-4 py-10">
                 <div className="flex flex-row gap-2 h-full w-auto m-2">
                   <div className="h-full w-2/6 bg-transition pl-32">
-                    <img className="h-full w-96" src={award.imageUrl} alt={`Award ${index}`} />
+                    <img className="h-1/3 w-96" src={award.imageUrl} alt={`Award ${index}`} />
                   </div>
                   <div className="flex flex-col h-full w-4/6 bg-white text-start pl-32 pt-28">
                     <h1 className="text-4xl font-bold text-back pr-80">{award.title}</h1>
                     <h2 className="text-2xl font-normal text-gray-700">{award.description}</h2>
                   </div>
                 </div>
+                <div className="h-0.5 w-full bg-gray-800 mt-24"></div>
               </div>
             ))}
           </div>
@@ -140,18 +153,19 @@ export default function AwardContent() {
               <div key={index} className="relative bg-white shadow-md flex flex-col h-full w-full pt-16 py-10">
                 <div className="flex flex-row gap-2 h-full w-auto m-2">
                   <div className="h-full w-2/6 bg-transition pl-32">
-                    <img className="h-full w-96" src={award.imageUrl} alt={`Award ${index}`} />
+                    <img className="h-96 w-96" src={award.imageUrl} alt={`Award ${index}`} />
                   </div>
-                  <div className="flex flex-col h-full pt-2 w-4/6 bg-white text-start mt-4 pl-32">
-                    <h1 className="text-4xl  font-bold text-back pr-80">{award.title}</h1>
-                    <h2 className="text-2xl  font-normal text-gray-700">{award.description}</h2>
-                    <h3 className="text-2xl  font-normal text-gray-700">{award.description1}</h3>
-                    <h4 className="text-2xl  font-normal text-gray-700">{award.description2}</h4>
-                    <h5 className="text-2xl  font-normal text-gray-700">{award.description3}</h5>
-                    <h6 className="text-2xl  font-normal text-gray-700">{award.description4}</h6>
-                    <h7 className="text-2xl  font-normal text-gray-700">{award.description5}</h7>
+                  <div className="flex flex-col h-full pt-16 w-4/6 bg-white text-start mt-4 pl-32">
+                    <h1 className="text-4xl font-bold text-back pr-80">{award.title}</h1>
+                    <h2 className="text-2xl font-normal text-gray-700">{award.description}</h2>
+                    <h3 className="text-2xl font-normal text-gray-700">{award.description1}</h3>
+                    <h4 className="text-2xl font-normal text-gray-700">{award.description2}</h4>
+                    <h5 className="text-2xl font-normal text-gray-700">{award.description3}</h5>
+                    <h6 className="text-2xl font-normal text-gray-700">{award.description4}</h6>
+                    <h7 className="text-2xl font-normal text-gray-700">{award.description5}</h7>
                   </div>
                 </div>
+                  <div className="h-0.5 w-full bg-gray-800 mt-24"></div>
               </div>
             ))}
           </div>
