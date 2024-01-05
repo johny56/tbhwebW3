@@ -267,7 +267,7 @@ const productImage = [
 
 
                                         </div>
-                                        <div className="h-2/3 w-2/3 border-2 mt-2 ml-72">
+                                        <div className="h-2/3 w-2/3 mt-2 ml-72">
                                           {currentSpec <= 0 &&PRITspec.map((item) => (
 
                                             <div className="flex justify-center h-full w-auto hover:scale-125 hover:translate-y-20">
