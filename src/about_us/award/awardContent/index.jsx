@@ -141,7 +141,7 @@ export default function AwardContent() {
                     <h2 className="text-2xl font-normal text-gray-700">{award.description}</h2>
                   </div>
                 </div>
-                <div className="h-0.5 w-full bg-gray-800 mt-24"></div>
+                <div className="h-0.5 w-full bg-gray-100 mt-24"></div>
               </div>
             ))}
           </div>
@@ -165,7 +165,7 @@ export default function AwardContent() {
                     <h7 className="text-2xl font-normal text-gray-700">{award.description5}</h7>
                   </div>
                 </div>
-                  <div className="h-0.5 w-full bg-gray-800 mt-24"></div>
+                  <div className="h-0.5 w-full bg-gray-100 mt-24"></div>
               </div>
             ))}
           </div>
