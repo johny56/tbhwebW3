@@ -135,5 +135,11 @@ const routes = [
       path: "default",
       component: <History/>,
     },
+    {
+      name: "history_img",
+      layout: "/history_img",
+      path: "default",
+      component: <History_img/>,
+    },
 ];
 export default routes;

@@ -10,47 +10,77 @@ export default function History(){
                 
                 <div className="h-28 w-3/5 flex flex-col justify-center text-center my-4 ml-56 pl-56">
                     <img className="h-full w-auto rounded-lg m-16" src="https://drive.google.com/uc?export=view&id=1QS_Mf-VzBKZn7-iGL1VJWVlHEFUNGYyd" alt=""/>
-                    {/* <h1 className="h-full w-full font-bold text-black text-6xl">LEE INN TONG</h1>
-                    <p className="h-full w-full font-sans font-tt-hoves text-black text-lg pt-2">- FOUNDER OF TECK BEE HANG -</p> */}
+                    
                 </div>
 
-                <div className="flex flex-rows-3 h-2/3 w-full gap-x-4 p-1">
+                <div className="h-10 w-full flex justify-end my-2 mr-8 pr-8">
+                    <Link to="/history_img" className="h-full w-10 bg-gray-400/50 rounded-full -pt-2 border-2 border-gray-900 text-gray-800 font-samibold text-2xl text-center hover:bg-gray-700/80">+</Link>
+                </div>
+
+
+
+                <div className="flex flex-rows-3 h-2/3 w-full gap-x-4 p-1 mt-8">
                     
                     <div className="flex flex-col h-full w-1/3 gap-4">
                         
-                        <div className="flex flex-row h-2/5 w-full gap-4">
-                            <div className="h-full w-1/3 bg-red-200"></div>
-                            <div className="h-full w-2/3 bg-red-100"></div>
+                        <div className="flex flex-row h-2/5 w-full gap-0">
+                            <div className="h-full w-1/3 bg-red-200">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1wzklFaTvSg74aX2zmJEvV0vfzmJ_lTIj" alt=""/>
+                            </div>
+                            <div className="h-full w-2/3 overflow-hidden overflow-clip pl-4">
+                                <img className="h-full w-auto mr-12 scale-150" src="https://drive.google.com/uc?export=view&id=1yWdrI6s-zaJKZf8XuBnfmE5lyAV44KnT" alt=""/>
+                            </div>
                         </div>
                         <div className="flex flex-row h-3/5 w-full gap-4">
-                            <div className="h-full w-1/2 bg-red-200"></div>
-                            <div className="h-full w-1/2 bg-red-300"></div>
+                            <div className="h-full w-1/2 bg-red-200">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=18_LFqwqaXertbsSmqqp6SQU0tOynoaQK" alt=""/>
+                            </div>
+                            <div className="h-full w-1/2 bg-red-300">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1VtqdAbulzNAXips6ILfNssYFVDHkZMZO" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="flex flex-col h-full w-1/3 gap-4 overflow-hidden">
+                        
+                        <div className="flex flex-row h-3/5 w-full gap-4">
+                            <div className="h-full w-1/2">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1njwBR1_dSoUr1DZtq5JxFB4HO05nM_Ew" alt=""/>
+                            </div>
+                            <div className="h-full w-1/2 bg-red-300">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1ukzRs6CiaFO_P83H_33IAUuLdirePivs" alt=""/>
+                            </div>
+                        </div>
+                        <div className="flex flex-row h-2/5 w-full gap-4">
+                            <div className="h-full w-2/3 bg-red-200">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1roupY5roHznV_vhiwimDVbNYb-5m55gz" alt=""/>
+                            </div>
+                            <div className="h-full w-1/3 bg-red-100">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1wcIT48eIAFRpdw0i5peL2n8ibKwDpjlA" alt=""/>
+                            </div>
                         </div>
 
                     </div>
 
                     <div className="flex flex-col h-full w-1/3 gap-4">
                         
-                        <div className="flex flex-row h-3/5 w-full gap-4">
-                            <div className="h-full w-1/2 bg-red-200"></div>
-                            <div className="h-full w-1/2 bg-red-300"></div>
-                        </div>
                         <div className="flex flex-row h-2/5 w-full gap-4">
-                            <div className="h-full w-1/3 bg-red-200"></div>
-                            <div className="h-full w-2/3 bg-red-100"></div>
-                        </div>
-
-                    </div>
-
-                    <div className="flex flex-col h-full w-1/3 gap-4">
-                        
-                        <div className="flex flex-row h-2/5 w-full gap-4">
-                            <div className="h-full w-1/3 bg-red-200"></div>
-                            <div className="h-full w-2/3 bg-red-100"></div>
+                            <div className="h-full w-1/3 bg-red-200">
+                                {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1yWdrI6s-zaJKZf8XuBnfmE5lyAV44KnT" alt=""/> */}
+                            
+                            </div>
+                            <div className="h-full w-2/3 bg-red-100">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1jN2pa5CsGaJMOeYUN2QBF0XltqRrSCiz" alt=""/>
+                            </div>
                         </div>
                         <div className="flex flex-row h-3/5 w-full gap-4">
-                            <div className="h-full w-1/2 bg-red-200"></div>
-                            <div className="h-full w-1/2 bg-red-300"></div>
+                            <div className="h-full w-1/2 bg-red-200">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1wjwLP6MOpE_xezI3lra9RLXeDY-yBWcs" alt=""/>
+                            </div>
+                            <div className="h-full w-1/2 bg-red-300">
+                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1AN_S6JZXMqciRUF7PCzkY-oSr29eosxw" alt=""/>
+                            </div>
                         </div>
 
                     </div>
