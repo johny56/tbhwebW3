@@ -34,19 +34,49 @@ const Package = [
         imageUrl:'https://drive.google.com/uc?export=view&id=1pTa5hIhTl9NbbMwIloTcQ2x_NhQVxY9w',
       },
     ],
+    [
+      {
+        name:'Shrink wrap - pallet RMP',
+        imageUrl:'https://drive.google.com/uc?export=view&id=1-LqXai5puVUzPihWFcBA7Tp5gcQq-21J',
+      },
+    ],
+    [
+      {
+        name:'Shrink wrap - wooden pallet',
+        imageUrl:'https://drive.google.com/uc?export=view&id=1fSIZVZvMj1EnOGI3-aDqDSrCY7EvbiPC',
+      },
+    ],
+    [
+      {
+        name:'Shrink wrap - TBH Metal pallet',
+        imageUrl:'https://drive.google.com/uc?export=view&id=18raH7socPMFD_SFEOCpoPApyuVXwosUu',
+      },
+    ],
+    [
+      {
+        name:'Shrink wrap - DMP-A Power Concord',
+        imageUrl:'https://drive.google.com/uc?export=view&id=1L8e7RvEcoMPpBqY4R1A7g3a5_xng9UA1',
+      },
+    ],
+    [
+      {
+        name:'Metal nox',
+        imageUrl:'https://drive.google.com/uc?export=view&id=1pTa5hIhTl9NbbMwIloTcQ2x_NhQVxY9w',
+      },
+    ],
     
   ]
 
 export default function Packing(){
 
     
-    const [currentPackage, setCurrentPackage] = useState(1);
+    const [currentPackage, setCurrentPackage] = useState(2);
 
     const handlePackageChange = (pack) => {
         console.log(currentPackage);
         setCurrentPackage(pack);
-        if(currentPackage > 5)setCurrentPackage(1);
-        if(currentPackage < -5)setCurrentPackage(0);
+        if(currentPackage >= 6 )setCurrentPackage(pack - 5);
+        if(currentPackage <= 1)setCurrentPackage(pack + 5);
       };
 
     return(
@@ -67,8 +97,8 @@ export default function Packing(){
                 {Package[currentPackage - 1].map((item, index) => (
                 <div key={index} className="relative flex justify-center item-center h-full w-1/6">
                     <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-64 w-64 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-36 h-auto w-auto bg-transparent pt-16" src={item.imageUrl} alt="" />
+                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                    <img className="absolute buttom-32 right-36 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
                     </div>
                 </div>
                 ))}
@@ -76,17 +106,17 @@ export default function Packing(){
                 {Package[currentPackage - 0].map((item, index) => (
                 <div key={index} className="relative flex justify-center item-center h-full w-1/6">
                     <div className="relative h-full w-56 pt-8">
-                    <div className="absolute h-64 w-64 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 left-4 h-auto w-auto bg-transparent pt-16" src={item.imageUrl} alt="" />
+                    <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                    <img className="absolute buttom-32 left-4 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
                     </div>
                 </div>
                 ))}
 
                 {Package[currentPackage + 1].map((item, index) => (
                   <div key={index} className="relative flex justify-center item-center h-full w-2/6">
-                    <div className="relative h-full w-64">
-                    <div className="absolute h-72 w-72 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-20 left-4 h-auto w-auto bg-transparent pt-20" src={item.imageUrl} alt="" />
+                    <div className="relative h-full w-64 pt-8">
+                    <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                    <img className="absolute buttom-20 left-4 h-64 w-72 bg-transparent pt-12" src={item.imageUrl} alt="" />
                     </div>
                 </div>
                 ))}
@@ -95,8 +125,8 @@ export default function Packing(){
                 {Package[currentPackage + 2].map((item, index) => (
                   <div key={index} className="relative flex justify-center item-center h-full w-1/6">
                     <div className="relative h-full w-56 pt-8">
-                    <div className="absolute h-64 w-64 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 left-6 h-auto w-auto bg-transparent pt-16" src={item.imageUrl} alt="" />
+                    <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                    <img className="absolute buttom-32 left-6 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
                     </div>
                 </div>
                 ))}
@@ -104,8 +134,8 @@ export default function Packing(){
                 {Package[currentPackage + 3].map((item, index) => (
                 <div key={index} className="relative flex justify-center item-center h-full w-1/6">
                     <div className="relative h-full w-56 pt-8">
-                    <div className="absolute left-24 h-64 w-64 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 left-36 h-auto w-auto bg-transparent pt-16" src={item.imageUrl} alt="" />
+                    <div className="absolute left-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                    <img className="absolute buttom-32 left-36 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
                     </div>
                 </div>
                 ))}
@@ -117,7 +147,7 @@ export default function Packing(){
 
                 <div className="flex flex-rows-3 justify-center">
                 <button
-                onClick={() => handlePackageChange(currentPackage - 1)}
+                onClick={() => handlePackageChange(currentPackage + 1)}
                 className={`h-12 w-12 bg-gray-500 rounded-full
                 }`}
                 >
@@ -133,7 +163,7 @@ export default function Packing(){
                 ))}
                 
                 <button
-                onClick={() => handlePackageChange(currentPackage + 1)}
+                onClick={() => handlePackageChange(currentPackage - 1)}
                 className={`h-12 w-12 bg-gray-500 rounded-full`}
                 >
                 <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">

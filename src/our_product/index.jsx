@@ -4,6 +4,79 @@ import Packing from "./packing";
 // import Carousel from "./component_p/Carousel";
 
 const productImage = [
+    
+    [
+      {
+          name:'STR10',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu',
+          dirt:'0.08',ash:'0.60',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'50',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'STR20',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1PfKAz9x_8GKbY0VyLYlXj8SCW-mmUrs-',
+          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'40',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'Mixtures20',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1y_Mv63WCCTfhymINmR8uvQ0ptdS_Kjc4',
+          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'40',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'STR20CV',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1-GU2ZF2o5QznCUiB6TFncXS6ccz4SLjO',
+          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'-',PRI:'40',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'STR10',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu',
+          dirt:'0.08',ash:'0.60',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'50',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'STR20',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1PfKAz9x_8GKbY0VyLYlXj8SCW-mmUrs-',
+          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'40',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'Mixtures20',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1y_Mv63WCCTfhymINmR8uvQ0ptdS_Kjc4',
+          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'30',PRI:'40',
+          
+      },
+      
+    ],
+    [
+      {
+          name:'STR20CV',
+          imageUrl: 'https://drive.google.com/uc?export=view&id=1-GU2ZF2o5QznCUiB6TFncXS6ccz4SLjO',
+          dirt:'0.16',ash:'0.80',nitrogen:'0.60',volatile:'0.80',Po:'-',PRI:'40',
+          
+      },
+      
+    ],
     [
       {
           name:'STR10',
@@ -71,16 +144,31 @@ const productImage = [
   function Productpage(){
     
     
-        const [currentProduct, setCurrentProduct] = useState(1);
+        const [currentProduct, setCurrentProduct] = useState(5);
         const [currentSpec, setCurrentSpec] = useState(1);
+        // const [isOpen, setisOpen] = useState(false);
+
+        // function handleClick() {
+        //   setisOpen(!isOpen);
+        //   console.log("helloworld");
+        // }
+        // const handleClick = ({ isOpen }) => {
+        //   return (
+        //     <div className={isOpen ? 'translate-x-96' : ''}>
+        //       <img src="https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu" alt="Your Image" />
+        //     </div>
+        //   );
+        // };
 
         const handleCardChange = (product) => {
           
-          console.log(currentProduct);
           setCurrentProduct(product);
+          if(currentProduct <= 1){
+            setCurrentProduct(product + 5);
+          }else if(currentProduct > 7){
+            setCurrentProduct(product - 5);
+          }
           console.log(currentProduct);
-          if(currentProduct >= 4)setCurrentProduct(0);
-          if(currentProduct < 0)setCurrentProduct(3);
         };
 
         const handleSpecChange = (spec) => {
@@ -89,9 +177,6 @@ const productImage = [
           if(currentSpec > 1)setCurrentSpec(1);
           if(currentSpec < 0)setCurrentSpec(0);
         };
-
-        
-
 
        
             return (
@@ -120,13 +205,41 @@ const productImage = [
                             <div className="h-full w-full flex flex-col">
                               <div className="flex flex-rows-3">
 
+                              {/* <div className="h-96 w-full bg-green-200">
+                                  
+                                  <div className="flex flex-rows-3 justify-center">
+
+                                      <div className="h-96 w-1/3 bg-green-300">
+                                        <div className="relative h-full w-56 pt-24 z-10">
+                                          <div className="absolute ml-40 h-40 w-40 mt-2 rounded-full bg-orange-100"></div>
+                                          <img className="absolute ml-32 h-auto w-auto bg-transparent hover:translate-x-56 transition delay-700" src="https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu" alt="" />
+                                        </div>
+                                      </div>
+                                      
+                                      <div className="h-96 w-2/4 bg-green-400">
+                                        <div className="relative h-full w-3/5 pt-8 z-10">
+                                          <div className="absolute ml-52 h-80 w-80 rounded-full bg-orange-100"></div>
+                                          <img className="absolute ml-40 h-auto w-auto bg-transparent" src="https://drive.google.com/uc?export=view&id=1PfKAz9x_8GKbY0VyLYlXj8SCW-mmUrs-" alt="" />
+                                        </div>
+                                      </div>
+                                      
+                                      <div className="h-96 w-1/3 bg-green-500">
+                                        <div className="relative h-full w-56 pt-24 z-10">
+                                          <div className="absolute ml-40 h-40 w-40 mt-2 rounded-full bg-orange-100"></div>
+                                          <img className="absolute ml-32 h-auto w-auto bg-transparent hover:translate-x-56 transition delay-700" src="https://drive.google.com/uc?export=view&id=1y_Mv63WCCTfhymINmR8uvQ0ptdS_Kjc4" alt="" />
+                                        </div>
+                                      </div>
+
+                                  </div>
+                              </div> */}
+
                               {productImage[currentProduct - 1].map((item, index) => (
                               <div key={index} className="relative flex justify-center item-center h-full w-1/4 pl-32">
-                                      <div className="relative h-full w-56 pt-36">
-                                      <div className="absolute ml-6 h-44 w-44 rounded-full bg-orange-100"></div>
-                                      <img className="absolute h-auto w-auto bg-transparent" src={item.imageUrl} alt="" />
-                                    </div>
-                                  
+                                  <div className="relative h-full w-56 pt-36">
+                                  <div className="absolute ml-6 h-44 w-44 rounded-full bg-orange-100"></div>
+                                  <img className="absolute h-auto w-auto bg-transparent" src={item.imageUrl} alt="" />
+                                  </div>
+                    
                               </div>
                               ))}
 
@@ -185,7 +298,9 @@ const productImage = [
                                     {/* <div className="absolute left-56 h-12 w-12 bg-gray-500 rounded-full">L</div> */}
                                     
                                     <button
-                                    onClick={() => handleCardChange(currentProduct - 1)}
+                                    onClick={() => handleCardChange(currentProduct + 1)}
+                                    // onClick={() => {next()}}
+                                    // onClick={() => handleClick()}
                                     className={`absolute left-56 h-12 w-12 bg-gray-500 rounded-full
                                     }`}
                                     >
@@ -196,7 +311,7 @@ const productImage = [
                                     
                                     {/* <div className="absolute right-72 h-12 w-12 bg-gray-500 rounded-full">R</div> */}
                                     <button
-                                    onClick={() => handleCardChange(currentProduct + 1)}
+                                    onClick={() => handleCardChange(currentProduct - 1)}
                                     className={`absolute right-72 h-12 w-12 bg-gray-500 rounded-full`}
                                     >
                                     <svg className="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
