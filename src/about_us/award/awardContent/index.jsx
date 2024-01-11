@@ -88,10 +88,14 @@ export default function AwardContent() {
         <div className="pt-32 pl-16">
 
           <div className="flex flex-row justify-center h-full w-auto">
-              <div className="h-28 w-28 mr-2 bg-green-900 rounded-full">
-                  <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/>
-                  {/* <h2 className="text-9xl font-bold text-black text-stroke">A</h2> */}
+              <div className="relative h-48 w-36 pt-2 pl-8">
+                  {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/> */}
+                  <h1 className="text-9xl font-bold outline-3 text-stroke-black scale-150 p-1">A
+                  <h1 className="absolute -top-2 -left-1.5 p-3 scale-95 text-9xl font-normal font-outline-4 text-white z-10">A</h1>
+                  </h1>
+                  
               </div>
+
               <div className="flex flex-col items-center justify-center text-black">
                   <h2 className="text-4xl font-bold pr-28">WARDS &</h2>
                   <h2 className="text-4xl font-bold pt-2">CHIEVEMENTS</h2>
