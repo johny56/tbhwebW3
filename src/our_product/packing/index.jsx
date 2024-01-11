@@ -116,7 +116,7 @@ export default function Packing(){
                   <div key={index} className="relative flex justify-center item-center h-full w-2/6">
                     <div className="relative h-full w-64 pt-8">
                     <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-20 left-4 h-64 w-72 bg-transparent pt-12" src={item.imageUrl} alt="" />
+                    <img className="absolute buttom-20 left-4 h-64 w-72 bg-transparent pt-8" src={item.imageUrl} alt="" />
                     </div>
                 </div>
                 ))}
@@ -177,15 +177,19 @@ export default function Packing(){
                     <div className="flex flex-col">
 
                         <div className="flex flex-row justify-center item-center">
-                        <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">Other</div>
-                        <div className="h-32 w-auto text-7xl font-bold text-green-900 pl-4">business</div>
+                          <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">Other</div>
+                          <div className="h-32 w-auto text-7xl font-bold text-green-900 pl-4">business</div>
                         </div>
+
                         <div className="flex flex-row justify-center item-center gap-16">
-                        <div className="h-72 w-72 bg-green-500 rounded-lg">
+                          <div className="h-72 w-72 bg-green-500 rounded-lg">
+                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1-0y3U1wZANYwX9jzMHTj5gsA_GK7ChHO" alt="" />
+                          </div>
+                          <div className="h-72 w-72 bg-green-500 rounded-lg">
+                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1VaaoCrTffbLrUAmM7F6aqDT2MwKrCxn5" alt="" />
+                          </div>
                         </div>
-                        <div className="h-72 w-72 bg-green-500 rounded-lg">
-                        </div>
-                        </div>
+
                     </div>
 
                     <div className="bg-[#273F02] text-white mt-56">
