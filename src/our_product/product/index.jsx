@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img from "E:/Web/assets/01_Homepage/product01.jpg";
+import img1 from "E:/Web/assets/01_Homepage/Product02.jpg";
+import img2 from "E:/Web/assets/01_Homepage/Product02.jpg";
+export const image00 = img;
+export const image01 = img1;
+
 
 export default function Product(){
 
@@ -29,12 +35,12 @@ export default function Product(){
 
                     <div className="relative h-full w-1/4 flex flex-col invisible md:visible">
                         <div className="bg-gray-200/90 rounded-full h-72 w-72"></div>
-                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={"https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu"}/>
+                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={image00}/>
                         <p className="text-xl font-sans font-tt-hoves text-green-900 pl-28">STR10</p>
                     </div>
                     <div className="relative h-full w-1/4 flex flex-col invisible md:visible">
                         <div className="bg-gray-200/90 rounded-full h-72 w-72"></div>
-                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={"https://drive.google.com/uc?export=view&id=1PfKAz9x_8GKbY0VyLYlXj8SCW-mmUrs-"}/>
+                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={image01}/>
                         <p className="text-xl font-sans font-tt-hoves text-green-900 pl-28">STR20</p>
                     </div>
                     <div className="relative h-full w-1/4 flex flex-col invisible md:visible">

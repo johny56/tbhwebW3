@@ -1,5 +1,7 @@
 import Navbar from "components/navbar";
 import React from 'react';
+// import img from "E:/Web/assets/01_Homepage/Hompage_01.jpg";
+// export const image01 = img;
 
 const Header = () => {
 
@@ -15,7 +17,12 @@ const Header = () => {
                   <Navbar></Navbar>
               </nav>
               <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed z-20">
-              <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1w2SwHnIUEbKgPLefMC8YPxEH4kzJX0QB)] bg-no-repeat z-10">
+              {/* <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1w2SwHnIUEbKgPLefMC8YPxEH4kzJX0QB)] bg-no-repeat z-10"> */}
+                
+              <div className="bg-cover h-screen bg-[url(E:/Web/assets/01_Homepage/Hompage_01.jpg)] bg-no-repeat z-10">
+               
+             
+             {/* <div className="bg-cover h-screen bg-[image01] bg-no-repeat z-10"> */}
             
 
                   <div className="flex h-full items-end py-18 justify-center">
@@ -28,9 +35,7 @@ const Header = () => {
               
               </div>
             </div>
-            
-
-            
+     
               
           </header>
             

@@ -1,11 +1,14 @@
 import React from "react";
+import img from "E:/Web/assets/01_Homepage/Qualitypolicy.png";
+export const image01 = img;
+
 
 export default function Policy(){
 
     return (
 
         <div className="bg-cover bg-center h-screen relative">
-            <img src="https://drive.google.com/uc?export=view&id=170zOJoMDg0Pf0_6ifEHpGxO1bFb9L3KW" className="h-full w-full" alt=""/>
+            <img src={image01} className="h-full w-full" alt=""/>
             <div className="absolute inset-y-4 w-full">
             <div className="flex flex-col h-full items-center justify-center">
              <div className="text-[#E6DCC6] space-y-8">

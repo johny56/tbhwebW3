@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
+
 import picture_1 from "../../assets/img/activity/01Sep-07.svg";
 import picture_2 from "../../assets/img/activity/02Sep-06.svg";
 import picture_3 from "../../assets/img/activity/03Aug-11.svg";
 import picture_4 from "../../assets/img/activity/04Jun-21.svg";
 import picture_5 from "../../assets/img/activity/05Jun-16.svg";
 import picture_6 from "../../assets/img/activity/06Jun-28.svg";
+import img from "E:/Web/assets/06_Factory/Circle.png";
+export const image01 = img;
+
 
 const images = [
     picture_2,
@@ -52,7 +56,7 @@ export default function Activity(){
                         />
                             <div className="hidden group-hover:flex items-center justify-center absolute top-0 left-0 w-full h-full">
                                     <img className="w-auto h-32 flex justify-center item-center"
-                                        src="https://drive.google.com/uc?export=view&id=1vLDPRW1ckbl8LdFqK1oo7t7EBX2ZeGCA"
+                                        src={image01}
                                     />
                             </div>
                         </div>
