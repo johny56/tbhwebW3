@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Packing from "./packing";
-import Product_Roll from "./product _roll";
-import Product_Rolltest from "./product _roll/test";
+// import Product_Roll from "./product _roll/carousel";
+import Carousel from "./product _roll/carousel";
+// import Product_Rolltest from "./product _roll/test";
 // import Carousel from "./component_p/Carousel";
 
   const PRITspec = [
@@ -34,19 +35,6 @@ import Product_Rolltest from "./product _roll/test";
     
         const [currentProduct, setCurrentProduct] = useState(5);
         const [currentSpec, setCurrentSpec] = useState(1);
-        // const [isOpen, setisOpen] = useState(false);
-
-        // function handleClick() {
-        //   setisOpen(!isOpen);
-        //   console.log("helloworld");
-        // }
-        // const handleClick = ({ isOpen }) => {
-        //   return (
-        //     <div className={isOpen ? 'translate-x-96' : ''}>
-        //       <img src="https://drive.google.com/uc?export=view&id=1IoSB-WGi7DrqQp4VUWjYp8me0uhXdCSu" alt="Your Image" />
-        //     </div>
-        //   );
-        // };
 
         const handleCardChange = (product) => {
           
@@ -87,22 +75,16 @@ import Product_Rolltest from "./product _roll/test";
                               <br/>Consistently Satiefies or Exceeds Customer's 
                               <br/>Requirements Through Continuous Improvement</p>
                           </div>
-                            
-                            <div>
-                              <div>
-                                <Product_Roll/>
+                            <div className="pt-24"> 
+
+                                <Carousel/>
+                            </div>
                                 {/* <Product_Rolltest/> */}
+                        
                           
+                            
 
-                           
-
-                          
-                              
-
-                            </div>
-                            </div>
-
-                            <div className="h-screen w-full bg-white pt-96 mt-72">
+                            <div className="h-screen w-full bg-white">
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
                                       <div className="h-20 w-auto text-6xl font-bold text-stroke text-green-900">SPEC</div>
