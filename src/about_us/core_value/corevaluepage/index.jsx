@@ -1,6 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import img1 from "E:/Web/assets/03-Vision Mission Core Value/01.png";
+import img2 from "E:/Web/assets/03-Vision Mission Core Value/ไลน์ผลิต02.png";
+import img3 from "E:/Web/assets/03-Vision Mission Core Value/03.png";
+import img4 from "E:/Web/assets/03-Vision Mission Core Value/04.png";
+
+export const image01 = img1;
+export const image02 = img2;
+export const image03 = img3;
+export const image04 = img4;
+
+
 export default function CorevaluePage(){
 
     
@@ -24,14 +35,16 @@ export default function CorevaluePage(){
                         </div>
 
                         <div className="h-full w-1/2 flex justify-center item-center m-4">
-                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1u3grAJgd74mkD7unpG8bM_80SHmxMc32" alt=""/>
+                            {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1u3grAJgd74mkD7unpG8bM_80SHmxMc32" alt=""/> */}
+                            <img className="h-full w-full" src={image01} alt=""/>
                         </div>
                     </div>
                         
                     <div className="flex flex-row m-4 pt-24">
                         
                         <div className="h-full w-1/3 flex justify-start item-start pl-12">
-                            <img className="h-full w-96" src="https://drive.google.com/uc?export=view&id=1wv7ExbPIbzyjXX-YA2pYQaY9EL3bjPqq" alt=""/>
+                            {/* <img className="h-full w-96" src="https://drive.google.com/uc?export=view&id=1wv7ExbPIbzyjXX-YA2pYQaY9EL3bjPqq" alt=""/> */}
+                            <img className="h-full w-full" src={image02} alt=""/>
                         </div>
 
                         <div className="h-full w-2/3 item-start justify-start md:w-full pl-32 ">
@@ -60,13 +73,15 @@ export default function CorevaluePage(){
                         </div>
 
                         <div className="h-full w-1/2 flex justify-center item-center pr-24">
-                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1kTRrbtsZnq4QvPcbbPNLjuu17Hthki7Q" alt=""/>
+                            {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1kTRrbtsZnq4QvPcbbPNLjuu17Hthki7Q" alt=""/> */}
+                            <img className="h-full w-full" src={image03} alt=""/>
                         </div>
 
                     </div>
 
                     <div className="h-full w-full flex justify-center item-center px-48 pt-36 pb-16">
-                        <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XDwEOmCirIdsJ-0RIaenfKD6ZtP1oaDH" alt=""/>
+                        {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XDwEOmCirIdsJ-0RIaenfKD6ZtP1oaDH" alt=""/> */}
+                            <img className="h-full w-full" src={image04} alt=""/>
                     </div>
 
                     <div className="h-64 w-full pt-18 p-4">
