@@ -4,6 +4,7 @@ import Carousel from "./product _roll/carousel";
 
 import img1 from 'E:/Web/assets/08-Our Product/Products/RRIT-SPEC.webp';
 import img2 from 'E:/Web/assets/08-Our Product/Products/INE-20-SPEC.webp';
+import imgBg from 'E:/Web/assets/08-Our Product/Products/bg.png';
 
 // import { Link } from "react-router-dom";
 // import Product_Roll from "./product _roll/carousel";
@@ -11,6 +12,7 @@ import img2 from 'E:/Web/assets/08-Our Product/Products/INE-20-SPEC.webp';
 // import Carousel from "./component_p/Carousel";
 export const image01 = img1;
 export const image02 = img2;
+export const imageBackground = imgBg;
 
   const PRITspec = [
     [
@@ -72,20 +74,26 @@ export const image02 = img2;
 
                   {/* <div className="bg-contain bg-no-repeat h-full w-full bg-[url(https://drive.google.com/uc?export=view&id=1YuEwCgokxtAKC82Hxb3H0ATiP3QOS_LJ)]"> */}
                     
-                  <div className="bg-contain bg-no-repeat h-full w-full bg-[url(E:/Web/assets/08-Our Product/Products/bg.png)]">
+                  {/* <div className="bg-contain bg-no-repeat h-full w-full bg-[url('E:/Web/assets/08-Our Product/Products/bg.png')]"> */}
+                  
+                  <div className="bg-contain bg-no-repeat h-2/3 w-full">
 
-                      <div className="flex flex-col h-24 mt-36 pt-14">
+                      {/* <div className="bg-cover bg-no-repeat h-full w-full"> */}
+                        <img className="h-96 w-full" src={imageBackground}/>
+                      {/* </div> */}
 
-                          <div className="flex flex-row pl-32 pt-64 m-4 justify-center item-center">
+                      <div className="flex flex-col h-24">
+
+                          <div className="flex flex-row pt-16 m-4 justify-center item-center">
                               <h1 className="h-full w-auto text-8xl font-sans font-bold text-stroke text-green-900">OUR</h1>
                               <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold">PRODUCT</h1>
                           </div>
-                          <div className="flex flex-col h-96 w-auto pt-4 pb-16 pl-96">
+                          <div className="flex flex-col h-96 w-auto pt-4 pb-16 pl-80">
                               <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-32">To Produce Standard Thai Rubber(STR) that
                               <br/>Consistently Satiefies or Exceeds Customer's 
                               <br/>Requirements Through Continuous Improvement</p>
                           </div>
-                            <div className="pt-24"> 
+                            <div className="pt-4"> 
 
                                 <Carousel/>
                             </div>
@@ -144,7 +152,7 @@ export const image02 = img2;
                         </div>
                       
 
-              </div>
+             </div>
 
           );
 

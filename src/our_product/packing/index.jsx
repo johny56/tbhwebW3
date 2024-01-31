@@ -2,6 +2,13 @@ import { useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
+import img1 from "E:/Web/assets/08-Our Product/Products/FT.png"
+import img2 from "E:/Web/assets/08-Our Product/Products/TC.png"
+
+export const imgFT = img1;
+export const imgTC = img2;
+
+
 
 const Package = [
     [
@@ -183,10 +190,12 @@ export default function Packing(){
 
                         <div className="flex flex-row justify-center item-center gap-16">
                           <div className="h-72 w-72 bg-green-500 rounded-lg">
-                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1-0y3U1wZANYwX9jzMHTj5gsA_GK7ChHO" alt="" />
+                            {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1-0y3U1wZANYwX9jzMHTj5gsA_GK7ChHO" alt="" /> */}
+                            <img className="h-full w-full" src={imgFT} alt="" />
                           </div>
                           <div className="h-72 w-72 bg-green-500 rounded-lg">
-                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1VaaoCrTffbLrUAmM7F6aqDT2MwKrCxn5" alt="" />
+                            {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1VaaoCrTffbLrUAmM7F6aqDT2MwKrCxn5" alt="" /> */}
+                            <img className="h-full w-full" src={imgTC} alt="" />
                           </div>
                         </div>
 
