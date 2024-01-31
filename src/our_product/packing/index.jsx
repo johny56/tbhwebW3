@@ -177,8 +177,8 @@ export default function Packing(){
                     <div className="flex flex-col">
 
                         <div className="flex flex-row justify-center item-center">
-                          <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">Other</div>
-                          <div className="h-32 w-auto text-7xl font-bold text-green-900 pl-4">business</div>
+                          <div className="h-32 w-auto text-7xl font-sans font-bold text-stroke text-green-900">Other</div>
+                          <div className="h-32 w-auto text-7xl font-sans font-bold text-green-900 pl-4">business</div>
                         </div>
 
                         <div className="flex flex-row justify-center item-center gap-16">
