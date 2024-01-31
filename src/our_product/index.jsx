@@ -78,9 +78,9 @@ import Product_Rolltest from "./product _roll/test";
 
                       <div className="flex flex-col h-24 mt-36 pt-14">
 
-                          <div className="flex flex-row pl-32 pt-64">
-                              <h1 className="h-full w-auto text-8xl font-bold text-stroke text-green-900 lg:ml-96">OUR</h1>
-                              <h1 className="h-full w-auto text-8xl text-green-900 font-bold">PRODUCT</h1>
+                          <div className="flex flex-row pl-32 pt-64 m-4 justify-center item-center">
+                              <h1 className="h-full w-auto text-8xl font-sans font-bold text-stroke text-green-900">OUR</h1>
+                              <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold">PRODUCT</h1>
                           </div>
                           <div className="flex flex-col h-96 w-auto pt-4 pb-16 pl-96">
                               <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-32">To Produce Standard Thai Rubber(STR) that
