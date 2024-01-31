@@ -90,9 +90,9 @@ export default function AwardContent() {
           <div className="flex flex-row justify-center h-full w-auto">
               <div className="relative h-48 w-36 pt-2 pl-8">
                   {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/> */}
-                  <h1 className="text-9xl font-bold outline-3 text-stroke-black scale-150 p-1.5">A
-                  <h1 className="absolute -top-1.5 -left-1 p-3 scale-95 text-9xl font-normal font-outline-4 text-white z-10">A</h1>
-                  </h1>
+                  {/* <h1 className="text-9xl font-bold outline-3 text-stroke-black scale-150 p-1.5">A */}
+                  <h1 className="absolute top-3.5 left-12 scale-125 text-9xl font-bold drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] font-outline-4 text-white z-10">A</h1>
+                  {/* </h1> */}
                   
               </div>
 
