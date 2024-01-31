@@ -3,7 +3,7 @@ import Product from "our_product/product";
 import Policy from "sustainability/policies";
 import FactoryClip from "about_us/factory";
 import Activity from "about_us/company_activity";
-import CompanyStructure from "about_us/company_structure";
+// import CompanyStructure from "about_us/company_structure";
 
 
 import React from 'react';

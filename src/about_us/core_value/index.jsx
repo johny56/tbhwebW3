@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img from "E:/Web/assets/01_Homepage/c.JPG";
 
 export default function CoreValue(){
 
+    const image01 = img;
 
             return(
 
                 <div className="bg-contain bg-no-repeat h-screen w-full bg-white pt-28">
                     <div className="flex flex-row h-full w-full">
                         <div className="flex justify-center item-center h-2/3 w-auto pl-16">
-                            <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1nvfsMEr_-PEMVF24mKtdwzZiqtEnv-xt" alt=""/>
+                            <img className="h-full w-full" src={image01}/>
                         </div>
 
                         <div className="flex flex-col h-full w-auto pl-20 pt-36">
