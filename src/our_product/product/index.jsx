@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "E:/Web/assets/01_Homepage/product01.jpg";
-import img1 from "E:/Web/assets/01_Homepage/Product02.jpg";
-import img2 from "E:/Web/assets/01_Homepage/Product02.jpg";
+import img from "E:/Web/assets/08-Our Product/Products/STR10_SHADOW.png";
+import img1 from "E:/Web/assets/08-Our Product/Products/STR20_SHADOW.png";
+import img2 from "E:/Web/assets/08-Our Product/Products/STR20CV_SHADOW.png";
+import img3 from "E:/Web/assets/08-Our Product/Products/MIXTURES_SHADOW.png";
+
 export const image00 = img;
 export const image01 = img1;
+export const image02 = img2;
+export const image03 = img3;
 
 
 export default function Product(){
@@ -45,12 +49,12 @@ export default function Product(){
                     </div>
                     <div className="relative h-full w-1/4 flex flex-col invisible md:visible">
                         <div className="bg-gray-200/90 rounded-full h-72 w-72"></div>
-                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={"https://drive.google.com/uc?export=view&id=1-GU2ZF2o5QznCUiB6TFncXS6ccz4SLjO"}/>
+                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={image02}/>
                         <p className="text-xl font-sans font-tt-hoves text-green-900 pl-28">STR20CV</p>
                     </div>
                     <div className="relative h-full w-1/4 flex flex-col invisible md:visible">
                         <div className="bg-gray-200/90 rounded-full h-72 w-72"></div>
-                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={"https://drive.google.com/uc?export=view&id=1y_Mv63WCCTfhymINmR8uvQ0ptdS_Kjc4"}/>
+                        <img className="absolute top-20 left-11 h-auto w-2/4 hover:scale-125" src={image03}/>
                         <p className="text-xl font-sans font-tt-hoves text-green-900 pl-28">Mixture</p>
                     </div>
 

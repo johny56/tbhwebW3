@@ -1,6 +1,8 @@
 import React from "react";
 import img from "E:/Web/assets/01_Homepage/Qualitypolicy.png";
+import img2 from "E:/Web/assets/01_Homepage/WeChat Image_20230707151821.png";
 export const image01 = img;
+export const image02 = img2;
 
 
 export default function Policy(){
@@ -20,8 +22,8 @@ export default function Policy(){
             
              </div>
              <div>
-             <a href="#" className="flex flex-nowarp mt-5 items-center justify-center">
-                <img src="https://drive.google.com/uc?export=view&id=19G1fi2gEjUFi-D7qAsgk41EQQ6_-4gGr" className="h-20 w-20" />
+             <a className="flex flex-nowarp mt-5 items-center justify-center">
+                <img src={image02} className="h-20 w-20" />
             </a>
              </div>
             </div>
