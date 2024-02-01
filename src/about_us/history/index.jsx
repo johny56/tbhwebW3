@@ -1,15 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import img1 from "E:/Web/assets/02-History/หัวเรื่อง Lee in tong.png";
+import img2 from "E:/Web/assets/02-History/History pic/Home.png";
+import img3 from "E:/Web/assets/02-History/4.png";
+import img4 from "E:/Web/assets/02-History/เนื้อหา.png";
+import img5 from "E:/Web/assets/02-History/6.png";
+import img6 from "E:/Web/assets/02-History/หัวเรื่อง timeline.png";
+
+import img7 from "E:/Web/assets/02-History/History pic/7.png";
+import img8 from "E:/Web/assets/02-History/History pic/3.png";
+import img9 from "E:/Web/assets/02-History/History pic/5.png";
+import img10 from "E:/Web/assets/02-History/History pic/9.png";
+import img11 from "E:/Web/assets/02-History/History pic/6.png";
+import img12 from "E:/Web/assets/02-History/History pic/10.png";
+import img13 from "E:/Web/assets/02-History/History pic/8.png";
+
+
+
+export const image01 = img1;
+export const image02 = img2;
+export const image03 = img3;
+export const image04 = img4;
+export const image05 = img5;
+export const image06 = img6;
+
+export const image07 = img7;
+export const image08 = img8;
+export const image09 = img9;
+export const image10 = img10;
+export const image11 = img11;
+export const image12 = img12;
+export const image13 = img13;
+
+
 export default function History(){
 
     
         return (
 
-            <div className="relative h-screen w-full bg-white pt-32">
+            <div className="relative h-screen w-full bg-white pt-32 overflow-x-hidden">
                 
                 <div className="h-28 w-3/5 flex flex-col justify-center text-center my-4 ml-56 pl-56">
-                    <img className="h-full w-auto rounded-lg m-16" src="https://drive.google.com/uc?export=view&id=1QS_Mf-VzBKZn7-iGL1VJWVlHEFUNGYyd" alt=""/>
+                <img className="h-full w-auto rounded-lg m-16" src={image01} alt=""/>
                     
                 </div>
 
@@ -17,74 +50,8 @@ export default function History(){
                     <Link to="/history_img" className="h-full w-10 bg-gray-400/50 rounded-full -pt-2 border-2 border-gray-900 text-gray-800 font-samibold text-2xl text-center hover:bg-gray-700/80">+</Link>
                 </div>
 
-
-
-                <div className="flex flex-rows-3 h-2/3 w-full gap-x-4 p-1 mt-8">
-                    
-                    <div className="flex flex-col h-full w-1/3 gap-4">
-                        
-                        <div className="flex flex-row h-2/5 w-full gap-0">
-                            <div className="h-full w-1/3 bg-red-200">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1wzklFaTvSg74aX2zmJEvV0vfzmJ_lTIj" alt=""/>
-                            </div>
-                            <div className="h-full w-2/3 overflow-hidden overflow-clip pl-4">
-                                <img className="h-full w-auto mr-12 scale-150" src="https://drive.google.com/uc?export=view&id=1yWdrI6s-zaJKZf8XuBnfmE5lyAV44KnT" alt=""/>
-                            </div>
-                        </div>
-                        <div className="flex flex-row h-3/5 w-full gap-4">
-                            <div className="h-full w-1/2 bg-red-200">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=18_LFqwqaXertbsSmqqp6SQU0tOynoaQK" alt=""/>
-                            </div>
-                            <div className="h-full w-1/2 bg-red-300">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1VtqdAbulzNAXips6ILfNssYFVDHkZMZO" alt=""/>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="flex flex-col h-full w-1/3 gap-4 overflow-hidden">
-                        
-                        <div className="flex flex-row h-3/5 w-full gap-4">
-                            <div className="h-full w-1/2">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1njwBR1_dSoUr1DZtq5JxFB4HO05nM_Ew" alt=""/>
-                            </div>
-                            <div className="h-full w-1/2 bg-red-300">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1ukzRs6CiaFO_P83H_33IAUuLdirePivs" alt=""/>
-                            </div>
-                        </div>
-                        <div className="flex flex-row h-2/5 w-full gap-4">
-                            <div className="h-full w-2/3 bg-red-200">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1roupY5roHznV_vhiwimDVbNYb-5m55gz" alt=""/>
-                            </div>
-                            <div className="h-full w-1/3 bg-red-100">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1wcIT48eIAFRpdw0i5peL2n8ibKwDpjlA" alt=""/>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="flex flex-col h-full w-1/3 gap-4">
-                        
-                        <div className="flex flex-row h-2/5 w-full gap-4">
-                            <div className="h-full w-1/3 bg-red-200">
-                                {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1yWdrI6s-zaJKZf8XuBnfmE5lyAV44KnT" alt=""/> */}
-                            
-                            </div>
-                            <div className="h-full w-2/3 bg-red-100">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1jN2pa5CsGaJMOeYUN2QBF0XltqRrSCiz" alt=""/>
-                            </div>
-                        </div>
-                        <div className="flex flex-row h-3/5 w-full gap-4">
-                            <div className="h-full w-1/2 bg-red-200">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1wjwLP6MOpE_xezI3lra9RLXeDY-yBWcs" alt=""/>
-                            </div>
-                            <div className="h-full w-1/2 bg-red-300">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1AN_S6JZXMqciRUF7PCzkY-oSr29eosxw" alt=""/>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div className="relative h-3/4 w-full flex justify-center">
+                    <img className="absolute -top-56 h-auto w-full" src={image02}/>
                 </div>
 
                 <div className="h-24 w-full px-8">
@@ -93,28 +60,35 @@ export default function History(){
                 </div>
 
                 
-                <div className="bg-contain h-5/6 w-full mt-16 bg-[url('https://drive.google.com/uc?export=view&id=11lbVo54ir_Qg6dTM_DH-NBqto86Cc8nK')]">
+                <div className="relative bg-contain h-5/6 w-full mt-16">
+                    {/* bg-[url('https://drive.google.com/uc?export=view&id=11lbVo54ir_Qg6dTM_DH-NBqto86Cc8nK')] */}
+                    
+                    <img className="absolute h-full w-full" src={image03}/>
 
-                    <div className="flex flex-row h-full w-full pl-16">
+                    <div className="absolute flex flex-row h-full w-full pl-16">
                         <div className="h-full w-2/3 m-4">
                             <div className="h-96 w-auto bg-gray-200/20 border-4 mt-16 ml-12"></div>
                         </div>
-                        <div className="h-full w-2/5 mt-12 pl-36">
-                            <img className="h-5/6 w-auto" src="https://drive.google.com/uc?export=view&id=1NwoIfPdj-bv6b3j3kQ5_HUPGfMgel6hS" alt=""/>
+                        <div className="h-full w-2/5 pl-36">
+                            <img className="h-full w-auto" src={image04} alt=""/>
                             
                         </div>
                     </div>
 
+                    
+
                 </div>
 
-                <div className="bg-contain max-h-screen w-full mt-24 bg-[url('https://drive.google.com/uc?export=view&id=1dU0MhmIxow1DWaytqd7Rv3j4ljqyGlCQ')]">
+                <div className="relative bg-contain h-screen w-full mt-24 scale-125">
+                    {/* bg-[url('https://drive.google.com/uc?export=view&id=1dU0MhmIxow1DWaytqd7Rv3j4ljqyGlCQ')] */}
+                    <img className="absolute h-full w-full" src={image05}/>
                     
                     <div className="h-36 w-3/6 flex flex-col my-4 ml-96 pl-96 scale-125">
-                        <img className="h-full w-auto rounded-lg m-16" src="https://drive.google.com/uc?export=view&id=1AmvMhJEkGUYAIz3DXaqNh6_eF1wJfe9g" alt=""/>
+                        <img className="h-full w-auto rounded-lg m-16" src={image06} alt=""/>
                     </div>
 
                     {/* <!-- component --> */}
-                    <div className="relative container">
+                    <div className="relative flex ml-8 justify-center scale-100 container">
                             <div
                                 className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
                             >
@@ -251,8 +225,8 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
                                     GMG Global Ltd. become majority shareholder of TBH
                                     </p>
-                                    <div className="absolute h-72 w-auto -top-56 -right-72 bg-transition">
-                                        <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=12LykCbcYIorsyN3lVejtPiQV82r6Rxnn" alt=""/>
+                                    <div className="absolute h-96 w-auto -top-56 -right-96 bg-transition">
+                                        <img className="h-96 w-full" src={image07} alt=""/>
                                     </div>
                                 </div>
                                 </div>
@@ -266,7 +240,7 @@ export default function History(){
                                     Halcyon Agri Corporation Ltd., takeover of GMG Global Ltd., Thus becoming a majority shareholder of TBH.
                                     </p>
                                     <div className="absolute h-96 w-auto -top-56 -left-96 bg-transition">
-                                        <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1ryU8Q1qqbF-qR3WQPRGVo3CJbcRhIA49" alt=""/>
+                                        <img className="h-full w-full" src={image10} alt=""/>
                                     </div>
                                     
                                 </div>
@@ -280,19 +254,19 @@ export default function History(){
                                 </div>
                                 </div>
 
-                                <div className="absolute h-72 w-auto -top-20 left-48 bg-transition">
-                                    <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=11ECxqqCM3Dm5O95CflF9eYAJF6b4YOj1" alt=""/>
+                                <div className="absolute h-96 w-auto -top-25 -left-5 bg-transition">
+                                    <img className="h-full w-full" src={image08} alt=""/>
                                 </div>
 
-                                <div className="absolute h-64 w-56 top-56 -scale-x-100 -right-5 bg-transition">
-                                    <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1whVsBu6At7VZnxO_W85bv65p-v6sKeeF" alt=""/>
+                                <div className="absolute h-96 w-auto top-80 scale-x-100 -right-24 bg-transition">
+                                    <img className="h-full w-full" src={image09} alt=""/>
                                 </div>
-                                <div className="absolute h-96 w-auto top-80 -scale-x-100 -right-5 bg-transition">
-                                    <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1nnFzJpdcDNSKhC2vcDb9E4-chLhgTZt4" alt=""/>
-                                </div>
+                                {/* <div className="absolute h-96 w-auto top-80 -scale-x-100 -right-5 bg-transition">
+                                    <img className="h-full w-full" src={image10} alt=""/>
+                                </div> */}
                                 
-                                <div className="absolute h-64 w-auto top-96 mt-64 left-20 bg-transition">
-                                    <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1er3QIUSptDjk3WS8YgzkXr2TgyKsVLe-" alt=""/>
+                                <div className="absolute h-96 w-auto top-96 -left-5 mt-64 left-20 bg-transition">
+                                    <img className="h-full w-full" src={image11} alt=""/>
                                 </div>
 
                                 
@@ -300,25 +274,17 @@ export default function History(){
                             </div>
 
                             
-                            <div className="relative container mt-4 ml-16 h-96 w-full bg-[url('https://drive.google.com/uc?export=view&id=1dU0MhmIxow1DWaytqd7Rv3j4ljqyGlCQ')] z-10 ">
-                                
-                                <div className="h-64 w-full pt-20 p-4">
-                                    <div className="flex flex-col text-center">
-                                        <h1 className=" text-xl">Teck Bee Hang Co., Ltd.</h1>
-                                        <div className="font-sm text-lg text-slate-700">
-                                            <p>Address: 157 Niphat Uthit 2 Road, Hatyai, Songkhla 90110, Thailand.</p>
-                                            <p>Telephone: +(66) 7435 5307-9, +(66) 7423 5200-5</p>
-                                            <p>Fax: +(66) 7423 4729, +(66) 7423 1308</p>
-                                            <p>Office Hours: 8:30 – 17:30 (Mon-Fri)</p>
-                                            <p>Sales and Marketing: sales@teckbeehang.com</p>
-                                            <p>Human Resources: hrd@teckbeehang.com</p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="bg-[#273F02] text-white mt-10">
-                                    <div className="w-full container mx-auto flex flex-col text-center">
-                                        <div className="flex flex-row mx-8 md:flex-row text-center text-lg md:text-left md:justify-between py-6">
+                           
+
+                </div>
+                            <div className="relative h-96 w-full z-10 overflow-y-hidden">
+
+                                <img className="absolute -top-32 buttom-24 bg-cover h-max w-full" src={image12}/>
+
+                                <div className="absolute mt-80 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
+                                    <div className="w-full container mx-auto flex flex-col text-center scale-90">
+                                        <div className="flex flex-row mx-4 md:flex-row text-center text-md md:text-left md:justify-between py-6">
                                             
                                             <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>
                                             <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
@@ -331,13 +297,9 @@ export default function History(){
 
                             </div>
 
-                            <div className="absolute top-72 mt-72 pt-96 -right-20 h-1/2 w-auto z-0">
-                                <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1zjGEOdM_2wz8Gig99_WEUmfhSYe9s-V0" alt=""/>
+                            <div className="absolute -right-72 top-96 mt-80 pt-96 h-max w-auto z-0 ">
+                                <img className="h-full w-full" src={image13} alt=""/>
                             </div>
-
-                           
-
-                </div>
                 </div>
 
             
