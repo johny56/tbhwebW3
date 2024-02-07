@@ -79,12 +79,12 @@ export default function CorevaluePage(){
 
                     </div>
 
-                    <div className="h-full w-full flex justify-center item-center px-48 pt-36 pb-16">
+                    <div className="h-full w-full flex justify-center item-center px-12 pt-24 scale-75">
                         {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XDwEOmCirIdsJ-0RIaenfKD6ZtP1oaDH" alt=""/> */}
                             <img className="h-full w-full" src={image04} alt=""/>
                     </div>
 
-                    <div className="h-64 w-full pt-18 p-4">
+                    <div className="h-64 w-full mt-56">
                         <div className="flex flex-col text-center">
                             <h1 className=" text-xl">Teck Bee Hang Co., Ltd.</h1>
                             <div className="font-sm text-lg text-gray-700">

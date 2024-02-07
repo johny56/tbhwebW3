@@ -32,7 +32,7 @@ export default function Activity(){
     
         return (
 
-            <div className="w-full h-screen bg-[#FFFFFF] shadow overflow-hidden py-14">
+            <div className="w-full h-screen bg-[#FFFFFF] shadow overflow-hidden py-14 pt-48">
 
                 <div className="grid grid-col-2 
                                 md:gap-0 grid-cols-2

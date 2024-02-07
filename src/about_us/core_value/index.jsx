@@ -8,7 +8,7 @@ export default function CoreValue(){
 
             return(
 
-                <div className="bg-contain bg-no-repeat h-screen w-full bg-white pt-28">
+                <div className="bg-contain bg-no-repeat h-screen w-full bg-white pt-28 mt-28">
                     <div className="flex flex-row h-full w-full">
                         <div className="flex justify-center item-center h-2/3 w-auto pl-16">
                             <img className="h-full w-full" src={image01}/>
