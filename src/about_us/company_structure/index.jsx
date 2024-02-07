@@ -20,35 +20,23 @@ export default function CompanyStructure() {
           <Navbar />
         </nav>
       <div className="bg-cover h-screen bg-no-repeat z-10">
-      {/* bg-[url(https://drive.google.com/uc?export=view&id=16IPET1uaGQKXb75QfNamUhnwdbNzzWY8)] */}
         <img src={image01}/>
 
       <div className="absolute inset-0 flex flex-col justify-center pl-8">
         {/* <h1 className="flex flex-col  text-7xl font-extrabold ml-36 text-[#827717]"> */}
             <img
-                // src="https://drive.google.com/uc?export=view&id=1vDVjmb2SGxNkH5vhA7uYTMcgXck_wsPc"
                 src={image03}
-                className="absolute -top-96 right-0 h-min w-auto scale-75"
+                className="absolute -top-96 right-12 h-min w-auto scale-50"
                 alt=""
                 />
             <img
-                // src="https://drive.google.com/uc?export=view&id=19ePNijrJLKrJ4O8X9FNCEcVyk9XKKYgV"
                 src={image02}
-                className="absolute top-48 right-72 h-3/4 w-auto p-4"
+                className="relative flex justify-center h-full w-3/5 scale-95 mt-36 ml-56 p-8"
                 alt=""
                 />
         {/* </h1> */}
         
       </div>
-      {/* <div className="mt-28 h-4/5 w-auto flex justify-center item-center ">
-          <img
-            // src="https://drive.google.com/uc?export=view&id=16zQqLt1ik1E3FHUPY-bPy4TGEeyOVdOe"
-            src={image04}
-            className=""
-            alt=""
-            />
-            </div>
-        </div> */}
                   
         </div>
     //   </div>
