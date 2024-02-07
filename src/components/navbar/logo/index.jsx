@@ -1,4 +1,4 @@
-import img from "E:/Web/assets/01_Homepage/WeChat Image_20230707151821.png";
+import img from "./asset/WeChat Image_20230707151821.png";
 
 const Logo = () =>{
 
