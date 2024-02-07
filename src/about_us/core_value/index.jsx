@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "E:/Web/assets/01_Homepage/c.JPG";
+import img from "./corevaluepage/asset/c (1).jpg";
 
 export default function CoreValue(){
 

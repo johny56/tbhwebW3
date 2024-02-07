@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "E:/Web/assets/03-Vision Mission Core Value/01.png";
-import img2 from "E:/Web/assets/03-Vision Mission Core Value/ไลน์ผลิต02.png";
-import img3 from "E:/Web/assets/03-Vision Mission Core Value/03.png";
-import img4 from "E:/Web/assets/03-Vision Mission Core Value/04.png";
+import img1 from "./asset/01.png";
+import img2 from "./asset/ไลน์ผลิต02.png";
+import img3 from "./asset/03.png";
+import img4 from "./asset/04.png";
 
 export const image01 = img1;
 export const image02 = img2;

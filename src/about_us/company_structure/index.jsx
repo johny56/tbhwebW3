@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "components/navbar";
 
-import img1 from "E:/Web/assets/04-Company Structure/BG_Building.jpg";
-import img2 from "E:/Web/assets/04-Company Structure/Company ST..png";
-import img3 from "E:/Web/assets/04-Company Structure/Shareholder structure.png";
+import img1 from "./asset/BG_Building.jpg";
+import img2 from "./asset/TBH.png";
+import img3 from "./asset/Shareholder structure.png";
 // import img4 from "E:/Web/assets/04-Company Structure/TBH.png";
 
 export const image01 = img1;

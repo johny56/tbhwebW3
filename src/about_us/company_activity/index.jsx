@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 
-import picture_1 from "../../assets/img/activity/01Sep-07.svg";
-import picture_2 from "../../assets/img/activity/02Sep-06.svg";
-import picture_3 from "../../assets/img/activity/03Aug-11.svg";
-import picture_4 from "../../assets/img/activity/04Jun-21.svg";
-import picture_5 from "../../assets/img/activity/05Jun-16.svg";
-import picture_6 from "../../assets/img/activity/06Jun-28.svg";
-import img from "E:/Web/assets/06_Factory/Circle.png";
+import picture_1 from "./asset/Activity/01Sep-07.svg";
+import picture_2 from "./asset/Activity/02Sep-06.svg";
+import picture_3 from "./asset/Activity/03Aug-11.svg";
+import picture_4 from "./asset/Activity/04Jun-21.svg";
+import picture_5 from "./asset/Activity/05Jun-16.svg";
+import picture_6 from "./asset/Activity/06Jun-28.svg";
+import img from "./asset/Activity/Circle.png";
 export const image01 = img;
 
 
