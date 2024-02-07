@@ -50,7 +50,7 @@ import GREENnav from "components/navbar/greenNav";
 // import OurFACTORY from "about_us/ourFactory";
 // import OurFactoryList from "about_us/ourFactory/ourFactoryList";
 // import Productpage from "our_product";
-// import History from "about_us/history";
+import History from "about_us/history";
 // import History_img from "about_us/history/history_img";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
@@ -82,7 +82,7 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<Layout/>} />
-        {/* <Route path='/history' element={<History/>}/> */}
+        <Route path='/history' element={<History/>}/>
         {/* <Route path='history_img' element={<History_img/>}/> */}
         {/* <Route path='/work_opp' element={<WorkOpputunity/>}/> */}
         {/* <Route path='/Whistleblowing' element={<Whistleblowing/>}/> */}

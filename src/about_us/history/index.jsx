@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import img1 from "E:/Web/assets/02-History/หัวเรื่อง Lee in tong.png";
-import img2 from "E:/Web/assets/02-History/History pic/Home.png";
-import img3 from "E:/Web/assets/02-History/4.png";
-import img4 from "E:/Web/assets/02-History/เนื้อหา.png";
-import img5 from "E:/Web/assets/02-History/6.png";
-import img6 from "E:/Web/assets/02-History/หัวเรื่อง timeline.png";
+import img1 from "./asset/หัวเรื่อง Lee in tong.png";
+import img2 from "./asset/History pic/Home.png";
+import img3 from "./asset/bg4.png";
+import img4 from "./asset/เนื้อหา.png";
+import img5 from "./asset/bg6.png";
+import img6 from "./asset/หัวเรื่อง timeline.png";
 
-import img7 from "E:/Web/assets/02-History/History pic/7.png";
-import img8 from "E:/Web/assets/02-History/History pic/3.png";
-import img9 from "E:/Web/assets/02-History/History pic/5.png";
-import img10 from "E:/Web/assets/02-History/History pic/9.png";
-import img11 from "E:/Web/assets/02-History/History pic/6.png";
-import img12 from "E:/Web/assets/02-History/History pic/10.png";
-import img13 from "E:/Web/assets/02-History/History pic/8.png";
+import img7 from "./asset/History pic/7.png";
+import img8 from "./asset/History pic/3.png";
+import img9 from "./asset/History pic/5.png";
+import img10 from "./asset/History pic/9.png";
+import img11 from "./asset/History pic/6.png";
+import img12 from "./asset/History pic/10.png";
+import img13 from "./asset/History pic/8.png";
 
 
 
@@ -41,26 +41,26 @@ export default function History(){
 
             <div className="relative h-screen w-full bg-white pt-32 overflow-x-hidden">
                 
-                <div className="h-28 w-3/5 flex flex-col justify-center text-center my-4 ml-56 pl-56">
+                <div className="h-28 w-3/5 flex flex-col justify-center text-center ml-56 pl-56">
                 <img className="h-full w-auto rounded-lg m-16" src={image01} alt=""/>
                     
                 </div>
 
-                <div className="h-10 w-full flex justify-end my-2 mr-8 pr-8">
+                <div className="h-10 w-full flex justify-end mr-8 pr-8">
                     <Link to="/history_img" className="h-full w-10 bg-gray-400/50 rounded-full -pt-2 border-2 border-gray-900 text-gray-800 font-samibold text-2xl text-center hover:bg-gray-700/80">+</Link>
                 </div>
-
-                <div className="relative h-3/4 w-full flex justify-center">
-                    <img className="absolute -top-56 h-auto w-full" src={image02}/>
+                <div className="relative h-auto w-full flex justify-center">
+                    <img className="absolute -top-56 h-auto w-5/6" src={image02}/>
                 </div>
 
-                <div className="h-24 w-full px-8">
-                    <p className="text-xl font-normal indent-16 pt-4">In 1954, Lee Inntong and his associates acquired real estate, founded Thailand Teck Bee Hang Co., Ltd., and was nominated as a chairman.
+
+                <div className="relative h-24 w-full px-8 mt-96 pt-20">
+                    <p className="text-xl font-normal indent-16">In 1954, Lee Inntong and his associates acquired real estate, founded Thailand Teck Bee Hang Co., Ltd., and was nominated as a chairman.
                     Under his devoted management. Teck Bee Hang standard rubber production and export progressively become the leader in Thailand, becoming the Empire of rubber exports.</p>
                 </div>
 
                 
-                <div className="relative bg-contain h-5/6 w-full mt-16">
+                <div className="relative bg-contain h-5/6 w-full mt-48">
                     {/* bg-[url('https://drive.google.com/uc?export=view&id=11lbVo54ir_Qg6dTM_DH-NBqto86Cc8nK')] */}
                     
                     <img className="absolute h-full w-full" src={image03}/>
@@ -79,7 +79,7 @@ export default function History(){
 
                 </div>
 
-                <div className="relative bg-contain h-screen w-full mt-24 scale-125">
+                <div className="relative bg-contain h-screen w-full mt-48 scale-125">
                     {/* bg-[url('https://drive.google.com/uc?export=view&id=1dU0MhmIxow1DWaytqd7Rv3j4ljqyGlCQ')] */}
                     <img className="absolute h-full w-full" src={image05}/>
                     
@@ -88,7 +88,7 @@ export default function History(){
                     </div>
 
                     {/* <!-- component --> */}
-                    <div className="relative flex ml-8 justify-center scale-100 container">
+                    <div className="relative flex ml-24 justify-center scale-100 container">
                             <div
                                 className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
                             >
@@ -103,7 +103,7 @@ export default function History(){
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto"
+                                    className="bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto pt-20"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">1954</h3>
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
@@ -114,7 +114,7 @@ export default function History(){
                                 {/* <!-- left --> */}
                                 <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end"
+                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end pt-16"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">1966</h3>
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
@@ -141,7 +141,7 @@ export default function History(){
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto"
+                                    className="bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto pt-20"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">1973</h3>
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
@@ -152,7 +152,7 @@ export default function History(){
                                 {/* <!-- left --> */}
                                 <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end"
+                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end pt-20"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">1995</h3>
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
@@ -179,7 +179,7 @@ export default function History(){
                                     ></div>
                                 </div>
                                 <div
-                                    className="bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto"
+                                    className="bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto pt-44"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">1999</h3>
                                     <p className="leading-tight text-gray-900 text-base line-clamp-7">
@@ -192,7 +192,7 @@ export default function History(){
                                 {/* <!-- left --> */}
                                 <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end"
+                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end pt-16"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">2003</h3>
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
@@ -219,27 +219,27 @@ export default function History(){
                                     ></div>
                                 </div>
                                 <div
-                                    className="relative bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto"
+                                    className="relative bg-transition col-start-6 col-end-8 p-4 my-4 mr-auto pt-16"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">2010</h3>
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
                                     GMG Global Ltd. become majority shareholder of TBH
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-56 -right-96 bg-transition">
-                                        <img className="h-96 w-full" src={image07} alt=""/>
+                                    <div className="absolute h-96 w-auto -top-44 -right-80 scale-125 bg-transition">
+                                        <img className="h-full w-full" src={image07} alt=""/>
                                     </div>
                                 </div>
                                 </div>
                                 {/* <!-- left --> */}
                                 <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="relative bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end"
+                                    className="relative bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end pt-20"
                                 >
                                     <h3 className="font-bold text-3xl mb-1 text-green-900">2016</h3>
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
                                     Halcyon Agri Corporation Ltd., takeover of GMG Global Ltd., Thus becoming a majority shareholder of TBH.
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-56 -left-96 bg-transition">
+                                    <div className="absolute h-96 w-auto -top-36 -left-96 scale-150 bg-transition">
                                         <img className="h-full w-full" src={image10} alt=""/>
                                     </div>
                                     
@@ -252,24 +252,24 @@ export default function History(){
                                     className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-800"
                                     ></div>
                                 </div>
+
+                                
                                 </div>
 
-                                <div className="absolute h-96 w-auto -top-25 -left-5 bg-transition">
+                                <div className="absolute h-1/3 w-auto -top-20 -left-48 bg-transition">
                                     <img className="h-full w-full" src={image08} alt=""/>
                                 </div>
 
-                                <div className="absolute h-96 w-auto top-80 scale-x-100 -right-24 bg-transition">
+                                <div className="absolute h-1/3 w-auto top-96 -right-80 scale-x-100 bg-transition">
                                     <img className="h-full w-full" src={image09} alt=""/>
                                 </div>
                                 {/* <div className="absolute h-96 w-auto top-80 -scale-x-100 -right-5 bg-transition">
                                     <img className="h-full w-full" src={image10} alt=""/>
                                 </div> */}
                                 
-                                <div className="absolute h-96 w-auto top-96 -left-5 mt-64 left-20 bg-transition">
+                                <div className="absolute h-2/4 w-auto buttom-0 top-48 mt-96 pt-96 scale-100 -left-48 bg-transition">
                                     <img className="h-full w-full" src={image11} alt=""/>
                                 </div>
-
-                                
 
                             </div>
 
@@ -278,11 +278,15 @@ export default function History(){
                            
 
                 </div>
-                            <div className="relative h-96 w-full z-10 overflow-y-hidden">
+                            <div className="relative h-3/4 w-full overflow-hidden">
 
-                                <img className="absolute -top-32 buttom-24 bg-cover h-max w-full" src={image12}/>
+                                <img className="absolute top-28 buttom-0 bg-cover h-max w-full z-10" src={image12}/>
 
-                                <div className="absolute mt-80 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
+                                <div className="absolute -top-52 -right-56 h-max w-auto z-0">
+                                    <img className="h-full w-full" src={image13} alt=""/>
+                                </div>
+
+                                <div className="absolute mt-96 top-40 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
                                     <div className="w-full container mx-auto flex flex-col text-center scale-90">
                                         <div className="flex flex-row mx-4 md:flex-row text-center text-md md:text-left md:justify-between py-6">
                                             
@@ -297,10 +301,8 @@ export default function History(){
 
                             </div>
 
-                            <div className="absolute -right-72 top-96 mt-80 pt-96 h-max w-auto z-0 ">
-                                <img className="h-full w-full" src={image13} alt=""/>
-                            </div>
                 </div>
+                
 
             
             </div>
