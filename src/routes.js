@@ -100,7 +100,7 @@ const routes = [
       component: <ManagementTeam/>,
     },
     {
-      name: "policy-page",
+      name: "policy_page",
       layout: "/sustainability",
       path: "default",
       component: <PolicyPage/>,

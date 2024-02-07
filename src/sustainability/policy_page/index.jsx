@@ -1,15 +1,24 @@
 import React from "react";
 
+import img from "../asset/BG_Policy.svg";
+
+export const image01 = img;
+
 const PolicyPage = () =>{
 
     return (
         
-            <div className="py-32 max-h-screen w-full bg-cover bg-[url(https://drive.google.com/uc?export=view&id=10pEUCBisG5dGQmrTeV-pskegypRqr_Rz)]">
-                <div className="mt-1 h-32 w-auto flex flex-row justify-center item-center">
+            // <div className="py-32 max-h-screen w-full bg-cover bg-[url(https://drive.google.com/uc?export=view&id=10pEUCBisG5dGQmrTeV-pskegypRqr_Rz)]">
+            <div className="relative h-screen w-full overflow-hidden bg-green-200 z-0">
+                <div className="absolute h-full w-auto scale-150 z-10">
+                    <img className="h-full w-full" src={image01} alt=""/>
+                </div>
+
+                <div className="relative mt-24 pt-8 h-32 w-auto flex flex-row justify-center item-center z-20">
                     <h1 className="font-bold text-8xl text-white">POLICIES</h1>
                 </div>
 
-                <div className="flex flex-row h-full w-full">
+                <div className="relative flex flex-row h-full w-full z-20">
 
                     <div className="flex flex-col h-full w-1/2">
                     <div className="m-1 pl-56">

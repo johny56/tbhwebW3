@@ -1,8 +1,8 @@
 import Card from "about_us/core_value";
-// import Product from "our_product/product";
-// import Policy from "sustainability/policies";
-// import FactoryClip from "about_us/factory";
+import Policy from "sustainability/policies";
 import Activity from "about_us/company_activity";
+// import Product from "our_product/product";
+// import FactoryClip from "about_us/factory";
 // import CompanyStructure from "about_us/company_structure";
 
 
@@ -55,7 +55,7 @@ const Body = () => {
                   </div>
   
                   <div id="policy">
-                      {/* <Policy></Policy> */}
+                      <Policy></Policy>
                   </div>
   
                   <div className="" id="activity">
