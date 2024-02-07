@@ -51,7 +51,7 @@ import GREENnav from "components/navbar/greenNav";
 // import OurFactoryList from "about_us/ourFactory/ourFactoryList";
 // import Productpage from "our_product";
 import History from "about_us/history";
-// import History_img from "about_us/history/history_img";
+import History_img from "about_us/history/history_img";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
 // import ThungSongfac from "about_us/ourFactory/thungSong";
@@ -83,7 +83,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Layout/>} />
         <Route path='/history' element={<History/>}/>
-        {/* <Route path='history_img' element={<History_img/>}/> */}
+        <Route path='history_img' element={<History_img/>}/>
         {/* <Route path='/work_opp' element={<WorkOpputunity/>}/> */}
         {/* <Route path='/Whistleblowing' element={<Whistleblowing/>}/> */}
         <Route path='/management' element={<ManagementTeam/>}/>
