@@ -1,7 +1,7 @@
 import Card from "about_us/core_value";
-import Product from "our_product/product";
-import Policy from "sustainability/policies";
-import FactoryClip from "about_us/factory";
+// import Product from "our_product/product";
+// import Policy from "sustainability/policies";
+// import FactoryClip from "about_us/factory";
 import Activity from "about_us/company_activity";
 // import CompanyStructure from "about_us/company_structure";
 
@@ -42,7 +42,7 @@ const Body = () => {
                     {/* header space */}
                 </div>
                 <div id="factory-clip">
-                    <FactoryClip></FactoryClip>
+                    {/* <FactoryClip></FactoryClip> */}
                   </div>
   
                   {/* <div classsName="py-2 mt-2 z-20" id="core_value"> */}
@@ -51,11 +51,11 @@ const Body = () => {
                   </div>
                   
                   <div classsName="m-2" id="product">
-                      <Product></Product>
+                      {/* <Product></Product> */}
                   </div>
   
                   <div id="policy">
-                      <Policy></Policy>
+                      {/* <Policy></Policy> */}
                   </div>
   
                   <div className="" id="activity">
