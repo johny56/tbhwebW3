@@ -260,7 +260,7 @@ export default function History(){
                                     <img className="h-full w-full" src={image08} alt=""/>
                                 </div>
 
-                                <div className="absolute h-1/3 w-auto top-96 -right-80 scale-x-100 bg-transition">
+                                <div className="absolute h-1/3 w-auto top-96 -right-56 scale-x-100 bg-transition">
                                     <img className="h-full w-full" src={image09} alt=""/>
                                 </div>
                                 {/* <div className="absolute h-96 w-auto top-80 -scale-x-100 -right-5 bg-transition">
@@ -280,9 +280,9 @@ export default function History(){
                 </div>
                             <div className="relative h-3/4 w-full overflow-hidden">
 
-                                <img className="absolute top-28 buttom-0 bg-cover h-max w-full z-10" src={image12}/>
+                                <img className="absolute top-16 buttom-0 bg-cover h-max w-full z-10" src={image12}/>
 
-                                <div className="absolute -top-52 -right-56 h-max w-auto z-0">
+                                <div className="absolute -top-32 -right-28 h-full w-auto z-0 scale-125">
                                     <img className="h-full w-full" src={image13} alt=""/>
                                 </div>
 
