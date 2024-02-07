@@ -1,14 +1,13 @@
 import Card from "about_us/core_value";
 import Policy from "sustainability/policies";
 import Activity from "about_us/company_activity";
-// import Product from "our_product/product";
-// import FactoryClip from "about_us/factory";
-// import CompanyStructure from "about_us/company_structure";
-
 
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
+// import Product from "our_product/product";
+// import FactoryClip from "about_us/factory";
+// import CompanyStructure from "about_us/company_structure";
 
 const Body = () => {
 
@@ -67,8 +66,8 @@ const Body = () => {
                         <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6">
                             
                             <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>
-                            <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
-                            <a href="#" className="font-sans font-tt-hoves ">PRIVACY POLICY | COOKIE POLICY</a>
+                            <a href="" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
+                            <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/policy_page">PRIVACY POLICY | COOKIE POLICY</Link>
                             <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/tbhstaff">TBH STAFF</Link>
                             
                         </div>

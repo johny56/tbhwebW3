@@ -27,14 +27,14 @@ const PolicyPage = () =>{
                         </div>
                         <div className="bg-contain flex flex-col justify-start bg-lime-100/90 h-36 w-full rounded-b-lg">
 
-                            <div className="flex flex-row justify-start h-8 w-full py-2">
-                                <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="flex flex-row justify-start h-8 w-full pt-2">
+                                <svg className="mx-1 h-8 w-8 text-green-700 scale-150 pl-1"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
                                 </svg>
-                                <a href="https://www.teckbeehang.com/wp-content/uploads/2023/08/Sustainability-Policy-SNRSCP-V6-Approved-and-Adopted-on-22-October-2021.pdf" className="font-thin text-green-900/80">Sustainable Natural Rubber Supply Chain Policy</a>
+                                <a href="https://www.teckbeehang.com/wp-content/uploads/2023/08/Sustainability-Policy-SNRSCP-V6-Approved-and-Adopted-on-22-October-2021.pdf" className="font-thin text-green-900/80 ml-2">Sustainable Natural Rubber Supply Chain Policy</a>
                             </div>
 
-                            <div className="flex flex-row justify-start h-8 w-full py-4">
+                            <div className="flex flex-row justify-start h-8 w-full pt-6">
                                 <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"/>
                                 </svg>
