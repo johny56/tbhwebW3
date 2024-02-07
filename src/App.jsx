@@ -9,7 +9,7 @@ import Layout from "./layouts/index";
 
 import ScrollToTopButton from "components/scroll_upButton";
 
-// import ManagementTeam from "about_us/management";
+import ManagementTeam from "about_us/management";
 // import PolicyPage from "sustainability/policy_page";
 // import ContactUS from "contact_us";
 // import TBHstaff from "thbstaff";
@@ -70,11 +70,12 @@ const App = () => {
 
   const isFactoryPath = location.pathname === "/ourFactory";
   const isCompanyStructurePath = location.pathname === "/company_structure";
+  const isManagementPath = location.pathname === "/management";
 
   return (
     // && !isManagementPath
     <div>
-      {!isRootPath && !isFactoryPath && !isCompanyStructurePath &&(
+      {!isRootPath && !isFactoryPath && !isCompanyStructurePath && !isManagementPath &&(
         <GREENnav></GREENnav>
       )}
       <ScrollToTopOnPageChange />
@@ -85,7 +86,7 @@ const App = () => {
         {/* <Route path='history_img' element={<History_img/>}/> */}
         {/* <Route path='/work_opp' element={<WorkOpputunity/>}/> */}
         {/* <Route path='/Whistleblowing' element={<Whistleblowing/>}/> */}
-        {/* <Route path='/management' element={<ManagementTeam/>}/> */}
+        <Route path='/management' element={<ManagementTeam/>}/>
         {/* <Route path='/policy_page' element={<PolicyPage/>}/> */}
         {/* <Route path='/contact_us' element={<ContactUS/>}/> */}
         {/* <Route path='/tbhstaff' element={<TBHstaff/>}/> */}
