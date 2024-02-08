@@ -106,17 +106,17 @@ export default function OurFACTORY() {
                 </div>
                 <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
                     <Link to='/narathiwat'>
-                        <img className="h-full w-auto rounded-lg" src={picture_3} alt=""/>
+                        <img className="h-full w-auto rounded-lg" src={picture_5} alt=""/>
                     </Link>
                 </div>
                 <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
                     <Link to='/pattani'>
-                        <img className="h-full w-auto rounded-lg" src={picture_4} alt=""/>
+                        <img className="h-full w-auto rounded-lg" src={picture_3} alt=""/>
                     </Link>
                 </div>
                 <div className="h-72 w-auto overflow-hidden hover:opacity-75 transition">
                     <Link to='/suratthani'>
-                        <img className="h-full w-auto rounded-lg" src={picture_5} alt=""/>
+                        <img className="h-full w-auto rounded-lg" src={picture_4} alt=""/>
                     </Link>
                 </div>
 

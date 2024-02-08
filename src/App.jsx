@@ -54,11 +54,11 @@ import History from "about_us/history";
 import History_img from "about_us/history/history_img";
 
 import ScrollToTopOnPageChange from "components/scroll_up";
-// import ThungSongfac from "about_us/ourFactory/thungSong";
-// import YaLafac from "about_us/ourFactory/yala";
-// import NarathiWatfac from "about_us/ourFactory/narathiwat";
-// import PatTanifac from "about_us/ourFactory/pattani";
-// import SuratThanifac from "about_us/ourFactory/suratthani";
+import ThungSongfac from "about_us/ourFactory/thungSong";
+import YaLafac from "about_us/ourFactory/yala";
+import NarathiWatfac from "about_us/ourFactory/narathiwat";
+import PatTanifac from "about_us/ourFactory/pattani";
+import SuratThanifac from "about_us/ourFactory/suratthani";
 
 
 
@@ -98,11 +98,11 @@ const App = () => {
         {/* factory path */}
         <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path='/ourFactoryList' element={<OurFactoryList/>}/>
-        {/* <Route path ="/thungSong" element={<ThungSongfac/>}/>
+        <Route path ="/thungSong" element={<ThungSongfac/>}/>
         <Route path ="/yala" element={<YaLafac/>}/>
         <Route path ="/narathiwat" element={<NarathiWatfac/>}/>
         <Route path ="/pattani" element={<PatTanifac/>}/>
-        <Route path ="/suratthani" element={<SuratThanifac/>}/> */}
+        <Route path ="/suratthani" element={<SuratThanifac/>}/>
         {/* activity path */}
         {/* 2023 */}
         {/* <Route path='/Gcg' element={<Gcg/>}/>
