@@ -47,8 +47,8 @@ import CorevaluePage from "about_us/core_value/corevaluepage";
 // import AwardContent from "about_us/award/awardContent";
 import CompanyStructure from "about_us/company_structure";
 import GREENnav from "components/navbar/greenNav";
-// import OurFACTORY from "about_us/ourFactory";
-// import OurFactoryList from "about_us/ourFactory/ourFactoryList";
+import OurFACTORY from "about_us/ourFactory";
+import OurFactoryList from "about_us/ourFactory/ourFactoryList";
 // import Productpage from "our_product";
 import History from "about_us/history";
 import History_img from "about_us/history/history_img";
@@ -96,9 +96,9 @@ const App = () => {
         <Route path='/CorevaluePage' element={<CorevaluePage/>}/>
         {/* <Route path='/productpage' element={<Productpage/>}/> */}
         {/* factory path */}
-        {/* <Route path='/ourFactory' element={<OurFACTORY/>}/>
+        <Route path='/ourFactory' element={<OurFACTORY/>}/>
         <Route path='/ourFactoryList' element={<OurFactoryList/>}/>
-        <Route path ="/thungSong" element={<ThungSongfac/>}/>
+        {/* <Route path ="/thungSong" element={<ThungSongfac/>}/>
         <Route path ="/yala" element={<YaLafac/>}/>
         <Route path ="/narathiwat" element={<NarathiWatfac/>}/>
         <Route path ="/pattani" element={<PatTanifac/>}/>
