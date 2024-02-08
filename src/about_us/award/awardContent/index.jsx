@@ -2,6 +2,36 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
+import picture_1 from "../asset/letterA.png";
+
+import picture_2 from "../asset/2023/Corporate_GOV_2023.png";
+import picture_3 from "../asset/2023/ECOVADIS 2023.png";
+import picture_4 from "../asset/2023/Fin_D_2023.png";
+import picture_5 from "../asset/2023/จ้าง_คนพิการ_2023.png";
+
+import picture_6 from "../asset/2022/2022_5S Award.png";
+import picture_7 from "../asset/2022/2022_CSR-DIW AWARD.png";
+import picture_8 from "../asset/2022/2022_DISABILITIES EMPOWERMENT.png";
+import picture_9 from "../asset/2022/2022_Ecovadis.png";
+import picture_10 from "../asset/2022/2022_Sufficient Economy Model.png";
+import picture_11 from "../asset/2022/2022_THE GOOD LABOR PRACTICES.png";
+
+
+export const images = [
+    picture_1,
+    picture_2,
+    picture_3,
+    picture_4,
+    picture_5,
+    picture_6,
+    picture_7,
+    picture_8,
+    picture_9,
+    picture_10,
+    picture_11,
+  
+]
+
 export default function AwardContent() {
   const [selectedYear, setSelectedYear] = useState("2023");
   const [isCardVisible, setIsCardVisible] = useState(false);
@@ -19,22 +49,22 @@ export default function AwardContent() {
         {
         title: "ECOVADIS",
         description: "Gold Medal by Ecovadis CSR assessment",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1BLtP3g9LwAe8R37Rx8fJTZ0JL2MLhqxT",
+        imageUrl: picture_2,
         },
         {
         title: "GOOD CORPORATE GOVERNANCE 2023",
         description: "Teck Bee Hang Co.,Ltd",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1SO2Wh4fwWrhAPTRQgv7h6yyYBoao-CL6",
+        imageUrl: picture_3,
         },
         {
         title: "FIN.ดี HAPPY LIFE",
         description: "Teck Bee Hang Co.,Ltd",
-        imageUrl: "https://drive.google.com/uc?export=view&id=18Fr9LowKLf2ZecpDznXVe0UlQKVmxUw0",
+        imageUrl: picture_4,
         },
         {
         title: "DISABILITIES EMPOWERMENT",
         description: "Teck Bee Hang Co.,Ltd",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1m-vAMi2EecSqNdyLmF5Lh_TBxdoE8BUr",
+        imageUrl: picture_5,
         },
     ];
 
@@ -43,7 +73,7 @@ export default function AwardContent() {
         {
         title: "Thailand 5S Award(Gold Medal)",
         description: "Teck Bee Hang Co.,Ltd(Thungsong Branch)",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1TIxcGNyhoieEVJU8TpgpVKx_FweVWKEn",
+        imageUrl: picture_6,
         },
         {
         title: "CSR-DIW Award",
@@ -52,7 +82,7 @@ export default function AwardContent() {
         description3: "Teck Bee Hang Co.,Ltd(Yala Branch)",
         description4: "Teck Bee Hang Co.,Ltd(Thungsong Branch)",
         description5: "Teck Bee Hang Co.,Ltd(Suratthani Branch)",
-        imageUrl: "https://drive.google.com/uc?export=view&id=17s0PtFHuywHoNet7M1YjoC0uzU5-q9IM",
+        imageUrl: picture_7,
         },
         {
         title: "DISABILITIES EMPOWERMENT",
@@ -62,22 +92,22 @@ export default function AwardContent() {
         description3: "Teck Bee Hang Co.,Ltd(Yala Branch)",
         description4: "Teck Bee Hang Co.,Ltd(Thungsong Branch)",
         description5: "Teck Bee Hang Co.,Ltd(Suratthani Branch)",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1IA2tzD5TP1IOv7kwjmaS9n7-u5bdOK7s",
+        imageUrl: picture_8,
         },
         {
         title: "GOOD WORKERS FOLLOWING THE SUFFICIENCY ECONOMY WAY",
         description: "Teck Bee Hang Co.,Ltd(Thungsong Branch)",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1_1UdT7U5cZ3XDoE1_viW2I5h4wkvep_Q",
+        imageUrl: picture_9,
         },
         {
         title: "THE GOOD LABOR PRACTICES",
         description: "Teck Bee Hang Co.,Ltd(Narathiwat Branch)",
-        imageUrl: "https://drive.google.com/uc?export=view&id=12CPbryHc7Kaq55Lqa94kFot__Dcdzdcd",
+        imageUrl: picture_10,
         },
         {
         title: "ECOVADIS",
         description: "Bronze Medal by EcoVadis CS assessment",
-        imageUrl: "https://drive.google.com/uc?export=view&id=1_KPgQlaAJu2zZn4vFikHeU3bTjXxwCGD",
+        imageUrl: picture_11,
         },
 
     ];
@@ -88,10 +118,10 @@ export default function AwardContent() {
         <div className="pt-32 pl-16">
 
           <div className="flex flex-row justify-center h-full w-auto">
-              <div className="relative h-48 w-36 pt-2 pl-8">
-                  {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1XVWCJEmmmrRgxoKR4344UXuWWZyxlfXY" alt=""/> */}
+              <div className="relative h-28 w-32 p-2 pl-8">
+                  <img className="h-full w-full" src={picture_1} alt=""/>
                   {/* <h1 className="text-9xl font-bold outline-3 text-stroke-black scale-150 p-1.5">A */}
-                  <h1 className="absolute top-3.5 left-12 scale-125 text-9xl font-bold drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] font-outline-4 text-white z-10">A</h1>
+                  {/* <h1 className="absolute top-3.5 left-12 scale-125 text-9xl font-bold drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] font-outline-4 text-white z-10">A</h1> */}
                   {/* </h1> */}
                   
               </div>
@@ -133,9 +163,9 @@ export default function AwardContent() {
         </div>
 
         {selectedYear === "2023" && (
-          <div className={`card transition-opacity duration-300 bg-white mt-4`}>
+          <div className={`card transition-opacity duration-300 bg-white`}>
             {awards2023.map((award, index) => (
-              <div key={index} className="relative bg-white shadow-md flex flex-col h-full w-full pt-4 py-10">
+              <div key={index} className="relative bg-white shadow-md flex flex-col h-full w-full pt-4 py-8">
                 <div className="flex flex-row gap-2 h-full w-auto m-2">
                   <div className="h-full w-2/6 bg-transition pl-32">
                     <img className="h-1/3 w-96" src={award.imageUrl} alt={`Award ${index}`} />
@@ -154,10 +184,10 @@ export default function AwardContent() {
         {selectedYear === "2022" && (
           <div className={`card transition-opacity duration-300 bg-white mt-12`}>
             {awards2022.map((award, index) => (
-              <div key={index} className="relative bg-white shadow-md flex flex-col h-full w-full pt-16 py-10">
+              <div key={index} className="relative bg-white shadow-md flex flex-col h-full w-full pt-8 py-28">
                 <div className="flex flex-row gap-2 h-full w-auto m-2">
-                  <div className="h-full w-2/6 bg-transition pl-32">
-                    <img className="h-96 w-96" src={award.imageUrl} alt={`Award ${index}`} />
+                  <div className="h-96 w-auto bg-transition pl-32">
+                    <img className="h-full w-full" src={award.imageUrl} alt={`Award ${index}`} />
                   </div>
                   <div className="flex flex-col h-full pt-16 w-4/6 bg-white text-start mt-4 pl-32">
                     <h1 className="text-4xl font-bold text-back pr-80">{award.title}</h1>
