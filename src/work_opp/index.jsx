@@ -1,16 +1,21 @@
 import Forum from "./emailforum";
+import img from "./asset/Work Opputunity.png";
+
+export const imageBg = img;
 
 export default function WorkOpputunity(){
 
     return (
 
         <div>
-            <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-cover z-20 bg-white">
-                <div className="bg-contain h-screen bg-[url(https://drive.google.com/uc?export=view&id=1NrjlHx18OHUAMQPRh-rd6nx7h-AZhwh-)] bg-no-repeat z-10">
-            
+            <div className="relative h-screen w-full overflow-hidden bg-cover z-0 bg-white">
+                {/* <div className="relative bg-cover h-full z-10"> */}
+                <div className="absolute h-full w-full pt-24">
+                    <img className="h-full w-full" src={imageBg} alt=""/>
+                </div>            
 
-                    <div className="flex relative h-full items-center justify-center">
-                    <div className=" text-green-900 text-center">
+                    <div className="flex relative h-full items-center justify-center z-20">
+                    <div className=" text-green-900 text-center pt-28">
                         <h2 className="my-2 text-7xl font-semibold"> WORK WITH US</h2>
                         <h4 className="my-2 text-4xl font-semibold"> BECOME ONE OF OUR HEROES</h4>
                     
@@ -21,7 +26,7 @@ export default function WorkOpputunity(){
             
             </div>
 
-            <div className="flex relative h-full overflow-x-auto shadow-md sm:rounded-lg">
+            <div className="relative flex flex-col h-full shadow-md pt-20 z-10 sm:rounded-lg">
                     <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
@@ -95,16 +100,62 @@ export default function WorkOpputunity(){
                                 ...
                             </td>
                         </tr>
+                        <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                2
+                            </th>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                        </tr>
+                        <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                2
+                            </th>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                        </tr>
                         
                         
                     </tbody>
                 </table>
             </div>
                 
-            </div>
+            {/* </div> */}
 
-            <div id="emailforum">
-            <Forum></Forum>
+            <div className="pt-36" id="emailforum">
+                <Forum/>
             </div>
 
 

@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 
 import Layout from "./layouts/index";
-// import WorkOpputunity from "work_opp";
+import WorkOpputunity from "work_opp";
 // import Whistleblowing from "Whistleblowing";
 
 
@@ -84,7 +84,7 @@ const App = () => {
         <Route path='/' element={<Layout/>} />
         <Route path='/history' element={<History/>}/>
         <Route path='history_img' element={<History_img/>}/>
-        {/* <Route path='/work_opp' element={<WorkOpputunity/>}/> */}
+        <Route path='/work_opp' element={<WorkOpputunity/>}/>
         {/* <Route path='/Whistleblowing' element={<Whistleblowing/>}/> */}
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>

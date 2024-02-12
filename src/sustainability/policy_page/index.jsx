@@ -10,7 +10,7 @@ const PolicyPage = () =>{
         
             // <div className="py-32 max-h-screen w-full bg-cover bg-[url(https://drive.google.com/uc?export=view&id=10pEUCBisG5dGQmrTeV-pskegypRqr_Rz)]">
             <div className="relative h-screen w-full overflow-hidden bg-green-200 z-0">
-                <div className="absolute h-full w-auto scale-150 z-10">
+                <div className="absolute h-full w-auto scale-150 z-10 ml-36">
                     <img className="h-full w-full" src={image01} alt=""/>
                 </div>
 
@@ -109,11 +109,11 @@ const PolicyPage = () =>{
                 </div>
                 
                 <div className="flex flex-col h-full w-full">
-                    <div className="h-4/7 w-full p-2 pl-12">
+                    <div className="h-3/7 w-full p-2 pl-12">
                             <div className="flex justify-center bg-green-900/80 h-12 w-2/3 rounded-t-lg">
                                 <h1 className="text-white text-xl font-bold p-2">HUMAN RESOURCES & CSR POLICIES</h1>
                             </div>
-                            <div className="h-full w-2/3 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-b-lg pb-4">
+                            <div className="h-4/5 w-2/3 bg-transition flex flex-col justify-start bg-lime-100/90 rounded-b-lg pb-4">
 
                             <div className="flex flex-row justify-start h-8 w-full py-1">
                                 <svg className="mx-1 h-8 w-8 text-green-700"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
