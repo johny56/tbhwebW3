@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "components/navbar";
 
 import img1 from "./asset/BG_Building.jpg";
-import img2 from "./asset/TBH.png";
+import img2 from "./asset/Company ST..png";
 import img3 from "./asset/Shareholder structure.png";
 // import img4 from "E:/Web/assets/04-Company Structure/TBH.png";
 
@@ -26,12 +26,12 @@ export default function CompanyStructure() {
         {/* <h1 className="flex flex-col  text-7xl font-extrabold ml-36 text-[#827717]"> */}
             <img
                 src={image03}
-                className="absolute -top-96 right-12 h-min w-auto scale-50"
+                className="absolute -top-64 right-56 h-full w-auto scale-75"
                 alt=""
                 />
             <img
                 src={image02}
-                className="relative flex justify-center h-full w-3/5 scale-95 mt-36 ml-56 p-8"
+                className="relative flex justify-center h-full w-3/5 scale-100 mt-56 ml-72 p-8"
                 alt=""
                 />
         {/* </h1> */}

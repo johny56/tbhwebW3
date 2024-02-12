@@ -31,7 +31,7 @@ export default function SuratThanifac() {
                         </div>
 
                     <div className="relative flex flex-col pt-24 pl-32 z-20">
-                        <h1 className="font-black text-8xl text-white pt-10">SURATTHANI</h1>
+                        <h1 className="font-black text-8xl text-gray-800/50 pt-10">SURATTHANI</h1>
                         <div className="absolute left-0 pt-16 pl-8">
                             {/* Button to toggle visibility */}
                             <Link to="/ourFactoryList">

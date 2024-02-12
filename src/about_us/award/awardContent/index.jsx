@@ -97,7 +97,7 @@ export default function AwardContent() {
         {
         title: "GOOD WORKERS FOLLOWING THE SUFFICIENCY ECONOMY WAY",
         description: "Teck Bee Hang Co.,Ltd(Thungsong Branch)",
-        imageUrl: picture_9,
+        imageUrl: picture_11,
         },
         {
         title: "THE GOOD LABOR PRACTICES",
@@ -107,7 +107,7 @@ export default function AwardContent() {
         {
         title: "ECOVADIS",
         description: "Bronze Medal by EcoVadis CS assessment",
-        imageUrl: picture_11,
+        imageUrl: picture_9,
         },
 
     ];
@@ -119,16 +119,16 @@ export default function AwardContent() {
 
           <div className="flex flex-row justify-center h-full w-auto">
               <div className="relative h-28 w-32 p-2 pl-8">
-                  <img className="h-full w-full" src={picture_1} alt=""/>
+                  {/* <img className="h-full w-full" src={picture_1} alt=""/> */}
                   {/* <h1 className="text-9xl font-bold outline-3 text-stroke-black scale-150 p-1.5">A */}
                   {/* <h1 className="absolute top-3.5 left-12 scale-125 text-9xl font-bold drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)] font-outline-4 text-white z-10">A</h1> */}
                   {/* </h1> */}
                   
               </div>
 
-              <div className="flex flex-col items-center justify-center text-black">
-                  <h2 className="text-4xl font-bold pr-28">WARDS &</h2>
-                  <h2 className="text-4xl font-bold pt-2">CHIEVEMENTS</h2>
+              <div className="flex flex-row items-center justify-center text-black">
+                  <h2 className="text-6xl font-bold pr-2">AWARDS &</h2>
+                  <h2 className="text-6xl font-bold">ACHIEVEMENTS</h2>
               </div>
           </div>
           

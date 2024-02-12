@@ -44,7 +44,7 @@ export default function YaLafac() {
                             </button>
                             </Link>
                         </div>
-                        <h1 className="font-black text-8xl text-white pt-10 z-20">YALA</h1>
+                        <h1 className="font-black text-8xl text-gray-800/50 pt-10 z-20">YALA</h1>
                     </div>
 
                     <div className="absolute md:h-3/5 w-auto flex flex-row justify-center space-x-32 scale-125 lg:h-1/2 w-full mt-16 z-20">

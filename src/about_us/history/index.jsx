@@ -239,7 +239,7 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
                                     Halcyon Agri Corporation Ltd., takeover of GMG Global Ltd., Thus becoming a majority shareholder of TBH.
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-36 -left-96 scale-150 bg-transition">
+                                    <div className="absolute h-max-screen w-auto -top-36 -left-96 scale-150 bg-transition">
                                         <img className="h-full w-full" src={image10} alt=""/>
                                     </div>
                                     
@@ -256,7 +256,7 @@ export default function History(){
                                 
                                 </div>
 
-                                <div className="absolute h-1/3 w-auto -top-20 -left-48 bg-transition">
+                                <div className="absolute h-1/3 w-auto -top-20 -left-48 bg-transition scale-125">
                                     <img className="h-full w-full" src={image08} alt=""/>
                                 </div>
 
