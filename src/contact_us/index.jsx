@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import img from "./asset/Contact us.png";
+
+export const imageMap = img;
 
 export default function ContactUS() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -14,15 +17,15 @@ export default function ContactUS() {
 
   return (
         <div>
-          <div className="h-full pt-24 bg-gray-200">
-            <div className="flex flex-row items-center p-2 ml-52">
+          <div className="h-screen pt-20 bg-gray-200">
+            <div className="flex flex-row items-center ml-52">
               
               <img
-                className="h-min-screen w-auto"
-                src="https://drive.google.com/uc?export=view&id=14qtecVcjCjvO8X279QUqg2mvMvUWLjx4"
+                className="h-3/4 w-auto pr-12 pt-16 scale-110"
+                src={imageMap}
                 alt=""
               />
-              <div className="flex flex-col h-min-screen w-1/2 bg-cover bg-gray-100 relative z-10">
+              <div className="flex flex-col h-min-screen w-1/2 bg-cover bg-gray-100 relative z-10 pt-2">
                <h1 className="pl-32 m-4 uppercase text-3xl font-sans font-noto-sans-thai">contact us</h1>
                 <div className="w-full pt-8">
                   {[1, 2, 3, 4, 5, 6].map((index) => (
