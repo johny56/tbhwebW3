@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import Layout from "./layouts/index";
 import WorkOpputunity from "work_opp";
-// import Whistleblowing from "Whistleblowing";
+import Whistleblowing from "Whistleblowing";
 
 
 import ScrollToTopButton from "components/scroll_upButton";
@@ -85,7 +85,7 @@ const App = () => {
         <Route path='/history' element={<History/>}/>
         <Route path='history_img' element={<History_img/>}/>
         <Route path='/work_opp' element={<WorkOpputunity/>}/>
-        {/* <Route path='/Whistleblowing' element={<Whistleblowing/>}/> */}
+        <Route path='/Whistleblowing' element={<Whistleblowing/>}/>
         <Route path='/management' element={<ManagementTeam/>}/>
         <Route path='/policy_page' element={<PolicyPage/>}/>
         <Route path='/contact_us' element={<ContactUS/>}/>
