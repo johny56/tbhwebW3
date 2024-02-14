@@ -12,8 +12,9 @@ const Layout = () => {
         <body>
       
         <Header></Header>
+        <Cookie/>
         <Body></Body>
-        <Cookie></Cookie>
+
         
         
         
