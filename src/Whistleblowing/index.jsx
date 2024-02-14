@@ -15,9 +15,6 @@ export default function Whistleblowing() {
       <div className="relative h-screen">
         <div
           className="relative h-full w-full bg-fixed bg-cover z-0"
-          // style={{
-          //   backgroundImage: imgBg,
-          // }}
         >
         <img className="h-full w-full" src={imgBg} alt=""/>
           <div className="absolute top-36 left-96 h-full w-auto flex justify-center items-center">
@@ -34,7 +31,7 @@ export default function Whistleblowing() {
             <img className="h-full w-full" src={imgBg2} alt=""/>
           </div>
 
-        <div className="relative container mx-auto text-black px-16 pt-12 z-20 scale-95 m-4">
+        <div className="relative container mx-auto text-black px-16 pt-16 z-20 scale-95">
           <h1 className="font-extrabold">1. Principle and justification</h1>
           <p className="text-left indent-8">The policy for handling complaints has been established by Teck Bee Hang Co.,
 Ltd., attempting to conduct business that upholds ethical standards in addition to
