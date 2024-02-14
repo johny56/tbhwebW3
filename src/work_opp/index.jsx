@@ -1,4 +1,4 @@
-import Forum from "./emailforum";
+// import Forum from "./emailforum";
 import img from "./asset/Work Opputunity.png";
 
 export const imageBg = img;
@@ -102,7 +102,7 @@ export default function WorkOpputunity(){
                         </tr>
                         <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                2
+                                3
                             </th>
                             <td className="px-6 py-4">
                                 ...
@@ -125,7 +125,53 @@ export default function WorkOpputunity(){
                         </tr>
                         <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                2
+                                4
+                            </th>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                        </tr>
+                        <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                5
+                            </th>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                {/* <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a> */}
+                            </td>
+                            <td className="px-6 py-4">
+                                ...
+                            </td>
+                        </tr>
+                        <tr className="border-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                6
                             </th>
                             <td className="px-6 py-4">
                                 ...
@@ -154,9 +200,9 @@ export default function WorkOpputunity(){
                 
             {/* </div> */}
 
-            <div className="pt-36" id="emailforum">
+            {/* <div className="pt-36" id="emailforum">
                 <Forum/>
-            </div>
+            </div> */}
 
 
             

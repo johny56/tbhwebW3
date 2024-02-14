@@ -1,6 +1,7 @@
 
 import Header from "layouts/header";
 import Body from "layouts/body";
+import Cookie from "layouts/cookie";
 
 import React from 'react';
 
@@ -12,6 +13,7 @@ const Layout = () => {
       
         <Header></Header>
         <Body></Body>
+        <Cookie></Cookie>
         
         
         
