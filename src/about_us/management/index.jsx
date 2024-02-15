@@ -25,7 +25,7 @@ import picture_16 from "./asset/PHAKPONG C.svg";
 // export const image01 = img;
 
 
-const images = [
+export const images = [
     picture_1,
     picture_2,
     picture_3,
