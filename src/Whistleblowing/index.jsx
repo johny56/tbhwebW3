@@ -17,8 +17,8 @@ export default function Whistleblowing() {
           className="relative h-full w-full bg-fixed bg-cover z-0"
         >
         <img className="h-full w-full" src={imgBg} alt=""/>
-          <div className="absolute top-36 left-96 h-full w-auto flex justify-center items-center">
-            <h2 className="text-8xl font-sans font-tt-hoves text-green-900">
+          <div className="absolute top-24 left-96 h-full w-auto flex justify-center items-center">
+            <h2 className="text-8xl font-sans font-bold font-tt-hoves text-green-900">
               WHISTLEBLOWING
             </h2>
           </div>
@@ -71,7 +71,7 @@ You may also use an online system to file complaints.
                 <br/>
                 
                 <h5 className="font-bold">5.</h5>
-                <p className="text-left font-normal">
+                <p className="text-left font-normal">5.
 The company investigates and handles complaints. The investigation results
 should go to the appropriate agencies to report for the right people.
 Send the complainant an email to let them know what we did and inform the

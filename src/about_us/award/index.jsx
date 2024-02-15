@@ -24,16 +24,16 @@ export default function Award(){
     return (
         <>
 
-        {!isCardVisible && (
+        {/* {!isCardVisible && (
           <nav className="flex flex-row bg-transition fixed top-0 w-full z-20">
             <Navbar />
           </nav>
-        )}
+        )} */}
 
-        {isCardVisible &&(
+        {/* {isCardVisible &&( */}
             
-            // <div className="relative bg-cover h-screen w-full bg-[url(https://drive.google.com/uc?export=view&id=17OcFrqE-5HEkzmHXLn5wP6KmcUKK8f05)] py-1">
-            <div className="relative bg-cover h-screen w-auto overflow-hidden z-0">
+            {/* <div className="relative bg-cover h-screen w-full bg-[url(https://drive.google.com/uc?export=view&id=17OcFrqE-5HEkzmHXLn5wP6KmcUKK8f05)] py-1"> */}
+            <div className="relative bg-contain h-screen overflow-hidden w-auto text-back text-end bg-no-scroll z-30">
               <div className="absolute h-full w-auto scale-150 mt-32 p-20 ml-52 z-10">
                 <img className="h-full w-full" src={picture_2} alt=""/>
               </div>
@@ -77,7 +77,7 @@ export default function Award(){
               </div>
             </div>
 
-           )}
+           {/* )} */}
 
         </>
     );

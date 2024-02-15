@@ -95,8 +95,8 @@ export default function History(){
                                 {/* <!-- right --> */}
                                 <div className="flex md:contents">
                                 <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                                    <div className="h-full w-6 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                    <div className="relative h-full w-6 flex items-center justify-center">
+                                    <div className="absolute h-2/3 top-28 w-1 bg-gray-200 pointer-events-none"></div>
                                     </div>
                                     <div
                                     className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-800"
@@ -215,7 +215,7 @@ export default function History(){
                                     <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                     </div>
                                     <div
-                                    className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-800"
+                                    className="w-6 h-6 absolute z-10 top-1/2 -mt-3 rounded-full bg-green-800"
                                     ></div>
                                 </div>
                                 <div
@@ -245,8 +245,8 @@ export default function History(){
                                     
                                 </div>
                                 <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                                    <div className="h-full w-6 flex items-center justify-center">
-                                    <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                    <div className="relative h-full w-6 flex items-center justify-center">
+                                    <div className="absolute -top-28 h-full w-1 bg-gray-200 pointer-events-none"></div>
                                     </div>
                                     <div
                                     className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-800"

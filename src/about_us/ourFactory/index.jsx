@@ -39,31 +39,27 @@ export default function OurFACTORY() {
     setIsCardVisible(!isCardVisible);
     
     setTimeout(() => {  
-      window.scrollTo(0,document.body.scrollHeight);
-    }, 2000);
+      window.scrollTo(10,document.body.scrollHeight);
+    }, 0);
   };
 
 
     return (
       <>
 
-            {/* {!isCardVisible && (
-              <nav className="flex flex-row fixed top-0 w-full z-20 lg:pr-24">
-                <Navbar></Navbar>
-              </nav> 
-            )} */}
+            
               <div className="relative bg-contain h-screen overflow-hidden w-auto text-back text-end bg-no-scroll z-30">
               
                 <div className="absolute h-full w-full top-0 z-10 scale-125">
                     <img className={`h-full w-full rounded-lg
-                        ${isCardVisible ? 'z-10 overflow-y-hidden':'transition transfrom -translate-y-full delay-700 duration-1000 ease-in-out z-10'
+                        ${isCardVisible ? 'z-10 overflow-y-hidden':'transition transfrom -translate-y-full delay-500 duration-1000 ease-in-out z-10'
                     }`} 
                     src={picture_6} alt=""/>
                 </div>
                   <div className="absolute flex flex-col items-center justify-center pt-48 z-10">
                     <img
                       className={`h-full w-full rounded-lg
-                      ${isCardVisible ? 'z-10':'transition transfrom -translate-y-full delay-700 duration-700 ease-in-out pb-20 z-10'
+                      ${isCardVisible ? 'z-10':'transition transfrom -translate-y-full delay-700 duration-500 ease-in-out pb-20 z-10'
                   }`} 
                       src={picture_7}
                       alt=""
@@ -75,7 +71,7 @@ export default function OurFACTORY() {
                       id="showBox"
                       onClick={toggleCard}
                       className={`relative focus:outline-none transition ${
-                        isCardVisible ? 'top-[8rem] z-10' : 'bg-green-900 rounded-lg -translate-y-72 translate-x-96 -right-96 z-10 delay-0 duration-1000 scale-50'
+                        isCardVisible ? 'top-[8rem] z-10' : 'scale-0'
                       }`}
                     >
                       <FontAwesomeIcon className="fa-7x text-gray-200 fa-beat" icon={faChevronDown} />
@@ -88,7 +84,7 @@ export default function OurFACTORY() {
             
             {!isCardVisible && ( 
 
-                <div id="cardContent" className={`absolute top-64 card transition-opacity duration-500 bg-white z-20 overflow-hidden`}>
+                <div id="cardContent" className={`absolute top-0 card transition-opacity duration-500 bg-white z-20 overflow-hidden`}>
 
 
                   <div className="relative flex flex-col h-screen w-full pt-16">
