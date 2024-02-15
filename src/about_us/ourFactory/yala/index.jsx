@@ -48,7 +48,7 @@ export default function YaLafac() {
                     </div>
 
                     <div className="absolute md:h-3/5 w-auto flex flex-row justify-center space-x-32 scale-125 lg:h-1/2 w-full mt-16 z-20">
-                        <div className="h-full w-auto p-4">
+                        <div className="h-full w-auto p-8 mt-4">
                             <img className="h-full w-full" src={picture_2}/>
                         </div>
                         <div className="h-full w-auto p-4">
