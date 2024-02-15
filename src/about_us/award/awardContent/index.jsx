@@ -115,7 +115,7 @@ export default function AwardContent() {
   return (
     <>
       <div className="relative bg-cover h-screen w-full bg-white">
-        <div className="pt-32 pl-16">
+        <div className="pt-20 pl-16">
 
           <div className="flex flex-row justify-center h-full w-auto">
               <div className="relative h-28 w-32 p-2 pl-8">

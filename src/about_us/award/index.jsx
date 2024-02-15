@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "components/navbar";
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import AwardContent from "./awardContent";
 
 import picture_1 from "./asset/1-removebg-preview.png";
 import picture_2 from "./asset/BG_Awards.svg";
@@ -14,11 +15,15 @@ export const images = [
 
 export default function Award(){
 
-    const [isCardVisible, setIsCardVisible] = useState(true);
+  const [isCardVisible, setIsCardVisible] = useState(true);
 
-    const toggleCard = () => {
-        setIsCardVisible(!isCardVisible);
-    };
+  const toggleCard = () => {
+    setIsCardVisible(!isCardVisible);
+    window.scrollTo({
+      top: 800,
+      behavior: "smooth"
+    });
+  };
 
 
     return (
@@ -34,7 +39,7 @@ export default function Award(){
             
             {/* <div className="relative bg-cover h-screen w-full bg-[url(https://drive.google.com/uc?export=view&id=17OcFrqE-5HEkzmHXLn5wP6KmcUKK8f05)] py-1"> */}
             <div className="relative bg-contain h-screen overflow-hidden w-auto text-back text-end bg-no-scroll z-30">
-              <div className="absolute h-full w-auto scale-150 mt-32 p-20 ml-52 z-10">
+              <div className="absolute h-full w-auto scale-150 mt-28 p-20 ml-52 z-10">
                 <img className="h-full w-full" src={picture_2} alt=""/>
               </div>
               <div className="h-2/3 w-full flex flex-col justify-center item-center pt-96 text-end md:pt-64 z-20">
@@ -63,19 +68,20 @@ export default function Award(){
 
                 </div>
                 {/* Button to toggle visibility */}
-                <Link to="/awardContent">
+                {/* <Link to="/awardContent"> */}
                  {/* className="absolute inset-x-0 bottom-0"> */}
                     <button
                     onClick={toggleCard}
                     className={`absolute inset-x-0 bottom-4 focus:outline-none transition${
-                        isCardVisible ? 'top-[8rem] z-20' : ''
+                        isCardVisible ? 'top-[8rem] z-20' : 'top-[8rem] z-20'
                     }`}
                     >
                     <FontAwesomeIcon className="fa-7x text-gray-200 fa-beat" icon={faChevronDown} />
                     </button>
-                </Link>
+                {/* </Link> */}
               </div>
             </div>
+              <AwardContent />
 
            {/* )} */}
 
