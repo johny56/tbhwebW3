@@ -10,7 +10,7 @@ const PolicyPage = () =>{
         
             // <div className="py-32 max-h-screen w-full bg-cover bg-[url(https://drive.google.com/uc?export=view&id=10pEUCBisG5dGQmrTeV-pskegypRqr_Rz)]">
             <div className="relative h-screen w-full overflow-hidden bg-green-200 z-0">
-                <div className="absolute h-full w-auto scale-150 z-10 ml-36">
+                <div className="absolute h-full w-auto scale-150 z-10 ml-32">
                     <img className="h-full w-full" src={image01} alt=""/>
                 </div>
 
