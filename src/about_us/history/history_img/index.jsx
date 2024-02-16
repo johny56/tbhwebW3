@@ -23,10 +23,26 @@ import picture_17 from "../asset/รูปที่ใส่ในปุ่ม+/
 import picture_18 from "../asset/รูปที่ใส่ในปุ่ม+/101-1-1030x696.jpg";
 import picture_19 from "../asset/รูปที่ใส่ในปุ่ม+/102-1-1030x693.jpg";
 import picture_20 from "../asset/รูปที่ใส่ในปุ่ม+/104-1-1030x696.jpg";
-// import picture_21 from "./asset/Activity/03Aug-11.svg";
-// import picture_22 from "./asset/Activity/04Jun-21.svg";
-// import picture_23 from "./asset/Activity/05Jun-16.svg";
-// import picture_24 from "./asset/Activity/06Jun-28.svg";
+
+import picture_21 from "../asset/รูปที่ใส่ในปุ่ม+/100-2-1030x693.jpg";
+import picture_22 from "../asset/รูปที่ใส่ในปุ่ม+/106-1-1030x699.jpg";
+import picture_23 from "../asset/รูปที่ใส่ในปุ่ม+/109-1-1030x693.jpg";
+import picture_24 from "../asset/รูปที่ใส่ในปุ่ม+/114-1-1030x693.jpg";
+import picture_25 from "../asset/รูปที่ใส่ในปุ่ม+/202-1-1030x738.jpg";
+import picture_26 from "../asset/รูปที่ใส่ในปุ่ม+/203-1-1030x741.jpg";
+import picture_27 from "../asset/รูปที่ใส่ในปุ่ม+/206-1-1030x747.jpg";
+import picture_28 from "../asset/รูปที่ใส่ในปุ่ม+/207-1-1030x741.jpg";
+import picture_29 from "../asset/รูปที่ใส่ในปุ่ม+/210-1-1030x736.jpg";
+import picture_30 from "../asset/รูปที่ใส่ในปุ่ม+/211-1-1030x734.jpg";
+import picture_31 from "../asset/รูปที่ใส่ในปุ่ม+/212-1-1030x736.jpg";
+import picture_32 from "../asset/รูปที่ใส่ในปุ่ม+/214-1-1030x736.jpg";
+
+import picture_33 from "../asset/รูปที่ใส่ในปุ่ม+/6085093_f4939feccb962096e81406.jpg";
+import picture_34 from "../asset/รูปที่ใส่ในปุ่ม+/6085093_f4939feccb962096e81f07.jpg";
+import picture_35 from "../asset/รูปที่ใส่ในปุ่ม+/6085093_f4939feccb962096e82d08.jpg";
+import picture_36 from "../asset/รูปที่ใส่ในปุ่ม+/6085093_f4939feccb962096e83d09.jpg";
+import picture_37 from "../asset/รูปที่ใส่ในปุ่ม+/download (1).jpeg";
+import picture_38 from "../asset/รูปที่ใส่ในปุ่ม+/20191104_101022-1030x579.jpg";
 
 // export const image01 = img;
 
@@ -51,10 +67,26 @@ export const images = [
     picture_18,
     picture_19,
     picture_20,
-    // picture_21,
-    // picture_22,
-    // picture_23,
-    // picture_24,
+
+    picture_21,
+    picture_22,
+    picture_23,
+    picture_24,
+    picture_25,
+    picture_26,
+    picture_27,
+    picture_28,
+    picture_29,
+    picture_30,
+    picture_31,
+    picture_32,
+
+    picture_33,
+    picture_34,
+    picture_35,
+    picture_36,
+    picture_37,
+    picture_38,
 ]
 
 export default function History_img(){
@@ -170,6 +202,82 @@ export default function History_img(){
                                 <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
                                     <img className="h-56 w-full" src={picture_20} alt=""/>
                                 </div>
+
+                                {/* line5 */}
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_21} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_22} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_23} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_24} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_25} alt=""/>
+                                </div>
+
+                            {/* line6 */}
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_26} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_27} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_28} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_29} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_30} alt=""/>
+                                </div>
+                                {/* line3 */}
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_31} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_32} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_33} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_34} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_35} alt=""/>
+                                </div>
+
+                            {/* line4 */}
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_36} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_37} alt=""/>
+                                </div>
+
+                                <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
+                                    <img className="h-56 w-full" src={picture_38} alt=""/>
+                                </div>
+
 
                                 </div>
                             </div>
