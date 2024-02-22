@@ -63,7 +63,7 @@ export default function Songkran(){
                                             <div className="absolute top-20 left-0 right-0 bottom-0 bg-white h-full w-full">
                                                             
 
-                                            <Carousel className="fixed top-32 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-4/5 w-full z-0 rounded-xl p-2 shadow-lg"
+                                            <Carousel className="fixed item-center top-16 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-full w-full z-0s"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
                                                         <div className=''>
@@ -72,9 +72,27 @@ export default function Songkran(){
                                                             onClick={handleCloseCarousel}
                                                             >
                                                                 X
-                                                        </button> 
+                                                        </button>
+                                                        <div className='fixed top-96 left-24 h-12 w-8 z-30'>
+                                                            <button className={`h-full w-full`}
+                                                                onClick={() => setActiveIndex(activeIndex-1)}
+                                                            >
+                                                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"/>
+                                                            </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div className='fixed top-96 right-24 h-12 w-8 z-30'>
+                                                            <button className={`h-full w-full`}
+                                                                    onClick={() => setActiveIndex(activeIndex+1)}
+                                                            >
+                                                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                            </svg>
+                                                            </button>
+                                                        </div>
 
-                                                        <div className="absolute bottom-4 left-2/4 z-10 flex -translate-x-2/4 gap-3">
+                                                        <div className="fixed bottom-4 left-2/4 z-10 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -95,32 +113,32 @@ export default function Songkran(){
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-01.jpg?fit=960%2C720&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-02.jpg?fit=960%2C720&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-03.jpg?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-04.jpg?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-04.jpg?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/06/skr-05.jpg?fit=1030%2C481&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover pt-2"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                             
                                             </Carousel>
