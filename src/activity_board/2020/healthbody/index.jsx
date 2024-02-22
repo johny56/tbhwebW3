@@ -54,104 +54,133 @@ export default function Healthbody(){
                                         <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="fixed item-center top-16 left-0 right-0 buttom-0 bg-gray-800/90 h-full w-full z-20"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button>
+                                                        <div className='fixed top-96 left-24 h-12 w-8 z-30'>
+                                                            <button className={`h-full w-full`}
+                                                                onClick={() => setActiveIndex(activeIndex-1)}
+                                                            >
+                                                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"/>
+                                                            </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div className='fixed top-96 right-24 h-12 w-8 z-30'>
+                                                            <button className={`h-full w-full`}
+                                                                    onClick={() => setActiveIndex(activeIndex+1)}
+                                                            >
+                                                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                            </svg>
+                                                            </button>
+                                                        </div> 
+
+                                                        <div className="fixed bottom-4 left-2/4 z-30 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
                                                             key={i}
-                                                            className={`block h-2.5 border-2 cursor-pointer rounded-2xl transition-all content-[''] ${
+                                                            className={`block h-2.5 border-2 cursor-pointer rounded-2xl transition-all content-[''] item-center ${
                                                                 activeIndex === i ? "w-16 bg-white" : "w-12 bg-white/50"
                                                             }`}
                                                             onClick={() => setActiveIndex(i)}
                                                             />
                                                             ))}
 
-                                                            
+                                                            </div>
                                                         </div>
                                                         
                                                         )}
-                                                        >
+                                                        > 
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_0.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_0.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_1.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_2.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                     />
                                                 {/* ----------------------1------------ */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_3.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_4.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_2.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_51.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                     />
                                                 <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_65.jpg?resize=495%2C400&ssl=1"
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_3.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                     />
                                                 {/* --------------------2-------------- */}
                                                 <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_69.jpg?resize=495%2C400&ssl=1"
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_4.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_79.jpg?resize=495%2C400&ssl=1"
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_5.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                 />
                                                 <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_89.jpg?resize=495%2C400&ssl=1"
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_7.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                     />
                                                 <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_98.jpg?resize=495%2C400&ssl=1"
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_6.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                     />
                                                 <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_99.jpg?resize=495%2C400&ssl=1"
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_8.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-4"
                                                     />
-                                                {/* --------------------3-------------- */}
+                                                <img 
+                                                    className="h-56 w-full scale-75 pb-4" 
+                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_9.jpg?resize=845%2C684&ssl=1" 
+                                                    alt=""/>
                                                 
                                             </Carousel>
                                             <button
@@ -264,11 +293,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_51.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_3.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_51.jpg?resize=495%2C400&ssl=1'
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_3.jpg?resize=845%2C684&ssl=1'
                                                     )
                                                 }
                                                 />
@@ -276,11 +305,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_65.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_4.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_65.jpg?resize=495%2C400&ssl=1'
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_4.jpg?resize=845%2C684&ssl=1'
                                                 )
                                             }
                                             />
@@ -289,11 +318,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_69.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_5.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_69.jpg?resize=495%2C400&ssl=1'
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_5.jpg?resize=845%2C684&ssl=1'
                                                 )
                                             }
                                             />
@@ -301,11 +330,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_79.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_7.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_79.jpg?resize=495%2C400&ssl=1'
+                                                'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_7.jpg?resize=845%2C684&ssl=1'
                                                 )
                                             }
                                             />
@@ -313,11 +342,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_89.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_6.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_89.jpg?resize=495%2C400&ssl=1'
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_6.jpg?resize=845%2C684&ssl=1'
                                                 )
                                             }
                                             />
@@ -325,11 +354,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_98.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_8.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_98.jpg?resize=495%2C400&ssl=1'
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_8.jpg?resize=845%2C684&ssl=1'
                                                 )
                                             }
                                             />
@@ -337,11 +366,11 @@ export default function Healthbody(){
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
-                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_99.jpg?resize=495%2C400&ssl=1"
+                                            src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_9.jpg?resize=845%2C684&ssl=1"
                                             alt=""
                                             onClick={() =>
                                                 handleImageClick(
-                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/CNY-2021_210209_99.jpg?resize=495%2C400&ssl=1'
+                                                    'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_9.jpg?resize=845%2C684&ssl=1'
                                                     )
                                                 }
                                                 />
@@ -361,64 +390,4 @@ export default function Healthbody(){
         </div>
     );
 }
-                                {/* <div className="grid grid-flow-rows-5 grid-cols-5 grid-rows-2 gap-3 pt-12 pb-16">
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_0.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_0.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_1.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_2.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_3.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-                                    
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_1_4.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-                                    
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_2.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_3.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_4.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_5.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_7.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_6.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_8.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                    <div className="relative h-56 w-full overflow-hidden hover:opacity-75 transition">
-                                        <img className="h-56 w-full" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9C%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B9%88%E0%B8%B2-BMI-050520_210419_9.jpg?resize=845%2C684&ssl=1" alt=""/>
-                                    </div>
-
-                                </div> */}
+                                

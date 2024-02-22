@@ -17,7 +17,8 @@ export default function Isotrainning(){
 
         <div>
             <div>
-                <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]">
+                <div className="bg-cover h-screen">
+                {/* bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] */}
                     <div className="bg-white h-full w-full text-back text-start pt-12">
                         {/* backbutton */}
                         <div className="flex justify-end pr-12 pt-20">
@@ -50,117 +51,122 @@ export default function Isotrainning(){
                                         <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-800/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="fixed top-16 left-0 right-0 buttom-0 bg-gray-800/90 h-full w-full z-20 item-center"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button>
+                                                        <div className='fixed top-96 left-24 h-12 w-8 z-30'>
+                                                            <button className={`h-full w-full`}
+                                                                onClick={() => setActiveIndex(activeIndex-1)}
+                                                            >
+                                                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"/>
+                                                            </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div className='fixed top-96 right-24 h-12 w-8 z-30'>
+                                                            <button className={`h-full w-full`}
+                                                                    onClick={() => setActiveIndex(activeIndex+1)}
+                                                            >
+                                                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                                            </svg>
+                                                            </button>
+                                                        </div> 
+
+                                                        <div className="fixed bottom-4 left-2/4 z-30 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
                                                             key={i}
-                                                            className={`block h-2.5 border-2 cursor-pointer rounded-2xl transition-all content-[''] ${
+                                                            className={`block h-2.5 border-2 cursor-pointer rounded-2xl transition-all content-[''] item-center ${
                                                                 activeIndex === i ? "w-16 bg-white" : "w-12 bg-white/50"
                                                             }`}
                                                             onClick={() => setActiveIndex(i)}
                                                             />
                                                             ))}
 
-                                                            
+                                                            </div>
                                                         </div>
                                                         
                                                         )}
                                                         > 
-                                                        
-                                    
-                                    
-                                    
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208092239-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208102350-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208103750-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111833-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* ----------------------1------------ */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208111914-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208132824-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75" 
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201208135350-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101628-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* --------------------2-------------- */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101646-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101652-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209101657-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201209135309-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20201222144230-scaled.jpg?resize=495%2C400&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-80 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* ----------------------3------------ */}
-                                                </Carousel>
-                                                <button
-                                                                className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
-                                                                onClick={handleCloseCarousel}
-                                                                >
-                                                                    CLOSE
-                                                </button>    
+                                                </Carousel> 
                                                 </div>
                                                 
                                                 ) : (

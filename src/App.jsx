@@ -33,14 +33,14 @@ import Technical from "activity_board/2021/technical";
 import Chnewyear21 from "activity_board/2021/chnewyear21";
 import Leanproduction from "activity_board/2021/leanproduction";
 
-// import Isotrainning from "activity_board/2020/iso";
-// import Newyear20 from "activity_board/2020/newyear20";
-// import Softskill from "activity_board/2020/softskill";
-// import FireEscapetraining from "activity_board/2020/fireescape";
-// import Merrit from "activity_board/2020/merrit";
-// import Nrproperty from "activity_board/2020/nr";
-// import Ergonomic from "activity_board/2020/ergonomic";
-// import Healthbody from "activity_board/2020/healthbody";
+import Isotrainning from "activity_board/2020/iso";
+import Newyear20 from "activity_board/2020/newyear20";
+import Softskill from "activity_board/2020/softskill";
+import FireEscapetraining from "activity_board/2020/fireescape";
+import Merrit from "activity_board/2020/merrit";
+import Nrproperty from "activity_board/2020/nr";
+import Ergonomic from "activity_board/2020/ergonomic";
+import Healthbody from "activity_board/2020/healthbody";
 
 import Activity_board from "activity_board";
 import Award from "about_us/award";
@@ -123,14 +123,14 @@ const App = () => {
         <Route path='/Leanproduction' element={<Leanproduction/>}/>
         <Route path='/thungsong21' element={<ThungSong21/>}/>
         {/* 2020 */}
-        {/* <Route path='/Isotraining' element={<Isotrainning/>}/>
+        <Route path='/Isotraining' element={<Isotrainning/>}/>
         <Route path='/Newyear20' element={<Newyear20/>}/>
         <Route path='/Softskill' element={<Softskill/>}/>
         <Route path='/Fireescape' element={<FireEscapetraining/>}/>
         <Route path='/Merritpage' element={<Merrit/>}/>
         <Route path='/Nrtraining' element={<Nrproperty/>}/>
         <Route path='/Ergonomic' element={<Ergonomic/>}/>
-        <Route path='/Healthbody' element={<Healthbody/>}/> */}
+        <Route path='/Healthbody' element={<Healthbody/>}/>
 
         <Route path ="/activity_board" element={<Activity_board/>}/>
       </Routes>
