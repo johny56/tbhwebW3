@@ -49,10 +49,18 @@ export default function Leanproduction(){
                                         <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="fixed top-16 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-full w-full z-0 rounded-xl p-2"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
+
+                                                        <div className="fixed bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -63,8 +71,9 @@ export default function Leanproduction(){
                                                             onClick={() => setActiveIndex(i)}
                                                             />
                                                             ))}
-
                                                             
+                                                        
+                                                        </div>
                                                         </div>
                                                         
                                                         )}
@@ -72,115 +81,104 @@ export default function Leanproduction(){
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/1612515306724.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
-                                                <img
+                                                {/* <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210204114853-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
                                                     className="ml-72 h-full w-2/3 object-cover"
-                                                />
+                                                /> */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210204114907-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210204114934-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* ----------------------1------------ */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210204115120-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210204115142-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210205113349-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_116923501488122.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* --------------------2-------------- */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210205131748-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210219152938-scaled.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_116923501488122.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
-                                                />
-                                                <img
-                                                    src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_116923501488122.jpg?resize=845%2C684&ssl=1"
-                                                    alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* --------------------3-------------- */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_116925428492122.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_200380931316712.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_200384769078558.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_116933966910738.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* ------------------4---------------- */}
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_123790503826531.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_215010368686661.jpg?fit=1030%2C772&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_123796723252224.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/line_123797660300917.jpg?resize=845%2C684&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="relative left-1/3 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 {/* ------------------5---------------- */}
-                                            </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
+                                            </Carousel>   
                                             </div>
                                             
                                             ) : (
@@ -197,7 +195,7 @@ export default function Leanproduction(){
                                             }
                                             />
                                         </div>
-                                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                        {/* <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/IMG20210204114853-scaled.jpg?resize=845%2C684&ssl=1"
@@ -208,7 +206,7 @@ export default function Leanproduction(){
                                                 )
                                             }
                                             />
-                                        </div>
+                                        </div> */}
                                         <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"

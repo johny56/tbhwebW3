@@ -28,10 +28,10 @@ import NewYear22 from "activity_board/2022/newyear22";
 import BestSupplier from "activity_board/2022/bestsupply";
 import Bigcleaning from "activity_board/2022/bigcleaning";
 
-// import ThungSong21 from "activity_board/2021/thungsong21";
-// import Technical from "activity_board/2021/technical";
-// import Chnewyear21 from "activity_board/2021/chnewyear21";
-// import Leanproduction from "activity_board/2021/leanproduction";
+import ThungSong21 from "activity_board/2021/thungsong21";
+import Technical from "activity_board/2021/technical";
+import Chnewyear21 from "activity_board/2021/chnewyear21";
+import Leanproduction from "activity_board/2021/leanproduction";
 
 // import Isotrainning from "activity_board/2020/iso";
 // import Newyear20 from "activity_board/2020/newyear20";
@@ -118,10 +118,10 @@ const App = () => {
         <Route path='/Bigcleaning' element={<Bigcleaning/>}/>
         <Route path='/newyear22' element={<NewYear22/>}/>
         {/* 2021 */}
-        {/* <Route path='/Technical' element={<Technical/>}/>
+        <Route path='/Technical' element={<Technical/>}/>
         <Route path='/Chnewyear21' element={<Chnewyear21/>}/>
         <Route path='/Leanproduction' element={<Leanproduction/>}/>
-        <Route path='/thungsong21' element={<ThungSong21/>}/> */}
+        <Route path='/thungsong21' element={<ThungSong21/>}/>
         {/* 2020 */}
         {/* <Route path='/Isotraining' element={<Isotrainning/>}/>
         <Route path='/Newyear20' element={<Newyear20/>}/>

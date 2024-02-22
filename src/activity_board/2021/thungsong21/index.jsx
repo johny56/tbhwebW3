@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { Carousel } from "@material-tailwind/react";
 
+// import img1 from "../../asset/5saward20.png";
+
 export default function ThungSong21(){
 
     const [selectedImage, setSelectedImage] = useState(null);
@@ -17,7 +19,9 @@ export default function ThungSong21(){
 
         <div>
             <div>
-                <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]">
+                {/* <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]"> */}
+                    <div className="bg-cover h-screen w-full">
+                    {/* <img className='h-full w-full' src={img1} alt=""/> */}
                     <div className="bg-white h-full w-full text-back text-start pt-12">
                         <div className="container mx-auto flex flex-col justify-center">
                             <h1 className="text-3xl text-green-800 font-sans font-tt-hoves pt-20 mx-16">
@@ -56,10 +60,18 @@ export default function ThungSong21(){
                                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="absolute top-24 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-full w-full z-0 rounded-xl p-2"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
+
+                                                        <div className="fixed bottom-8 left-2/4 z-50 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -71,7 +83,7 @@ export default function ThungSong21(){
                                                             />
                                                         ))}
 
-                                                            
+                                                        </div>
                                                         </div>
                                                         
                                                     )}
@@ -79,40 +91,34 @@ export default function ThungSong21(){
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/278610.jpg?fit=1030%2C785&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2022/12/4.jpg?fit=1030%2C773&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/278608.jpg?fit=1030%2C757&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/S__41320519.jpg?fit=1030%2C772&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/S__41320521.jpg?fit=1030%2C772&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-96 h-full w-2/3 object-cover scale-75" 
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2021/04/S__41320523.jpg?fit=1030%2C772&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-96 h-full w-2/3 object-cover scale-75"
                                                 />
-                                            </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
+                                            </Carousel>  
                                             </div>
                                             
                                             ) : (
