@@ -9,17 +9,18 @@ import picture_4 from "./asset/DILOK.svg";
 import picture_5 from "./asset/KS.svg";
 import picture_6 from "./asset/SY.svg";
 
-import picture_7 from "./asset/SIRIWAT C.svg";
+import picture_13 from "./asset/SOMCHAI M.svg";
 import picture_8 from "./asset/SETTHA K.svg";
 import picture_9 from "./asset/MAYUREE S.svg";
 
 import picture_10 from "./asset/YOTSAK I.svg";
 import picture_11 from "./asset/THITIKORN V.svg";
 import picture_12 from "./asset/NARONG R.svg";
-import picture_13 from "./asset/SOMCHAI M.svg";
-
 import picture_14 from "./asset/TAWEE P.svg";
+
+import picture_17 from "./asset/JAKKAPHAN R.svg"
 import picture_15 from "./asset/JIRAPHAT S.svg";
+import picture_7 from "./asset/SINEENART P.svg";
 import picture_16 from "./asset/PHAKPONG C.svg";
 // import img from "./asset/Activity/Circle.png";
 // export const image01 = img;
@@ -92,7 +93,8 @@ export default function ManagementTeam(){
                 <div className="flex flex-row h-full w-auto justify-center lg:space-x-16 md:space-x-10">
                     <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
-                        <img className="h-full w-auto rounded-lg z-10" src={picture_9} alt=""/>
+                        <img className="h-full w-auto rounded-lg z-10" src={picture_13} alt=""/>
+
         
                     </div>
                     
@@ -104,14 +106,14 @@ export default function ManagementTeam(){
                     
                     <div className="lg:h-64 w-auto flex justify-center mx-4 px-2 md:h-56 w-auto">
 
-                        <img className="h-full w-auto rounded-lg z-10" src={picture_7} alt=""/>
-        
+                        <img className="h-full w-auto rounded-lg z-10" src={picture_9} alt=""/>
+
                     </div>
                 
                 </div>
 
 
-                <div className="flex flex-row h-full w-auto justify-center lg:space-x-16 mt-96 md:space-x-2">
+                <div className="flex flex-row h-full w-auto justify-center lg:space-x-16  md:space-x-2">
 
                     <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto">
 
@@ -150,6 +152,12 @@ export default function ManagementTeam(){
         
                     </div>
 
+                    <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto">
+
+                         <img className="h-full w-auto rounded-lg z-10" src={picture_7} alt=""/>
+
+        
+                    </div>
                     <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto">
 
                          <img className="h-full w-auto rounded-lg z-10" src={picture_16} alt=""/>
