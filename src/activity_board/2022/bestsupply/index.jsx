@@ -1,5 +1,7 @@
 import React from 'react';
 
+import img1 from '../../asset/yokohama.png'
+
 export default function BestSupplier(){
 
     return (
@@ -27,7 +29,7 @@ export default function BestSupplier(){
                         Best Supplier for Quality Performance Award
                         </h1>
                         <div className="flex justify-center p-4">
-                            <img className="max-h-full max-w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2022/05/yrs-1-e1653465777889.png?fit=1030%2C725&ssl=1" alt=""/>
+                            <img className="max-h-full max-w-full rounded-lg" src={img1} alt=""/>
                         </div>
 
                         </div>

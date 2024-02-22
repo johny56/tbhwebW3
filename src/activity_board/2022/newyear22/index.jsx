@@ -60,12 +60,20 @@ export default function NewYear22(){
                                     {selectedImage ? (
                                             
                                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
-                                                            
+                                                    
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="absolute top-24 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-full w-full z-0 rounded-xl p-2 item-center"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
+
+                                                        <div className="fixed bottom-16 left-2/4 z-50 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -77,7 +85,7 @@ export default function NewYear22(){
                                                             />
                                                         ))}
 
-                                                            
+                                                        </div>
                                                         </div>
                                                         
                                                     )}
@@ -85,40 +93,34 @@ export default function NewYear22(){
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01-4.jpg?fit=1030%2C686&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-10"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-4.jpg?fit=1030%2C686&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-10"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/03-4.jpg?fit=1030%2C686&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-10"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/05-2.jpg?fit=1030%2C686&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-80 h-full w-2/3 object-cover scale-75 pb-10"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/06-2.jpg?fit=1030%2C686&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-96 h-full w-2/3 object-cover scale-75 pb-10"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/04-2.jpg?fit=1030%2C686&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-96 h-full w-2/3 object-cover scale-75 pb-10"
                                                 />
                                             </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
                                             </div>
                                             
                                             ) : (

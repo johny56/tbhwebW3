@@ -23,10 +23,10 @@ import QCC from "activity_board/2023/qcctrain";
 import Efforts from "activity_board/2023/efforts";
 import NewYear23 from "activity_board/2023/newyear23";
 
-// import ThungSong from "activity_board/2022/thungSong5S";
-// import NewYear22 from "activity_board/2022/newyear22";
-// import BestSupplier from "activity_board/2022/bestsupply";
-// import Bigcleaning from "activity_board/2022/bigcleaning";
+import ThungSong from "activity_board/2022/thungSong5S";
+import NewYear22 from "activity_board/2022/newyear22";
+import BestSupplier from "activity_board/2022/bestsupply";
+import Bigcleaning from "activity_board/2022/bigcleaning";
 
 // import ThungSong21 from "activity_board/2021/thungsong21";
 // import Technical from "activity_board/2021/technical";
@@ -113,10 +113,10 @@ const App = () => {
         <Route path='/efforts' element={<Efforts/>}/>
         <Route path='/newyear23' element={<NewYear23/>}/>
         {/* 2022 */}
-        {/* <Route path='/thungSong5S' element={<ThungSong/>}/>
+        <Route path='/thungSong5S' element={<ThungSong/>}/>
         <Route path='/bestsupply' element={<BestSupplier/>}/>
         <Route path='/Bigcleaning' element={<Bigcleaning/>}/>
-        <Route path='/newyear22' element={<NewYear22/>}/> */}
+        <Route path='/newyear22' element={<NewYear22/>}/>
         {/* 2021 */}
         {/* <Route path='/Technical' element={<Technical/>}/>
         <Route path='/Chnewyear21' element={<Chnewyear21/>}/>

@@ -17,7 +17,7 @@ export default function ThungSong(){
 
         <div>
             <div>
-                <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)]">
+                <div className="bg-cover h-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] overflow-x-hidden">
                     <div className="bg-white h-full w-full text-back text-start pt-12">
                         {/* backbutton */}
                         <div className="flex justify-end pr-12 pt-20">
@@ -34,7 +34,7 @@ export default function ThungSong(){
                         <div className="container mx-auto flex flex-col justify-center">
                             <div className="flex flex-row">
                                 <div className="flex flex-col">
-                                    <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-12 pt-20 mx-16">
+                                    <h1 className="text-3xl text-green-800 font-sans font-tt-hoves py-12 pt-20 mx-0">
                                     TBH THUNG SONG RECEIVES 5S GOLD
                                     </h1>
                                     <div className="flex flex-col h-full w-3/4">
@@ -52,16 +52,24 @@ export default function ThungSong(){
                                         </p>
                                     </div>
                                 </div>
-                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 w-full pt-16">
+                                <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-3 w-full pt-18 overflow-x-hidden">
                                     {selectedImage ? (
                                             
                                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="fixed top-24 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-full w-full z-0 rounded-xl p-2"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
+
+                                                        <div className="fixed bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -73,7 +81,7 @@ export default function ThungSong(){
                                                             />
                                                         ))}
 
-                                                            
+                                                        </div>
                                                         </div>
                                                         
                                                     )}
@@ -108,13 +116,7 @@ export default function ThungSong(){
                                                     alt="image 1"
                                                     className="ml-72 h-full w-2/3 object-cover"
                                                 />
-                                            </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
+                                            </Carousel>   
                                             </div>
                                             
                                             ) : (

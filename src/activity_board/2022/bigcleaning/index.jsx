@@ -66,10 +66,18 @@ export default function Bigcleaning(){
                                             <div className="absolute top-0 left-0 right-0 bottom-0 bg-transition h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-40 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="fixed top-20 left-0 right-0 buttom-0 bg-gray-200/90 border-4 h-full w-full z-0 rounded-xl p-2"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
-                                                        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
+
+                                                        <div className="fixed bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -81,7 +89,7 @@ export default function Bigcleaning(){
                                                             />
                                                         ))}
 
-                                                            
+                                                        </div>
                                                         </div>
                                                         
                                                     )}
@@ -89,24 +97,24 @@ export default function Bigcleaning(){
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01-6.jpg?fit=1030%2C687&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-8"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-6.jpg?fit=1030%2C687&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-8"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/03-6.jpg?fit=1030%2C687&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-8"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/05-4.jpg?fit=1030%2C687&ssl=1"
                                                     alt="image 1"
-                                                    className="ml-72 h-full w-2/3 object-cover"
+                                                    className="ml-72 h-full w-2/3 object-cover scale-75 pb-8"
                                                 />
-                                                <img
+                                                {/* <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/05-4.jpg?fit=1030%2C687&ssl=1"
                                                     alt="image 1"
                                                     className="ml-72 h-full w-2/3 object-cover"
@@ -115,14 +123,8 @@ export default function Bigcleaning(){
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/06-4.jpg?fit=1030%2C687&ssl=1"
                                                     alt="image 1"
                                                     className="ml-72 h-full w-2/3 object-cover"
-                                                />
-                                            </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-40 right-10 text-gray-700 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
+                                                /> */}
+                                            </Carousel>   
                                             </div>
                                             
                                             ) : (
@@ -175,7 +177,7 @@ export default function Bigcleaning(){
                                             }
                                             />
                                         </div>
-                                        <div className="relative overflow-hidden hover:opacity-75 transition p-4">
+                                        {/* <div className="relative overflow-hidden hover:opacity-75 transition p-4">
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/05-4.jpg?fit=1030%2C687&ssl=1"
@@ -198,7 +200,7 @@ export default function Bigcleaning(){
                                                 )
                                             }
                                             />
-                                        </div>
+                                        </div> */}
                                         
                                         </>
                                     )}
