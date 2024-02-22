@@ -63,8 +63,16 @@ export default function Songkran(){
                                             <div className="absolute top-20 left-0 right-0 bottom-0 bg-white h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-16 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-4/5 w-full z-0 rounded-xl p-2 shadow-lg"
+                                            <Carousel className="fixed top-32 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-4/5 w-full z-0 rounded-xl p-2 shadow-lg"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
+
+                                                        <div className=''>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
 
                                                         <div className="absolute bottom-4 left-2/4 z-10 flex -translate-x-2/4 gap-3">
                                                         
@@ -78,57 +86,9 @@ export default function Songkran(){
                                                             />
                                                             
                                                         ))}
-                                                            {/* prevArrow={({ handlePrev }) => (
-                                                                <IconButton
-                                                                variant="text"
-                                                                color="white"
-                                                                size="lg"
-                                                                onClick={handlePrev}
-                                                                className="!absolute top-2/4 left-4 -translate-y-2/4"
-                                                                >
-                                                                <svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    fill="none"
-                                                                    viewBox="0 0 24 24"
-                                                                    strokeWidth={2}
-                                                                    stroke="currentColor"
-                                                                    className="h-6 w-6"
-                                                                >
-                                                                    <path
-                                                                    strokeLinecap="round"
-                                                                    strokeLinejoin="round"
-                                                                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                                                                    />
-                                                                </svg>
-                                                                </IconButton>
-                                                            )}
-                                                            nextArrow={({ handleNext }) => (
-                                                                <IconButton
-                                                                variant="text"
-                                                                color="white"
-                                                                size="lg"
-                                                                onClick={handleNext}
-                                                                className="!absolute top-2/4 !right-4 -translate-y-2/4"
-                                                                >
-                                                                <svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    fill="none"
-                                                                    viewBox="0 0 24 24"
-                                                                    strokeWidth={2}
-                                                                    stroke="currentColor"
-                                                                    className="h-6 w-6"
-                                                                >
-                                                                    <path
-                                                                    strokeLinecap="round"
-                                                                    strokeLinejoin="round"
-                                                                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                                                                    />
-                                                                </svg>
-                                                                </IconButton>
-                                                            )} */}
 
                                                         </div>
-                                                        
+                                                        </div>
                                                         
                                                     )}
                                                 >
@@ -164,12 +124,7 @@ export default function Songkran(){
                                                 />
                                             
                                             </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-16 right-10 text-white/90 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>
+                                            
                                             </div>
                                             
                                             ) : (

@@ -68,8 +68,16 @@ export default function Efforts(){
                                             <div className="absolute top-20 left-0 right-0 bottom-0 bg-white h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-16 left-0 right-0 buttom-0 bg-gray-800/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
+                                            <Carousel className="fixed top-32 left-0 right-0 buttom-0 bg-gray-800/90 border-4 h-3/4 w-full z-0 rounded-xl p-2"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
+
+                                                        <div className=''>
+                                                        <button
+                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                            onClick={handleCloseCarousel}
+                                                            >
+                                                                X
+                                                        </button> 
 
                                                         <div className="absolute bottom-4 left-2/4 z-10 flex -translate-x-2/4 gap-3">
                                                         
@@ -83,7 +91,7 @@ export default function Efforts(){
                                                             />
                                                         ))}
 
-                                                            
+                                                        </div>
                                                         </div>
                                                         
                                                     )}
@@ -119,12 +127,6 @@ export default function Efforts(){
                                                     className="ml-80 h-full w-2/3 object-contain"
                                                 />
                                             </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-16 right-10 text-white/90 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
                                             </div>
                                             
                                             ) : (

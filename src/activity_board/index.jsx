@@ -283,8 +283,8 @@ export default function ActivityBoard() {
                 <ul className="list-style-none flex">
                 <li>
                                     <button
-                                    onClick={() => handlePageChange(currentPage - 2)}
-                                    className={`relative block rounded bg-transparent px-6 text-sm text-neutral-600 transition-all duration-300 ${
+                                    onClick={() => handlePageChange(currentPage - 1)}
+                                    className={`relative block rounded bg-transparent px-6 text-sm text-neutral-600 transition-all duration-300 hover:bg-green-300 dark:hover:text-white ${
                                         currentPage === 1 ? 'pointer-events-none text-neutral-300' : 'hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white'
                                     }`}
                                     >
@@ -306,7 +306,7 @@ export default function ActivityBoard() {
                                 <li>
                                     <button
                                     onClick={() => handlePageChange(currentPage + 2)}
-                                    className={`relative block rounded bg-transparent px-6 text-sm text-neutral-600 transition-all duration-300 hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white`}
+                                    className={`relative block rounded bg-transparent px-6 text-sm text-neutral-600 transition-all duration-300 hover:bg-green-300 dark:hover:text-white`}
                                     >
                                     &raquo;
                                     </button>

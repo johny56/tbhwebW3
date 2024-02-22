@@ -15,13 +15,13 @@ import ContactUS from "contact_us";
 import TBHstaff from "thbstaff";
 import CorevaluePage from "about_us/core_value/corevaluepage";
 
-// import Gcg from "activity_board/2023/gcg";
-// import KaizenAward from "activity_board/2023/kaizen";
-// import Songkran from "activity_board/2023/songkran";
-// import HappyWork from "activity_board/2023/happyWorkplace";
-// import QCC from "activity_board/2023/qcctrain";
-// import Efforts from "activity_board/2023/efforts";
-// import NewYear23 from "activity_board/2023/newyear23";
+import Gcg from "activity_board/2023/gcg";
+import KaizenAward from "activity_board/2023/kaizen";
+import Songkran from "activity_board/2023/songkran";
+import HappyWork from "activity_board/2023/happyWorkplace";
+import QCC from "activity_board/2023/qcctrain";
+import Efforts from "activity_board/2023/efforts";
+import NewYear23 from "activity_board/2023/newyear23";
 
 // import ThungSong from "activity_board/2022/thungSong5S";
 // import NewYear22 from "activity_board/2022/newyear22";
@@ -105,13 +105,13 @@ const App = () => {
         <Route path ="/suratthani" element={<SuratThanifac/>}/>
         {/* activity path */}
         {/* 2023 */}
-        {/* <Route path='/Gcg' element={<Gcg/>}/>
+        <Route path='/Gcg' element={<Gcg/>}/>
         <Route path='/KaizenAward' element={<KaizenAward/>}/>
         <Route path='/songkran' element={<Songkran/>}/>
         <Route path='/HappyWork' element={<HappyWork/>}/>
         <Route path='/qcctrain' element={<QCC/>}/>
         <Route path='/efforts' element={<Efforts/>}/>
-        <Route path='/newyear23' element={<NewYear23/>}/> */}
+        <Route path='/newyear23' element={<NewYear23/>}/>
         {/* 2022 */}
         {/* <Route path='/thungSong5S' element={<ThungSong/>}/>
         <Route path='/bestsupply' element={<BestSupplier/>}/>

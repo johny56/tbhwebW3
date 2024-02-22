@@ -68,12 +68,20 @@ export default function KaizenAward(){
                                             <div className="absolute top-20 left-0 right-0 bottom-0 bg-white h-full w-full">
                                                             
 
-                                            <Carousel className="absolute top-16 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-4/5 w-full z-0 rounded-xl p-2 shadow-lg"
+                                            <Carousel className="fixed top-32 left-0 right-0 buttom-0 bg-cover bg-gray-800/70 border-4 h-4/5 w-full z-0 rounded-xl p-2 shadow-lg"
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
 
                                                         // <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+                                                        <div className='fixed'>
+                                                            <button
+                                                                className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
+                                                                onClick={handleCloseCarousel}
+                                                                >
+                                                                X
+                                                            </button>    
 
                                                         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-3">
+
                                                         
                                                         {new Array(length).fill("").map((_, i) => (
                                                             <span
@@ -85,6 +93,7 @@ export default function KaizenAward(){
                                                             />
                                                         ))}
 
+                                                        </div>
                                                             
                                                         </div>
                                                         
@@ -92,41 +101,36 @@ export default function KaizenAward(){
                                                 >
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01.png?fit=1030%2C773&ssl=1"
-                                                    alt="image 1"
+                                                    alt="image1"
                                                     className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-7.jpg?fit=1030%2C773&ssl=1"
-                                                    alt="image 1"
+                                                    alt="image2"
                                                     className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/03-7.jpg?fit=1030%2C772&ssl=1"
-                                                    alt="image 1"
+                                                    alt="image3"
                                                     className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/04-5.jpg?fit=1030%2C772&ssl=1"
-                                                    alt="image 1"
+                                                    alt="image4"
                                                     className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/5.png?fit=1030%2C773&ssl=1"
-                                                    alt="image 1"
+                                                    alt="image5"
                                                     className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
                                                 <img
                                                     src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/6.png?fit=1030%2C773&ssl=1"
-                                                    alt="image 1"
+                                                    alt="image6"
                                                     className="ml-80 h-full w-2/3 object-cover pt-2"
                                                 />
+                                            
                                             </Carousel>
-                                            <button
-                                                            className="absolute pt-4 top-16 right-10 text-white/90 text-bold cursor-pointer text-4xl"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                CLOSE
-                                            </button>    
                                             </div>
                                             
                                             
@@ -136,7 +140,7 @@ export default function KaizenAward(){
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01.png?fit=1030%2C773&ssl=1"
-                                            alt=""
+                                            alt="image1"
                                             onClick={() =>
                                                 handleImageClick(
                                                 'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/01.png?fit=1030%2C773&ssl=1'
@@ -148,7 +152,7 @@ export default function KaizenAward(){
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-7.jpg?fit=1030%2C773&ssl=1"
-                                            alt=""
+                                            alt="image2"
                                             onClick={() =>
                                                 handleImageClick(
                                                 'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/02-7.jpg?fit=1030%2C773&ssl=1'
@@ -160,7 +164,7 @@ export default function KaizenAward(){
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/03-7.jpg?fit=1030%2C772&ssl=1"
-                                            alt=""
+                                            alt="image3"
                                             onClick={() =>
                                                 handleImageClick(
                                                 'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/03-7.jpg?fit=1030%2C772&ssl=1'
@@ -172,7 +176,7 @@ export default function KaizenAward(){
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/04-5.jpg?fit=1030%2C772&ssl=1"
-                                            alt=""
+                                            alt="image4"
                                             onClick={() =>
                                                 handleImageClick(
                                                 'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/09/04-5.jpg?fit=1030%2C772&ssl=1'
@@ -184,7 +188,7 @@ export default function KaizenAward(){
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/5.png?fit=1030%2C773&ssl=1"
-                                            alt=""
+                                            alt="image5"
                                             onClick={() =>
                                                 handleImageClick(
                                                 'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/5.png?fit=1030%2C773&ssl=1'
@@ -196,7 +200,7 @@ export default function KaizenAward(){
                                             <img
                                             className="h-auto max-w-full rounded-lg"
                                             src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/6.png?fit=1030%2C773&ssl=1"
-                                            alt=""
+                                            alt="image6"
                                             onClick={() =>
                                                 handleImageClick(
                                                 'https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/08/6.png?fit=1030%2C773&ssl=1'
