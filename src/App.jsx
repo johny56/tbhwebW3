@@ -42,7 +42,7 @@ import CorevaluePage from "about_us/core_value/corevaluepage";
 // import Ergonomic from "activity_board/2020/ergonomic";
 // import Healthbody from "activity_board/2020/healthbody";
 
-// import Activity_board from "activity_board";
+import Activity_board from "activity_board";
 import Award from "about_us/award";
 import AwardContent from "about_us/award/awardContent";
 import CompanyStructure from "about_us/company_structure";
@@ -132,7 +132,7 @@ const App = () => {
         <Route path='/Ergonomic' element={<Ergonomic/>}/>
         <Route path='/Healthbody' element={<Healthbody/>}/> */}
 
-        {/* <Route path ="/activity_board" element={<Activity_board/>}/> */}
+        <Route path ="/activity_board" element={<Activity_board/>}/>
       </Routes>
 
 
