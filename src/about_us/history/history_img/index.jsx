@@ -1,6 +1,4 @@
 import React, { useState }  from 'react';
-// import data from "./data.json";
-// import { Carousel } from 'react';
 
 import picture_1 from "../asset/รูปที่ใส่ในปุ่ม+/Lee01.jpg";
 import picture_2 from "../asset/รูปที่ใส่ในปุ่ม+/Lee02.jpg";
@@ -43,11 +41,6 @@ import picture_35 from "../asset/รูปที่ใส่ในปุ่ม+/
 import picture_36 from "../asset/รูปที่ใส่ในปุ่ม+/6085093_f4939feccb962096e83d09.jpg";
 import picture_37 from "../asset/รูปที่ใส่ในปุ่ม+/download (1).jpeg";
 import picture_38 from "../asset/รูปที่ใส่ในปุ่ม+/20191104_101022-1030x579.jpg";
-// import { image01 } from '..';
-
-// export const image01 = img;
-
-// import img from "../asset/รูปที่ใส่ในปุ่ม+/"
 
     const History_img = () =>{
 
@@ -262,13 +255,6 @@ import picture_38 from "../asset/รูปที่ใส่ในปุ่ม+/
                         <h1 className="h-full w-full font-bold text-black text-6xl">LEE INN TONG</h1>
                         <p className="h-full w-full font-sans font-tt-hoves text-black text-lg pt-2">- FOUNDER OF TECK BEE HANG -</p>
                         <div className="flex flex-col">
-                            
-                        {/* <button
-                            onClick={toggleCard}
-                            type="button"
-                            className="p-3 h-12 w-36 bg-blue-300 rounded-lg shadow-lg text-gray-800 text-2xl font-bold"
-                            >
-                        </button> */}
                             
                             <div className="grid grid-flow-rows-5 grid-cols-6 grid-rows-2 gap-3 pt-12 pb-16">
         
