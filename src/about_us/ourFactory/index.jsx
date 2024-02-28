@@ -105,7 +105,7 @@ export default function OurFACTORY() {
 
                   <div className="h-56 w-auto overflow-hidden hover:opacity-75 transition">
                       <Link to='/thungSong'>
-                          <div className='h-full w-52 bg-red-100/90 pt-16 rounded-full shadow-md'>
+                          <div className='h-full w-52 bg-gray-200/90 pt-16 rounded-full shadow-md'>
                             <h1 className='text-6xl font-extrabold text-center text-gray-800/80'>H1</h1>
                             <h2 className='text-2xl font-bold text-center text-green-800'>THUNGSONG</h2>
                           </div>
@@ -113,7 +113,7 @@ export default function OurFACTORY() {
                   </div> 
                   <div className="h-56 w-auto overflow-hidden hover:opacity-75 transition">
                       <Link to='/yala'>
-                          <div className='h-full w-52 bg-red-100/90 pt-16 rounded-full shadow-md'>
+                          <div className='h-full w-52 bg-gray-200/90 pt-16 rounded-full shadow-md'>
                             <h1 className='text-6xl font-extrabold text-center text-gray-800/80'>H2</h1>
                             <h2 className='text-2xl font-bold text-center text-green-800'>YALA</h2>
                           </div>
@@ -121,7 +121,7 @@ export default function OurFACTORY() {
                   </div>
                   <div className="h-56 w-auto overflow-hidden hover:opacity-75 transition">
                       <Link to='/narathiwat'>
-                          <div className='h-full w-52 bg-red-100/90 pt-16 rounded-full shadow-md'>
+                          <div className='h-full w-52 bg-gray-200/90 pt-16 rounded-full shadow-md'>
                             <h1 className='text-6xl font-extrabold text-center text-gray-800/80'>H6</h1>
                             <h2 className='text-2xl font-bold text-center text-green-800'>NARATHIWAT</h2>
                           </div>
@@ -129,7 +129,7 @@ export default function OurFACTORY() {
                   </div>
                       <div className="h-56 w-auto overflow-hidden hover:opacity-75 transition">
                       <Link to='/pattani'>
-                          <div className='h-full w-52 bg-red-100/90 pt-16 rounded-full shadow-md'>
+                          <div className='h-full w-52 bg-gray-200/90 pt-16 rounded-full shadow-md'>
                             <h1 className='text-6xl font-extrabold text-center text-gray-800/80'>H7</h1>
                             <h2 className='text-2xl font-bold text-center text-green-800'>PATANI</h2>
                           </div>
@@ -137,7 +137,7 @@ export default function OurFACTORY() {
                       </div>
                   <div className="h-56 w-auto overflow-hidden hover:opacity-75 transition">
                       <Link to='/suratthani'>
-                          <div className='h-full w-52 bg-red-100/90 pt-16 rounded-full shadow-md'>
+                          <div className='h-full w-52 bg-gray-200/90 pt-16 rounded-full shadow-md'>
                             <h1 className='text-6xl font-extrabold text-center text-gray-800/80'>H8</h1>
                             <h2 className='text-2xl font-bold text-center text-green-800'>SURATTHANI</h2>
                           </div>

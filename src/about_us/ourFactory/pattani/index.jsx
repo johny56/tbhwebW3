@@ -22,11 +22,11 @@ export default function PatTanifac() {
     return (
         
 
-            <div className="h-screen w-full overflow-clip">
+            <div className="h-screen w-full overflow-hidden">
                 <div className="relative bottom-0 left-0 right-0 top-0 h-screen w-full">
                     {/* <div className="bg-cover bg-no-repeat bg-center h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1fi4h0fXvnGCnXWKkBmx5pRCBhKOydUIA)]"> */}
-                    <div className="relative bg-cover h-screen w-full z-0">
-                        <div className="absolute h-full w-full z-10">
+                    <div className="relative h-screen w-full z-0">
+                        <div className="absolute h-screen w-full z-10">
                             <img className="h-full w-full" src={picture_1} alt=""/>
                         </div>
 

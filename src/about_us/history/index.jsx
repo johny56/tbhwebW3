@@ -42,7 +42,7 @@ export default function History(){
             <div className="relative h-screen w-full bg-white pt-32 overflow-x-hidden">
                 
                 <div className="h-28 w-3/5 flex flex-col justify-center text-center ml-56 pl-56">
-                <img className="h-full w-auto rounded-lg m-16" src={image01} alt=""/>
+                <img className="h-full w-auto rounded-lg" src={image01} alt=""/>
                     
                 </div>
 
@@ -225,7 +225,7 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
                                     GMG Global Ltd. become majority shareholder of TBH
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-44 -right-80 scale-125 bg-transition">
+                                    <div className="absolute h-96 w-auto -top-44 -right-80 scale-150 bg-transition">
                                         <img className="h-full w-full" src={image07} alt=""/>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@ export default function History(){
                                 </div>
 
                                 <div className="absolute mt-96 top-40 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
-                                    <div className="w-full container mx-auto flex flex-col text-center scale-90">
+                                    <div className="w-full container mx-16 flex flex-col text-center scale-90">
                                         <div className="flex flex-row mx-4 md:flex-row text-center text-md md:text-left md:justify-between py-6">
                                             
                                             <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>

@@ -16,8 +16,8 @@ import img9 from "./asset/5saward.png";
 
 import img10 from "./asset/yokohama.png";
 import img11 from "./asset/newyear22.png";
-import img12 from "./asset/5saward20.png";
 
+import img12 from "./asset/5saward20.png";
 import img13 from "./asset/technical.png";
 import img14 from "./asset/chnewyear21.png";
 import img15 from "./asset/lean.png";
@@ -228,7 +228,7 @@ export default function ActivityBoard() {
             <div className="h-screen w-full bg-white">
                 {/* <div className="h-full w-full bg-contain bg-no-repeat bg-center bg-[url(https://drive.google.com/uc?export=view&id=1Iq3t9w9bNbyIfyvfSYQlaRl6v8_IpAOc)]"> */}
                 <div className="h-full w-full bg-contain"> 
-                    <img className="h-full w-full" src={imgBg} alt=""/>
+                    <img className="h-full w-full sc" src={imgBg} alt=""/>
 
                 </div>
 
