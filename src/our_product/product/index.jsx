@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "E:/Web/assets/08-Our Product/Products/STR10_SHADOW.png";
-import img1 from "E:/Web/assets/08-Our Product/Products/STR20_SHADOW.png";
-import img2 from "E:/Web/assets/08-Our Product/Products/STR20CV_SHADOW.png";
-import img3 from "E:/Web/assets/08-Our Product/Products/MIXTURES_SHADOW.png";
+import img from "../asset/STR10_SHADOW.png";
+import img1 from "../asset/STR20_SHADOW.png";
+import img2 from "../asset/STR20CV_SHADOW.png";
+import img3 from "../asset/MIXTURES_SHADOW.png";
 
 export const image00 = img;
 export const image01 = img1;

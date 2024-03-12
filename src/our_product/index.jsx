@@ -1,10 +1,11 @@
 import React, {useState} from "react";
-import Packing from "./packing";
-import Carousel from "./product _roll/carousel";
+// import Packing from "./packing";
+// import Carousel from "./product _roll/carousel";
+import Product from "./product _roll/productRoll"
 
-import img1 from 'E:/Web/assets/08-Our Product/Products/RRIT-SPEC.webp';
-import img2 from 'E:/Web/assets/08-Our Product/Products/INE-20-SPEC.webp';
-import imgBg from 'E:/Web/assets/08-Our Product/Products/bg.png';
+import img1 from './asset/RRIT-SPEC.png';
+import img2 from './asset/INE-20-SPEC.png';
+import imgBg from './asset/bg.png';
 
 // import { Link } from "react-router-dom";
 // import Product_Roll from "./product _roll/carousel";
@@ -18,7 +19,6 @@ export const imageBackground = imgBg;
     [
       {
           name:'PRIT',
-          // imageUrl: 'https://drive.google.com/uc?export=view&id=1YzxZ2MirclJyI98j0oY1JFISAuIrdCxG',
           imageUrl: {img1},
           
       },
@@ -31,7 +31,6 @@ export const imageBackground = imgBg;
     [
       {
         name:'INE',
-        // imageUrl: 'https://drive.google.com/uc?export=view&id=1vc104kTA6ah_F2FuGEicJCsYNKCJR7dm',
         imageUrl: {img2},
         
       },
@@ -70,11 +69,6 @@ export const imageBackground = imgBg;
                 <div className="relative h-screen bg-white">
                 
                 <div className="flex flex-col w-full h-full pt-24">
-                
-
-                  {/* <div className="bg-contain bg-no-repeat h-full w-full bg-[url(https://drive.google.com/uc?export=view&id=1YuEwCgokxtAKC82Hxb3H0ATiP3QOS_LJ)]"> */}
-                    
-                  {/* <div className="bg-contain bg-no-repeat h-full w-full bg-[url('E:/Web/assets/08-Our Product/Products/bg.png')]"> */}
                   
                   <div className="bg-contain bg-no-repeat h-2/3 w-full">
 
@@ -88,14 +82,14 @@ export const imageBackground = imgBg;
                               <h1 className="h-full w-auto text-8xl font-sans font-bold text-stroke text-green-900">OUR</h1>
                               <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold">PRODUCT</h1>
                           </div>
-                          <div className="flex flex-col h-96 w-auto pt-4 pb-16 pl-80">
+                          <div className="flex flex-col h-96 w-auto pt-4 pb-16 pl-96">
                               <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-32">To Produce Standard Thai Rubber(STR) that
                               <br/>Consistently Satiefies or Exceeds Customer's 
                               <br/>Requirements Through Continuous Improvement</p>
                           </div>
                             <div className="pt-4"> 
 
-                                <Carousel/>
+                                <Product/>
                             </div>
                                 {/* <Product_Rolltest/> */}
                         
@@ -143,7 +137,7 @@ export const imageBackground = imgBg;
                                       <p className="flex justify-end pr-28 text-2xl font-normal h-12 w-full">NEED MORE INFORMATION? FEEL FREE TO CONTACT US</p>
                                     </div>
                                     
-                                    <Packing/>
+                                    {/* <Packing/> */}
                                     
 
                                 </div>
