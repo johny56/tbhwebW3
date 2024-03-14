@@ -27,7 +27,7 @@ export default function YaLafac() {
                 <div className="h-screen w-full overflow-clip">
                     {/* <div className="bg-cover bg-no-repeat bg-center h-full w-auto bg-[url(https://drive.google.com/uc?export=view&id=1r-lZKJ3L5_klh6EWlakBmwYEGGXMeNb2)]"> */}
                     <div className="relative bg-cover h-full w-full z-0">
-                        <div className="absolute h-full w-full z-10">
+                        <div className="absolute bg-cover h-screen w-full z-10">
                             <img className="h-full w-full" src={picture_1} alt=""/>
                         </div>
                     <div className="relative flex flex-row pt-24 pl-32 z-20">
