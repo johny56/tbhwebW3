@@ -1,6 +1,7 @@
 import React from "react";
-import InputConplaintForm from "./complaint_form";
+import Form from "./complaint_form";
 import StyledCheckbox from "./checkbox";
+// import { useState } from "react";
 
 import imgBg from "./asset/Backgroung Whistle Blower.jpg";
 import imgBg2 from "./asset/Background Whistle Blower part 2.jpg";
@@ -10,9 +11,16 @@ export const img2 = imgBg2;
 
 
 export default function Whistleblowing() {
+
+
+
   return (
 
+    
+
       <div className="relative h-screen">
+
+
         <div
           className="relative h-full w-full bg-fixed bg-cover z-0"
         >
@@ -86,15 +94,16 @@ executives of the activities&#39; results for acknowledgment.</p>
             <img className="h-full w-full" src={imgBg2} alt=""/>
           </div>
 
-          <div className="relative h-full w-3/4 overflow-hidden bg-white overflow-x-hidden z-10 scale-95 ml-64 mt-24">
+          <div className="relative h-full w-full overflow-hidden bg-white z-10 mt-24">
               
-            <div className="relative bg-cover h-full w-4/6 z-20 mt-6">
-            <div className="text-back text-start mx-16">
+            <div className="relative bg-cover h-full w-full z-20 mt-6">
+            <div className="text-back text-start">
 
-            <div className="absolute -top-36 container mx-auto flex flex-col justify-center scale-75 ml-32">
-                {/* <p className="mt-2">Entered Text: <InputConplaintForm/></p> */}
+            <div className="absolute h-full w-full -top-36 flex flex-col justify-center">
 
-                <div className="w-full font-normal px-4 mb-2 pt-2">
+            
+                <Form/>
+                {/* <div className="w-full font-normal px-4 mb-2 pt-2">
                   <h2 className="text-2xl font-extrabold mb-4">Complaint Form</h2>
                 </div>
                 
@@ -144,12 +153,10 @@ executives of the activities&#39; results for acknowledgment.</p>
                 </div>
 
                 </div>
-                <p className="pl-4 text-normal">Maximum 4 MB(File must be .Doc .Docx and pdf only)</p>
+                <p className="pl-4 text-normal">Maximum 4 MB(File must be .Doc .Docx and pdf only)</p> */}
 
                
 
-                {/* <div className="h-96 w-full bg-white">
-                </div> */}
 
                 
                 <div className="flex flex-col p-4">
@@ -161,7 +168,6 @@ executives of the activities&#39; results for acknowledgment.</p>
         </div>
             </div>
           </div>
-          {/* <div className="relative pt-36 bg-red-200 h-12 w-full z-30"></div>   */}
 
       </div>
 
