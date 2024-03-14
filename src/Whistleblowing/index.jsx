@@ -71,7 +71,7 @@ You may also use an online system to file complaints.
                 <br/>
                 
                 <h5 className="font-bold">5.</h5>
-                <p className="text-left font-normal">5.
+                <p className="text-left font-normal inline">
 The company investigates and handles complaints. The investigation results
 should go to the appropriate agencies to report for the right people.
 Send the complainant an email to let them know what we did and inform the
