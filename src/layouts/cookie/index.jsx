@@ -34,7 +34,7 @@ const Cookie = () => {
                 </div>
 
                 <h1 className="text-2xl font-bold pl-2">NOTIFICATION</h1>
-                <h2 className="text-normal font-normal pt-2 pl-12">Now</h2>
+                {/* <h2 className="text-normal font-normal pt-2 pl-12">Now</h2> */}
             </div>
 
             <div className="flex flex-col h-full w-full rounded-lg bg-green-700 text-white p-2 mt-2 z-30 border-2">

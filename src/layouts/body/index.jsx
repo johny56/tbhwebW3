@@ -5,7 +5,7 @@ import Activity from "about_us/company_activity";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
-// import Product from "our_product/product";
+import Product from "../../our_product/product _roll/productRoll";
 // import FactoryClip from "about_us/factory";
 // import CompanyStructure from "about_us/company_structure";
 
@@ -50,7 +50,7 @@ const Body = () => {
                   </div>
                   
                   <div classsName="m-2" id="product">
-                      {/* <Product></Product> */}
+                      <Product></Product>
                   </div>
   
                   <div id="policy">
