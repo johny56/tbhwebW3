@@ -16,6 +16,10 @@ import img11 from "./asset/History pic/6.png";
 import img12 from "./asset/History pic/10.png";
 import img13 from "./asset/History pic/8.png";
 
+import video from "D:/webW4/tbhweb/tbhwebW3/src/about_us/history/asset/videoHistory.mp4";
+
+
+
 
 
 export const image01 = img1;
@@ -66,8 +70,14 @@ export default function History(){
                     <img className="absolute h-full w-full" src={image03}/>
 
                     <div className="absolute flex flex-row h-full w-full pl-16">
-                        <div className="h-full w-2/3 m-4">
-                            <div className="h-96 w-auto bg-gray-200/20 border-4 mt-16 ml-12"></div>
+                        {/* <div className="h-full w-2/3 m-4">
+                            <div className="h-96 w-auto bg-gray-200/20 border-4 mt-16 ml-12 z-30" src={video}></div>
+                        </div> */}
+                        <div className="h-full w-2/3 m-4 video-wrapper">
+                            <video className="video-area" controls>
+                            <source src={video} type="video/mp4"/>
+                            Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div className="h-full w-2/5 pl-36">
                             <img className="h-full w-auto" src={image04} alt=""/>
@@ -80,7 +90,6 @@ export default function History(){
                 </div>
 
                 <div className="relative bg-contain h-screen w-full mt-48 scale-125">
-                    {/* bg-[url('https://drive.google.com/uc?export=view&id=1dU0MhmIxow1DWaytqd7Rv3j4ljqyGlCQ')] */}
                     <img className="absolute h-full w-full" src={image05}/>
                     
                     <div className="h-36 w-3/6 flex flex-col my-4 ml-96 pl-96 scale-125">
@@ -114,9 +123,9 @@ export default function History(){
                                 {/* <!-- left --> */}
                                 <div className="flex flex-row-reverse md:contents">
                                 <div
-                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end pt-16"
+                                    className="bg-transition col-start-3 col-end-5 p-4 my-4 ml-auto text-end pt-16 z-20"
                                 >
-                                    <h3 className="font-bold text-3xl mb-1 text-green-900">1966</h3>
+                                    <h3 className="font-bold text-3xl mb-1 text-green-900 z-2">1966</h3>
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
                                     Overtook Krung Sang Rubber to become Thailand's leading natural rubber exporter.
                                     </p>
@@ -225,8 +234,8 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
                                     GMG Global Ltd. become majority shareholder of TBH
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-44 -right-80 scale-150 bg-transition">
-                                        <img className="h-full w-full" src={image07} alt=""/>
+                                    <div className="absolute h-96 w-auto -top-48 -right-72 bg-transition scale-150 z-0">
+                                        <img className="h-full w-full scale-150" src={image07} alt=""/>
                                     </div>
                                 </div>
                                 </div>
@@ -239,8 +248,8 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
                                     Halcyon Agri Corporation Ltd., takeover of GMG Global Ltd., Thus becoming a majority shareholder of TBH.
                                     </p>
-                                    <div className="absolute h-max-screen w-auto -top-36 -left-96 scale-150 bg-transition">
-                                        <img className="h-full w-full" src={image10} alt=""/>
+                                    <div className="absolute h-96 w-auto -top-36 -left-96 scale-150 bg-transition">
+                                        <img className="h-full w-full scale-150" src={image10} alt=""/>
                                     </div>
                                     
                                 </div>
@@ -256,18 +265,18 @@ export default function History(){
                                 
                                 </div>
 
-                                <div className="absolute h-1/3 w-auto -top-20 -left-48 bg-transition scale-125">
-                                    <img className="h-full w-full" src={image08} alt=""/>
+                                <div className="absolute h-1/3 w-auto -top-20 -left-48 bg-transition scale-125 z-0 opacity-50">
+                                    <img className="h-full w-full scale-150" src={image08} alt=""/>
                                 </div>
 
-                                <div className="absolute h-1/3 w-auto top-96 -right-56 scale-x-100 bg-transition">
+                                <div className="absolute h-1/3 w-auto top-96 pt-12 -right-72 scale-150 bg-transition">
                                     <img className="h-full w-full" src={image09} alt=""/>
                                 </div>
                                 {/* <div className="absolute h-96 w-auto top-80 -scale-x-100 -right-5 bg-transition">
                                     <img className="h-full w-full" src={image10} alt=""/>
                                 </div> */}
                                 
-                                <div className="absolute h-2/4 w-auto buttom-0 top-48 mt-96 pt-96 scale-100 -left-48 bg-transition">
+                                <div className="absolute h-2/4 w-auto buttom-0 top-0 mt-96 pt-96 scale-150 -left-48 bg-transition">
                                     <img className="h-full w-full" src={image11} alt=""/>
                                 </div>
 
@@ -280,15 +289,15 @@ export default function History(){
                 </div>
                             <div className="relative h-3/4 w-full overflow-hidden">
 
-                                <img className="absolute top-16 buttom-0 bg-cover h-max w-full z-10" src={image12}/>
+                                <img className="absolute top-20 buttom-0 bg-cover h-max w-full z-10" src={image12}/>
 
-                                <div className="absolute -top-32 -right-28 h-full w-auto z-0 scale-125">
+                                <div className="absolute -top-28 -right-28 h-full w-auto z-0 scale-125">
                                     <img className="h-full w-full" src={image13} alt=""/>
                                 </div>
 
-                                <div className="absolute mt-96 top-40 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
+                                <div className="absolute mt-96 top-32 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
                                     <div className="w-full container mx-16 flex flex-col text-center scale-90">
-                                        <div className="flex flex-row mx-4 md:flex-row text-center text-md md:text-left md:justify-between py-6">
+                                        <div className="flex flex-row mx-4 md:flex-row text-center text-md md:text-left md:justify-between py-4">
                                             
                                             <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>
                                             <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>

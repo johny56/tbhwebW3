@@ -1,4 +1,6 @@
 import React, { useState }  from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 import picture_1 from "../asset/รูปที่ใส่ในปุ่ม+/Lee01.jpg";
 import picture_2 from "../asset/รูปที่ใส่ในปุ่ม+/Lee02.jpg";
@@ -89,32 +91,25 @@ import picture_38 from "../asset/รูปที่ใส่ในปุ่ม+/
                 
                 {isCardVisible && (
                     <div className="fixed auto-scroll h-full w-full bg-gray-500/90 z-20 mt-24">
-                        <button
-                            onClick={toggleCard}
-                            type="button"
-                            className="absolute right-10 top-10 h-12 w-12 bg-red-600 rounded-lg shadow-lg text-white text-4xl font-extrabold border-2 pb-2 hover:bg-red-700"
-                            >x
-                        </button>
-                        
-                        <button
-                        
-                            onClick={handleImageLeft}
-                            type="button"
-                            className="absolute left-64 top-72 h-32 w-12 pb-2 z-20"
-                            >
-                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"/>
-                            </svg>
+                            <button
+                                onClick={toggleCard}
+                                className={`absolute right-10 top-10 focus:outline-none transition `}
+                                >
+                            <FontAwesomeIcon className="fa-3x text-white hover:opacity-60" icon={faChevronLeft}/>
 
+                            </button>
+                        
+                        <button
+                        onClick={handleImageLeft}
+                        className={`absolute top-56 mt-28 ml-24 left-24 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40 hover:bg-gray-600`}
+                        >
+                        {"<"}
                         </button>
                         <button
-                            onClick={handleImageRight}
-                            type="button"
-                            className="absolute right-64 top-72 h-32 w-12 pb-2 z-20"
-                            >
-                            <svg class="h-16 w-16 text-white bg-gray-800 rounded-full hover:bg-green-600"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
+                        onClick={handleImageRight}
+                        className={`absolute top-56 mt-28 mr-24 right-24 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40 hover:bg-gray-600`}
+                        >
+                        {">"}
                         </button>
                         <div className='relative -top-5 flex justify-center m-20 h-3/4 w-auto'>
 
