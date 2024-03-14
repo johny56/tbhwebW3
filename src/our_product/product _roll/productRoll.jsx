@@ -104,7 +104,7 @@ export default function Product_Rolltest() {
 
   // negative spin 
 
-  if(currentProduct==-5 && preProduct==-4){
+  if(currentProduct===-5 && preProduct===-4){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -113,7 +113,7 @@ export default function Product_Rolltest() {
               <div
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif4} alt=""/>
+                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif2} alt=""/>
 
               </div>
               <div className="absolute top-40 left-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
@@ -126,8 +126,97 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                <p className="absolute top-0 h-56 w-64">
+                    Dirt (%wt,max) 0.16<br/>
+                    Ash (%wt,max) 0.80<br/>
+                    Nitrogen (%wt,max) 0.60<br/>
+                    Volatile Matter (%wt,max) 0.80<br/>
+                    Po (Initial Plasticity) 30<br/>
+                    PRI Index (min) 40<br/>
+                    Money (ML 1+4, 100C)-
+                    </p>
+                </div>
+              </div>
+              <div className="absolute top-96 mt-12 left-2 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                 <p className="absolute top-10 h-56 w-64">
+                    Dirt (%wt,max) 0.08<br/>
+                    Ash (%wt,max) 0.60<br/>
+                    Nitrogen (%wt,max) 0.60<br/>
+                    Volatile Matter (%wt,max) 0.80<br/>
+                    Po (Initial Plasticity) 30<br/>
+                    PRI Index (min) 50<br/>
+                    Money (ML 1+4, 100C)-
+                    </p>
+                </div>
+              </div>
+              <div className="absolute top-96 mt-12 right-6 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                <div className="relative h-full w-56 text-center">
+                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <p className="absolute top-10 h-56 w-64">
+                    Dirt (%wt,max) 0.16<br/>
+                    Ash (%wt,max) 0.80<br/>
+                    Nitrogen (%wt,max) 0.60<br/>
+                    Volatile Matter (%wt,max) 0.80<br/>
+                    Po (Initial Plasticity) 30<br/>
+                    PRI Index (min) 40<br/>
+                    Money (ML 1+4, 100C)-
+                    </p>
+                </div>
+              </div>
+
+              
+          </div>
+  
+        
+      
+        
+  
+          <button
+              onClick={handleClickLeft}
+              className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+            >
+              {"<"}
+            </button>
+            <button
+              onClick={handleClickRight}
+              className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+            >
+              {">"}
+            </button>
+
+            
+
+          
+  
+    </div>
+    );
+
+    }
+  if(currentProduct===-4&&preProduct===-3){
+    return (
+      <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
+  
+        <div className="relative h-full w-full bg-red-100/50 z-20 overflow-hidden">
+              
+              <div 
+              className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
+                
+                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif4} alt=""/>
+
+              </div>
+              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              
+              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              
+              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
+                <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.08<br/>
                     Ash (%wt,max) 0.60<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -166,36 +255,30 @@ export default function Product_Rolltest() {
                     </p>
                 </div>
               </div>
-
-              
           </div>
   
-        
       
         
   
-            <button
+          <button
               onClick={handleClickLeft}
-              className={`absolute top-96 mt-28 ml-48 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+              className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
             >
               {"<"}
             </button>
             <button
               onClick={handleClickRight}
-              className={`absolute top-96 mt-28 mr-32 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+              className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
             >
               {">"}
             </button>
-
-            
-
           
   
-    </div>
+      </div>
+  
     );
-
-    }
-  if(currentProduct==-4&&preProduct==-3){
+  }
+  if(currentProduct===-3 && preProduct===-2){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -212,10 +295,11 @@ export default function Product_Rolltest() {
               <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
               <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -226,7 +310,8 @@ export default function Product_Rolltest() {
                     </p>
                 </div>
               </div>
-              <div className="absolute top-96 mt-12 left-2 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+
+              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
                 <p className="absolute top-10 h-56 w-64">
@@ -237,9 +322,10 @@ export default function Product_Rolltest() {
                     Po (Initial Plasticity) 30<br/>
                     PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
-                    </p>
+                    </p>  
                 </div>
               </div>
+
               <div className="absolute top-96 mt-12 right-6 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
@@ -254,12 +340,17 @@ export default function Product_Rolltest() {
                     </p>
                 </div>
               </div>
+          
+          
+          
           </div>
+
   
+        
       
         
   
-            <button
+          <button
               onClick={handleClickLeft}
               className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
             >
@@ -277,7 +368,7 @@ export default function Product_Rolltest() {
   
     );
   }
-  if(currentProduct==-3 && preProduct==-2){
+  if(currentProduct===-2 && preProduct===-1){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -287,91 +378,6 @@ export default function Product_Rolltest() {
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
                   `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif8} alt=""/>
-
-              </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-              
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
-              
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-          </div>
-
-          <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                
-                </div>
-              </div>
-              <div className="absolute top-96 mt-12 right-6 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) -<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-  
-        
-      
-        
-  
-            <button
-              onClick={handleClickLeft}
-              className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-            >
-              {"<"}
-            </button>
-            <button
-              onClick={handleClickRight}
-              className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-            >
-              {">"}
-            </button>
-          
-  
-      </div>
-  
-    );
-  }
-  if(currentProduct==-2 && preProduct==-1){
-    return (
-      <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
-  
-        <div className="relative h-full w-full bg-red-100/50 z-20 overflow-hidden">
-              
-              <div 
-              className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
-                
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif10} alt=""/>
   
               </div>
               <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
@@ -382,19 +388,18 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.08<br/>
-                    Ash (%wt,max) 0.60<br/>
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <p className="absolute top-0 h-56 w-64">
+                    Dirt (%wt,max) 0.16<br/>
+                    Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
                     Volatile Matter (%wt,max) 0.80<br/>
                     Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 50<br/>
+                    PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
                     </p>
                 </div>
                 </div>
-              </div>
               <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
@@ -413,17 +418,20 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 right-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
                 <p className="absolute top-10 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
                     Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
+                    Po (Initial Plasticity) -<br/>
                     PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
                     </p>
                 
+              </div>
+              
+              
               </div>
           </div>
   
@@ -431,7 +439,7 @@ export default function Product_Rolltest() {
       
         
   
-            <button
+          <button
               onClick={handleClickLeft}
               className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
             >
@@ -449,7 +457,7 @@ export default function Product_Rolltest() {
   
     );
   }
-  if(currentProduct==-1 && preProduct==0){
+  if(currentProduct===-1 && preProduct===0){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -458,7 +466,7 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif2} alt=""/>
+                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif10} alt=""/>
   
               </div>
               <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
@@ -469,6 +477,21 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                <p className="absolute top-0 h-56 w-64">
+                    Dirt (%wt,max) 0.08<br/>
+                    Ash (%wt,max) 0.60<br/>
+                    Nitrogen (%wt,max) 0.60<br/>
+                    Volatile Matter (%wt,max) 0.80<br/>
+                    Po (Initial Plasticity) 30<br/>
+                    PRI Index (min) 50<br/>
+                    Money (ML 1+4, 100C)-
+                    </p>
+                </div>
+              </div>
+
+              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-10 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -478,21 +501,8 @@ export default function Product_Rolltest() {
                     Po (Initial Plasticity) 30<br/>
                     PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.08<br/>
-                    Ash (%wt,max) 0.60<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 50<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
+                </p>
+                
                 </div>
               </div>
 
@@ -511,9 +521,99 @@ export default function Product_Rolltest() {
                 
                 </div>
               </div>
+              
 
           </div>
           
+  
+          <button
+              onClick={handleClickLeft}
+              className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+            >
+              {"<"}
+            </button>
+            <button
+              onClick={handleClickRight}
+              className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+            >
+              {">"}
+            </button>
+          
+  
+      </div>
+  
+    );
+  }
+  if(currentProduct===0 && preProduct===1){
+    return (
+      <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
+  
+        <div className="relative h-full w-full bg-red-100/50 z-20 overflow-hidden">
+              
+              <div 
+              className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
+                
+                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif2} alt=""/>
+  
+              </div>
+              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              
+              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              
+              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
+                    <div className="relative h-full w-56 text-center ml-56">
+                    <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                    <p className="absolute top-0 h-56 w-64">
+                        Dirt (%wt,max) 0.16<br/>
+                        Ash (%wt,max) 0.80<br/>
+                        Nitrogen (%wt,max) 0.60<br/>
+                        Volatile Matter (%wt,max) 0.80<br/>
+                        Po (Initial Plasticity) 30<br/>
+                        PRI Index (min) 40<br/>
+                        Money (ML 1+4, 100C)-
+                        </p>
+                    </div>
+                  </div>
+                  <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                    <div className="relative h-full w-56 text-center">
+                    <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                    <p className="absolute top-10 h-56 w-64">
+                        Dirt (%wt,max) 0.08<br/>
+                        Ash (%wt,max) 0.60<br/>
+                        Nitrogen (%wt,max) 0.60<br/>
+                        Volatile Matter (%wt,max) 0.80<br/>
+                        Po (Initial Plasticity) 30<br/>
+                        PRI Index (min) 50<br/>
+                        Money (ML 1+4, 100C)-
+                        </p>
+                    </div>
+                  </div>
+                    <div className="absolute top-96 mt-12 right-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                    <div className="relative h-full w-56 text-center">
+                    <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixture</div>
+                    <p className="absolute top-10 h-56 w-64">
+                      Dirt (%wt,max) 0.16<br/>
+                      Ash (%wt,max) 0.80<br/>
+                      Nitrogen (%wt,max) 0.60<br/>
+                      Volatile Matter (%wt,max) 0.80<br/>
+                      Po (Initial Plasticity) 30<br/>
+                      PRI Index (min) 40<br/>
+                      Money (ML 1+4, 100C)-
+                    </p>
+                
+              
+                      </div>
+                    
+                    
+                  </div>
+          </div>
+
+  
+        
+      
+        
   
             <button
               onClick={handleClickLeft}
@@ -533,7 +633,7 @@ export default function Product_Rolltest() {
   
     );
   }
-  if(currentProduct==0 && preProduct==1){
+  if(currentProduct===1 && preProduct===2){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -543,7 +643,7 @@ export default function Product_Rolltest() {
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
                   `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif4} alt=""/>
-  
+
               </div>
               <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
@@ -554,8 +654,8 @@ export default function Product_Rolltest() {
 
           <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.08<br/>
                     Ash (%wt,max) 0.60<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -592,8 +692,8 @@ export default function Product_Rolltest() {
                     PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
                     </p>
-                  </div>
                 
+              </div>
                 
               </div>
   
@@ -619,7 +719,7 @@ export default function Product_Rolltest() {
   
     );
   }
-  if(currentProduct==1 && preProduct==2){
+  if(currentProduct===2 && preProduct===3){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -636,12 +736,11 @@ export default function Product_Rolltest() {
               <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
               <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-          </div>
 
-          <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -655,91 +754,6 @@ export default function Product_Rolltest() {
               <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-                <div className="absolute top-96 mt-12 right-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.08<br/>
-                    Ash (%wt,max) 0.60<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 50<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                
-              </div>
-                
-              </div>
-  
-        
-      
-        
-  
-            <button
-              onClick={handleClickLeft}
-              className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-            >
-              {"<"}
-            </button>
-            <button
-              onClick={handleClickRight}
-              className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-            >
-              {">"}
-            </button>
-          
-  
-      </div>
-  
-    );
-  }
-  if(currentProduct==2 && preProduct==3){
-    return (
-      <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
-  
-        <div className="relative h-full w-full bg-red-100/50 z-20 overflow-hidden">
-              
-              <div 
-              className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
-                
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif8} alt=""/>
-
-              </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-              
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
-              
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-10 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
@@ -754,14 +768,14 @@ export default function Product_Rolltest() {
               </div>
               <div className="absolute top-96 mt-12 right-6 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
+                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                 <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
+                    Dirt (%wt,max) 0.08<br/>
+                    Ash (%wt,max) 0.60<br/>
                     Nitrogen (%wt,max) 0.60<br/>
                     Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) -<br/>
-                    PRI Index (min) 40<br/>
+                    Po (Initial Plasticity) 30<br/>
+                    PRI Index (min) 50<br/>
                     Money (ML 1+4, 100C)-
                     </p>
                 </div>
@@ -792,7 +806,7 @@ export default function Product_Rolltest() {
     );
 
     }
-    if(currentProduct==3 && preProduct==4){
+    if(currentProduct===3 && preProduct===4){
       return (
         <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
     
@@ -803,7 +817,7 @@ export default function Product_Rolltest() {
                 // key={index} 
                 className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                   
-                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif10} alt=""/>
+                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif8} alt=""/>
   
                 </div>
                 {/* ))} */}
@@ -815,14 +829,14 @@ export default function Product_Rolltest() {
 
                 <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.08<br/>
-                    Ash (%wt,max) 0.60<br/>
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <p className="absolute top-0 h-56 w-64">
+                    Dirt (%wt,max) 0.16<br/>
+                    Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
                     Volatile Matter (%wt,max) 0.80<br/>
                     Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 50<br/>
+                    PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
                     </p>
                 
@@ -845,13 +859,13 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 right-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
                 <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
                 <p className="absolute top-10 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
                     Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
+                    Po (Initial Plasticity) -<br/>
                     PRI Index (min) 40<br/>
                     Money (ML 1+4, 100C)-
                     </p>
@@ -883,7 +897,7 @@ export default function Product_Rolltest() {
       );
   
       }
-    if(currentProduct==4 && preProduct==-5){
+    if(currentProduct===4 && preProduct===-5){
       return (
         <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
     
@@ -894,7 +908,7 @@ export default function Product_Rolltest() {
                 // key={index} 
                 className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                   
-                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif2} alt=""/>
+                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif10} alt=""/>
   
                 </div>
                 {/* ))} */}
@@ -906,6 +920,21 @@ export default function Product_Rolltest() {
 
                 <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                <p className="absolute top-0 h-56 w-64">
+                    Dirt (%wt,max) 0.08<br/>
+                    Ash (%wt,max) 0.60<br/>
+                    Nitrogen (%wt,max) 0.60<br/>
+                    Volatile Matter (%wt,max) 0.80<br/>
+                    Po (Initial Plasticity) 30<br/>
+                    PRI Index (min) 50<br/>
+                    Money (ML 1+4, 100C)-
+                    </p>
+                
+                </div>
+              </div>
+              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                <div className="relative h-full w-56 text-center">
                 <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-10 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -914,20 +943,6 @@ export default function Product_Rolltest() {
                     Volatile Matter (%wt,max) 0.80<br/>
                     Po (Initial Plasticity) 30<br/>
                     PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.08<br/>
-                    Ash (%wt,max) 0.60<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 50<br/>
                     Money (ML 1+4, 100C)-
                     </p>
                 
@@ -976,7 +991,7 @@ export default function Product_Rolltest() {
           
             
     // positive spin-------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    if(currentProduct==-4 && preProduct==5){
+    if(currentProduct===-4 && preProduct===5){
       return (
         <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
     
@@ -996,8 +1011,8 @@ export default function Product_Rolltest() {
 
                 <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1062,7 +1077,7 @@ export default function Product_Rolltest() {
     
       );
     }
-    if(currentProduct==-3 && preProduct==-4){
+    if(currentProduct===-3 && preProduct===-4){
       return (
         <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
     
@@ -1082,8 +1097,8 @@ export default function Product_Rolltest() {
             
                 <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1148,7 +1163,7 @@ export default function Product_Rolltest() {
     
       );
     }
-  if(currentProduct==-2 && preProduct==-3){
+  if(currentProduct===-2 && preProduct===-3){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -1168,8 +1183,8 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1234,7 +1249,7 @@ export default function Product_Rolltest() {
   
     );
   }
-  if(currentProduct==-1 && preProduct==-2){
+  if(currentProduct===-1 && preProduct===-2){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -1254,8 +1269,8 @@ export default function Product_Rolltest() {
 
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1321,7 +1336,7 @@ export default function Product_Rolltest() {
   
     );
   }
-  if(currentProduct==0 && preProduct==-1){
+  if(currentProduct===0 && preProduct===-1){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -1343,9 +1358,10 @@ export default function Product_Rolltest() {
               <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
+
                               <div className="relative h-full w-56 text-center ml-56">
-                              <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                              <p className="absolute top-10 h-56 w-64">
+                              <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                              <p className="absolute top-0 h-56 w-64">
                                   Dirt (%wt,max) 0.08<br/>
                                   Ash (%wt,max) 0.60<br/>
                                   Nitrogen (%wt,max) 0.60<br/>
@@ -1411,7 +1427,7 @@ export default function Product_Rolltest() {
     );
 
     }
-  if(currentProduct==1 && preProduct==0){
+  if(currentProduct===1 && preProduct===0){
     return (
       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
   
@@ -1433,8 +1449,8 @@ export default function Product_Rolltest() {
               <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1501,7 +1517,7 @@ export default function Product_Rolltest() {
  
 
       
-      if(currentProduct==2 && preProduct==1){
+      if(currentProduct===2 && preProduct===1){
         return (
           <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
       
@@ -1520,8 +1536,8 @@ export default function Product_Rolltest() {
                   <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                   <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1587,7 +1603,7 @@ export default function Product_Rolltest() {
     
         }
         
-          if(currentProduct==3 && preProduct==2){
+          if(currentProduct===3 && preProduct===2){
             return (
               <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
           
@@ -1606,8 +1622,8 @@ export default function Product_Rolltest() {
                       <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                       <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1674,7 +1690,7 @@ export default function Product_Rolltest() {
         
             }
             
-              if(currentProduct==4 && preProduct==3){
+              if(currentProduct===4 && preProduct===3){
                 return (
                   <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
               
@@ -1694,51 +1710,52 @@ export default function Product_Rolltest() {
                           <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                           
                           <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-                      </div>
+                      
                       <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
-              <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.16<br/>
-                    Ash (%wt,max) 0.80<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) -<br/>
-                    PRI Index (min) 40<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                </div>
-              </div>
+                      <div className="relative h-full w-56 text-center ml-56">
+                      <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                      <p className="absolute top-0 h-56 w-64">
+                          Dirt (%wt,max) 0.16<br/>
+                          Ash (%wt,max) 0.80<br/>
+                          Nitrogen (%wt,max) 0.60<br/>
+                          Volatile Matter (%wt,max) 0.80<br/>
+                          Po (Initial Plasticity) 30<br/>
+                          PRI Index (min) 40<br/>
+                          Money (ML 1+4, 100C)-
+                          </p>
+                      </div>
+                    </div>
+                    <div className="absolute top-96 mt-12 left-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                      <div className="relative h-full w-56 text-center">
+                      <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
+                      <p className="absolute top-10 h-56 w-64">
+                          Dirt (%wt,max) 0.16<br/>
+                          Ash (%wt,max) 0.80<br/>
+                          Nitrogen (%wt,max) 0.60<br/>
+                          Volatile Matter (%wt,max) 0.80<br/>
+                          Po (Initial Plasticity) -<br/>
+                          PRI Index (min) 40<br/>
+                          Money (ML 1+4, 100C)-
+                          </p>
+                      </div>
+                    </div>
 
-              <div className="absolute top-96 mt-12 right-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
-                <div className="relative h-full w-56 text-center">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                <p className="absolute top-10 h-56 w-64">
-                    Dirt (%wt,max) 0.08<br/>
-                    Ash (%wt,max) 0.60<br/>
-                    Nitrogen (%wt,max) 0.60<br/>
-                    Volatile Matter (%wt,max) 0.80<br/>
-                    Po (Initial Plasticity) 30<br/>
-                    PRI Index (min) 50<br/>
-                    Money (ML 1+4, 100C)-
-                    </p>
-                
-                </div>
-              </div>
+                    <div className="absolute top-96 mt-12 right-0 flex justify-center item-center h-full w-1/4 z-30 scale-95">
+                      <div className="relative h-full w-56 text-center">
+                      <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                      <p className="absolute top-10 h-56 w-64">
+                          Dirt (%wt,max) 0.08<br/>
+                          Ash (%wt,max) 0.60<br/>
+                          Nitrogen (%wt,max) 0.60<br/>
+                          Volatile Matter (%wt,max) 0.80<br/>
+                          Po (Initial Plasticity) 30<br/>
+                          PRI Index (min) 50<br/>
+                          Money (ML 1+4, 100C)-
+                          </p>
+                      
+                      </div>
+                    </div>
+                      </div>
               
                     
                   
@@ -1762,7 +1779,7 @@ export default function Product_Rolltest() {
               
                 );
                }
-                  if(currentProduct==5 && preProduct==4){
+                  if(currentProduct===5 && preProduct===4){
                     return (
                       <div className="relative h-screen w-full bg-white overflow-x-hidden z-0">
                   
@@ -1785,8 +1802,8 @@ export default function Product_Rolltest() {
                               
                               <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                               <div className="relative h-full w-56 text-center ml-56">
-                              <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
-                              <p className="absolute top-10 h-56 w-64">
+                              <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
+                              <p className="absolute top-0 h-56 w-64">
                                   Dirt (%wt,max) 0.08<br/>
                                   Ash (%wt,max) 0.60<br/>
                                   Nitrogen (%wt,max) 0.60<br/>
@@ -1826,7 +1843,7 @@ export default function Product_Rolltest() {
                                 </div>
                 
                 
-              </div>
+                          </div>
                               
                               
                           </div>
@@ -1873,26 +1890,11 @@ export default function Product_Rolltest() {
                   <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                   
                   <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-              </div>
-        
-            
-                  <button
-                  onClick={handleClickLeft}
-                  className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-                >
-                  {"<"}
-                </button>
-                <button
-                  onClick={handleClickRight}
-                  className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-                >
-                  {">"}
-                </button>
 
-                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
+                  <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
                 <div className="relative h-full w-56 text-center ml-56">
-                <div className="absolute h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
-                <p className="absolute top-10 h-56 w-64">
+                <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
+                <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
                     Ash (%wt,max) 0.80<br/>
                     Nitrogen (%wt,max) 0.60<br/>
@@ -1933,6 +1935,23 @@ export default function Product_Rolltest() {
                     </p>
                 </div>
               </div>
+              </div>
+        
+            
+                  <button
+                  onClick={handleClickLeft}
+                  className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+                >
+                  {"<"}
+                </button>
+                <button
+                  onClick={handleClickRight}
+                  className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
+                >
+                  {">"}
+                </button>
+
+                
                 
         
             </div>
