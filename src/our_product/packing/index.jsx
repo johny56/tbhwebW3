@@ -108,112 +108,68 @@ export default function Packing(){
     return(
 
 
-        <div className="relative h-screen w-full bg-white">
+        <div className="relative h-screen w-full bg-red-100/50">
                                         
             <div className="h-full w-full flex flex-col">
 
-            <div className="flex flex-row justify-center item-center pt-28">
+            <div className="flex flex-row justify-center item-center pt-96">
                 <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
                 <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
             </div>
 
-            <div className="flex flex-rows-5 justify-center item-center overflow-x-clip gap-x-28">
+            <div className="absolute top-96 h-72 w-full bg-green-300/20 mt-12">
 
-                <div className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img3} alt=""/>
-                    </div>
-                </div>
+              <div className="flex flex-rows-5 justify-center item-center overflow-x-clip gap-x-24 mr-20">
 
-                <div className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img4} alt=""/>
-                    </div>
-                </div>
+                  <div className="relative flex justify-center item-center h-full w-1/6">
+                      <div className="relative h-full w-56 pt-8">
+                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img3} alt=""/> */}
+                      </div>
+                  </div>
 
-                <div className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img5} alt=""/>
-                    </div>
-                </div>
+                  <div className="relative flex justify-center item-center h-full w-1/6">
+                      <div className="relative h-full w-56 pt-8">
+                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img4} alt=""/> */}
+                      </div>
+                  </div>
 
-                <div className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img6} alt=""/>
-                    </div>
-                </div>
+                  <div className="relative flex justify-center item-center h-full w-1/6">
+                      <div className="relative h-full w-56 pt-8">
+                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img5} alt=""/> */}
+                      </div>
+                  </div>
 
-                <div className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img7} alt=""/>
-                    </div>
-                </div>
+                  <div className="relative flex justify-center item-center h-full w-1/6">
+                      <div className="relative h-full w-56 pt-8">
+                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img6} alt=""/> */}
+                      </div>
+                  </div>
 
-                <div className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img8} alt=""/>
-                    </div>
-                </div>
+                  <div className="relative flex justify-center item-center h-full w-1/6">
+                      <div className="relative h-full w-56 pt-8">
+                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img7} alt=""/> */}
+                      </div>
+                  </div>
 
-                
-                {/* {Package[currentPackage - 1].map((item, index) => (
-                <div key={index} className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={item.imageUrl} alt=""/>
-                    </div>
-                </div>
-                ))}
-
-                {Package[currentPackage - 0].map((item, index) => (
-                <div key={index} className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 left-4 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
-                    </div>
-                </div>
-                ))}
-
-                {Package[currentPackage + 1].map((item, index) => (
-                  <div key={index} className="relative flex justify-center item-center h-full w-2/6">
-                    <div className="relative h-full w-64 pt-8">
-                    <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-20 left-4 h-64 w-72 bg-transparent pt-8" src={item.imageUrl} alt="" />
-                    </div>
-                </div>
-                ))}
+                  <div className="relative flex justify-center item-center h-full w-1/6">
+                      <div className="relative h-full w-56 pt-8">
+                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
+                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img8} alt=""/> */}
+                      </div>
+                  </div>
 
 
-                {Package[currentPackage + 2].map((item, index) => (
-                  <div key={index} className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 left-6 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
-                    </div>
-                </div>
-                ))}
-
-                {Package[currentPackage + 3].map((item, index) => (
-                <div key={index} className="relative flex justify-center item-center h-full w-1/6">
-                    <div className="relative h-full w-56 pt-8">
-                    <div className="absolute left-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                    <img className="absolute buttom-32 left-36 h-56 w-64 bg-transparent pt-8" src={item.imageUrl} alt="" />
-                    </div>
-                </div>
-                ))} */}
-
-
+              </div>
             </div>
 
-            <div className="relative h-12 w-full mt-80 pt-16">
+            <div className="relative h-12 w-full mt-80">
 
-                <div className="flex flex-rows-3 justify-center">
+                <div className="flex flex-rows-3 justify-center bg-red-100/50">
                 <button
                 onClick={() => handlePackageChange(currentPackage + 1)}
                 className={`h-12 w-12 bg-gray-500 rounded-full
@@ -240,7 +196,7 @@ export default function Packing(){
                 </button>
                 </div>
 
-                <div className="relativeb h-screen w-full bg-white pt-48">
+                <div className="relativeb h-screen w-full bg-red-100/50 pt-48">
                     
                     <div className="flex flex-col">
 
@@ -251,18 +207,16 @@ export default function Packing(){
 
                         <div className="flex flex-row justify-center item-center gap-16">
                           <div className="h-72 w-72 bg-green-500 rounded-lg">
-                            {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1-0y3U1wZANYwX9jzMHTj5gsA_GK7ChHO" alt="" /> */}
                             <img className="h-full w-full" src={imgFT} alt="" />
                           </div>
                           <div className="h-72 w-72 bg-green-500 rounded-lg">
-                            {/* <img className="h-full w-full" src="https://drive.google.com/uc?export=view&id=1VaaoCrTffbLrUAmM7F6aqDT2MwKrCxn5" alt="" /> */}
                             <img className="h-full w-full" src={imgTC} alt="" />
                           </div>
                         </div>
 
                     </div>
 
-                    <div className="bg-[#273F02] text-white mt-56">
+                    <div className="bg-[#273F02] text-white mt-44">
                     <div className="w-full container mx-auto flex flex-col text-center">
                         <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6 mx-8">
                             
