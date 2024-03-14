@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./complaint_form";
-import StyledCheckbox from "./checkbox";
+
 // import { useState } from "react";
 
 import imgBg from "./asset/Backgroung Whistle Blower.jpg";
@@ -99,146 +99,25 @@ executives of the activities&#39; results for acknowledgment.</p>
             <div className="relative bg-cover h-full w-full z-20 mt-6">
             <div className="text-back text-start">
 
-            <div className="absolute h-full w-full -top-36 flex flex-col justify-center">
+            <div className="absolute h-full w-full top-0 flex flex-col justify-center z-30">
 
             
                 <Form/>
-                {/* <div className="w-full font-normal px-4 mb-2 pt-2">
-                  <h2 className="text-2xl font-extrabold mb-4">Complaint Form</h2>
-                </div>
                 
-                <div className="w-full  px-4 mb-6">
-                  <h2 className="text-xl font-normal mb-4">Name-Surname</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
                 
-                <div className="w-full  px-4 mb-6">
-                  <h2 className="text-xl front-normal mb-4">Contact Number</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                  <h2 className="text-xl front-normal mb-4">Email</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                  <h2 className="text-xl front-normal mb-4">Type of Complaint</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                  <h2 className="text-xl front-normal mb-4">Complaint Topics</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full px-4 mb-6">
-                  <h2 className="text-xl front-normal mb-4">Details</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
-                
-                <div className="flex flex-row">
-
-                <div className="flex flex-col w-full px-4 mb-6">
-                  <h2 className="text-xl front-normal mb-4">Attachment(if have)</h2>
-                  <InputConplaintForm></InputConplaintForm>
-                </div>
-
-                <div className="pt-12">
-                  <span className="sr-only">Choose file</span>
-                  <input type="file" 
-                  className="block px-8 mx-8 w-full text-sm text-slate-500
-                  file:mr-4 file:py-2 file:px-4
-                  file:rounded-full file:border-0
-                  file:text-sm file:font-semibold
-                  file:bg-violet-50 file:text-violet-700
-                  hover:file:bg-violet-100
-                  "/>
-                </div>
-
-                </div>
-                <p className="pl-4 text-normal">Maximum 4 MB(File must be .Doc .Docx and pdf only)</p> */}
-
-               
-
-
-                
-                <div className="flex flex-col p-4">
-                    <StyledCheckbox></StyledCheckbox>
-                    <p className="text-xm pt-2">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
-                </div>
             </div>
             
-        </div>
+            </div>
             </div>
           </div>
 
-      </div>
+          </div>
 
         
 
-      </div>
+    </div>
 
         
   );
 }
 
-
-
-{/* <div className="relative bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden">
-        <div className=" bg-cover h-max-screen bg-[url(https://drive.google.com/uc?export=view&id=1VbqaCvp6OGGFT11eaatz_AqWai8yKYol)] bg-repeat-y z-10">
-        <footer className="bg-white text-back text-start mx-16 p-8">
-            <div className="container mx-auto flex flex-col justify-center">
-                <div className="w-full font-normal px-4 mb-6">
-                <h2 className="text-xl font-extrabold mb-4">Complaint Form</h2>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                
-                <h2 className="text-xl font-normal mb-4">Name-Surname</h2>
-                <InputConplaintForm></InputConplaintForm>
-                </div>
-                <p className="mt-2">Entered Text: {inputText}</p> 
-                
-                <div className="w-full  px-4 mb-6">
-                <h2 className="text-xl front-normal mb-4">Contact Number</h2>
-                <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                <h2 className="text-xl front-normal mb-4">Email</h2>
-                <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                <h2 className="text-xl front-normal mb-4">Type of Complaint</h2>
-                <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                <h2 className="text-xl front-normal mb-4">Complaint Topics</h2>
-                <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="w-full  px-4 mb-6">
-                <h2 className="text-xl front-normal mb-4">Details</h2>
-                <InputConplaintForm></InputConplaintForm>
-                </div>
-                <div className="flex flex-col w-full px-4 mb-6">
-                <h2 className="text-xl front-normal mb-4">Attachment(if have)</h2>
-                <div className="flex flex-row">
-
-                <InputConplaintForm></InputConplaintForm>
-                <span class="sr-only">Choose file</span>
-                <input type="file" 
-                className="block px-10 mx-8 w-full text-sm text-slate-500
-                file:mr-4 file:py-2 file:px-4
-                file:rounded-full file:border-0
-                file:text-sm file:font-semibold
-                file:bg-violet-50 file:text-violet-700
-                hover:file:bg-violet-100
-                "/>
-                </div>
-                </div>
-                
-                <div className="flex flex-row p-4">
-                    <StyledCheckbox></StyledCheckbox>
-                    <p className="text-xs">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
-                </div>
-            </div>
-            
-        </footer>
-
-        </div>
-        </div> */}
