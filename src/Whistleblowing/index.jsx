@@ -39,7 +39,7 @@ export default function Whistleblowing() {
             <img className="h-full w-full" src={imgBg2} alt=""/>
           </div>
 
-        <div className="relative container mx-auto text-black px-16 pt-16 z-20 scale-95">
+        <div className="relative container mx-auto text-black px-16 pt-4 z-20 scale-95">
           <h1 className="font-extrabold">1. Principle and justification</h1>
           <p className="text-left indent-8">The policy for handling complaints has been established by Teck Bee Hang Co.,
 Ltd., attempting to conduct business that upholds ethical standards in addition to
@@ -78,7 +78,7 @@ You may also use an online system to file complaints.
 <a className="font-bold"> https://teckbeehang.com/whistleblower/</a></p>
                 <br/>
                 
-                <h5 className="font-bold">5.</h5>
+                <h5 className="font-bold inline">5.</h5>
                 <p className="text-left font-normal inline">
 The company investigates and handles complaints. The investigation results
 should go to the appropriate agencies to report for the right people.
@@ -94,7 +94,7 @@ executives of the activities&#39; results for acknowledgment.</p>
             <img className="h-full w-full" src={imgBg2} alt=""/>
           </div>
 
-          <div className="relative h-full w-full overflow-hidden bg-white z-10 mt-24">
+          <div className="relative h-full w-full overflow-hidden bg-white z-10 mt-12">
               
             <div className="relative bg-cover h-full w-full z-20 mt-6">
             <div className="text-back text-start">
