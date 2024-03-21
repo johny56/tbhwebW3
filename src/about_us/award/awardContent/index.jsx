@@ -136,13 +136,13 @@ export default function AwardContent() {
             <button
               onClick={toggleCard}
               type="button"
-              className="p-3 h-12 w-36 bg-white rounded-lg shadow-lg text-gray-800 text-2xl font-bold"
+              className="p-3 h-12 w-36 bg-white rounded-lg text-gray-800 text-2xl font-bold"
             >
               {selectedYear}
               <FontAwesomeIcon className="pl-8 fa-1x text-gray-800" icon={faChevronDown} />
             </button>
             {isCardVisible && (
-              <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
+              <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10 shadow-lg">
                 <div className="py-1">
                   <button
                     onClick={() => handleYearChange("2023")}

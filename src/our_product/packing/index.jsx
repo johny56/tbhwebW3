@@ -1,9 +1,5 @@
 import { useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
-
-import img1 from "../asset/FT.png"
-import img2 from "../asset/TC.png"
 
 import img3 from "./asset/package/Shrink wrap - Metal pallet RMP.png"
 import img4 from "./asset/package/Shrink wrap - wooden pallet.png"
@@ -12,8 +8,62 @@ import img6 from "./asset/package/Shrink wrap - DMP-A Power Concord.png"
 import img7 from "./asset/package/Metal box.png"
 import img8 from "./asset/package/Shrink wrap - plastic pallet.png"
 
-export const imgFT = img1;
-export const imgTC = img2;
+import img9 from "./asset/package/GIFpacking.png"
+
+import gif1 from "./asset/package/GIF/gif01.gif";
+import gif2 from "./asset/package/GIF/gif02.gif";
+import gif3 from "./asset/package/GIF/gif03.gif";
+import gif4 from "./asset/package/GIF/gif04.gif";
+import gif5 from "./asset/package/GIF/gif05.gif";
+import gif6 from "./asset/package/GIF/gif06.gif";
+
+import gif7 from "./asset/package/GIFreverse/gif01reverse.gif";
+import gif8 from "./asset/package/GIFreverse/gif02reverse.gif";
+import gif9 from "./asset/package/GIFreverse/gif03reverse.gif";
+import gif10 from "./asset/package/GIFreverse/gif04reverse.gif";
+import gif11 from "./asset/package/GIFreverse/gif05reverse.gif";
+import gif12 from "./asset/package/GIFreverse/gif06reverse.gif";
+
+
+
+export const gifs = [
+  {
+    gif:gif1
+  },
+  {
+    gif:gif2
+  },
+  {
+    gif:gif3
+  },
+  {
+    gif:gif4
+  },
+  {
+    gif:gif5
+  },
+  {
+    gif:gif6
+  },
+  {
+    gif:gif7
+  },
+  {
+    gif:gif8
+  },
+  {
+    gif:gif9
+  },
+  {
+    gif:gif10
+  },
+  {
+    gif:gif11
+  },
+  {
+    gif:gif12
+  },
+]
 
 
 
@@ -95,83 +145,61 @@ export const Package = [
 
 export default function Packing(){
 
-    
-    const [currentPackage, setCurrentPackage] = useState(2);
+  const [currentPackage, setCurrentPackage] = useState(0);
+  const [prePackage, setCurrentprePackage] = useState(0)
+ 
+  
 
-    const handlePackageChange = (pack) => {
-        console.log(currentPackage);
-        setCurrentPackage(pack);
-        if(currentPackage >= 6 )setCurrentPackage(pack - 5);
-        if(currentPackage <= 1)setCurrentPackage(pack + 5);
-      };
+  const handleClickLeft = () => {
+    if(currentPackage < -3){
+      setCurrentprePackage(currentPackage);
+      setCurrentPackage(currentPackage+7);
+    }else{
+  
+      setCurrentPackage(currentPackage-1);
+      setCurrentprePackage(currentPackage);
+    }
+   
+    console.log(currentPackage);
+  };
+  const handleClickRight = () => {
 
-    return(
+    if(currentPackage > 3){
+      setCurrentprePackage(currentPackage);
+      setCurrentPackage(currentPackage-6);
+    }else{
+  
+      setCurrentPackage(currentPackage+1);
+      setCurrentprePackage(currentPackage);
+    }
 
+    console.log(currentPackage);
+  };
 
-        <div className="relative h-screen w-full bg-red-100/50">
-                                        
-            <div className="h-full w-full flex flex-col">
+  if(currentPackage===2 && prePackage===-2){
+    return (
+      <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+  
+        <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
 
-            <div className="flex flex-row justify-center item-center pt-96">
-                <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
-                <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
-            </div>
-
-            <div className="absolute top-96 h-72 w-full bg-green-300/20 mt-12">
-
-              <div className="flex flex-rows-5 justify-center item-center overflow-x-clip gap-x-24 mr-20">
-
-                  <div className="relative flex justify-center item-center h-full w-1/6">
-                      <div className="relative h-full w-56 pt-8">
-                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img3} alt=""/> */}
-                      </div>
-                  </div>
-
-                  <div className="relative flex justify-center item-center h-full w-1/6">
-                      <div className="relative h-full w-56 pt-8">
-                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img4} alt=""/> */}
-                      </div>
-                  </div>
-
-                  <div className="relative flex justify-center item-center h-full w-1/6">
-                      <div className="relative h-full w-56 pt-8">
-                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img5} alt=""/> */}
-                      </div>
-                  </div>
-
-                  <div className="relative flex justify-center item-center h-full w-1/6">
-                      <div className="relative h-full w-56 pt-8">
-                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img6} alt=""/> */}
-                      </div>
-                  </div>
-
-                  <div className="relative flex justify-center item-center h-full w-1/6">
-                      <div className="relative h-full w-56 pt-8">
-                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img7} alt=""/> */}
-                      </div>
-                  </div>
-
-                  <div className="relative flex justify-center item-center h-full w-1/6">
-                      <div className="relative h-full w-56 pt-8">
-                      <div className="absolute right-24 h-48 w-48 mt-8 ml-12 rounded-full bg-orange-100 shadow-md"></div>
-                      {/* <img className="absolute buttom-32 right-24 h-56 bg-transparent w-64 pt-8" src={img8} alt=""/> */}
-                      </div>
-                  </div>
+          <div className="absolute top-0 h-auto w-full">
 
 
+          <div className="relative flex justify-center item-center h-full w-full">
+              <div className="relative h-full w-full pt-8">
+              <img className="h-auto w-full" src={gif6} alt=""/>
               </div>
-            </div>
+          </div>
 
-            <div className="relative h-12 w-full mt-80">
-
-                <div className="flex flex-rows-3 justify-center bg-red-100/50">
+          </div>
+              
+          </div>
+  
+        
+  
+          <div className="flex flex-rows-3 justify-center mt-0.5n">
                 <button
-                onClick={() => handlePackageChange(currentPackage + 1)}
+                onClick={() => handleClickLeft}
                 className={`h-12 w-12 bg-gray-500 rounded-full
                 }`}
                 >
@@ -187,59 +215,682 @@ export default function Packing(){
                 ))}
                 
                 <button
-                onClick={() => handlePackageChange(currentPackage - 1)}
+                onClick={() => handleClickRight}
                 className={`h-12 w-12 bg-gray-500 rounded-full`}
                 >
                 <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
                 </button>
-                </div>
-
-                <div className="relativeb h-screen w-full bg-red-100/50 pt-48">
-                    
-                    <div className="flex flex-col">
-
-                        <div className="flex flex-row justify-center item-center">
-                          <div className="h-32 w-auto text-7xl font-sans font-bold text-stroke text-green-900">Other</div>
-                          <div className="h-32 w-auto text-7xl font-sans font-bold text-green-900 pl-4">business</div>
-                        </div>
-
-                        <div className="flex flex-row justify-center item-center gap-16">
-                          <div className="h-72 w-72 bg-green-500 rounded-lg">
-                            <img className="h-full w-full" src={imgFT} alt="" />
-                          </div>
-                          <div className="h-72 w-72 bg-green-500 rounded-lg">
-                            <img className="h-full w-full" src={imgTC} alt="" />
-                          </div>
-                        </div>
-
-                    </div>
-
-                    <div className="bg-[#273F02] text-white mt-44">
-                    <div className="w-full container mx-auto flex flex-col text-center">
-                        <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-6 mx-8">
-                            
-                            <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>
-                            <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
-                            <Link to="/policy_page" className="font-sans font-tt-hoves ">PRIVACY POLICY | COOKIE POLICY</Link>
-                            <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/tbhstaff">TBH STAFF</Link>
-                            
-                        </div>
-                    </div>
-                    </div>
-
-                </div>
 
             </div>
 
-        </div>
-        </div>
-
-
+      
+      </div>
 
     );
 
+    }
+  if(currentPackage===-2 && prePackage===-1){
+    return (
+      <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+  
+        <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
 
+          <div className="absolute top-0 h-auto w-full">
+
+
+          <div className="relative flex justify-center item-center h-full w-full">
+              <div className="relative h-full w-full pt-8">
+              <img className="h-auto w-full" src={gif5} alt=""/>
+              </div>
+          </div>
+
+          </div>
+              
+          </div>
+  
+        
+  
+          <div className="flex flex-rows-3 justify-center mt-0.5n">
+                <button
+                onClick={() => handleClickLeft}
+                className={`h-12 w-12 bg-gray-500 rounded-full
+                }`}
+                >
+                <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                </svg>
+                </button>
+
+                {Package[currentPackage - 0].map((item, index) => (
+                <div key={index} className="relative h-16 w-2/3 text-center">
+                    <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                </div>
+                ))}
+                
+                <button
+                onClick={() => handleClickRight}
+                className={`h-12 w-12 bg-gray-500 rounded-full`}
+                >
+                <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                </button>
+
+            </div>
+
+      
+      </div>
+
+    );
+
+  }
+  if(currentPackage===-1 && prePackage===0){
+    return (
+      <div className="relative h-screen w-full bg-white overflow-x-hidden  z-40">
+  
+        <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+
+          <div className="absolute top-0 h-auto w-full">
+
+
+          <div className="relative flex justify-center item-center h-full w-full">
+              <div className="relative h-full w-full pt-8">
+              <img className="h-auto w-full" src={gif4} alt=""/>
+              </div>
+          </div>
+
+          </div>
+              
+          </div>
+  
+        
+  
+          <div className="flex flex-rows-3 justify-center mt-0.5n">
+                <button
+                onClick={() => handleClickLeft}
+                className={`h-12 w-12 bg-gray-500 rounded-full
+                }`}
+                >
+                <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                </svg>
+                </button>
+
+                {Package[currentPackage - 0].map((item, index) => (
+                <div key={index} className="relative h-16 w-2/3 text-center">
+                    <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                </div>
+                ))}
+                
+                <button
+                onClick={() => handleClickRight}
+                className={`h-12 w-12 bg-gray-500 rounded-full`}
+                >
+                <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                </button>
+
+            </div>
+
+      
+      </div>
+
+    );
+
+    }
+    if(currentPackage===0 && prePackage===1){
+      return (
+        <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+    
+          <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+  
+            <div className="absolute top-0 h-auto w-full">
+  
+  
+            <div className="relative flex justify-center item-center h-full w-full">
+                <div className="relative h-full w-full pt-8">
+                <img className="h-auto w-full" src={gif3} alt=""/>
+                </div>
+            </div>
+  
+            </div>
+                
+            </div>
+    
+          
+    
+            <div className="flex flex-rows-3 justify-center mt-0.5n">
+                  <button
+                  onClick={() => handleClickLeft}
+                  className={`h-12 w-12 bg-gray-500 rounded-full
+                  }`}
+                  >
+                  <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                  </svg>
+                  </button>
+  
+                  {Package[currentPackage - 0].map((item, index) => (
+                  <div key={index} className="relative h-16 w-2/3 text-center">
+                      <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                  </div>
+                  ))}
+                  
+                  <button
+                  onClick={() => handleClickRight}
+                  className={`h-12 w-12 bg-gray-500 rounded-full`}
+                  >
+                  <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  </button>
+  
+              </div>
+  
+        
+        </div>
+  
+      );
+  
+      }
+      if(currentPackage===1 && prePackage===2){
+        return (
+          <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+      
+            <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+    
+              <div className="absolute top-0 h-auto w-full">
+    
+    
+              <div className="relative flex justify-center item-center h-full w-full">
+                  <div className="relative h-full w-full pt-8">
+                  <img className="h-auto w-full" src={gif2} alt=""/>
+                  </div>
+              </div>
+    
+              </div>
+                  
+              </div>
+      
+            
+      
+              <div className="flex flex-rows-3 justify-center mt-0.5n">
+                    <button
+                    onClick={() => handleClickLeft}
+                    className={`h-12 w-12 bg-gray-500 rounded-full
+                    }`}
+                    >
+                    <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                    </svg>
+                    </button>
+    
+                    {Package[currentPackage - 0].map((item, index) => (
+                    <div key={index} className="relative h-16 w-2/3 text-center">
+                        <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                    </div>
+                    ))}
+                    
+                    <button
+                    onClick={() => handleClickRight}
+                    className={`h-12 w-12 bg-gray-500 rounded-full`}
+                    >
+                    <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                    </button>
+    
+                </div>
+    
+          
+          </div>
+    
+        );
+    
+        }
+        if(currentPackage===2 && prePackage===-2){
+          return (
+            <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+        
+              <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+      
+                <div className="absolute top-0 h-auto w-full">
+      
+      
+                <div className="relative flex justify-center item-center h-full w-full">
+                    <div className="relative h-full w-full pt-8">
+                    <img className="h-auto w-full" src={gif1} alt=""/>
+                    </div>
+                </div>
+      
+                </div>
+                    
+                </div>
+        
+              
+        
+                <div className="flex flex-rows-3 justify-center mt-0.5n">
+                      <button
+                      onClick={() => handleClickLeft}
+                      className={`h-12 w-12 bg-gray-500 rounded-full
+                      }`}
+                      >
+                      <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                      </svg>
+                      </button>
+      
+                      {Package[currentPackage - 0].map((item, index) => (
+                      <div key={index} className="relative h-16 w-2/3 text-center">
+                          <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                      </div>
+                      ))}
+                      
+                      <button
+                      onClick={() => handleClickRight}
+                      className={`h-12 w-12 bg-gray-500 rounded-full`}
+                      >
+                      <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      </button>
+      
+                  </div>
+      
+            
+            </div>
+      
+          );
+      
+          }
+    //-------------------------------------------------------------------------------------------------------------------------------reverse----------------------------------------------------------------------------------------------------------------------------        
+            if(currentPackage===1 && prePackage===0){
+              return (
+                <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+            
+                  <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+          
+                    <div className="absolute top-0 h-auto w-full">
+          
+          
+                    <div className="relative flex justify-center item-center h-full w-full">
+                        <div className="relative h-full w-full pt-8">
+                        <img className="h-auto w-full" src={gif7} alt=""/>
+                        </div>
+                    </div>
+          
+                    </div>
+                        
+                    </div>
+            
+                  
+            
+                    <div className="flex flex-rows-3 justify-center mt-0.5n">
+                          <button
+                          onClick={() => handleClickLeft}
+                          className={`h-12 w-12 bg-gray-500 rounded-full
+                          }`}
+                          >
+                          <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                          </svg>
+                          </button>
+          
+                          {Package[currentPackage - 0].map((item, index) => (
+                          <div key={index} className="relative h-16 w-2/3 text-center">
+                              <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                          </div>
+                          ))}
+                          
+                          <button
+                          onClick={() => handleClickRight}
+                          className={`h-12 w-12 bg-gray-500 rounded-full`}
+                          >
+                          <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                          </svg>
+                          </button>
+          
+                      </div>
+          
+                
+                </div>
+          
+              );
+          
+              }
+              if(currentPackage===2 && prePackage===1){
+                return (
+                  <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+              
+                    <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+            
+                      <div className="absolute top-0 h-auto w-full">
+            
+            
+                      <div className="relative flex justify-center item-center h-full w-full">
+                          <div className="relative h-full w-full pt-8">
+                          <img className="h-auto w-full" src={gif8} alt=""/>
+                          </div>
+                      </div>
+            
+                      </div>
+                          
+                      </div>
+              
+                    
+              
+                      <div className="flex flex-rows-3 justify-center mt-0.5n">
+                            <button
+                            onClick={() => handleClickLeft}
+                            className={`h-12 w-12 bg-gray-500 rounded-full
+                            }`}
+                            >
+                            <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                            </svg>
+                            </button>
+            
+                            {Package[currentPackage - 0].map((item, index) => (
+                            <div key={index} className="relative h-16 w-2/3 text-center">
+                                <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                            </div>
+                            ))}
+                            
+                            <button
+                            onClick={() => handleClickRight}
+                            className={`h-12 w-12 bg-gray-500 rounded-full`}
+                            >
+                            <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                            </button>
+            
+                        </div>
+            
+                  
+                  </div>
+            
+                );
+            
+                }
+                if(currentPackage===3 && prePackage===2){
+                  return (
+                    <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+                
+                      <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+              
+                        <div className="absolute top-0 h-auto w-full">
+              
+              
+                        <div className="relative flex justify-center item-center h-full w-full">
+                            <div className="relative h-full w-full pt-8">
+                            <img className="h-auto w-full" src={gif9} alt=""/>
+                            </div>
+                        </div>
+              
+                        </div>
+                            
+                        </div>
+                
+                      
+                
+                        <div className="flex flex-rows-3 justify-center mt-0.5n">
+                              <button
+                              onClick={() => handleClickLeft}
+                              className={`h-12 w-12 bg-gray-500 rounded-full
+                              }`}
+                              >
+                              <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                              </svg>
+                              </button>
+              
+                              {Package[currentPackage - 0].map((item, index) => (
+                              <div key={index} className="relative h-16 w-2/3 text-center">
+                                  <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                              </div>
+                              ))}
+                              
+                              <button
+                              onClick={() => handleClickRight}
+                              className={`h-12 w-12 bg-gray-500 rounded-full`}
+                              >
+                              <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                              </svg>
+                              </button>
+              
+                          </div>
+              
+                    
+                    </div>
+              
+                  );
+              
+                  }
+                  if(currentPackage===-2 && prePackage===3){
+                    return (
+                      <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+                  
+                        <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+                
+                          <div className="absolute top-0 h-auto w-full">
+                
+                
+                          <div className="relative flex justify-center item-center h-full w-full">
+                              <div className="relative h-full w-full pt-8">
+                              <img className="h-auto w-full" src={gif10} alt=""/>
+                              </div>
+                          </div>
+                
+                          </div>
+                              
+                          </div>
+                  
+                        
+                  
+                          <div className="flex flex-rows-3 justify-center mt-0.5n">
+                                <button
+                                onClick={() => handleClickLeft}
+                                className={`h-12 w-12 bg-gray-500 rounded-full
+                                }`}
+                                >
+                                <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                                </svg>
+                                </button>
+                
+                                {Package[currentPackage - 0].map((item, index) => (
+                                <div key={index} className="relative h-16 w-2/3 text-center">
+                                    <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                                </div>
+                                ))}
+                                
+                                <button
+                                onClick={() => handleClickRight}
+                                className={`h-12 w-12 bg-gray-500 rounded-full`}
+                                >
+                                <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                                </button>
+                
+                            </div>
+                
+                      
+                      </div>
+                
+                    );
+                
+                    }
+                    if(currentPackage===-1 && prePackage===-2){
+                      return (
+                        <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+                    
+                          <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+                  
+                            <div className="absolute top-0 h-auto w-full">
+                  
+                  
+                            <div className="relative flex justify-center item-center h-full w-full">
+                                <div className="relative h-full w-full pt-8">
+                                <img className="h-auto w-full" src={gif11} alt=""/>
+                                </div>
+                            </div>
+                  
+                            </div>
+                                
+                            </div>
+                    
+                          
+                    
+                            <div className="flex flex-rows-3 justify-center mt-0.5n">
+                                  <button
+                                  onClick={() => handleClickLeft}
+                                  className={`h-12 w-12 bg-gray-500 rounded-full
+                                  }`}
+                                  >
+                                  <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                                  </svg>
+                                  </button>
+                  
+                                  {Package[currentPackage - 0].map((item, index) => (
+                                  <div key={index} className="relative h-16 w-2/3 text-center">
+                                      <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                                  </div>
+                                  ))}
+                                  
+                                  <button
+                                  onClick={() => handleClickRight}
+                                  className={`h-12 w-12 bg-gray-500 rounded-full`}
+                                  >
+                                  <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                  </svg>
+                                  </button>
+                  
+                              </div>
+                  
+                        
+                        </div>
+                  
+                      );
+                  
+      
+                    }
+                    if(currentPackage===0 && prePackage===-1){
+                      return (
+                        <div className="relative h-screen w-full bg-white overflow-x-hidden z-40">
+                    
+                          <div className="relative h-full w-full bg-red-100/50 overflow-hidden">
+                  
+                            <div className="absolute top-0 h-auto w-full">
+                  
+                  
+                            <div className="relative flex justify-center item-center h-full w-full">
+                                <div className="relative h-full w-full pt-8">
+                                <img className="h-auto w-full" src={gif12} alt=""/>
+                                </div>
+                            </div>
+                  
+                            </div>
+                                
+                            </div>
+                    
+                          
+                    
+                            <div className="flex flex-rows-3 justify-center mt-0.5n">
+                                  <button
+                                  onClick={() => handleClickLeft}
+                                  className={`h-12 w-12 bg-gray-500 rounded-full
+                                  }`}
+                                  >
+                                  <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                                  </svg>
+                                  </button>
+                  
+                                  {Package[currentPackage - 0].map((item, index) => (
+                                  <div key={index} className="relative h-16 w-2/3 text-center">
+                                      <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                                  </div>
+                                  ))}
+                                  
+                                  <button
+                                  onClick={() => handleClickRight}
+                                  className={`h-12 w-12 bg-gray-500 rounded-full`}
+                                  >
+                                  <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                  </svg>
+                                  </button>
+                  
+                              </div>
+                  
+                        
+                        </div>
+                  
+                      );
+                  
+      
+                    }else{
+
+      return (
+        <div className="absolute h-auto w-full overflow-x-hidden z-40">
+    
+          <div className="relative h-full w-full overflow-hidden">
+  
+            {/* <div className="absolute end-0 h-auto w-full"> */}
+  
+  
+            <div className="relative flex justify-center item-center h-full w-full">
+                <div className="relative h-full w-full pt-8">
+                <img className="h-full w-full" src={img9} alt=""/>
+                </div>
+            </div>
+  
+            </div>
+                
+            {/* </div> */}
+    
+            <div className="relative flex flex-rows-3 justify-center mt-0.5n">
+                  <button
+                  onClick={() => handleClickLeft}
+                  className={`absolute top-0 left-96 h-12 w-12 bg-gray-500 rounded-full
+                  }`}
+                  >
+                  <svg class="h-8 w-8 text-white ml-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="15 6 9 12 15 18" />
+                  </svg>
+                  </button>
+  
+                  {Package[currentPackage - 0].map((item, index) => (
+                  <div key={index} className="relative h-16 w-2/3 text-center">
+                      <div className="right-50 h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
+                  </div>
+                  ))}
+                  
+                  <button
+                  onClick={() => handleClickRight}
+                  className={`absolute top-0 right-96 h-12 w-12 bg-gray-500 rounded-full`}
+                  >
+                  <svg class="h-8 w-8 text-white ml-2"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  </button>
+  
+              </div>
+  
+              
+    
+      </div>
+      );
+
+    }
 
 };
