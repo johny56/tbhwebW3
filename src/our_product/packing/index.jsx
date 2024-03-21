@@ -168,7 +168,7 @@ export default function Packing(){
               </button>
 
               {Package[currentPackage - 0].map((item, index) => (
-              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                   <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
               </div>
               ))}
@@ -209,7 +209,7 @@ export default function Packing(){
               </button>
 
               {Package[currentPackage - 0].map((item, index) => (
-              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                   <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
               </div>
               ))}
@@ -250,7 +250,7 @@ export default function Packing(){
               </button>
 
               {Package[currentPackage - 0].map((item, index) => (
-              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                   <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
               </div>
               ))}
@@ -291,7 +291,7 @@ export default function Packing(){
               </button>
 
               {Package[currentPackage - 0].map((item, index) => (
-              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                   <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
               </div>
               ))}
@@ -333,7 +333,7 @@ export default function Packing(){
               </button>
 
               {Package[currentPackage - 0].map((item, index) => (
-              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                   <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
               </div>
               ))}
@@ -375,7 +375,7 @@ export default function Packing(){
                 </button>
 
                 {Package[currentPackage - 0].map((item, index) => (
-                <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                     <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                 </div>
                 ))}
@@ -417,7 +417,7 @@ export default function Packing(){
                     </button>
 
                     {Package[currentPackage - 0].map((item, index) => (
-                    <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                    <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                         <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                     </div>
                     ))}
@@ -457,7 +457,7 @@ export default function Packing(){
                       </button>
 
                       {Package[currentPackage - 0].map((item, index) => (
-                      <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                      <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                           <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                       </div>
                       ))}
@@ -499,7 +499,7 @@ export default function Packing(){
                         </button>
 
                         {Package[currentPackage - 0].map((item, index) => (
-                        <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                        <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                             <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                         </div>
                         ))}
@@ -541,7 +541,7 @@ export default function Packing(){
                           </button>
 
                           {Package[currentPackage - 0].map((item, index) => (
-                          <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                          <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                               <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                           </div>
                           ))}
@@ -585,7 +585,7 @@ export default function Packing(){
                             </button>
 
                             {Package[currentPackage - 0].map((item, index) => (
-                            <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                            <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                                 <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                             </div>
                             ))}
@@ -628,7 +628,7 @@ export default function Packing(){
                             </button>
 
                             {Package[currentPackage - 0].map((item, index) => (
-                            <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+                            <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                                 <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
                             </div>
                             ))}
@@ -649,47 +649,6 @@ export default function Packing(){
                   
       
       }
-      // if(currentPackage===0 && prePackage===6){
-      //   return (
-      //     <div className="absolute h-auto w-full overflow-x-hidden z-20">
-      
-      //       <div className="relative h-full w-full overflow-hidden z-20">
-    
-    
-      //         <div className="relative flex justify-center item-center h-full w-full">
-      //             <div className="relative h-full w-full pt-8">
-      //             <img className="h-auto w-full" src={gif1} alt=""/>
-      //             </div>
-      //         </div>
-    
-      //         <button
-      //         onClick={handleClickLeft}
-      //         className={`absolute top-96 mt-28 ml-24 left-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-      //         >
-      //           {"<"}
-      //         </button>
-
-      //         {Package[currentPackage - 0].map((item, index) => (
-      //         <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
-      //             <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
-      //         </div>
-      //         ))}
-              
-      //         <button
-      //           onClick={handleClickRight}
-      //           className={`absolute top-96 mt-28 mr-24 right-96 h-12 w-12 bg-gray-500 rounded-full shadow-md border-2 scale-125 text-3xl z-40`}
-      //           >
-      //           {">"}
-      //         </button>
-              
-
-
-      //         </div>
-          
-      //     </div>
-    
-      //   );
-      // }
       else{
 
       return (
@@ -716,7 +675,7 @@ export default function Packing(){
               </button>
 
               {Package[currentPackage - 0].map((item, index) => (
-              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-28 text-center">
+              <div key={index} className="relative h-16 w-1/3 -top-20 left-96 ml-56 text-center">
                   <div className="h-full w-full text-2xl font-bold text-green-800">{item.name}</div>
               </div>
               ))}

@@ -119,22 +119,21 @@ export const imgTC = img4;
                                         
                                       </div>
                                     </div>
-                                      <p className="relative bg-red-100/50 flex justify-end text-2xl font-normal h-12 w-full z-30">NEED MORE INFORMATION? FEEL FREE TO CONTACT US</p>
                                     
                                       <div className="relative h-screen w-full">
                                         
                                         <div className="h-full w-full flex flex-col">
                             
-                                        <div className="flex flex-row justify-center item-center z-30">
+                                        <div className="flex flex-row justify-center item-center z-30 mt-8">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
                                             <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
                                         </div>
 
                                         <Packing/>
 
-                                        <div className="relativeb h-screen w-full mt-48 pt-0.5 mb-4">
+                                        <div className="relativeb h-screen w-full mt-72 pt-1 mb-4">
                       
-                                            <div className="flex flex-col mt-72 pt-12 bg-red-100/50">
+                                            <div className="flex flex-col mt-80 pt-12 bg-red-100/50">
 
                                                 <div className="flex flex-row justify-center item-center">
                                                   <div className="h-32 w-auto text-7xl font-sans font-bold text-stroke text-green-900">Other</div>
