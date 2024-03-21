@@ -85,9 +85,9 @@ export const imgTC = img4;
                           
                             
 
-                            <div className="h-screen w-full bg-white">
+                            <div className="h-screen w-full bg-white ">
 
-                                    <div className="relative h-screen w-full bg-red-100/50">
+                                    <div className="relative h-screen w-full  bg-red-100/50">
 
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
@@ -100,14 +100,6 @@ export const imgTC = img4;
                                           <button onClick={() => handleSpecChange(currentSpec - 2)} className="btn btn-warning text-2xl text-white font-medium px-4 hover:bg-green-800 rounded-full">RRIT SPEC</button>
                                           <button onClick={() => handleSpecChange(currentSpec + 2)} className="btn btn-success text-2xl text-white font-medium px-4 ml-4 hover:bg-green-800 rounded-full">INE SPEC</button>
                                           </div>
-                                            {/* <TabContext value={value}>
-                                            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                                              <TabList onChange={handleChange} aria-label="lab API tabs example">
-                                                <Tab label="Item One" value="1" />
-                                                <Tab label="Item Two" value="2" />
-                                              </TabList>
-                                            </Box>
-                                          </TabContext> */}
 
                                         </div>
                                         <div className="relative h-2/3 w-2/3 mb-12 ml-72 z-30">
@@ -129,9 +121,9 @@ export const imgTC = img4;
                                     </div>
                                       <p className="relative bg-red-100/50 flex justify-end text-2xl font-normal h-12 w-full z-30">NEED MORE INFORMATION? FEEL FREE TO CONTACT US</p>
                                     
-                                      <div className="relative h-screen w-full ">
+                                      <div className="relative h-screen w-full">
                                         
-                                        <div className="h-full w-full flex flex-col bg-red-100/50">
+                                        <div className="h-full w-full flex flex-col">
                             
                                         <div className="flex flex-row justify-center item-center z-30">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
@@ -140,7 +132,7 @@ export const imgTC = img4;
 
                                         <Packing/>
 
-                                        <div className="relativeb h-screen w-full mt-96 mb-4">
+                                        <div className="relativeb h-screen w-full mt-48 pt-0.5 mb-4">
                       
                                             <div className="flex flex-col mt-72 pt-12 bg-red-100/50">
 
@@ -160,7 +152,7 @@ export const imgTC = img4;
 
                                             </div>
 
-                                        <div className="bg-[#273F02] text-white mt-2">
+                                        <div className="bg-[#273F02] text-white pt-1 mt-1">
                                           <div className="w-full container mx-auto flex flex-col text-center">
                                               <div className="flex flex-row md:flex-row text-center text-lg md:text-left md:justify-between py-4 mx-8">
                                                   
