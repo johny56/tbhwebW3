@@ -1,10 +1,21 @@
 // import Forum from "./emailforum";
+import { useState } from "react";
 import img from "./asset/Work Opputunity.png";
 
 export const imageBg = img;
 
 export default function WorkOpputunity(){
 
+    const [clickState, setclickState] = useState(0);
+    const handleClick = () =>{
+        if(clickState >= 1){
+            setclickState(0);
+        }
+        setclickState(1);
+
+    }
+
+    if(clickState === 0){
     return (
 
         <div>
@@ -71,7 +82,7 @@ export default function WorkOpputunity(){
                                 <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a>
                             </td>
                             <td className="px-6 py-4">
-                                <a href="#emailforum" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a>
+                                <button onClick={handleClick} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</button>
                             </td>
                             <td className="px-6 py-4">
                                 ...
@@ -94,7 +105,7 @@ export default function WorkOpputunity(){
                                 <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">DETAILS</a>
                             </td>
                             <td className="px-6 py-4">
-                                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</a>
+                                <button onClick={handleClick} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">APPLY NOW</button>
                             </td>
                             <td className="px-6 py-4">
                                 ...
@@ -198,11 +209,6 @@ export default function WorkOpputunity(){
                 </table>
             </div>
                 
-            {/* </div> */}
-
-            {/* <div className="pt-36" id="emailforum">
-                <Forum/>
-            </div> */}
 
 
             
@@ -234,5 +240,52 @@ export default function WorkOpputunity(){
 
 
 
-    );
+        );
+
+    }
+    else{
+        return(
+            <div className="relative h-screen w-full bg-gray-800/10">
+                <button
+                    className="absolute top-32 right-40 h-12 w-12 text-center mt-4 border-2 right-5 text-red-100 border-4 text-extrabold cursor-pointer text-2xl rounded-full z-30 bg-red-400 hover:bg-red-700"
+                    onClick={handleClick}
+                    >
+                        X
+                </button>
+                <div className="absolute left-32 top-32 h-5/6 w-5/6  bg-white">
+                    
+                    <h1 className="relative text-5xl font-bold mt-8 h-8 w-auto ml-12 font-mono">แบบฟอร์มสมัครงาน</h1>
+                    
+                    <div className="relative flex flex-row">
+                        <p className="text-2xl font-bold mt-8 h-8 w-auto ml-10 font-mono">ตำแหน่ง: </p>
+                        <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono">Document Staff(CDS) </p>
+                    </div>
+                    <div className="relative flex flex-row">
+                        <p className="text-2xl font-bold mt-8 h-8 w-auto ml-10 font-mono">ชื่อสกุล: </p>
+                        <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono"> ตัวอย่าง สมชาย ใจดี</p>
+                    </div>
+                    <div className="relative flex flex-row">
+                        <p className="text-2xl font-bold mt-8 h-8 w-auto ml-10 font-mono">โทร: </p>
+                        <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono"> ตัวอย่าง +6681-234-5678</p>
+                    </div>
+                    <div className="relative flex flex-col">
+                        <p className="text-2xl font-bold mt-12 h-8 w-auto ml-10 font-mono">อัพโหลดรีซูเม่</p>
+                        <p className="text-xl font-bold mt-2 h-8 w-auto ml-10 font-mono">.pdf,.doc.docx ขนาดไม่เกิน 5 mb:</p>
+                        {/* <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white ml-2 mt-1 ml-10" for="file_input">Upload file</label> */}
+                        <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+                        <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+                        <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+                    </div>
+
+                    <div className="relative flex flex-col pt-4">
+                        <label className="text-2xl font-bold ml-12">ข้อความ:</label>
+                        <input className="bg-white h-20 w-5/6 mx-1 pt-2 ml-8" name="message" type="email"/>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        );
+    }
 }
