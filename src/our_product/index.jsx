@@ -70,14 +70,14 @@ export const imgTC = img4;
 
                           <div className="flex flex-row pt-16 m-4 justify-center item-center">
                               <h1 className="h-full w-auto text-8xl font-sans font-bold text-stroke text-green-900">OUR</h1>
-                              <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold">PRODUCT</h1>
+                              <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold">PRODUCTS</h1>
                           </div>
                           <div className="flex flex-col h-96 w-auto pt-4 pl-96">
-                              <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-32">To Produce Standard Thai Rubber(STR) that
+                              <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-56">To Produce Standard Thai Rubber(STR) that
                               <br/>Consistently Satiefies or Exceeds Customer's 
                               <br/>Requirements Through Continuous Improvement</p>
                           </div>
-                            <div className=""> 
+                            <div className="pl-4"> 
 
                                 <Product/>
                             </div>
@@ -85,9 +85,9 @@ export const imgTC = img4;
                           
                             
 
-                            <div className="h-screen w-full bg-white ">
+                            <div className="h-screen w-full bg-white">
 
-                                    <div className="relative h-screen w-full  bg-red-100/50">
+                                    <div className="relative h-screen w-full bg-red-100/50">
 
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
@@ -124,16 +124,18 @@ export const imgTC = img4;
                                         
                                         <div className="h-full w-full flex flex-col">
                             
-                                        <div className="flex flex-row justify-center item-center z-30 mt-8">
+                                        <div className="flex flex-row justify-center item-center z-30 pt-8 bg-red-100/50">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
                                             <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
                                         </div>
 
-                                        <Packing/>
+                                        <section id="packing">
+                                          <Packing/>
+                                        </section>
 
-                                        <div className="relativeb h-screen w-full mt-72 pt-1 mb-4">
+                                        <div className="relativeb h-screen w-full mt-96 pt-1 mb-4">
                       
-                                            <div className="flex flex-col mt-80 pt-12 bg-red-100/50">
+                                            <div className="flex flex-col mt-96 pt-12 bg-red-100/50">
 
                                                 <div className="flex flex-row justify-center item-center">
                                                   <div className="h-32 w-auto text-7xl font-sans font-bold text-stroke text-green-900">Other</div>

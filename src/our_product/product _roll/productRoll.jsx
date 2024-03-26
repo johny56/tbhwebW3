@@ -70,6 +70,7 @@ export const products = [
     // ImageUrl: img4,
   },
 ];
+
 export default function Product_Rolltest() {
   const [currentProduct, setCurrentProduct] = useState(0);
   const [preProduct, setCurrntpreProduct] = useState(0)
@@ -118,7 +119,7 @@ export default function Product_Rolltest() {
               </div>
               <div className="absolute top-40 left-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-20 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-20 left-96 ml-64 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
               <div className="absolute top-36 right-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
@@ -1880,14 +1881,14 @@ export default function Product_Rolltest() {
               <div className="relative h-full w-full bg-red-100/50 z-20 overflow-hidden">
         
                   <div 
-                  className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
+                  className={`relative flex justify-center item-center h-full w-2/3 ml-80 z-20"
                     
-                      `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={pic01} alt=""/>
+                      `}><img className="absolute -top-44 h-full w-full scale-150 z-20" src={pic01} alt=""/>
         
                   </div>
                   <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                   
-                  <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                  <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                   
                   <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
