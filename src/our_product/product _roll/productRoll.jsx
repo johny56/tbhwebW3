@@ -114,19 +114,19 @@ export default function Product_Rolltest() {
               <div
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif2} alt=""/>
+                  `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif2} alt=""/>
 
               </div>
-              <div className="absolute top-40 left-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-20 left-96 ml-64 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-20 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
 
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -205,17 +205,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif4} alt=""/>
+                  `}><img className="absolute -top-40 left-10 h-full w-full scale-150 z-20" src={gif4} alt=""/>
 
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-44 left-32 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-44 right-36 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.08<br/>
@@ -288,17 +288,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif6} alt=""/>
+                  `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif6} alt=""/>
 
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -378,17 +378,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif8} alt=""/>
+                  `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif8} alt=""/>
   
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -465,19 +465,19 @@ export default function Product_Rolltest() {
         <div className="relative h-full w-full bg-red-100/50 z-20 overflow-hidden">
               
               <div 
-              className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
+              className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif10} alt=""/>
+                  `}><img className="absolute -top-40 left-10 h-full w-full scale-150 z-20" src={gif10} alt=""/>
   
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-32 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-32 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.08<br/>
@@ -554,17 +554,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif2} alt=""/>
+                  `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif2} alt=""/>
   
               </div>
               <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                    <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                    <div className="relative h-full w-56 text-center ml-80">
                     <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                     <p className="absolute top-0 h-56 w-64">
                         Dirt (%wt,max) 0.16<br/>
@@ -643,18 +643,18 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif4} alt=""/>
+                  `}><img className="absolute -top-40 left-10 h-full w-full scale-150 z-20" src={gif4} alt=""/>
 
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-32 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-          </div>
+              <div className="absolute top-40 right-36 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+          
 
-          <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+          <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.08<br/>
@@ -697,6 +697,8 @@ export default function Product_Rolltest() {
               </div>
                 
               </div>
+
+              </div>
   
         
       
@@ -729,17 +731,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif6} alt=""/>
+                  `}><img className="absolute -top-40 left-10 h-full w-full scale-150 z-20" src={gif6} alt=""/>
 
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-28 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-36 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -818,18 +820,18 @@ export default function Product_Rolltest() {
                 // key={index} 
                 className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                   
-                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif8} alt=""/>
+                    `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif8} alt=""/>
   
                 </div>
                 {/* ))} */}
-                <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 left-24 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -909,18 +911,18 @@ export default function Product_Rolltest() {
                 // key={index} 
                 className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                   
-                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif10} alt=""/>
+                    `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif10} alt=""/>
   
                 </div>
                 {/* ))} */}
-                <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 left-32 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 right-24 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.08<br/>
@@ -1001,17 +1003,17 @@ export default function Product_Rolltest() {
                 <div 
                 className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                   
-                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif3} alt=""/>
+                    `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif3} alt=""/>
   
                 </div>
-                <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1087,17 +1089,17 @@ export default function Product_Rolltest() {
                 <div 
                 className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                   
-                    `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif5} alt=""/>
+                    `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif5} alt=""/>
   
                 </div>
-                <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 left-24 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                 
-                <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                <div className="absolute top-40 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
             
-                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1173,17 +1175,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif7} alt=""/>
+                  `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif7} alt=""/>
 
               </div>
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-24 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1259,17 +1261,17 @@ export default function Product_Rolltest() {
               <div 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif9} alt=""/>
+                  `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif9} alt=""/>
 
               </div>
               <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1348,19 +1350,19 @@ export default function Product_Rolltest() {
               // key={index} 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif1} alt=""/>
+                  `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif1} alt=""/>
 
               </div>
               {/* ))} */}
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
 
-                              <div className="relative h-full w-56 text-center ml-56">
+                              <div className="relative h-full w-56 text-center ml-80">
                               <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                               <p className="absolute top-0 h-56 w-64">
                                   Dirt (%wt,max) 0.08<br/>
@@ -1439,17 +1441,17 @@ export default function Product_Rolltest() {
               // key={index} 
               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                 
-                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif3} alt=""/>
+                  `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif3} alt=""/>
 
               </div>
               {/* ))} */}
-              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
               
-              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+              <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20CV</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1527,16 +1529,17 @@ export default function Product_Rolltest() {
                   <div
                   className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                     
-                      `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif5} alt=""/>
+                      `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif5} alt=""/>
     
                   </div>
-                  <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                  <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                   
-                  <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                  <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                   
-                  <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-                  <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                  <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+
+                  <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">Mixtures</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1613,16 +1616,16 @@ export default function Product_Rolltest() {
                       <div
                       className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-20 z-20"
                         
-                          `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif7} alt=""/>
+                          `}><img className="absolute -top-40 left-20 h-full w-full scale-150 z-20" src={gif7} alt=""/>
         
                       </div>
-                      <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                      <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                       
-                      <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                      <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                       
-                      <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
-                      <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                      <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                      <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>
@@ -1702,18 +1705,18 @@ export default function Product_Rolltest() {
                           // key={index} 
                           className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                             
-                              `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif9} alt=""/>
+                              `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif9} alt=""/>
             
                           </div>
                           {/* ))} */}
-                          <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                          <div className="absolute top-40 left-24 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                           
-                          <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                          <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                           
-                          <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                          <div className="absolute top-40 right-24 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                       
-                      <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                      <div className="relative h-full w-56 text-center ml-56">
+                      <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                      <div className="relative h-full w-56 text-center ml-80">
                       <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                       <p className="absolute top-0 h-56 w-64">
                           Dirt (%wt,max) 0.16<br/>
@@ -1791,18 +1794,18 @@ export default function Product_Rolltest() {
                               // key={index} 
                               className={`relative flex justify-center item-center h-full w-2/3 ml-64 pl-14 z-20"
                                 
-                                  `}><img className="absolute -top-32 h-full w-full scale-150 z-20" src={gif1} alt=""/>
+                                  `}><img className="absolute -top-40 left-16 h-full w-full scale-150 z-20" src={gif1} alt=""/>
                 
                               </div>
                               {/* ))} */}
-                              <div className="absolute top-40 left-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                              <div className="absolute top-40 left-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                               
-                              <div className="absolute top-24 left-96 ml-72 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
+                              <div className="absolute top-24 left-96 ml-96 scale-125 h-96 w-96 bg-yellow-700/20 rounded-full z-10"></div>
                               
-                              <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
+                              <div className="absolute top-40 right-20 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
                               
-                              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                              <div className="relative h-full w-56 text-center ml-56">
+                              <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                              <div className="relative h-full w-56 text-center ml-80">
                               <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR10</div>
                               <p className="absolute top-0 h-56 w-64">
                                   Dirt (%wt,max) 0.08<br/>
@@ -1892,8 +1895,8 @@ export default function Product_Rolltest() {
                   
                   <div className="absolute top-36 right-16 h-60 w-60 bg-yellow-700/20 rounded-full z-10"></div>
 
-                  <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-24 z-30">
-                <div className="relative h-full w-56 text-center ml-56">
+                  <div className="absolute top-96 mt-12 left-96 ml-32 flex justify-center item-center h-full w-1/4 pt-36 z-30">
+                <div className="relative h-full w-56 text-center ml-80">
                 <div className="absolute -top-10 h-16 w-44 text-3xl font-bold text-green-800 ml-10">STR20</div>
                 <p className="absolute top-0 h-56 w-64">
                     Dirt (%wt,max) 0.16<br/>

@@ -77,9 +77,10 @@ export const imgTC = img4;
                               <br/>Consistently Satiefies or Exceeds Customer's 
                               <br/>Requirements Through Continuous Improvement</p>
                           </div>
-                            <div className="pl-4"> 
+                          
 
-                                <Product/>
+                            <div>
+                              <Product/>
                             </div>
                         
                           
