@@ -1,6 +1,8 @@
 // import Forum from "./emailforum";
+import React, { useRef } from 'react';
 import { useState } from "react";
 import img from "./asset/Work Opputunity.png";
+import emailjs from '@emailjs/browser';
 
 import StyledCheckbox from "../Whistleblowing/checkbox";
 
@@ -9,6 +11,8 @@ export const imageBg = img;
 export default function WorkOpputunity(){
 
     const [clickState, setclickState] = useState(0);
+
+    const form = useRef();
 
     const handleClick = () =>{
         if(clickState === 0){
@@ -20,6 +24,24 @@ export default function WorkOpputunity(){
         console.log(clickState);
 
     }
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_bfyn9o7', 'template_5vz26qg', form.current, {
+            publicKey: 'HFjSoJWqqoZJCp-fb',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
 
     if(clickState === 0){
     return (
@@ -258,7 +280,7 @@ export default function WorkOpputunity(){
                     >
                         X
                 </button>
-                <div className="absolute left-32 top-32 h-5/6 w-5/6  bg-white">
+                <form className="absolute left-32 top-32 h-5/6 w-5/6 bg-white" ref={form} onSubmit={sendEmail}>
                     
                     <h1 className="relative text-5xl font-bold mt-8 h-8 w-auto ml-12 font-mono">แบบฟอร์มสมัครงาน</h1>
                     
@@ -295,9 +317,11 @@ export default function WorkOpputunity(){
                             <p className="text-xm text-xl w-3/4 ml-4 font-bold">ฉันเข้าใจและยอมรับนโยบายคามเป็นส่วนตัวของบริษัท</p>
                         </div>
                     </div>
+
+                    <button className='absolute top-96 mt-56 right-12 h-12 w-24 text-white font-bold rounded-full shadow-lg bg-gray-700 hover:bg-gray-900' onClick={sendEmail}>submit</button>
                     
 
-                </div>
+                </form>
 
             </div>
         );
