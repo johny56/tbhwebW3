@@ -27,8 +27,8 @@ const Header = () => {
              {/* <div className="bg-cover h-screen bg-[image01] bg-no-repeat z-10"> */}
             
 
-                  <div className="relative flex h-full items-end py-18 justify-center">
-                  <div className="text-white m-8">
+                  <div className="relative flex h-full items-end py-18 justify-center scale-125">
+                  <div className="absolute top-96 text-white mt-64">
                       <h2 className="my-2 text-7xl font-sans font-tt-hoves"> TECK BEE HANG CO.,LTD.</h2>
                       <h4 className="my-2 text-4xl font-sans font-tt-hoves"> NATURAL RUBBER PROCESSOR AND EXPORTER</h4>
                   

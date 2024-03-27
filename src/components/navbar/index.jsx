@@ -36,9 +36,9 @@ const Navbar = () => {
           <div className="px-4 mx-auto flex items-center justify-between">
             <div className="flex items-center">
               <Logo></Logo> {/* Replace with your logo component */}
-              <div className="flex item-center ml-32 pl-32">
+              <div className="flex item-center ml-20 pl-32">
                 
-                <div className="relative rounded-full bg-gray-600/20 ml-32">
+                <div className="relative rounded-full bg-gray-600/20 ml-48">
                   <Dropdown></Dropdown>
               
                 </div>

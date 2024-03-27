@@ -23,7 +23,7 @@ const Cookie = () => {
 
             !isCookieAccepted && (
             
-            <nav className="fixed right-24 top-80 flex flex-col h-2/4 w-80 bg-trabsition z-30">
+            <nav className="fixed right-24 top-80 flex flex-col h-2/4 w-80 bg-trabsition z-30 scale-125">
 
             <div className="flex flex-row h-1/5 w-full rounded-lg bg-white text-blue-400 p-4 mt-1 border-blue-200 border-2">
 
