@@ -225,16 +225,16 @@ export default function ActivityBoard() {
 
   return (
     <div>
-            <div className="h-screen w-full bg-white">
+            <div className="relative h-screen w-full bg-white">
                 {/* <div className="h-full w-full bg-contain bg-no-repeat bg-center bg-[url(https://drive.google.com/uc?export=view&id=1Iq3t9w9bNbyIfyvfSYQlaRl6v8_IpAOc)]"> */}
-                <div className="h-full w-full bg-contain"> 
-                    <img className="h-full w-full sc" src={imgBg} alt=""/>
+                <div className="h-auto w-full bg-contain"> 
+                    <img className="h-auto w-full" src={imgBg} alt=""/>
 
                 </div>
 
-                <div className="flex justify-center bg-white h-full w-full text-back pt-44 mt-12">
+                <div className="flex justify-center bg-white h-full w-full text-back pt-20">
                     <div className="flex flex-col gap-4">
-                    <div className="flex flex-rows-3 gap-20">
+                    <div className="flex flex-rows-3 gap-x-20">
 
                         {pageData[currentPage - 1].map((item, index) => (
                         <div key={index} className="relative h-full w-80 shadow-lg">
@@ -255,7 +255,7 @@ export default function ActivityBoard() {
 
                     </div>
 
-                    <div className="flex flex-cols-3 gap-20">
+                    <div className="flex flex-cols-3 gap-20 pt-12">
 
                             {pageData[currentPage - 0].map((item, index) => (
                             <div key={index} className="relative h-full w-80 shadow-lg">
@@ -279,8 +279,8 @@ export default function ActivityBoard() {
 
                 </div>
                     
-            <div className="h-12 w-full flex justify-center pt-6 mt-2">
-                <ul className="list-style-none flex">
+            <div className="relative h-6 w-full flex justify-center">
+                <ul className="absolute -top-24 list-style-none flex">
                 <li>
                                     <button
                                     onClick={() => handlePageChange(currentPage - 1)}
