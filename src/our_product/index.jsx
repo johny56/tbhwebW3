@@ -72,7 +72,7 @@ export const imgTC = img4;
 
                           <div className="flex flex-row pt-16 m-4 justify-center item-center">
                               <h1 className="h-full w-auto text-8xl font-sans font-bold text-stroke text-green-900">OUR</h1>
-                              <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold">PRODUCTS</h1>
+                              <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold ml-8">PRODUCTS</h1>
                           </div>
                           <div className="flex flex-col h-96 w-auto pt-4 pl-96">
                               <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-56">To Produce Standard Thai Rubber(STR) that
@@ -129,7 +129,7 @@ export const imgTC = img4;
                             
                                         <div className="absolute top-18 left-96 right-96 flex flex-row justify-center item-center z-30 pt-8">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
-                                            <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
+                                            <div className="h-32 w-auto text-7xl font-bold text-green-900">ackage</div>
                                         </div>
 
                                         <div className="">
@@ -147,9 +147,12 @@ export const imgTC = img4;
 
                                                 <div className="flex flex-row justify-center item-center gap-16">
                                                   <div className="h-72 w-72 bg-green-500 rounded-lg">
+                                                    <a href="https://feltex.co.th/">
                                                     <img className="h-full w-full" src={imgFT} alt="" />
+                                                    </a>
                                                   </div>
                                                   <div className="h-72 w-72 bg-green-500 rounded-lg">
+                                                  <a href="https://feltex.co.th/">
                                                     <img className="h-full w-full" src={imgTC} alt="" />
                                                   </div>
                                                 </div>

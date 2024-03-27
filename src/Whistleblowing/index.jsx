@@ -22,18 +22,18 @@ export default function Whistleblowing() {
 
 
         <div
-          className="relative h-full w-full bg-fixed bg-cover z-0"
+          className="relative h-1/2 w-full bg-fixed bg-cover z-0"
         >
         <img className="h-full w-full" src={imgBg} alt=""/>
           <div className="absolute top-24 left-96 h-full w-auto flex justify-center items-center">
-            <h2 className="text-8xl font-sans font-bold font-tt-hoves text-green-900">
+            <h2 className="text-9xl ml-8 font-sans font-bold font-tt-hoves text-green-900">
               WHISTLEBLOWING
             </h2>
           </div>
       </div>
 
 
-      <div className="relative w-full h-full bg-cover z-0">
+      <div className="relative w-full h-3/4 bg-cover z-0">
 
           <div className="absolute h-full w-full z-10 bg-center">
             <img className="h-full w-full" src={imgBg2} alt=""/>

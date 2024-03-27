@@ -9,11 +9,15 @@ export const imageBg = img;
 export default function WorkOpputunity(){
 
     const [clickState, setclickState] = useState(0);
+
     const handleClick = () =>{
-        if(clickState >= 1){
-            setclickState(0);
+        if(clickState === 0){
+            setclickState(clickState+1);
         }
-        setclickState(1);
+        else{
+            setclickState(clickState-1);
+        }
+        console.log(clickState);
 
     }
 
@@ -249,7 +253,7 @@ export default function WorkOpputunity(){
         return(
             <div className="relative h-screen w-full bg-gray-800/10">
                 <button
-                    className="absolute top-32 right-40 h-12 w-12 text-center mt-4 border-2 right-5 text-red-100 border-4 text-extrabold cursor-pointer text-2xl rounded-full z-30 bg-red-400 hover:bg-red-700"
+                    className="z-30 absolute top-32 right-40 h-12 w-12 text-center mt-4 border-2 right-5 text-red-100 border-4 text-extrabold cursor-pointer text-2xl rounded-full z-30 bg-red-400 hover:bg-red-700"
                     onClick={handleClick}
                     >
                         X
@@ -288,7 +292,7 @@ export default function WorkOpputunity(){
                         <p className="text-xm pt-2 text-xl w-3/4 ml-4">ข้อมูลส่ววนบุคคลของคุณจะถูกจัดเก็บตาม "นโยบายความเป็นส่วนตัว" ของเราโปรดศึกษานโยบายอย่างละเอียดก่อนกดส่ง</p>
                         <div className="flex flex-row ml-4 mb-4">
                             <StyledCheckbox></StyledCheckbox>
-                            <p className="text-xm pt-2 text-xl w-3/4 ml-4 font-bold">ฉันเข้าใจและยอมรับนโยบายคามเป็นส่วนตัวของบริษัท</p>
+                            <p className="text-xm text-xl w-3/4 ml-4 font-bold">ฉันเข้าใจและยอมรับนโยบายคามเป็นส่วนตัวของบริษัท</p>
                         </div>
                     </div>
                     
