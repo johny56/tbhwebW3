@@ -131,7 +131,7 @@ export default function OurFACTORY() {
                       <Link to='/pattani'>
                           <div className='h-full w-52 bg-gray-200/90 pt-16 rounded-full shadow-md'>
                             <h1 className='text-6xl font-extrabold text-center text-gray-800/80'>H7</h1>
-                            <h2 className='text-2xl font-bold text-center text-green-800'>PATANI</h2>
+                            <h2 className='text-2xl font-bold text-center text-green-800'>PATTANI</h2>
                           </div>
                       </Link>
                       </div>
