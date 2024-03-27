@@ -54,7 +54,7 @@ export default function Product2nav(){
             </li>
             <li>
                 <a
-                href="/"
+                href="#Packing"
                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                 data-te-dropdown-item-ref
                 >
@@ -63,7 +63,7 @@ export default function Product2nav(){
             </li>
             <li>
                 <a
-                href="/"
+                href="#SPEC"
                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                 data-te-dropdown-item-ref
                 >
@@ -72,7 +72,7 @@ export default function Product2nav(){
             </li>
             <li>
                 <a
-                href="/"
+                href="#otherbussiness"
                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
                 data-te-dropdown-item-ref
                 >
