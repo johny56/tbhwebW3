@@ -123,7 +123,7 @@ export const imgTC = img4;
                                       </div>
                                     </div>
                                     
-                                      <div className="relative h-screen w-full"id="Packing">
+                                      <div className="relative h-screen w-full"id="Packing" src="product-page.html">
                                         
                                         <div className="h-full w-full flex flex-col">
                             

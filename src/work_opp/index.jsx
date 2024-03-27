@@ -297,7 +297,7 @@ export default function WorkOpputunity(){
                         <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono"> ตัวอย่าง +6681-234-5678</p>
                     </div>
                     <div className="relative flex flex-col">
-                        <p className="text-2xl font-bold mt-12 h-8 w-auto ml-10 font-mono">อัพโหลดรีซูเม่</p>
+                        <p className="text-2xl font-bold mt-12 h-8 w-auto ml-10 font-mono">อัพโหลดประวัติส่วนตัว</p>
                         <p className="text-xl font-bold mt-2 h-8 w-auto ml-10 font-mono">.pdf,.doc.docx ขนาดไม่เกิน 5 mb:</p>
                         {/* <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white ml-2 mt-1 ml-10" for="file_input">Upload file</label> */}
                         <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>

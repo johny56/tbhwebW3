@@ -69,9 +69,9 @@ export const Complaint_form = () => {
             <input className="block w-3/4 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
 
 
-            <div className="flex flex-col p-4 inline">
+            <div className="flex flex-row p-4 inline">
                 <StyledCheckbox></StyledCheckbox>
-                <p className="text-xm pt-2 text-xs w-3/4">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
+                <p className="text-xm pt-2 text-xs w-3/4 pl-2">I have read and accepted the conditions as stated in Personal protection policy in all respects and give consent to the collection, use and disclosure of my personal information, accorcding to the objectives stated above</p>
             </div>
             <button className='absolute top-96 mt-56 right-12 h-12 w-24 text-white font-bold rounded-full shadow-lg bg-gray-700 hover:bg-gray-900' onClick={sendEmail}>submit</button>
 

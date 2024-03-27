@@ -134,7 +134,7 @@ export default function ManagementTeam(){
                     
                     <div className="lg:h-64 w-auto flex justify-center md:h-56 w-auto">
 
-                         <img className="h-full w-auto rounded-lg z-10" src={picture_13} alt=""/>
+                         <img className="h-full w-auto rounded-lg z-10" src={picture_17} alt=""/>
         
                     </div>
                 </div>

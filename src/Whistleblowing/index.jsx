@@ -25,9 +25,12 @@ export default function Whistleblowing() {
           className="relative h-1/2 w-full bg-fixed bg-cover z-0"
         >
         <img className="h-full w-full" src={imgBg} alt=""/>
-          <div className="absolute top-24 left-96 h-full w-auto flex justify-center items-center">
-            <h2 className="text-9xl ml-8 font-sans font-bold font-tt-hoves text-green-900">
-              WHISTLEBLOWING
+          <div className="absolute top-24 left-72 h-full w-auto flex flex-row justify-center items-center">
+            <h2 className="flex flex-row text-9xl font-sans font-bold font-tt-hoves text-green-900">
+              WHISTLE
+              <h2 className="ml-12">
+              BLOWING
+              </h2>
             </h2>
           </div>
       </div>
