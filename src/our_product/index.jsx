@@ -152,9 +152,9 @@ export const imgTC = img4;
                                                     </a>
                                                   </div>
                                                   <div className="h-72 w-72 bg-green-500 rounded-lg">
-                                                  <a href="https://feltex.co.th/">
+                                                  <a href="">
                                                     <img className="h-full w-full" src={imgTC} alt="" />
-                                                  </div>
+                                                  </a>
                                                 </div>
 
                                             </div>
@@ -175,7 +175,7 @@ export const imgTC = img4;
 
                                         </div>
 
-
+                                        </div>
                                         </div>
 
                                       </div>
