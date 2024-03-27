@@ -46,7 +46,7 @@ export default function History(){
             <div className="relative h-screen w-full bg-white pt-32 overflow-x-hidden">
                 
                 <div className="h-28 w-3/5 flex flex-col justify-center text-center ml-56 pl-56">
-                <img className="h-full w-auto rounded-lg" src={image01} alt=""/>
+                <img className="h-80 w-auto rounded-lg pt-6" src={image01} alt=""/>
                     
                 </div>
 
@@ -58,7 +58,7 @@ export default function History(){
                 </div>
 
 
-                <div className="relative h-24 w-full px-8 mt-96 pt-20">
+                <div className="relative h-24 w-full px-8 mt-96 pt-40">
                     <p className="text-xl font-normal indent-16">In 1954, Lee Inntong and his associates acquired real estate, founded Thailand Teck Bee Hang Co., Ltd., and was nominated as a chairman.
                     Under his devoted management. Teck Bee Hang standard rubber production and export progressively become the leader in Thailand, becoming the Empire of rubber exports.</p>
                 </div>
@@ -234,7 +234,7 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-2 text-gray-900">
                                     GMG Global Ltd. become majority shareholder of TBH
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-48 -right-72 bg-transition scale-150 z-0">
+                                    <div className="absolute h-96 w-auto -top-48 -right-64 bg-transition scale-150 z-0">
                                         <img className="h-full w-full scale-150" src={image07} alt=""/>
                                     </div>
                                 </div>
@@ -248,7 +248,7 @@ export default function History(){
                                     <p className="leading-tight text-base line-clamp-3 text-gray-900">
                                     Halcyon Agri Corporation Ltd., takeover of GMG Global Ltd., Thus becoming a majority shareholder of TBH.
                                     </p>
-                                    <div className="absolute h-96 w-auto -top-36 -left-96 scale-150 bg-transition">
+                                    <div className="absolute h-96 w-auto -top-36 -left-96 pr-44 scale-150 bg-transition">
                                         <img className="h-full w-full scale-150" src={image10} alt=""/>
                                     </div>
                                     
@@ -265,18 +265,18 @@ export default function History(){
                                 
                                 </div>
 
-                                <div className="absolute h-1/3 w-auto -top-20 -left-48 bg-transition scale-125 z-0 opacity-50">
+                                <div className="absolute h-1/3 w-auto top-0 -left-24 bg-transition scale-150 z-0 opacity-50">
                                     <img className="h-full w-full scale-150" src={image08} alt=""/>
                                 </div>
 
-                                <div className="absolute h-1/3 w-auto top-96 pt-12 -right-72 scale-150 bg-transition">
+                                <div className="absolute h-1/3 w-auto top-96 pt-12 -right-24 scale-150 bg-transition">
                                     <img className="h-full w-full" src={image09} alt=""/>
                                 </div>
                                 {/* <div className="absolute h-96 w-auto top-80 -scale-x-100 -right-5 bg-transition">
                                     <img className="h-full w-full" src={image10} alt=""/>
                                 </div> */}
                                 
-                                <div className="absolute h-2/4 w-auto buttom-0 top-0 mt-96 pt-96 scale-150 -left-48 bg-transition">
+                                <div className="absolute h-2/4 w-auto buttom-0 top-0 mt-96 pt-96 scale-150 -left-20 bg-transition">
                                     <img className="h-full w-full" src={image11} alt=""/>
                                 </div>
 
@@ -291,13 +291,13 @@ export default function History(){
 
                                 <img className="absolute top-20 buttom-0 bg-cover h-max w-full z-10" src={image12}/>
 
-                                <div className="absolute -top-28 -right-28 h-full w-auto z-0 scale-125">
+                                <div className="absolute -top-36 -right-28 h-full w-auto z-0 scale-125">
                                     <img className="h-full w-full" src={image13} alt=""/>
                                 </div>
 
-                                <div className="absolute mt-96 top-32 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
-                                    <div className="w-full container mx-16 flex flex-col text-center scale-90">
-                                        <div className="flex flex-row mx-4 md:flex-row text-center text-md md:text-left md:justify-between py-4">
+                                <div className="absolute mt-96 top-60 buttom-0 h-16 w-full bg-[#273F02] text-white z-10">
+                                    <div className="w-full container flex flex-col text-center scale-90">
+                                        <div className="flex flex-row mx-40 pl-8 md:flex-row text-center text-md md:text-left md:justify-between py-4">
                                             
                                             <Link className="font-sans font-tt-hoves text-white dark:text-white hover:underline" to="/Whistleblowing">WHISTLEBLOWIMG</Link>
                                             <a href="#" className="font-sans font-tt-hoves ">SUGGESTION/CUSTOMER COMPLAINTS</a>
