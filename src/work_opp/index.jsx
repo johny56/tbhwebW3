@@ -2,6 +2,8 @@
 import { useState } from "react";
 import img from "./asset/Work Opputunity.png";
 
+import StyledCheckbox from "../Whistleblowing/checkbox";
+
 export const imageBg = img;
 
 export default function WorkOpputunity(){
@@ -280,6 +282,14 @@ export default function WorkOpputunity(){
                     <div className="relative flex flex-col pt-4">
                         <label className="text-2xl font-bold ml-12">ข้อความ:</label>
                         <input className="bg-white h-20 w-5/6 mx-1 pt-2 ml-8" name="message" type="email"/>
+                    </div>
+
+                    <div className="flex flex-col p-4">
+                        <p className="text-xm pt-2 text-xl w-3/4 ml-4">ข้อมูลส่ววนบุคคลของคุณจะถูกจัดเก็บตาม "นโยบายความเป็นส่วนตัว" ของเราโปรดศึกษานโยบายอย่างละเอียดก่อนกดส่ง</p>
+                        <div className="flex flex-row ml-4 mb-4">
+                            <StyledCheckbox></StyledCheckbox>
+                            <p className="text-xm pt-2 text-xl w-3/4 ml-4 font-bold">ฉันเข้าใจและยอมรับนโยบายคามเป็นส่วนตัวของบริษัท</p>
+                        </div>
                     </div>
                     
 
