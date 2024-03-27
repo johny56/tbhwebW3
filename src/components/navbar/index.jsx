@@ -38,7 +38,7 @@ const Navbar = () => {
               <Logo></Logo> {/* Replace with your logo component */}
               <div className="flex item-center ml-32 pl-32">
                 
-                <div className="relative rounded-full bg-gray-600/20">
+                <div className="relative rounded-full bg-gray-600/20 ml-32">
                   <Dropdown></Dropdown>
               
                 </div>
