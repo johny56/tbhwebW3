@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "components/navbar";
+// import Navbar from "components/navbar";
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ export default function Award(){
   const toggleCard = () => {
     setIsCardVisible(!isCardVisible);
     window.scrollTo({
-      top: 800,
+      top: 850,
       behavior: "smooth"
     });
   };
@@ -46,14 +46,10 @@ export default function Award(){
 
                 <div className="flex flex-row justify-center item-center h-full w-auto pt-48">
 
-                    <div className="absolute top-96 left-64 h-72 w-auto lg:pr-2 z-20">
+                    <div className="absolute top-96 left-80 mt-6 ml-8 h-72 w-auto lg:pr-2 z-20">
                         <img className="h-full w-full" src={picture_1} alt=""/>
                     </div>
-                        
                     
-                    {/* <div className="flex flex-row items-center justify-center pt-24 z-20 scale-150"> 
-                      <h2 className="text-9xl font-sans font-extrabold text-white text-border-white text-stroke pr-48 md:pl-24 lg:pl-0">A</h2>
-                    </div> */}
                     <div className="flex flex-col items-center justify-center text-white pt-24 z-20">
 
                           <div className="">

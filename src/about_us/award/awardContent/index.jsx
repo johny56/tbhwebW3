@@ -49,12 +49,12 @@ export default function AwardContent() {
         {
         title: "ECOVADIS",
         description: "Gold Medal by Ecovadis CSR assessment",
-        imageUrl: picture_2,
+        imageUrl: picture_3,
         },
         {
         title: "GOOD CORPORATE GOVERNANCE 2023",
         description: "Teck Bee Hang Co.,Ltd",
-        imageUrl: picture_3,
+        imageUrl: picture_2,
         },
         {
         title: "FIN.ดี HAPPY LIFE",
@@ -97,12 +97,12 @@ export default function AwardContent() {
         {
         title: "GOOD WORKERS FOLLOWING THE SUFFICIENCY ECONOMY WAY",
         description: "Teck Bee Hang Co.,Ltd(Thungsong Branch)",
-        imageUrl: picture_11,
+        imageUrl: picture_10,
         },
         {
         title: "THE GOOD LABOR PRACTICES",
         description: "Teck Bee Hang Co.,Ltd(Narathiwat Branch)",
-        imageUrl: picture_10,
+        imageUrl: picture_11,
         },
         {
         title: "ECOVADIS",
