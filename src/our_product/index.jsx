@@ -44,8 +44,10 @@ export const imgTC = img4;
   function Productpage(){
     
         const [currentSpec, setCurrentSpec] = useState(1);
-        
         const [IshighlightSpec, setIshighlightSpec] = useState(1);
+
+        // const element = document.getElementById("packing");
+        // element.scrollIntoView();
 
         const handleSpecChange = (spec) => {
           console.log(currentSpec);
@@ -88,7 +90,7 @@ export const imgTC = img4;
 
                             <div className="h-screen w-full bg-white">
 
-                                    <div className="relative h-screen w-full bg-red-100/50">
+                                    <div className="relative h-screen w-full bg-red-100/50" id="SPEC">
 
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
@@ -121,26 +123,26 @@ export const imgTC = img4;
                                       </div>
                                     </div>
                                     
-                                      <div className="relative h-screen w-full">
+                                      <div className="relative h-screen w-full"id="Packing">
                                         
                                         <div className="h-full w-full flex flex-col">
                             
-                                        <div className="flex flex-row justify-center item-center z-30 pt-8 bg-red-100/50">
+                                        <div className="absolute top-18 left-96 right-96 flex flex-row justify-center item-center z-30 pt-8">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
                                             <div className="h-32 w-auto text-7xl font-bold text-green-900">acking</div>
                                         </div>
 
-                                        <section id="packing">
+                                        <div className="">
                                           <Packing/>
-                                        </section>
+                                        </div>
 
                                         <div className="relativeb h-screen w-full mt-96 pt-1 mb-4">
                       
-                                            <div className="flex flex-col mt-96 pt-12 bg-red-100/50">
+                                            <div className="flex flex-col mt-96 pt-12 bg-red-100/50" id="otherbussiness">
 
                                                 <div className="flex flex-row justify-center item-center">
                                                   <div className="h-32 w-auto text-7xl font-sans font-bold text-stroke text-green-900">Other</div>
-                                                  <div className="h-32 w-auto text-7xl font-sans font-bold text-green-900 pl-4">business</div>
+                                                  <div className="h-32 w-auto text-7xl font-sans font-bold text-green-900 pl-4">bussiness</div>
                                                 </div>
 
                                                 <div className="flex flex-row justify-center item-center gap-16">
