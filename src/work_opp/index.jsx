@@ -3,14 +3,36 @@ import React, { useRef } from 'react';
 import { useState } from "react";
 import img from "./asset/Work Opputunity.png";
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 
-import StyledCheckbox from "../Whistleblowing/checkbox";
+// import StyledCheckbox from "../Whistleblowing/checkbox";
 
 export const imageBg = img;
 
+
 export default function WorkOpputunity(){
 
+    // <script
+    // type="text/javascript"
+    // src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    // </script>
+    // emailjs.init({
+    //     publicKey: 'HFjSoJWqqoZJCp-fb',
+    // });
+
     const [clickState, setclickState] = useState(0);
+
+    const [checkBoxValue, setcheckBoxValue] = useState(false);
+
+    const IsCheck = () =>{
+        if(checkBoxValue===true){
+            setcheckBoxValue(false);
+            console.log(checkBoxValue);
+        }else{
+            setcheckBoxValue(true);
+            console.log(checkBoxValue);
+        }
+    }
 
     const form = useRef();
 
@@ -280,47 +302,89 @@ export default function WorkOpputunity(){
                     >
                         X
                 </button>
-                <form className="absolute left-32 top-32 h-5/6 w-5/6 bg-white" ref={form} onSubmit={sendEmail}>
+                <form className="absolute top-32 left-36 h-5/6 w-5/6 bg-white overflow-y-scroll" ref={form} onSubmit={sendEmail}>
                     
-                    <h1 className="relative text-5xl font-bold mt-8 h-8 w-auto ml-12 font-mono">แบบฟอร์มสมัครงาน</h1>
+                    <h1 className="relative text-4xl font-bold mt-8 h-8 w-auto ml-12 font-sans">แบบฟอร์มสมัครงาน</h1>
                     
                     <div className="relative flex flex-row">
-                        <p className="text-2xl font-bold mt-8 h-8 w-auto ml-10 font-mono">ตำแหน่ง: </p>
-                        <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono">Document Staff(CDS) </p>
-                    </div>
-                    <div className="relative flex flex-row">
-                        <p className="text-2xl font-bold mt-8 h-8 w-auto ml-10 font-mono">ชื่อสกุล: </p>
-                        <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono"> ตัวอย่าง สมชาย ใจดี</p>
-                    </div>
-                    <div className="relative flex flex-row">
-                        <p className="text-2xl font-bold mt-8 h-8 w-auto ml-10 font-mono">โทร: </p>
-                        <p className="text-2xl font-normal mt-8 h-8 w-auto ml-10 font-mono"> ตัวอย่าง +6681-234-5678</p>
-                    </div>
-                    <div className="relative flex flex-col">
-                        <p className="text-2xl font-bold mt-12 h-8 w-auto ml-10 font-mono">อัพโหลดประวัติส่วนตัว</p>
-                        <p className="text-xl font-bold mt-2 h-8 w-auto ml-10 font-mono">.pdf,.doc.docx ขนาดไม่เกิน 5 mb:</p>
-                        {/* <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white ml-2 mt-1 ml-10" for="file_input">Upload file</label> */}
-                        <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
-                        <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
-                        <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
-                    </div>
-
-                    <div className="relative flex flex-col pt-4">
-                        <label className="text-2xl font-bold ml-12">ข้อความ:</label>
-                        <input className="bg-white h-20 w-5/6 mx-1 pt-2 ml-8" name="message" type="email"/>
-                    </div>
-
-                    <div className="flex flex-col p-4">
-                        <p className="text-xm pt-2 text-xl w-3/4 ml-4">ข้อมูลส่ววนบุคคลของคุณจะถูกจัดเก็บตาม "นโยบายความเป็นส่วนตัว" ของเราโปรดศึกษานโยบายอย่างละเอียดก่อนกดส่ง</p>
-                        <div className="flex flex-row ml-4 mb-4">
-                            <StyledCheckbox></StyledCheckbox>
-                            <p className="text-xm text-xl w-3/4 ml-4 font-bold">ฉันเข้าใจและยอมรับนโยบายคามเป็นส่วนตัวของบริษัท</p>
+                        <p className="text-xl ml-10 font-bold mt-10 h-8 w-auto font-mono">ตำแหน่ง: </p>
+                        <div className="w-5/6 ml-4 flex items-center border-b border-gray-900 py-2">
+                            <input class="appearance-none bg-transparent border-none w-full text-gray-700 text-2xl mt-6 font-normal mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Document Staff(CDS)" aria-label="Position"/>
                         </div>
                     </div>
 
-                    <button className='absolute top-96 mt-56 right-12 h-12 w-24 text-white font-bold rounded-full shadow-lg bg-gray-700 hover:bg-gray-900' onClick={sendEmail}>submit</button>
-                    
+                    <div className="relative flex h-auto w-full flex-col">
+                        <div className="flex flex-row w-full">
+                            <div className="relative flex w-full">
+                                <p className="text-xl font-bold mt-10 h-8 w-auto ml-12 font-mono">ชื่อสกุล: </p>
+                                <div className="w-3/4 ml-4 flex items-center border-b border-gray-900 py-2">
+                                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 text-2xl mt-6 font-normal mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="ตัวอย่าง สมชาย ใจดี" aria-label="Full name"/>
+                                </div>
+                            </div>
+                            <div className="relative flex w-full">
+                                <p className="text-xl font-bold mt-10 ml-10 h-8 w-auto font-mono">อีเมล:  </p>
+                                <div className="w-4/6 ml-4 flex items-center border-b border-gray-900 py-2">
+                                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 text-2xl mt-6 font-normal mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="ตัวอย่าง somchai@kline.co.th" aria-label="e-mail"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-row w-full">
+                            <div className="relative flex flex-row w-full">
+                                <p className="text-xl font-bold mt-10 h-8 w-auto ml-20 font-mono">โทร: </p>
+                                <div className="w-3/4 ml-4 flex items-center border-b border-gray-900 py-2">
+                                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 text-2xl mt-6 font-normal mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="ตัวอย่าง +6681-234-5678" aria-label="Phone number"/>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-row w-full">
+                                <p className="text-xl font-bold mt-10 h-8 w-auto font-mono">ไอดี Line: </p>
+                                <div className="w-4/6 ml-2 flex items-center border-b border-gray-900 py-2">
+                                    <input class="appearance-none bg-transparent border-none w-full text-gray-700 text-2xl mt-6 font-normal mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="" aria-label="Line id"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="relative flex flex-col">
+                        <p className="text-xl font-bold mt-12 h-8 w-auto ml-10 font-mono">อัพโหลดประวัติส่วนตัว</p>
+                        <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-white ml-10 mt-1" for="file_input">.pdf, .doc, .docx ขนาดไม่เกิน 5 mb:
+                            <div className="w-5/6 flex items-center border-b border-gray-900 py-1"></div>
+                                <div className='py-2'>
+                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+                                </div>
+                        </label>
+                    </div>
+
+                    <div className="relative flex flex-col h-96 w-full bg-white">
+
+                        <div className="relative flex flex-col pt-4">
+                            <label className="text-xl font-bold ml-12">ข้อความ:</label>
+                            <div className="w-5/6 ml-12 flex items-center border-b border-gray-900 py-2">
+                                <input class="appearance-none bg-transparent border-none h-48 w-full text-gray-700 text-2xl mt-6 font-normal mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="" aria-label="Line id"/>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col p-4">
+                            <p className="text-xm pt-2 w-3/4 ml-8">ข้อมูลส่ววนบุคคลของคุณจะถูกจัดเก็บตาม
+                            <Link to="/policy_page" className="text-xm underline underline-offset-1 text-red-600 inline">"นโยบายความเป็นส่วนตัว"</Link> ของเราโปรดศึกษานโยบายอย่างละเอียดก่อนกดส่ง</p>
+                            <div className="flex flex-row ml-8 mb-4 pt-2">
+                                {/* <StyledCheckbox onClick={IsCheck}></StyledCheckbox> */}
+                                <label className="flex items-center space-x-2" onClick={IsCheck}>
+                                    <input id="checkbox" type="checkbox" value="1" className="form-checkbox text-blue-500 h-4 w-4" />
+                                    {/* <span>{label}</span> */}
+                                </label>
+                                <p className="text-xm w-3/4 ml-4 font-bold">ฉันเข้าใจและยอมรับนโยบายคามเป็นส่วนตัวของบริษัท</p>
+                            </div>
+                            {/* <button className="" </button> */}
+                            <button className={checkBoxValue?'absolute bottom-5 right-56 mt-2 h-16 w-28 text-white font-bold rounded-full shadow-lg bg-green-700 hover:bg-green-900'
+                                                :'absolute bottom-5 right-56 mt-2 h-16 w-28 text-white font-bold rounded-full shadow-lg bg-gray-300'}
+                                onClick={sendEmail}
+                                disabled={!checkBoxValue}>submit
+                            </button>
+                        </div>
+                        
+                    </div>
                 </form>
 
             </div>
