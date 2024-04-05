@@ -26,7 +26,7 @@ export default function CompanyStructure() {
         {/* <h1 className="flex flex-col  text-7xl font-extrabold ml-36 text-[#827717]"> */}
             <img
                 src={image03}
-                className="absolute -top-64 right-56 h-full w-auto scale-75"
+                className="absolute -top-80 right-56 h-full w-auto scale-75"
                 alt=""
                 />
             <img
