@@ -30,9 +30,9 @@ const GREENnav = () =>{
                   <Link to="/contact_us">Contact Us</Link>
                 </a>
               </p>
-              <p className="mx-2">
+              {/* <p className="mx-2">
                 <a href="#" className="font-sans font-noto-sans-thai text-white dark:text-white hover:underline">TH|EN</a>
-              </p>
+              </p> */}
             </div>
           </div>
           </nav>
