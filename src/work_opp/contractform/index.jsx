@@ -20,24 +20,11 @@ const ContactForm = () => {
             console.log(checkBoxValue);
         }
     }
-
-    // const handleOnSubmit = (e) => {
-    //     e.preventDefault();
-    //     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-    //       .then((result) => {
-    //         console.log(result.text);
-    //         alert('Message Sent Successfully')
-    //       }, (error) => {
-    //         console.log(error.text);
-    //         alert('Something went wrong!')
-    //       });
-    //     e.target.reset()
-    //   };
     const handleOnSubmit = async (e) => {
         e.preventDefault();
         
         // Check file sizes
-        const fileInputs = e.target.querySelectorAll('input[type="file"]');
+        const fileInputs = e.target.querySelectorAll('input[type="file_input"]');
         let filesValid = true;
         fileInputs.forEach(input => {
           const files = input.files;
@@ -110,9 +97,9 @@ const ContactForm = () => {
                         <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-white ml-10 mt-1" for="file_input">.pdf, .doc, .docx ขนาดไม่เกิน 5 mb:
                             <div className="w-5/6 flex items-center border-b border-gray-900 py-1"></div>
                                 <div className='py-2'>
-                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file_input" id="file_input" type="file"/>
-                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file_input" id="file_input" type="file"/>
-                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file_input" id="file_input" type="file"/>
+                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file_input" id="file_input" type="file_input"/>
+                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file_input" id="file_input" type="file_input"/>
+                                    <input className="block w-64 text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer mt-4 ml-10 bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file_input" id="file_input" type="file_input"/>
                                 </div>
                         </label>
                     </div>
@@ -151,23 +138,3 @@ const ContactForm = () => {
 
 
 export default ContactForm;
-         {/* <div className="pt-32 pl-32" style={{width:'100vw', height: '100vh', display:'flex'}}>
-             <form class="formContainer" onSubmit={handleOnSubmit}>
-                 <h2>Send me a message. Let's have a chat!</h2>
-                 <div class="formElement">
-                     <label for="from_name">Name</label>
-                     <input type="text" id="from_name" name="from_name" placeholder="Your name.." required />
-                 </div>
-
-                 <div class="formElement">
-                     <label>E-mail</label>
-                     <input type="email" id="from_email" name="from_email" placeholder="Your email.." required />
-                 </div>
-
-                 <div class="formElement">
-                     <label for="message">Message</label>
-                     <textarea name="message" rows="8" cols="30" placeholder="Your message.." required />
-                 </div>
-                 <button type='submit' className='formButton'>Submit</button>
-             </form>
-         </div> */}

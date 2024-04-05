@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-// import { Link } from 'react-router-dom';
-// import StyledCheckbox from "../checkbox";
 import bg from "../asset/Background Whistle Blower part 2.jpg";
 
 const SERVICE_ID = "service_tqhv012";
@@ -13,6 +11,7 @@ export const background = bg;
 
 function ComplaintForm() {
   const [selectedComplaintType, setSelectedComplaintType] = useState('');
+  
   const [translateTH, settranslateTH] = useState(true);
   const form = useRef(null);
 
@@ -38,20 +37,35 @@ function ComplaintForm() {
 
   }
 
-  const sendEmail = (e) => {
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(form.current);
-    const templateParams = {
-      from_name: formData.get('user_name'),
-      phone_number: formData.get('phone_number'),
-      from_email: formData.get('from_email'),
-      selected: selectedComplaintType, // Pass selected complaint type
-      topic: formData.get('topic'),
-      message: formData.get('message'),
-      file_input: formData.get('file_input'),
-    };
+    
+    // Check file sizes
+    const fileInputs = e.target.querySelectorAll('input[type="file_input"]');
+    let filesValid = true;
+    fileInputs.forEach(input => {
+      const files = input.files;
+      if (files.length > 0 && files[0].size > 50 * 1024) { // Check if file size exceeds 50KB
+        alert('Please upload files smaller than 50KB.');
+        filesValid = false;
+      }
+    });
+  
+    if (!filesValid) return;
+  
+    // Proceed with sending the form data if files are valid
+    try {
+      const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY);
+      console.log(result.text);
+      alert('Message Sent Successfully');
+      e.target.reset();
+    } catch (error) {
+      console.error(error.text);
+      alert('Something went wrong!');
+    }
+  
 
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY)
       .then((response) => {
         console.log('Email sent successfully!', response);
         // Reset form after submission if needed
@@ -77,8 +91,8 @@ function ComplaintForm() {
   
   
        <div
-             className={checkBoxValue?'absolute -top-6 h-6/7 w-3/4 right-0 left-56 bg-white rounded-lg z-30 border-4 border-green-500'
-             :'absolute -top-6 h-6/7 w-3/4 right-0 left-56 bg-white rounded-lg z-30 border-4 border-gray-200'}>
+             className={checkBoxValue?'absolute -top-6 h-6/7 w-3/4 right-0 left-56 bg-white rounded-lg border-4 border-green-500'
+             :'absolute -top-6 h-6/7 w-3/4 right-0 left-56 bg-white rounded-lg border-4 border-gray-200'}>
   
          <div className='scale-95'>
   
@@ -87,7 +101,7 @@ function ComplaintForm() {
           <div className='absolute top-0 right-0 h-8 w-6 bg-green-600/20 rounded-lg z-30'></div>
           <button onClick={translate} className='absolute right-0 top-0 bg-gray-200/70 text-xl font-extrabold text-gray-700 rounded-lg font-sans hover:text-gray-300 z-20'>TH/EN</button>
         </div>
-        <form className='pt-4 ml-4' ref={form} onSubmit={sendEmail}>
+        <form className='pt-4 ml-4' ref={form} onSubmit={handleOnSubmit}>
           <div className='flex flex-col'>
             <label className='font-medium text-xl'>Name - Surname</label>
             <input className="bg-gray-800/20 h-8 w-auto mx-1 pt-2" type="text" name="user_name" required/>
@@ -154,8 +168,8 @@ function ComplaintForm() {
     return (
       <>
       <div>
-           <div className='relative h-full w-full z-0'>
-             <img className='h-full w-full bg-contain' src={background} alt=""/>
+           <div className='relative h-full w-full'>
+             <img className='h-full w-full bg-contain overflow-y-scroll' src={background} alt=""/>
            </div>
   
   
@@ -170,7 +184,7 @@ function ComplaintForm() {
           <div className='absolute top-0 right-10 h-8 w-6 bg-green-600/20 rounded-lg z-30'></div>
           <button onClick={translate} className='absolute right-0 top-0 text-xl bg-gray-200/70 rounded-lg font-extrabold text-gray-700 font-sans hover:text-gray-300 z-30'>TH/EN</button>
         </div>
-        <form className='pt-4 ml-4' ref={form} onSubmit={sendEmail}>
+        <form className='pt-4 ml-4' ref={form} onSubmit={handleOnSubmit}>
           <div className='flex flex-col'>
             <label className='font-medium text-xl'>ชื่อจริง - นามสกุล</label>
             <input className="bg-gray-800/20 h-8 w-auto mx-1 pt-2" type="text" name="user_name" required/>
