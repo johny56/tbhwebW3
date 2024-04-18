@@ -6,7 +6,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useEffect } from "react";
 import Product from "../../our_product/product _roll/productRoll";
-// import FactoryClip from "about_us/factory";
+import FactoryClip from "about_us/factory";
 // import CompanyStructure from "about_us/company_structure";
 
 const Body = () => {
@@ -37,16 +37,16 @@ const Body = () => {
         
               <body className="absolute buttom-0"> 
 
-                <div className="h-screen">
-                    {/* header space */}
-                </div>
-                <div id="factory-clip">
-                    {/* <FactoryClip></FactoryClip> */}
+                  <div className="h-screen">
+                      {/* header space */}
                   </div>
   
-                  {/* <div classsName="py-2 mt-2 z-20" id="core_value"> */}
                   <div id="core_value">
                       <Card></Card>
+                  </div>
+
+                  <div id="factory-clip">
+                    <FactoryClip></FactoryClip>
                   </div>
                   
                   <div classsName="m-2" id="product">
