@@ -55,11 +55,11 @@ export const imgTC = img4;
           console.log(currentSpec);
           setCurrentSpec(spec);
 
-          if(currentSpec > 1){
+          if(spec > 1){
             setCurrentSpec(1);
             setIsSelected(true);
           };
-          if(currentSpec < 0){
+          if(spec < 0){
             setCurrentSpec(0);
             setIsSelected(false);
           }
@@ -101,7 +101,7 @@ export const imgTC = img4;
                             <div className="h-screen w-full bg-white">
 
                                     <div className="relative h-screen w-full bg-red-100/50 pt-28" id="SPEC">
-
+                                    
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
                                       <div className="h-20 w-auto text-6xl font-bold text-stroke text-green-900">SPEC</div>
@@ -109,12 +109,12 @@ export const imgTC = img4;
                                     </div>
 
                                       <div className="relative h-12 w-full flex justify-center z-20">
-                                        <div className={IsSelected?"absolute top-0 h-12 w-36 rounded-full bg-green-600":""}></div>
+                                        <div className={IsSelected?"absolute transition duration-800 translate-x-36 top-0 h-12 w-40 rounded-full bg-green-900/60 z-20 mr-32":"absolute transition duration-800 -translate-x-36 top-0 h-12 w-40 rounded-full bg-green-900/60 z-20 ml-32"}></div>
                                         <div className="flex flex-row justify-center h-12 w-80 rounded-full bg-gray-400">
                                           <button onClick={() => handleSpecChange(currentSpec - 2)} 
-                                            className="text-2xl text-white font-medium px-4 rounded-full">RRIT SPEC</button>
+                                            className="text-2xl text-white font-medium px-4 rounded-full z-30">RRIT SPEC</button>
                                           <button onClick={() => handleSpecChange(currentSpec + 2)} 
-                                            className="text-2xl text-white font-medium px-4 ml-4 rounded-full">INE SPEC</button>
+                                            className="text-2xl text-white font-medium px-4 ml-4 rounded-full z-30">INE SPEC</button>
                                           </div>
 
                                         </div>
