@@ -44,7 +44,9 @@ export const imgTC = img4;
   function Productpage(){
     
         const [currentSpec, setCurrentSpec] = useState(1);
-        const [IshighlightSpec, setIshighlightSpec] = useState(1);
+        // const [IshighlightSpec, setIshighlightSpec] = useState(1);
+
+        const [IsSelected, setIsSelected] = useState(1);
 
         // const element = document.getElementById("packing");
         // element.scrollIntoView();
@@ -52,9 +54,16 @@ export const imgTC = img4;
         const handleSpecChange = (spec) => {
           console.log(currentSpec);
           setCurrentSpec(spec);
-          if(currentSpec > 1)setCurrentSpec(1);
-          if(currentSpec < 0)setCurrentSpec(0);
-          setIshighlightSpec(true);
+
+          if(currentSpec > 1){
+            setCurrentSpec(1);
+            setIsSelected(true);
+          };
+          if(currentSpec < 0){
+            setCurrentSpec(0);
+            setIsSelected(false);
+          }
+          
         };
 
        
@@ -99,24 +108,29 @@ export const imgTC = img4;
                                       <div className="h-20 w-auto text-6xl font-bold text-green-900 pl-4">Approved</div>
                                     </div>
 
-                                      <div className="h-12 w-full flex justify-center">
+                                      <div className="relative h-12 w-full flex justify-center z-20">
+                                        <div className={IsSelected?"absolute top-0 h-12 w-36 rounded-full bg-green-600":""}></div>
                                         <div className="flex flex-row justify-center h-12 w-80 rounded-full bg-gray-400">
-                                          <button onClick={() => handleSpecChange(currentSpec - 2)} className="btn btn-warning text-2xl text-white font-medium px-4 hover:bg-green-800 rounded-full">RRIT SPEC</button>
-                                          <button onClick={() => handleSpecChange(currentSpec + 2)} className="btn btn-success text-2xl text-white font-medium px-4 ml-4 hover:bg-green-800 rounded-full">INE SPEC</button>
+                                          <button onClick={() => handleSpecChange(currentSpec - 2)} 
+                                            className="text-2xl text-white font-medium px-4 rounded-full">RRIT SPEC</button>
+                                          <button onClick={() => handleSpecChange(currentSpec + 2)} 
+                                            className="text-2xl text-white font-medium px-4 ml-4 rounded-full">INE SPEC</button>
                                           </div>
 
                                         </div>
-                                        <div className="relative h-2/3 w-2/3 mb-12 ml-72 z-30">
+                                        <div className="relative h-full w-auto mb-12 ml-44 z-30">
                                           {currentSpec <= 0 &&PRITspec.map(() => (
 
-                                            <div className="relative flex justify-center h-full w-auto scale-75">
-                                              <img className="absolute top-5" src={image01}/>
+                                            <div className="relative flex justify-start h-full w-auto">
+                                              {/* <div className="h-full w-auto bg-white scale-75"> */}
+                                                <img className="absolute -top-28 scale-75" src={image01}/>
+                                              {/* </div> */}
                                             </div>
                                           ))}
                                           {currentSpec > 0 &&INEspec.map(() => (
 
                                             <div className="flex justify-center h-full w-auto">
-                                              <img className="py-36" src={image02}/>
+                                              <img className="mt-32 mr-36 scale-125 z-20 bg-green-200" src={image02}/>
                                             </div>
                                           ))}
                                         </div>
@@ -124,19 +138,21 @@ export const imgTC = img4;
                                       </div>
                                     </div>
                                     
-                                      <div className="relative h-screen w-full" id="Packaging" src="product-page.html">
+                                      <div className="relative h-screen w-full" src="product-page.html">
                                         
-                                      <div className="absolute top-0 h-28 w-full bg-red-100/50"></div>
+                                      <div className="absolute top-0 h-56 w-full bg-red-100/50"></div>
+                                      <div className="absolute top-56 h-24 w-full bg-red-100/50" id="Packaging"></div>
                                         <div className="h-full w-full flex flex-col">
                             
-                                        <div className="absolute top-18 left-96 right-96 flex flex-row justify-center item-center z-30 pt-28">
+                                        <div className="absolute top-64 left-96 right-96 flex flex-row justify-center item-center z-30 pt-24">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
                                             <div className="h-32 w-auto text-7xl font-bold text-green-900">ackage</div>
                                         </div>
-
-                                        <div className="pt-28">
+                                        
+                                        <div className="mt-80">
                                           <Packing/>
                                         </div>
+
 
                                         <div className="relativeb h-screen w-full mt-96 pt-1 mb-4">
                       
