@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from "@material-tailwind/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function NewYear23(){
 
@@ -67,10 +69,10 @@ Happy Chinese New Year! We wish you all the best!
                                                     navigation={({ setActiveIndex, activeIndex, length }) => (
                                                         <div className=''>
                                                         <button
-                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                X
+                                                                onClick={handleCloseCarousel}
+                                                                className={`fixed h-12 w-12 text-center mt-4 border-2 top-32 right-10 text-extrabold cursor-pointer text-2xl border-gray-700 rounded-full bg-gray-200`}
+                                                                >
+                                                                <FontAwesomeIcon className="h-6 w-10 mb-1 fa-3x text-gray-800 hover:opacity-50" icon={faChevronLeft}/>
                                                         </button>
                                                         <div className='fixed top-96 left-24 h-12 w-8 z-30'>
                                                             <button className={`h-full w-full`}
@@ -230,34 +232,3 @@ Happy Chinese New Year! We wish you all the best!
         </div>
     );
 }
-{/* <div className="grid grid-flow-row-dense grid-cols-2 grid-rows-2">
-
-    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
-        
-        <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_83.jpg?fit=1030%2C686&ssl=1" alt=""/>
-    </div>
-
-    <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
-        <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_113.jpg?fit=1030%2C686&ssl=1" alt=""/>
-    </div>
-
-    <div className="relative w-auto h-auto overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
-        <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_121.jpg?fit=1030%2C686&ssl=1" alt=""/>
-    </div>
-    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
-        
-        <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_128.jpg?fit=1030%2C686&ssl=1" alt=""/>
-
-    </div>
-    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
-        
-        <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_133.jpg?fit=1030%2C686&ssl=1" alt=""/>
-    </div>
-    <div className="relative overflow-hidden hover:opacity-75 transition p-4 hover:absolute top-0 left-0 right-0 end-10 hover:z-10 hover:bg-gray-100  hover:scale-75">
-        
-        <img className="h-auto w-full rounded-lg" src="https://i0.wp.com/www.teckbeehang.com/wp-content/uploads/2023/03/LINE_ALBUM_Chinese-New-Year-2023_230220_76.jpg?fit=773%2C1030&ssl=1" alt=""/>
-    
-    </div>
-
-
-</div> */}
