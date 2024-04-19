@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { Carousel } from "@material-tailwind/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function NewYear22(){
 
@@ -67,10 +69,10 @@ export default function NewYear22(){
 
                                                         <div className='fixed'>
                                                         <button
-                                                            className="fixed h-10 w-10 text-center mt-4 border-2 top-32 right-5 text-red-300 text-extrabold cursor-pointer text-2xl rounded-full bg-red-500 hover:bg-red-700"
-                                                            onClick={handleCloseCarousel}
-                                                            >
-                                                                X
+                                                                onClick={handleCloseCarousel}
+                                                                className={`fixed h-12 w-12 text-center mt-4 border-2 top-32 right-10 text-extrabold cursor-pointer text-2xl border-gray-700 rounded-full bg-gray-200`}
+                                                                >
+                                                                <FontAwesomeIcon className="h-6 w-10 mb-1 fa-3x text-gray-800 hover:opacity-50" icon={faChevronLeft}/>
                                                         </button>
                                                         <div className='fixed top-96 left-24 h-12 w-8 z-30'>
                                                             <button className={`h-full w-full`}
