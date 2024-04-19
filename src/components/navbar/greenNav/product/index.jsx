@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { HashLink } from 'react-router-hash-link';
 
 import {
     Dropdown,
@@ -52,33 +53,24 @@ export default function Product2nav(){
                 Products
                 </a>
             </li>
-            <li>
-                <a
-                href="#Packing"
-                className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+            
+            <HashLink smooth to='/productpage/#Packing'
+                className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                 data-te-dropdown-item-ref
-                >
-                Packaging
-                </a>
-            </li>
-            <li>
-                <a
-                href="#SPEC"
-                className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+                >Package
+            </HashLink>
+
+            <HashLink smooth to='/productpage/#SPEC'
+                className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                 data-te-dropdown-item-ref
-                >
-                SPEC
-                </a>
-            </li>
-            <li>
-                <a
-                href="#otherbussiness"
-                className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
+                >SPEC
+            </HashLink>
+
+            <HashLink smooth to='/productpage/#otherbussiness'
+                className="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                 data-te-dropdown-item-ref
-                >
-                Other Bussiness
-                </a>
-            </li>
+                >Otherbussiness
+            </HashLink>
             
             </ul>
 
