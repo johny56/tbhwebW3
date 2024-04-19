@@ -10,7 +10,7 @@ export default function FactoryClip(){
         return (
 
             
-            <div className="relative h-screen mb-8">
+            <div className="relative h-screen">
                 
                 {/* <iframe className="h-screen w-full"
                     //src="https://www.youtube.com/embed/d25bccY87M4?si=Vsv5wtK0CM3hzaHD?modestbranding=1&rel=0"
