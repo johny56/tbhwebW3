@@ -60,21 +60,22 @@ export const imgTC = img4;
        
             return (
 
-                <div className="relative h-screen bg-red-100/60">
+                <div className="relative h-screen">
+                {/* bg-red-100/60 */}
                 
                 <div className="flex flex-col w-full h-full pt-24">
                   
-                  <div className="bg-contain bg-no-repeat h-2/3 w-full">
+                  <div className="bg-contain bg-no-repeat h-2/3 w-full bg-red-100/60">
 
                         <img className="h-96 w-full" src={imageBackground}/>
 
                       <div className="flex flex-col h-24">
 
-                          <div className="flex flex-row pt-16 m-4 justify-center item-center">
+                          <div className="flex flex-row pt-16 justify-center item-center">
                               <h1 className="h-full w-auto text-8xl font-sans font-bold text-stroke text-green-900">OUR</h1>
                               <h1 className="h-full w-auto text-8xl font-sans text-green-900 font-bold ml-8">PRODUCTS</h1>
                           </div>
-                          <div className="flex flex-col h-96 w-auto pt-4 pl-96">
+                          <div className="flex flex-col h-96 w-auto pt-4 pl-96 bg-red-100/60">
                               <p className="indent-6 text-green-900 text-xl line-clamp-3 pl-28 ml-56">To Produce Standard Thai Rubber(STR) that
                               <br/>Consistently Satiefies or Exceeds Customer's 
                               <br/>Requirements Through Continuous Improvement</p>
@@ -90,7 +91,7 @@ export const imgTC = img4;
 
                             <div className="h-screen w-full bg-white">
 
-                                    <div className="relative h-screen w-full bg-red-100/50" id="SPEC">
+                                    <div className="relative h-screen w-full bg-red-100/50 pt-28" id="SPEC">
 
                                   <div className="flex flex-col">
                                     <div className="flex flex-row justify-center item-center">
@@ -123,16 +124,17 @@ export const imgTC = img4;
                                       </div>
                                     </div>
                                     
-                                      <div className="relative h-screen w-full"id="Packing" src="product-page.html">
+                                      <div className="relative h-screen w-full" id="Packaging" src="product-page.html">
                                         
+                                      <div className="absolute top-0 h-28 w-full bg-red-100/50"></div>
                                         <div className="h-full w-full flex flex-col">
                             
-                                        <div className="absolute top-18 left-96 right-96 flex flex-row justify-center item-center z-30 pt-8">
+                                        <div className="absolute top-18 left-96 right-96 flex flex-row justify-center item-center z-30 pt-28">
                                             <div className="h-32 w-auto text-7xl font-bold text-stroke text-green-900">P</div>
                                             <div className="h-32 w-auto text-7xl font-bold text-green-900">ackage</div>
                                         </div>
 
-                                        <div className="">
+                                        <div className="pt-28">
                                           <Packing/>
                                         </div>
 
